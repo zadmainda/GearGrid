@@ -1,0 +1,140 @@
+*
+  &, &::before, &::after
+    box-sizing: inherit
+    overscroll-behavior-x: none
+    overscroll-behavior-y: auto
+    margin: 0
+    padding: 0
+
+body, html
+  scroll-behavior: smooth
+  scroll-padding-top: 11.5rem
+  box-sizing: border-box
+  font-kerning: normal
+  -webkit-text-size-adjust: 100%
+  font-size: 62.5%
+
+body
+  font-family: var(--font)
+  color: var(--theme-color-text-cream)
+  line-height: 1.5
+  background-color: var(--theme-color)
+  margin: 0 auto
+  position: relative
+  font-kerning: normal
+  min-height: 100vh
+  min-height: 100dvh
+  -webkit-font-smoothing: antialiased
+  -moz-osx-font-smoothing: grayscale
+  -webkit-overflow-scrolling: touch
+  overflow-x: hidden
+  font-size: 1.6rem
+  display: flex
+  flex-direction: column
+a
+  text-decoration: none
+  color: inherit
+  white-space: nowrap
+ol, ul
+  list-style: none
+
+.h1, .h2, .h3, .h4, .h5, .h6
+  color: var(--theme-color-text-cream)
+  font-family: var(--font)
+  line-height: 1
+  font-weight: 600
+  text-align: center
+  --h1: 6.2rem
+  --h2: 5.2rem
+  --h3: 4.5rem
+  --h4: 3.5rem
+  --h5: 3rem
+  --h6: 2.5rem
+  @media screen and (max-width: 667px)
+    --h1: 5rem
+    --h2: 4rem
+    --h3: 3.5rem
+    --h4: 2.5rem
+    --h5: 2.2rem
+    --h6: 2rem
+.h1
+  font-size: var(--h1)
+
+.h2
+  font-size: var(--h2)
+
+.h3
+  font-size: var(--h3)
+
+.h4
+  font-size: var(--h4)
+.h5
+  font-size: var(--h5)
+.h6
+  font-size: var(--h6)
+img, svg
+  max-width: 100%
+  vertical-align: middle
+img
+  height: auto
+  margin: auto
+  padding: 0
+
+.wrapper
+  margin-left: auto
+  margin-right: auto
+  padding-left: 2rem
+  padding-right: 2rem
+  max-width: var(--max-container-width)
+  @media  screen and (max-width: 667px)
+    padding-left: 2rem
+    padding-right: 2rem
+    overflow: hidden
+
+.wrapper-fullwidth
+  @extend .wrapper
+  max-width: 99%
+
+.main
+  flex: 1
+  display: flex
+  flex-direction: column 
+  justify-content: center
+
+
+.f-width 
+  margin-left: auto
+  margin-right: auto
+  padding-left: 1.5rem
+  padding-right: 1.5rem
+  max-width: 99%
+  @media  screen and (max-width: 667px)
+    padding-left: 1rem
+    padding-right:1rem
+    overflow: hidden
+
+@font-face
+  font-family: batmeton
+  src: url(/fonts/batmeton/Batmeton-9Y5AB.ttf)
+  font-weight: 800
+
+
+input[type="text"], input[type="tel"], input[type="email"], textarea
+  padding: 1.5rem 2rem
+  transition: opacity 600ms, transform 300ms
+  outline: none !important
+  font-weight: 500
+  border: 0.2rem solid rgba(92, 159, 216, 0.35)
+  border-radius: 1.5rem
+  background-color: rgba(206, 212, 218, 0.65)
+  &:focus-visible
+    border-color: var(--theme-color-blue-level-3)
+  &::placeholder
+    font-weight: 500
+
+button
+  outline: none
+  border: none
+  
+.hidden
+  display: none
