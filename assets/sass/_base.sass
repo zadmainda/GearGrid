@@ -19,8 +19,9 @@ body
   font-family: var(--font-family)
   color: var(--theme-color-text-cream)
   line-height: 1.5
-  background-color: var(--theme-color)
+  background-color: #fff
   margin: 0 auto
+  width: var(--max-body-width)
   position: relative
   font-kerning: normal
   min-height: 100vh
@@ -38,8 +39,12 @@ a
   white-space: nowrap
 ol, ul
   list-style: none
+button
+  outline: none
+  border: none
+  
 
-  .h1, .h2, .h3, .h4, .h5, .h6
+.h1, .h2, .h3, .h4, .h5, .h6
   color: var(--theme-color-text-cream)
   font-family: var(--font)
   line-height: 1
@@ -82,8 +87,6 @@ img
 .wrapper
   margin-left: auto
   margin-right: auto
-  padding-left: 2rem
-  padding-right: 2rem
   max-width: var(--max-container-width)
   @media  screen and (max-width: 667px)
     padding-left: 2rem

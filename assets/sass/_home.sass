@@ -1,0 +1,73 @@
+.header
+  &_bar, &_cta, &_nav, &_links, &_icons
+    display: flex
+    align-items: center
+  &_bar
+    justify-content: center
+    width: 100%
+    position: relative
+    padding: 1.2rem 0.8rem 
+    background-color: var(--neutral-level-2)
+  &_cta
+    justify-self: center
+  &_span
+    color: var(--secondary-blue)
+    margin: 0rem .5rem
+    text-decoration: underline
+    .fa-arrow-right
+      margin-left: 0.5rem
+  &_close
+    position: absolute
+    right: 2rem
+  &_wrapper
+    @extend .wrapper
+    // border: 1px solid green
+  &_nav
+    justify-content: space-between
+  &_logo
+    font-size: 3rem
+  &_links
+    gap: 3rem
+  &_icons
+    gap: 1.5rem
+
+  
+.hero
+  &_wrapper
+    @extend .wrapper
+    // border: 1px solid red
+  &_images
+    position: relative
+  &_img
+    img
+      width: 100%
+  &_arrow
+    position: absolute
+    font-size: 3rem
+    color: #fff
+    background-color: #000
+    border-radius: 50%
+    &.fa-circle-arrow-left
+      top: 50%
+      transform: translateY(50%)
+      left: 2rem
+    &.fa-circle-arrow-right
+      top: 50%
+      transform: translateY(50%)
+      right: 2rem
+  &_header
+    display: grid
+    grid-template-columns: repeat(2, 1fr)
+  &_content
+    font-size: 5rem
+    font-weight: 600
+    span
+      font-size: 4.5rem
+      &:first-of-type
+        font-weight: 800
+  &_text
+    align-self: center
+    justify-tracks: center
+    width: 55ch
+    span
+      font-weight: 800
