@@ -1,0 +1,94 @@
+*
+  &, &::before, &:after
+    box-sizing: inherit
+    overscroll-behavior-x: none
+    overscroll-behavior-y: auto
+    margin: 0
+    padding: 0
+
+body, html
+  scroll-behavior: smooth
+  scroll-padding-top: 8rem
+  box-sizing: border-box
+  font-kerning: normal
+  -webkit-text-size-adjust: 100%
+  font-size: 62.5%
+
+
+body
+  font-family: var(--font-family)
+  color: var(--theme-color-text-cream)
+  line-height: 1.5
+  background-color: var(--theme-color)
+  margin: 0 auto
+  position: relative
+  font-kerning: normal
+  min-height: 100vh
+  min-height: 100dvh
+  -webkit-font-smoothing: antialiased
+  -moz-osx-font-smoothing: grayscale
+  -webkit-overflow-scrolling: touch
+  overflow-x: hidden
+  font-size: 1.6rem
+  display: flex
+  flex-direction: column
+a
+  text-decoration: none
+  color: inherit
+  white-space: nowrap
+ol, ul
+  list-style: none
+
+  .h1, .h2, .h3, .h4, .h5, .h6
+  color: var(--theme-color-text-cream)
+  font-family: var(--font)
+  line-height: 1
+  font-weight: 600
+  text-align: center
+  --h1: 6.2rem
+  --h2: 5.2rem
+  --h3: 4.5rem
+  --h4: 3.5rem
+  --h5: 3rem
+  --h6: 2.5rem
+  @media screen and (max-width: 667px)
+    --h1: 5rem
+    --h2: 4rem
+    --h3: 3.5rem
+    --h4: 2.5rem
+    --h5: 2.2rem
+    --h6: 2rem
+.h1
+  font-size: var(--h1)
+.h2
+  font-size: var(--h2)
+.h3
+  font-size: var(--h3)
+.h4
+  font-size: var(--h4)
+.h5
+  font-size: var(--h5)
+.h6
+  font-size: var(--h6)
+img, svg
+  max-width: 100%
+  vertical-align: middle
+img
+  height: auto
+  margin: auto
+  padding: 0
+
+
+.wrapper
+  margin-left: auto
+  margin-right: auto
+  padding-left: 2rem
+  padding-right: 2rem
+  max-width: var(--max-container-width)
+  @media  screen and (max-width: 667px)
+    padding-left: 2rem
+    padding-right: 2rem
+    overflow: hidden
+
+.hidden
+  display: none
