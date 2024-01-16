@@ -109,13 +109,13 @@ img {
   padding: 0;
 }
 
-.wrapper, .hero_wrapper, .header_wrapper {
+.wrapper, .banner_wrapper, .hero_wrapper, .header_wrapper {
   margin-left: auto;
   margin-right: auto;
   max-width: var(--max-container-width);
 }
 @media screen and (max-width: 667px) {
-  .wrapper, .hero_wrapper, .header_wrapper {
+  .wrapper, .banner_wrapper, .hero_wrapper, .header_wrapper {
     padding-left: 2rem;
     padding-right: 2rem;
     overflow: hidden;
@@ -226,4 +226,15 @@ img {
 }
 .hero_text span {
   font-weight: 800;
+}
+
+.banner_wrapper {
+  border: 1px solid red;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+.banner-1 {
+  grid-row: 1/-1;
+  display: relative;
 }/*# sourceMappingURL=main.css.map */

@@ -70,3 +70,15 @@
     width: 55ch
     span
       font-weight: 800
+
+.banner
+  &_wrapper
+    @extend .wrapper
+    border: 1px solid red
+    display: grid
+    grid-template-columns: repeat(2, 1fr)
+    grid-template-rows: repeat(2, 1fr)
+  &-1
+    grid-row: 1/-1
+    display: relative
+    
