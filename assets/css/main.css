@@ -196,12 +196,12 @@ img {
   border-radius: 50%;
 }
 .hero_arrow.fa-circle-arrow-left {
-  top: 50%;
+  top: 40%;
   transform: translateY(50%);
   left: 2rem;
 }
 .hero_arrow.fa-circle-arrow-right {
-  top: 50%;
+  top: 40%;
   transform: translateY(50%);
   right: 2rem;
 }
