@@ -74,7 +74,6 @@
 .banner
   &_wrapper
     @extend .wrapper
-    border: 1px solid red
     display: grid
     grid-template-columns: repeat(2, 1fr)
     grid-template-rows: repeat(2, 1fr)
@@ -95,7 +94,25 @@
     gap: 2rem
     padding-top: 1.2rem
     padding-bottom: 1.2rem
-    border: 2px solid blue
     overflow: hidden
 
-  
+.value
+  background-color: var(--neutral-level-2)
+  padding: 4rem
+  flex-grow: 1
+  &_wrapper
+    @extend .wrapper
+    display: flex
+    justify-content: space-between
+    gap: 3rem
+  i
+    font-size: 4rem
+    padding-bottom: 1.2rem
+  &_title
+    padding-bottom: 1.2rem
+  &_description
+    font-size: 1.4rem
+    color: var(--neutral-level-4)
+  &s
+    padding-top: 4rem
+    
