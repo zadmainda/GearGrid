@@ -247,4 +247,37 @@ img {
 .carousel_track {
   display: flex;
   gap: 2rem;
+  padding-top: 1.2rem;
+  padding-bottom: 1.2rem;
+  border: 2px solid blue;
+  overflow: hidden;
+}
+
+.card {
+  position: relative;
+  width: 30rem;
+  height: 37rem;
+}
+.card span {
+  display: block;
+  font-weight: bold;
+  padding-top: 0.7rem;
+}
+.card img {
+  width: 100%;
+  height: 75%;
+}
+.card_discount, .card_banner {
+  position: absolute;
+  left: 1.5rem;
+  padding: 0.1rem 0.9rem;
+}
+.card_banner {
+  top: 1.25rem;
+  background: #fff;
+}
+.card_discount {
+  top: 6rem;
+  background: var(--secondary-green);
+  padding: 0.1rem 0.4rem;
 }/*# sourceMappingURL=main.css.map */
