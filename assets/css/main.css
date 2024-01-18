@@ -112,13 +112,13 @@ img {
   width: 100%;
 }
 
-.wrapper, .article_wrapper, .value_wrapper, .carousel_wrapper, .banner_wrapper, .hero_wrapper, .header_wrapper {
+.wrapper, .footer_wrapper, .article_wrapper, .value_wrapper, .carousel_wrapper, .banner_wrapper, .hero_wrapper, .header_wrapper {
   margin-left: auto;
   margin-right: auto;
   max-width: var(--max-container-width);
 }
 @media screen and (max-width: 667px) {
-  .wrapper, .article_wrapper, .value_wrapper, .carousel_wrapper, .banner_wrapper, .hero_wrapper, .header_wrapper {
+  .wrapper, .footer_wrapper, .article_wrapper, .value_wrapper, .carousel_wrapper, .banner_wrapper, .hero_wrapper, .header_wrapper {
     padding-left: 2rem;
     padding-right: 2rem;
     overflow: hidden;
@@ -211,6 +211,7 @@ img {
 .hero_header {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  padding: 1.5rem 0;
 }
 .hero_content {
   font-size: 5rem;
@@ -234,17 +235,44 @@ img {
 .banner_wrapper {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 30rem);
+  margin-bottom: 2rem;
+  gap: 2.5rem;
+}
+.banner_title {
+  font-size: 2.8rem;
+}
+.banner-1 img, .banner-2 img, .banner-3 img {
+  height: 100%;
+  width: 100%;
+}
+.banner-1 .banner_content, .banner-2 .banner_content, .banner-3 .banner_content {
+  position: absolute;
 }
 .banner-1 {
   grid-row: 1/-1;
-  display: relative;
+  position: relative;
+}
+.banner-1 .banner_content {
+  top: 2rem;
+  left: 2.5rem;
+}
+.banner-2, .banner-3 {
+  position: relative;
+}
+.banner-2 .banner_content, .banner-3 .banner_content {
+  bottom: 2.5rem;
+  left: 2.5rem;
 }
 
 .carousel_title {
   display: flex;
   justify-content: space-between;
-  border: 1px solid red;
+  padding: 1.2rem 0;
+  align-items: flex-end;
+}
+.carousel_heading {
+  font-size: 3.5rem;
 }
 .carousel_track {
   display: flex;
@@ -341,10 +369,12 @@ img {
   background-image: url("../images/newsletter.png");
   background-position: 50% 50%;
   background-repeat: no-repeat;
+  background-size: cover;
   height: 30rem;
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 100%;
 }
 .newsletter_content {
   display: flex;
@@ -385,6 +415,41 @@ img {
   scale: 1.05;
   cursor: pointer;
   transition: all 0.2s;
+}
+
+.footer {
+  background-color: var(--neutral-level-7);
+  color: #fff;
+}
+.footer_wrapper {
+  padding-top: 5rem;
+  padding-bottom: 3rem;
+}
+.footer_nav {
+  display: flex;
+  padding-bottom: 4rem;
+}
+.footer_nav h4 {
+  padding-right: 2rem;
+}
+.footer_nav span {
+  padding-right: 2rem;
+}
+.footer_links {
+  display: flex;
+  margin-left: auto;
+  gap: 2.5rem;
+}
+.footer_ribbon {
+  display: flex;
+  gap: 2rem;
+  border-top: 1px solid #fff;
+  padding-top: 2rem;
+}
+.footer_social {
+  margin-left: auto;
+  display: flex;
+  gap: 1.5rem;
 }
 
 .card {

@@ -57,6 +57,7 @@
   &_header
     display: grid
     grid-template-columns: repeat(2, 1fr)
+    padding: 1.5rem 0
   &_content
     font-size: 5rem
     font-weight: 600
@@ -76,10 +77,28 @@
     @extend .wrapper
     display: grid
     grid-template-columns: repeat(2, 1fr)
-    grid-template-rows: repeat(2, 1fr)
+    grid-template-rows: repeat(2, 30rem)
+    margin-bottom: 2rem
+    gap: 2.5rem
+  &_title
+    font-size: 2.8rem
+  &-1, &-2, &-3
+    img
+      height: 100%
+      width: 100%
+    .banner_content
+      position: absolute
   &-1
     grid-row: 1/-1
-    display: relative
+    position: relative
+    .banner_content
+      top: 2rem
+      left: 2.5rem
+  &-2, &-3
+    position: relative
+    .banner_content
+      bottom: 2.5rem
+      left: 2.5rem
     
 .carousel
   &_wrapper
@@ -87,7 +106,10 @@
   &_title
     display: flex
     justify-content: space-between
-    border: 1px solid red
+    padding: 1.2rem 0
+    align-items: flex-end
+  &_heading
+    font-size: 3.5rem
   &_inner
     //ssss
   &_track
@@ -147,7 +169,6 @@
     span
       text-transform: uppercase
 
-
 .article
   &_wrapper
     @extend .wrapper
@@ -172,10 +193,12 @@
   background-image: url("../images/newsletter.png")
   background-position: 50% 50%
   background-repeat: no-repeat
+  background-size: cover
   height: 30rem
   display: flex
   align-items: center
   justify-content: center
+  width: 100%
   &_content
     display: flex
     flex-direction: column
@@ -208,5 +231,34 @@
         scale: 1.05
         cursor: pointer
         transition: all .2s
+
+
+.footer
+  background-color: var(--neutral-level-7)
+  color: #fff
+  &_wrapper
+    @extend .wrapper
+    padding-top: 5rem
+    padding-bottom: 3rem
+  &_nav
+    display: flex
+    padding-bottom: 4rem
+    h4
+      padding-right: 2rem
+    span
+      padding-right: 2rem
+  &_links
+    display: flex
+    margin-left: auto
+    gap: 2.5rem
+  &_ribbon
+    display: flex
+    gap: 2rem
+    border-top: 1px solid #fff
+    padding-top: 2rem
+  &_social
+    margin-left: auto
+    display: flex
+    gap: 1.5rem
 
 
