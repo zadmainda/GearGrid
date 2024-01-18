@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap");
 *, *::before, *:after {
   box-sizing: inherit;
   overscroll-behavior-x: none;
@@ -16,7 +17,7 @@ body, html {
 }
 
 body {
-  font-family: var(--font-family);
+  font-family: "Inter", sans-serif;
   color: var(--theme-color-text-cream);
   line-height: 1.5;
   background-color: #fff;
@@ -468,15 +469,18 @@ img {
 }
 .card_discount, .card_banner {
   position: absolute;
-  left: 1.5rem;
-  padding: 0.1rem 0.9rem;
+  display: inline-flex;
+  left: 1.2rem;
+  padding: 0.2rem 0.7rem;
+  border-radius: 0.5rem;
+  font-size: 1.3rem;
+  text-align: center;
 }
 .card_banner {
-  top: 1.25rem;
+  top: 1.2rem;
   background: #fff;
 }
 .card_discount {
-  top: 6rem;
+  top: 5rem;
   background: var(--secondary-green);
-  padding: 0.1rem 0.4rem;
 }/*# sourceMappingURL=main.css.map */
