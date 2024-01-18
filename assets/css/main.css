@@ -111,6 +111,7 @@ img {
 
 .main {
   width: 100%;
+  flex-grow: 1;
 }
 
 .wrapper, .footer_wrapper, .article_wrapper, .value_wrapper, .carousel_wrapper, .banner_wrapper, .hero_wrapper, .header_wrapper {
