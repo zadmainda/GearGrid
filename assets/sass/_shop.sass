@@ -1,0 +1,26 @@
+.shop
+  &_wrapper
+    @extend .wrapper
+  &_layout
+    display: flex
+    border: 1px solid blue
+  &_sidebar
+    flex-basis: 22.5%
+    height: 80vh
+  &_products
+    flex-grow: 1
+
+  &_toolbar
+    display: flex
+    justify-content: space-between
+    margin-bottom: 3rem
+  &_grid
+    display: grid
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr))
+    border: 1px solid purple
+    gap: 3%
+    .card
+      border: 2px solid red
+      overflow: clip
+
+
