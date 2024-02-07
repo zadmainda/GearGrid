@@ -1,0 +1,35 @@
+.pageheader
+  @extend  .wrapper
+  position: relative
+  &_img
+    width: 100%
+    height: fit-content
+    
+    img
+      height: 39.2rem
+      width: 100%
+  &_header
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    display: flex
+    flex-direction: column
+    align-items: center
+    gap: 1.5rem
+  &_crumps
+    display: flex
+    gap: 2rem
+    align-items: center
+    font-size: 1.8rem
+    i
+      font-size: 1.4rem
+  &_crump, i
+    &:first-of-type
+      color: var(--neutral-level-4)
+  &_title
+    font-size: 5rem
+  
+
+
+
