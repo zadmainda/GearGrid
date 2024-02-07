@@ -1,19 +1,14 @@
 .shop
   &_wrapper
     @extend .wrapper
-    width: 100%
   &_layout
     display: flex
-    border: 1px solid blue
-    width: 100%
     gap: 2.5rem
+    padding-top: 4rem
   &_sidebar
-    width: 35%
-    height: 80vh
-    border: 4px solid tomato
+    width: fit-content
   &_products
-    overflow-x: scroll
-    width: 100%
+    // overflow-x: scroll
   &_toolbar
     display: flex
     justify-content: space-between
@@ -24,8 +19,13 @@
     flex-wrap: wrap
     gap: 2.5rem
     .card
-      width: 25rem
       overflow: clip
-      border: 1px solid green
+  &_rooms
+    margin-bottom: 3rem
+    input
+      display: none
+    label
+      padding-bottom: .6rem
+      display: inline-flex
 
-
+      
