@@ -3,23 +3,24 @@
     @extend .wrapper
   &_layout
     display: flex
-    gap: 2.5rem
+    gap: 2rem
     padding-top: 4rem
   &_sidebar
     width: fit-content
+    margin-top: 5.5rem
+  &_categories
+    display: block
   &_products
-    // overflow-x: scroll
+    flex-basis: 100%
+    padding-bottom: 5rem
   &_toolbar
     display: flex
     justify-content: space-between
     margin-bottom: 3rem
   &_grid
-    display: flex
-    justify-content: space-between
-    flex-wrap: wrap
-    gap: 2.5rem
-    .card
-      overflow: clip
+    display: grid
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr))
+    gap: 2rem
   &_rooms
     margin-bottom: 3rem
     input
@@ -27,5 +28,3 @@
     label
       padding-bottom: .6rem
       display: inline-flex
-
-      

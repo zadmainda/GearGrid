@@ -457,12 +457,20 @@ img {
 
 .shop_layout {
   display: flex;
-  gap: 2.5rem;
+  gap: 2rem;
   padding-top: 4rem;
 }
 .shop_sidebar {
   width: -moz-fit-content;
   width: fit-content;
+  margin-top: 5.5rem;
+}
+.shop_categories {
+  display: block;
+}
+.shop_products {
+  flex-basis: 100%;
+  padding-bottom: 5rem;
 }
 .shop_toolbar {
   display: flex;
@@ -470,13 +478,9 @@ img {
   margin-bottom: 3rem;
 }
 .shop_grid {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 2.5rem;
-}
-.shop_grid .card {
-  overflow: clip;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  gap: 2rem;
 }
 .shop_rooms {
   margin-bottom: 3rem;
@@ -491,6 +495,8 @@ img {
 
 .card {
   position: relative;
+  height: -moz-fit-content;
+  height: fit-content;
 }
 .card span {
   display: block;
