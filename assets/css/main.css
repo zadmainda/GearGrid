@@ -177,8 +177,9 @@ img {
 .header_nav {
   justify-content: space-between;
 }
-.header_logo {
-  font-size: 3rem;
+.header_logo a {
+  font-size: 4rem;
+  font-weight: 800;
 }
 .header_links {
   gap: 3rem;
