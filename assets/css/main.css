@@ -580,4 +580,10 @@ img {
 .price_field input {
   width: 2.2rem;
   height: 2.2rem;
+}
+
+.blog_grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(26rem, 1fr));
+  gap: 3rem;
 }/*# sourceMappingURL=main.css.map */
