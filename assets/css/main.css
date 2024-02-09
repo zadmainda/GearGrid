@@ -493,6 +493,31 @@ img {
   display: inline-flex;
 }
 
+.contact_feature {
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 3rem;
+       column-gap: 3rem;
+  padding: 4.5rem 0;
+}
+.contact_img {
+  flex-basis: 1;
+}
+.contact_content {
+  padding: 5rem;
+  width: 50%;
+}
+.contact_content > * {
+  padding-bottom: 2rem;
+}
+.contact_content h4 {
+  font-size: 3.2rem;
+}
+.contact_contact {
+  padding: 4rem 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
 .card {
   position: relative;
   height: -moz-fit-content;
