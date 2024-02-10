@@ -454,7 +454,7 @@ img {
   display: flex;
   gap: 2rem;
   align-items: center;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
 }
 .pageheader_crumps i {
   font-size: 1.4rem;
@@ -593,6 +593,11 @@ img {
   position: relative;
   padding: 1.2rem 0.8rem;
   background-color: var(--neutral-level-2);
+  display: none;
+  height: 0;
+  width: 0;
+  overflow: hidden;
+  opacity: 0;
 }
 .header_cta {
   justify-self: center;
@@ -611,16 +616,27 @@ img {
 }
 .header_nav {
   justify-content: space-between;
+  padding: 0.8rem 0;
 }
 .header_logo a {
   font-size: 4rem;
   font-weight: 800;
 }
 .header_links {
-  gap: 3rem;
+  gap: 2rem;
+}
+.header_url {
+  font-size: 1.6rem;
 }
 .header_icons {
-  gap: 1.5rem;
+  gap: 2rem;
+}
+.header_icon i {
+  font-size: 2rem;
+}
+.header_icon i:hover {
+  scale: 1.2;
+  cursor: pointer;
 }
 
 .newsletter {

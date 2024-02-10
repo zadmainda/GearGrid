@@ -8,6 +8,11 @@
     position: relative
     padding: 1.2rem 0.8rem 
     background-color: var(--neutral-level-2)
+    display: none
+    height: 0
+    width: 0
+    overflow: hidden
+    opacity: 0
   &_cta
     justify-self: center
   &_span
@@ -21,14 +26,22 @@
     right: 2rem
   &_wrapper
     @extend .wrapper
-    // border: 1px solid green
   &_nav
     justify-content: space-between
+    padding: .8rem 0
   &_logo
     a
       font-size: 4rem
       font-weight: 800
   &_links
-    gap: 3rem
+    gap: 2rem
+  &_url
+    font-size: 1.6rem
   &_icons
-    gap: 1.5rem
+    gap: 2rem
+  &_icon
+    i
+      font-size: 2rem
+      &:hover
+        scale: 1.2
+        cursor: pointer
