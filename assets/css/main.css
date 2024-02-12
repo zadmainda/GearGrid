@@ -563,6 +563,24 @@ img {
   gap: 1.5rem;
 }
 
+.cta_link {
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 0.4rem;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  transition: all 0.3s ease-in-out;
+}
+.cta_link:hover {
+  gap: 1.2rem;
+  transition: all 0.3s ease-in-out;
+}
+.cta_link:hover .fa-arrow-right {
+  scale: 1.2;
+  transition: all 0.2s ease-in-out;
+}
+
 .blog_grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(26rem, 1fr));
