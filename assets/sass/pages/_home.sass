@@ -25,16 +25,18 @@
     transform-origin: center
     transition: all .3s ease-in-out
     &:hover
-      scale: 1.05
+      transform-origin: center
+      transition: all .3s ease-in-out
+      scale: 1.09
       cursor: pointer
       color: var(--neutral-level-1)
     &.fa-circle-arrow-left
-      top: 40%
-      transform: translateY(50%)
+      top: 50%
+      transform: translateY(-50%)
       left: 2rem
     &.fa-circle-arrow-right
-      top: 40%
-      transform: translateY(50%)
+      top: 50%
+      transform: translateY(-50%)
       right: 2rem
   &_header
     display: grid

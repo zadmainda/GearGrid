@@ -178,18 +178,20 @@ img {
   transition: all 0.3s ease-in-out;
 }
 .hero_arrow:hover {
-  scale: 1.05;
+  transform-origin: center;
+  transition: all 0.3s ease-in-out;
+  scale: 1.09;
   cursor: pointer;
   color: var(--neutral-level-1);
 }
 .hero_arrow.fa-circle-arrow-left {
-  top: 40%;
-  transform: translateY(50%);
+  top: 50%;
+  transform: translateY(-50%);
   left: 2rem;
 }
 .hero_arrow.fa-circle-arrow-right {
-  top: 40%;
-  transform: translateY(50%);
+  top: 50%;
+  transform: translateY(-50%);
   right: 2rem;
 }
 .hero_header {
@@ -453,12 +455,13 @@ img {
 }
 .pageheader_img {
   width: 100%;
-  height: -moz-fit-content;
-  height: fit-content;
+  height: 42rem;
 }
 .pageheader_img img {
-  height: 39.2rem;
-  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 50% 50%;
+     object-position: 50% 50%;
 }
 .pageheader_header {
   position: absolute;
@@ -565,6 +568,25 @@ img {
   grid-template-columns: repeat(auto-fit, minmax(26rem, 1fr));
   gap: 3rem;
   padding: 5rem 0;
+}
+.blog_card {
+  height: 43rem;
+  transition: all 0.3s ease-in;
+}
+.blog_card:hover .blog_img img {
+  scale: 1.05;
+  transition: all 0.4s ease-in;
+}
+.blog_img {
+  height: 70%;
+  overflow: hidden;
+}
+.blog_img img {
+  transform-origin: center;
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .blog_title {
   padding: 2rem 0;

@@ -4,6 +4,21 @@
     grid-template-columns: repeat(auto-fit, minmax(26rem, 1fr))
     gap: 3rem
     padding: 5rem 0
+  &_card
+    height: 43rem
+    transition: all .3s ease-in
+    &:hover
+      .blog_img img
+        scale: 1.05
+        transition: all .4s ease-in
+  &_img
+    height: 70%
+    overflow: hidden
+    img
+      transform-origin: center
+      height: 100%
+      width: 100%
+      object-fit: cover
   &_title
     padding: 2rem 0
     font-weight: 600
