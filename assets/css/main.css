@@ -148,17 +148,26 @@ img {
   --max-body-width: 144.0rem;
 }
 
-.hero_images {
+.hero_slider {
   position: relative;
 }
-.hero_img img {
+.hero_slide {
+  display: flex;
+  white-space: nowrap;
+  overflow: hidden;
+  transition: all transform 1.5s;
+  scroll-behavior: smooth;
+  align-items: center;
+}
+.hero_slide img {
+  height: 57.5rem;
   width: 100%;
+  flex-shrink: 0;
 }
 .hero_arrow {
   position: absolute;
-  font-size: 3rem;
+  font-size: 3.5rem;
   color: #fff;
-  background-color: #000;
   border-radius: 50%;
 }
 .hero_arrow.fa-circle-arrow-left {

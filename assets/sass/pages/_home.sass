@@ -1,16 +1,23 @@
 .hero
   &_wrapper
     @extend .wrapper
-  &_images
+  &_slider
     position: relative
-  &_img
+  &_slide
+    display: flex
+    white-space: nowrap
+    overflow: hidden
+    transition: all transform 1.5s
+    scroll-behavior: smooth
+    align-items: center
     img
-      width: 100%
+      height: 57.5rem
+      width: calc( 100% / 1)
+      flex-shrink: 0
   &_arrow
     position: absolute
-    font-size: 3rem
+    font-size: 3.5rem
     color: #fff
-    background-color: #000
     border-radius: 50%
     &.fa-circle-arrow-left
       top: 40%

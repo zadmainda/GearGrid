@@ -5,5 +5,17 @@ headerBarClose.addEventListener('click', () =>{
   headerBar.remove()
 })
 
-console.log(headerBar)
+const heroImgSlider = document.querySelector('.hero_slide');
+const heroArrows = document.querySelectorAll('.hero_arrow');
+let firstHeroImgWidth = document.querySelectorAll('.hero_slide img')[0].clientWidth;
 
+
+heroArrows.forEach(arrow => {
+  arrow.addEventListener('click', () => {
+    if(arrow.id == "hero_arrow-left"){
+      heroImgSlider.scrollLeft -= firstHeroImgWidth;
+    }else{
+      heroImgSlider.scrollLeft += firstHeroImgWidth;
+    }
+  });
+});
