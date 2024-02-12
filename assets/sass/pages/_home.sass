@@ -7,11 +7,14 @@
     display: flex
     white-space: nowrap
     overflow: hidden
-    transition: all transform 1.5s
+    transition: all transform 1.7s
     scroll-behavior: smooth
     align-items: center
+    height: 57.5rem
     img
-      height: 57.5rem
+      object-position: 50% 50%
+      object-fit: cover
+      height: 100%
       width: calc( 100% / 1)
       flex-shrink: 0
   &_arrow
@@ -19,6 +22,12 @@
     font-size: 3.5rem
     color: #fff
     border-radius: 50%
+    transform-origin: center
+    transition: all .3s ease-in-out
+    &:hover
+      scale: 1.05
+      cursor: pointer
+      color: var(--neutral-level-1)
     &.fa-circle-arrow-left
       top: 40%
       transform: translateY(50%)
@@ -98,11 +107,13 @@
   height: 45rem
   margin-top: 6rem
   &_fig 
-    width: 50%
+    flex-basis: 50%
     height: 100%
     img
       height: 100%
       width: 100%
+      object-fit: cover
+      object-position: 50% 50%
   &_content
     padding: 5.5rem
     display: flex
@@ -110,7 +121,7 @@
     justify-content: center
     gap: 1.2rem
     background-color: var(--neutral-level-2)
-    flex: 1
+    flex-basis: 50%
     p
       &:first-of-type
         color: var(--secondary-blue)
@@ -132,12 +143,12 @@
     margin-bottom: 2rem
   &_grid
     display: flex
-
     justify-content: space-between
   &_preview
-    width: 31%
-
+    height: 33rem
+    flex-basis: 32%
   &_img
     height: 85%
+    object-fit: cover
   &_description
     padding: 1.5rem 0

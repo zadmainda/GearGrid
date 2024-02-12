@@ -155,12 +155,17 @@ img {
   display: flex;
   white-space: nowrap;
   overflow: hidden;
-  transition: all transform 1.5s;
+  transition: all transform 1.7s;
   scroll-behavior: smooth;
   align-items: center;
+  height: 57.5rem;
 }
 .hero_slide img {
-  height: 57.5rem;
+  -o-object-position: 50% 50%;
+     object-position: 50% 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 100%;
   width: 100%;
   flex-shrink: 0;
 }
@@ -169,6 +174,13 @@ img {
   font-size: 3.5rem;
   color: #fff;
   border-radius: 50%;
+  transform-origin: center;
+  transition: all 0.3s ease-in-out;
+}
+.hero_arrow:hover {
+  scale: 1.05;
+  cursor: pointer;
+  color: var(--neutral-level-1);
 }
 .hero_arrow.fa-circle-arrow-left {
   top: 40%;
@@ -261,12 +273,16 @@ img {
   margin-top: 6rem;
 }
 .promo_fig {
-  width: 50%;
+  flex-basis: 50%;
   height: 100%;
 }
 .promo_fig img {
   height: 100%;
   width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 50% 50%;
+     object-position: 50% 50%;
 }
 .promo_content {
   padding: 5.5rem;
@@ -275,7 +291,7 @@ img {
   justify-content: center;
   gap: 1.2rem;
   background-color: var(--neutral-level-2);
-  flex: 1;
+  flex-basis: 50%;
 }
 .promo_content p:first-of-type {
   color: var(--secondary-blue);
@@ -303,10 +319,13 @@ img {
   justify-content: space-between;
 }
 .article_preview {
-  width: 31%;
+  height: 33rem;
+  flex-basis: 32%;
 }
 .article_img {
   height: 85%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .article_description {
   padding: 1.5rem 0;
