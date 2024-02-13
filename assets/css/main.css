@@ -735,7 +735,8 @@ img {
   padding: 0.8rem 0;
 }
 .header_logo a {
-  font-size: 4rem;
+  font-size: 4.3rem;
+  font-family: "Shantell Sans", cursive;
   font-weight: 800;
 }
 .header_links {
