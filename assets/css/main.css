@@ -18,7 +18,7 @@ body, html {
 
 body {
   font-family: "Inter", sans-serif;
-  color: var(--theme-color-text-cream);
+  color: var(--neutral-level-7);
   line-height: 1.5;
   background-color: #fff;
   margin: 0 auto;
@@ -738,6 +738,7 @@ img {
   font-size: 4.3rem;
   font-family: "Shantell Sans", cursive;
   font-weight: 800;
+  color: var(--neutral-level-7);
 }
 .header_links {
   gap: 2rem;
