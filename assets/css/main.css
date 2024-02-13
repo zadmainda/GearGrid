@@ -228,12 +228,21 @@ img {
 .banner_title {
   font-size: 2.8rem;
 }
+.banner-1, .banner-2, .banner-3 {
+  overflow: hidden;
+}
 .banner-1 img, .banner-2 img, .banner-3 img {
-  height: 100%;
-  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: all 0.4s ease-in;
 }
 .banner-1 .banner_content, .banner-2 .banner_content, .banner-3 .banner_content {
   position: absolute;
+  z-index: 2;
+}
+.banner-1:hover .banner_img, .banner-2:hover .banner_img, .banner-3:hover .banner_img {
+  scale: 1.03;
+  transition: all 0.3s ease-in;
 }
 .banner-1 {
   grid-row: 1/-1;
@@ -261,11 +270,47 @@ img {
   font-size: 3.5rem;
 }
 .carousel_track {
+  box-sizing: border-box;
   display: flex;
-  gap: 2rem;
-  padding-top: 1.2rem;
-  padding-bottom: 1.2rem;
+  white-space: nowrap;
   overflow: hidden;
+  transition: all transform 1.7s;
+  scroll-behavior: smooth;
+  align-items: center;
+  height: 41rem;
+  position: relative;
+}
+.carousel_track .card {
+  width: 20%;
+  flex-shrink: 0;
+  height: 100%;
+  margin-left: 1.5rem;
+}
+.carousel_track .card:first-of-type {
+  margin-left: 0;
+}
+.carousel_arrows {
+  position: absolute;
+  font-size: 4.5rem;
+  color: var(--secondary-green);
+  top: 40%;
+  transform: translateY(-50%);
+  font-size: 3.5rem;
+  transition: all 0.4s ease-in;
+  transform-origin: center;
+}
+.carousel_arrows:hover {
+  transform-origin: center;
+  transition: all 0.4s ease-out;
+  scale: 1.2;
+  cursor: pointer;
+  color: var(--neutral-level-6);
+}
+.carousel_arrows-left {
+  left: 1rem;
+}
+.carousel_arrows-right {
+  right: 1rem;
 }
 
 .promo {
@@ -429,8 +474,8 @@ img {
   padding-top: 0.7rem;
 }
 .card img {
-  width: 100%;
-  height: 75%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .card_discount, .card_banner {
   position: absolute;
@@ -589,7 +634,9 @@ img {
 }
 .blog_card {
   height: 43rem;
-  transition: all 0.3s ease-in;
+}
+.blog_card .blog_img img {
+  transition: all 0.4s ease-in;
 }
 .blog_card:hover .blog_img img {
   scale: 1.05;

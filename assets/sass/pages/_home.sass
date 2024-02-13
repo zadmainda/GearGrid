@@ -67,11 +67,17 @@
   &_title
     font-size: 2.8rem
   &-1, &-2, &-3
+    overflow: hidden
     img
-      height: 100%
-      width: 100%
+      object-fit: cover
+      transition: all .4s ease-in
     .banner_content
       position: absolute
+      z-index: 2
+    &:hover
+      .banner_img
+        scale: 1.03
+        transition: all .3s ease-in
   &-1
     grid-row: 1/-1
     position: relative
@@ -94,14 +100,44 @@
     align-items: flex-end
   &_heading
     font-size: 3.5rem
-  &_inner
-    //ssss
   &_track
+    box-sizing: border-box
     display: flex
-    gap: 2rem
-    padding-top: 1.2rem
-    padding-bottom: 1.2rem
+    white-space: nowrap
     overflow: hidden
+    transition: all transform 1.7s
+    scroll-behavior: smooth
+    align-items: center
+    height: 41rem
+    position: relative
+    .card
+      width: calc( 100% / 5)
+      flex-shrink: 0
+      height: 100%
+      margin-left: 1.5rem
+      &:first-of-type
+        margin-left: 0
+  &_arrows
+    position: absolute
+    font-size: 4.5rem
+    color: var(--secondary-green)
+    top: 40%
+    transform: translateY(-50%)
+    font-size: 3.5rem
+    transition: all .4s ease-in
+    transform-origin: center
+    &:hover
+      transform-origin: center
+      transition: all .4s ease-out
+      scale: 1.2
+      cursor: pointer
+      color: var(--neutral-level-6)
+    &-left
+      left: 1rem
+    &-right
+      right: 1rem
+
+    
     
 .promo
   width: 100%
