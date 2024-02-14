@@ -629,6 +629,51 @@ img {
   transition: all 0.2s ease-in-out;
 }
 
+.signup {
+  border: 1px solid red;
+  display: flex;
+  align-items: center;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: 70rem;
+  overflow: hidden;
+  margin: 4rem auto;
+}
+.signup_img {
+  flex-basis: 50%;
+  position: relative;
+  height: 100%;
+}
+.signup_img .header_logo {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+}
+.signup_img .header_logo a {
+  font-size: 2.5rem;
+}
+.signup_img img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 50% 50%;
+     object-position: 50% 50%;
+}
+.signup_form {
+  flex-basis: 50%;
+  padding: 0 6rem;
+}
+.signup_form form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.signup_form form input {
+  border: none;
+  outline: none;
+  border-bottom: 0.1rem solid var(--neutral-level-3);
+  padding: 1rem;
+}
+
 .blog_grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(26rem, 1fr));
@@ -675,9 +720,12 @@ img {
 .footer_nav {
   display: flex;
   padding-bottom: 4rem;
+  align-items: center;
 }
 .footer_nav h4 {
   padding-right: 2rem;
+  font-family: "Shantell Sans", cursive;
+  font-size: 3rem;
 }
 .footer_nav span {
   padding-right: 2rem;
@@ -686,17 +734,20 @@ img {
   display: flex;
   margin-left: auto;
   gap: 2.5rem;
+  align-items: center;
 }
 .footer_ribbon {
   display: flex;
   gap: 2rem;
   border-top: 1px solid #fff;
   padding-top: 2rem;
+  align-items: center;
 }
 .footer_social {
   margin-left: auto;
   display: flex;
   gap: 1.5rem;
+  align-items: center;
 }
 
 .header_bar, .header_cta, .header_nav, .header_links, .header_icons {
