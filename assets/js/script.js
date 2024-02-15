@@ -26,7 +26,9 @@ heroArrows.forEach(arrow => {
 // Product Carousel
 const productCarousel = document.querySelector('.carousel_track');
 const productArrows = document.querySelectorAll('.carousel_arrows');
-let firstProductWidth = document.querySelectorAll('.carousel_track .card')[0].clientWidth + 14.5;
+let productMarginLeft = parseFloat(window.getComputedStyle(document.querySelectorAll('.carousel_track .card')[1]).marginLeft)
+let firstProductWidth = document.querySelectorAll('.carousel_track .card')[0].clientWidth + productMarginLeft;
+
 
 productArrows.forEach(arrow => {
   arrow.addEventListener('click', () => {

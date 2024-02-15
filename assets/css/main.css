@@ -337,6 +337,7 @@ img {
 }
 .carousel_track {
   box-sizing: border-box;
+  display: flex;
   white-space: nowrap;
   overflow: hidden;
   transition: all transform 1.7s;
@@ -356,7 +357,7 @@ img {
 }
 @media screen and (max-width: 667px) {
   .carousel_track .card {
-    width: 100%;
+    width: 99%;
     margin-left: 0;
   }
 }
