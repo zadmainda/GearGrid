@@ -5,29 +5,56 @@
     @extend .wrapper
     padding-top: 5rem
     padding-bottom: 3rem
+    @media  screen and (max-width: 667px)
+      padding-top: 2.5rem
+    
   &_nav
     display: flex
     padding-bottom: 4rem
     align-items: center
+    @media  screen and (max-width: 667px)
+      flex-direction: column
     h4
       padding-right: 2rem
       font-family: "Shantell Sans", cursive
       font-size: 3rem
     span
       padding-right: 2rem
+    > span:first-of-type
+      transform: rotate(90deg)
+      margin-top: 2rem
   &_links
     display: flex
     margin-left: auto
     gap: 2.5rem
     align-items: center
+    @media  screen and (max-width: 667px)
+      flex-direction: column
+      margin-left: 0
+      margin-top: 2rem
   &_ribbon
     display: flex
     gap: 2rem
     border-top: 1px solid #fff
     padding-top: 2rem
     align-items: center
+    > a
+      @media  screen and (max-width: 667px)
+        order: 2
+    > span
+      @media  screen and (max-width: 667px)
+        order: 3
+    @media  screen and (max-width: 667px)
+      flex-direction: column
+      border-top: 1px solid var(--neutral-level-6)
   &_social
     margin-left: auto
     display: flex
     gap: 1.5rem
     align-items: center
+    i
+      font-size: 2.5rem
+    @media  screen and (max-width: 667px)
+      order: 1
+      margin-left: 0
+      gap: 2.5rem
