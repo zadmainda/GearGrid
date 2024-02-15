@@ -1,13 +1,18 @@
 .signup
-  display: flex
+  z-index: 15
+  display: none
   align-items: center
   justify-content: center
   width: fit-content
   overflow: hidden
   margin: 4rem auto
+  @media  screen and (max-width: 667px)
+    flex-direction: column
   &_img
     flex-basis: 50%
     position: relative
+    @media  screen and (max-width: 667px)
+      padding: 0 2rem
     .header_logo
       position: absolute
       top: 2rem
@@ -19,6 +24,9 @@
       object-fit: cover
       height: 70rem
       object-position: 50% 50%
+      @media  screen and (max-width: 667px)
+        height: 50rem
+        object-fit: contain
   &_form
     margin-top: 2rem
     flex-basis: 50%
@@ -26,6 +34,10 @@
     display: flex
     flex-direction: column
     gap: 2rem
+    @media  screen and (max-width: 667px)
+      padding: 0 2rem
+      gap: 1rem
+      margin-top: 1rem
     form
       display: flex
       flex-direction: column
@@ -34,16 +46,22 @@
         border: none
         outline: none
         border-bottom: .1rem solid var(--neutral-level-3)
-        padding: 1rem
+        padding: 1.2rem 1.2rem 1.2rem 0
       button
         margin-top: 2rem
         background-color: var(--neutral-level-6)
         color: var(--neutral-level-1)
         padding: 1.5rem 0
+        @media  screen and (max-width: 667px)
+          margin-top: 1rem
   &_headline
     font-size: 4rem
+    @media  screen and (max-width: 667px)
+      font-size: 3rem
     span
       display: inline-block
   &_policy
     margin-top: 2rem
+  &-active
+    display: flex
     
