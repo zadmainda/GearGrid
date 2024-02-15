@@ -741,6 +741,12 @@ img {
   font-size: 4rem;
   font-weight: 800;
 }
+@media screen and (max-width: 667px) {
+  .header_logo a {
+    font-size: 3rem !important;
+    font-weight: 600;
+  }
+}
 .header_links {
   gap: 3rem;
 }
@@ -966,6 +972,7 @@ img {
 @media screen and (max-width: 667px) {
   .footer_ribbon > span {
     order: 3;
+    text-align: center;
   }
 }
 @media screen and (max-width: 667px) {
@@ -1060,6 +1067,11 @@ img {
   justify-content: center;
   width: 100%;
 }
+@media screen and (max-width: 667px) {
+  .newsletter {
+    padding: 3rem;
+  }
+}
 .newsletter_content {
   display: flex;
   flex-direction: column;
@@ -1070,7 +1082,6 @@ img {
   .newsletter_content {
     width: -moz-fit-content;
     width: fit-content;
-    padding: 2rem;
   }
 }
 .newsletter_content p {

@@ -8,6 +8,8 @@
   align-items: center
   justify-content: center
   width: 100%
+  @media  screen and (max-width: 667px)
+    padding: 3rem
   &_content
     display: flex
     flex-direction: column
@@ -15,7 +17,6 @@
     justify-content: center
     @media  screen and (max-width: 667px)
       width: fit-content
-      padding: 2rem
     p
       white-space: wrap
   &_title
