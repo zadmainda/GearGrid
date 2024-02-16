@@ -1,0 +1,44 @@
+.product
+  &_grid
+    padding-top: 3rem
+    display: flex
+    gap: 6rem
+  &_slider
+    flex-basis: 50%
+    &-L
+      width: 100%
+      position: relative
+      img
+        width: 100%
+        object-fit: cover
+    &-S
+      width: 100%
+      display: flex
+      gap: 1.5rem
+      img
+        width: calc( 100% / 3 )
+
+
+
+  &_arrow
+    font-size: 4rem
+    color: var(--neutral-level-1)
+    background: var(--neutral-level-7)
+    border-radius: 50%
+    overflow: hidden
+    position: absolute
+    transform: translateY(-50%)
+    top: 50%
+    &-left
+      left: 2rem
+    &-right
+      right: 2rem
+
+  &_content
+    flex-basis: 50%
+    > * 
+      border-bottom: 2px solid red
+  &_rating  
+    display: flex
+    gap: 3rem
+
