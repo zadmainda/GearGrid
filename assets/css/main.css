@@ -1318,16 +1318,17 @@ img {
 }
 .product_slider {
   flex-basis: 50%;
-  border: 1px solid purple;
 }
 .product_slider-L {
   width: 100%;
   position: relative;
+  scroll-behavior: smooth;
 }
 .product_slider-L img {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  transition: all 1s ease-in;
 }
 .product_slider-S {
   width: 100%;

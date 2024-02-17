@@ -65,24 +65,30 @@ const landingPageProductCarousel = () => {
     });
   });
 }
-
 landingPageProductCarousel()
 
 
 // Product Template Page Main Slider 
-const productTemplateTrack = document.querySelector('.product_track');
-const productTemplateArrows = document.querySelectorAll('.product_arrow');
-let firstProductSlideWidth = document.querySelectorAll('.product_track img');
+const ProductTemplatePageMainSlider = () => {
 
-console.log(firstProductSlideWidth)
+  const productTemplateTrack = document.querySelector('.product_track');
+  const productTemplateArrows = document.querySelectorAll('.product_arrow');
 
+  if (!productTemplateTrack || !productTemplateArrows) return;
 
-productTemplateArrows.forEach(arrow => {
-  arrow.addEventListener('click', () => {
-    if(arrow.id == "product_arrow-left"){
-      productTemplateTrack.scrollLeft -= firstProductSlideWidth;
-    }else{
-      productTemplateTrack.scrollLeft += firstProductSlideWidth;
-    }
+  let firstProductSlideImg = document.querySelectorAll('.product_track img')[0];
+  if (!firstProductSlideImg) return;
+
+  let firstProductSlideImgWidth = firstProductSlideImg.clientWidth
+
+  productTemplateArrows.forEach(arrow => {
+    arrow.addEventListener('click', () => {
+      if (arrow.id == "product_arrow-left") {
+        productTemplateTrack.scrollLeft -= firstProductSlideImgWidth;
+      } else {
+        productTemplateTrack.scrollLeft += firstProductSlideImgWidth;
+      }
+    });
   });
-});
+}
+ProductTemplatePageMainSlider()
