@@ -118,11 +118,11 @@ img {
   margin-left: auto;
   margin-right: auto;
   max-width: var(--max-container-width);
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 @media screen and (max-width: 667px) {
   .wrapper, .value_wrapper, .footer_wrapper, .header_wrapper, .pageheader, .shop_wrapper, .article_wrapper, .carousel_wrapper, .banner_wrapper, .hero_wrapper {
-    padding-left: 2rem;
-    padding-right: 2rem;
     overflow: hidden;
   }
 }
@@ -144,7 +144,7 @@ img {
   --neutral-level-5: #343839;
   --neutral-level-6: #232627;
   --neutral-level-7: #141718;
-  --max-container-width: 112.0rem;
+  --max-container-width: 122.5rem;
   --max-body-width: 144.0rem;
 }
 
@@ -464,7 +464,10 @@ img {
 }
 
 .article_wrapper {
-  padding: 4rem 6%;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  height: -moz-fit-content;
+  height: fit-content;
 }
 .article_heading {
   display: flex;
@@ -473,17 +476,22 @@ img {
 }
 .article_grid {
   display: flex;
+  gap: 1rem;
   justify-content: space-between;
 }
-@media screen and (max-width: 667px) {
+@media screen and (max-width: 550px) {
   .article_grid {
-    flex-direction: column;
     gap: 1rem;
+    flex-direction: column;
   }
 }
 .article_preview {
-  height: 33rem;
-  flex-basis: 32%;
+  width: 31%;
+}
+@media screen and (max-width: 550px) {
+  .article_preview {
+    width: 100%;
+  }
 }
 @media screen and (max-width: 667px) {
   .article_preview .cta_link {
@@ -493,20 +501,30 @@ img {
 @media screen and (max-width: 667px) {
   .article_preview {
     height: 20rem;
-    flex-basis: 1;
   }
 }
 .article_img {
-  height: 85%;
+  height: 30rem;
   -o-object-fit: cover;
      object-fit: cover;
 }
-@media screen and (max-width: 667px) {
+@media screen and (max-width: 550px) {
   .article_img {
-    height: 80%;
-    width: 100%;
-    -o-object-fit: cover;
-       object-fit: cover;
+    height: auto;
+  }
+}
+.article_img img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 100%;
+  width: 100%;
+  -o-object-position: 50% 50%;
+     object-position: 50% 50%;
+}
+@media screen and (max-width: 550px) {
+  .article_img img {
+    height: auto;
+    width: auto;
   }
 }
 .article_description {
@@ -1197,6 +1215,9 @@ img {
   color: var(--neutral-level-4);
 }
 
+.product {
+  padding-bottom: 1rem;
+}
 .product_grid {
   padding-top: 3rem;
   display: flex;
@@ -1204,6 +1225,7 @@ img {
 }
 .product_slider {
   flex-basis: 50%;
+  padding-bottom: 3rem;
 }
 .product_slider-L {
   width: 100%;
