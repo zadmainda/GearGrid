@@ -1365,6 +1365,7 @@ img {
   transform: translateY(-50%);
   top: 50%;
   transition: all 0.2s ease-in;
+  border: 1px solid var(--neutral-level-7);
 }
 .product_arrow:hover {
   scale: 1.15;
