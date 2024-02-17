@@ -8,7 +8,8 @@
       flex-direction: column
   &_slider
     flex-basis: 50%
-    padding-bottom: 3rem
+    // padding-bottom: 3rem
+    border: 1px solid purple
     &-L
       width: 100%
       position: relative
@@ -19,22 +20,39 @@
       width: 100%
       display: flex
       gap: 1.5rem
+      padding-top: 2rem
       img
         width: calc( 100% / 3 )
+  &_track
+    display: flex
+    white-space: nowrap
+    overflow: hidden
+    transition: all transform 1.7s
+    scroll-behavior: smooth
+    align-items: center
+    width: 100%
+    img
+      object-position: 50% 50%
+      object-fit: cover
+      height: 100%
+      width: calc( 100% / 1)
+      flex-shrink: 0
   &_arrow
     font-size: 4rem
     color: var(--neutral-level-1)
     background: var(--neutral-level-7)
     border-radius: 50%
-    overflow: hidden
     position: absolute
     transform: translateY(-50%)
     top: 50%
+    transition: all .2s ease-in
+    &:hover
+      scale: 1.15
+      transition: all .4s ease-out
     &-left
-      left: 2rem
+      left: 1rem
     &-right
-      right: 2rem
-
+      right: 1rem
   &_content
     flex-basis: 50%
     > * 

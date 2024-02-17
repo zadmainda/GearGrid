@@ -267,7 +267,7 @@ img {
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 30rem);
   margin-bottom: 2rem;
-  gap: 2.5rem;
+  gap: 2rem;
 }
 @media screen and (max-width: 667px) {
   .banner_wrapper {
@@ -280,11 +280,12 @@ img {
 }
 .banner-1, .banner-2, .banner-3 {
   overflow: hidden;
+  width: 100%;
 }
 .banner-1 img, .banner-2 img, .banner-3 img {
-  -o-object-fit: cover;
-     object-fit: cover;
+  height: 100%;
   transition: all 0.4s ease-in;
+  width: 100%;
 }
 .banner-1 .banner_content, .banner-2 .banner_content, .banner-3 .banner_content {
   position: absolute;
@@ -304,15 +305,15 @@ img {
   }
 }
 .banner-1 .banner_content {
-  top: 2rem;
-  left: 2.5rem;
+  top: 3rem;
+  left: 3rem;
 }
 .banner-2, .banner-3 {
   position: relative;
 }
 .banner-2 .banner_content, .banner-3 .banner_content {
-  bottom: 2.5rem;
-  left: 2.5rem;
+  bottom: 3rem;
+  left: 3rem;
 }
 @media screen and (max-width: 667px) {
   .banner-2 .banner_content, .banner-3 .banner_content {
@@ -1317,7 +1318,7 @@ img {
 }
 .product_slider {
   flex-basis: 50%;
-  padding-bottom: 3rem;
+  border: 1px solid purple;
 }
 .product_slider-L {
   width: 100%;
@@ -1332,25 +1333,48 @@ img {
   width: 100%;
   display: flex;
   gap: 1.5rem;
+  padding-top: 2rem;
 }
 .product_slider-S img {
   width: 33.3333333333%;
+}
+.product_track {
+  display: flex;
+  white-space: nowrap;
+  overflow: hidden;
+  transition: all transform 1.7s;
+  scroll-behavior: smooth;
+  align-items: center;
+  width: 100%;
+}
+.product_track img {
+  -o-object-position: 50% 50%;
+     object-position: 50% 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 100%;
+  width: 100%;
+  flex-shrink: 0;
 }
 .product_arrow {
   font-size: 4rem;
   color: var(--neutral-level-1);
   background: var(--neutral-level-7);
   border-radius: 50%;
-  overflow: hidden;
   position: absolute;
   transform: translateY(-50%);
   top: 50%;
+  transition: all 0.2s ease-in;
+}
+.product_arrow:hover {
+  scale: 1.15;
+  transition: all 0.4s ease-out;
 }
 .product_arrow-left {
-  left: 2rem;
+  left: 1rem;
 }
 .product_arrow-right {
-  right: 2rem;
+  right: 1rem;
 }
 .product_content {
   flex-basis: 50%;
