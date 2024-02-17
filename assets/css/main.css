@@ -541,10 +541,21 @@ img {
   gap: 2rem;
   padding-top: 4rem;
 }
+@media screen and (max-width: 835px) {
+  .shop_layout {
+    flex-direction: column;
+    padding-top: 2rem;
+  }
+}
 .shop_sidebar {
   width: -moz-fit-content;
   width: fit-content;
   margin-top: 5.5rem;
+}
+@media screen and (max-width: 835px) {
+  .shop_sidebar {
+    margin-top: 1rem;
+  }
 }
 .shop_categories {
   display: block;
@@ -563,6 +574,16 @@ img {
   grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
   gap: 2rem;
 }
+@media screen and (max-width: 740px) {
+  .shop_grid {
+    grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
+  }
+}
+@media screen and (max-width: 435px) {
+  .shop_grid .card img {
+    width: 100%;
+  }
+}
 .shop_rooms {
   margin-bottom: 3rem;
 }
@@ -572,6 +593,17 @@ img {
 .shop_rooms label {
   padding-bottom: 0.6rem;
   display: inline-flex;
+}
+@media screen and (max-width: 835px) {
+  .shop_rooms {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 835px) {
+  .price {
+    display: none;
+  }
 }
 
 .contact_feature {
@@ -660,11 +692,28 @@ img {
   width: 100%;
   height: 42rem;
 }
+@media screen and (max-width: 835px) {
+  .pageheader_img {
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+}
+@media screen and (max-width: 535px) {
+  .pageheader_img {
+    height: 30rem;
+  }
+}
 .pageheader_img img {
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: 50% 50%;
      object-position: 50% 50%;
+}
+@media screen and (max-width: 835px) {
+  .pageheader_img img {
+    width: 100%;
+    height: 100%;
+  }
 }
 .pageheader_header {
   position: absolute;
@@ -698,6 +747,11 @@ img {
 }
 .pageheader_title {
   font-size: 5rem;
+}
+@media screen and (max-width: 740px) {
+  .pageheader_title {
+    font-size: 3rem;
+  }
 }
 
 .price_title {
@@ -1108,6 +1162,9 @@ img {
 @media screen and (max-width: 667px) {
   .newsletter {
     padding: 3rem;
+    background-image: none;
+    background-color: var(--neutral-level-3);
+    height: 25rem;
   }
 }
 .newsletter_content {
@@ -1118,8 +1175,7 @@ img {
 }
 @media screen and (max-width: 667px) {
   .newsletter_content {
-    width: -moz-fit-content;
-    width: fit-content;
+    width: 96%;
   }
 }
 .newsletter_content p {
@@ -1138,8 +1194,7 @@ img {
 }
 @media screen and (max-width: 667px) {
   .newsletter_form {
-    min-width: -moz-fit-content;
-    min-width: fit-content;
+    width: 100%;
   }
 }
 .newsletter_form form {
@@ -1149,20 +1204,21 @@ img {
 }
 @media screen and (max-width: 667px) {
   .newsletter_form form {
-    min-width: -moz-fit-content;
-    min-width: fit-content;
+    width: 100%;
+    white-space: nowrap;
   }
 }
 .newsletter_form form input {
   outline: none;
   border: none;
   padding-left: 1rem;
-  width: 80%;
+  width: 100%;
   background-color: var(--neutral-level-2);
 }
 @media screen and (max-width: 667px) {
   .newsletter_form form input {
     width: 80%;
+    padding: 1.2rem;
   }
 }
 .newsletter_form form button {
