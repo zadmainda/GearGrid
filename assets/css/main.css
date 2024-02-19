@@ -681,31 +681,70 @@ img {
   height: -moz-fit-content;
   height: fit-content;
 }
+.card:hover .card_wishlist, .card:hover .card_footer {
+  opacity: 1;
+  transition: all 0.4s ease-in;
+  cursor: pointer;
+}
 .card span {
   display: block;
   font-weight: bold;
-  padding-top: 0.7rem;
 }
-.card img {
-  -o-object-fit: cover;
-     object-fit: cover;
+.card_img {
+  width: 100%;
+  background-color: var(--neutral-level-2);
+}
+.card_img img {
+  width: 100%;
+}
+.card_img ~ * {
+  margin: 0 1rem;
 }
 .card_discount, .card_banner {
   position: absolute;
   display: inline-flex;
-  left: 1.2rem;
-  padding: 0.2rem 0.7rem;
+  left: 2rem;
+  padding: 0.6rem 0.6rem;
   border-radius: 0.5rem;
   font-size: 1.3rem;
   text-align: center;
 }
 .card_banner {
-  top: 1.2rem;
+  top: 2rem;
   background: #fff;
 }
 .card_discount {
-  top: 5rem;
+  top: 7rem;
   background: var(--secondary-green);
+}
+.card_wishlist {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  font-size: 2.2rem;
+  opacity: 0;
+}
+.card_wishlist:hover {
+  scale: 1.2;
+  transition: all 0.4s ease-in;
+}
+.card_footer {
+  width: 100%;
+  background-color: var(--neutral-level-7);
+  color: var(--neutral-level-1);
+  font-weight: 400;
+  font-size: 1.2rem;
+  padding: 0.9rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.6rem;
+  width: 92%;
+  margin: 0 auto;
+  opacity: 0;
+}
+.card_footer:hover {
+  font-size: 1.3rem;
 }
 
 .pageheader {

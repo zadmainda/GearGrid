@@ -1,23 +1,59 @@
 .card
   position: relative
   height: fit-content
+  &:hover
+    .card_wishlist, .card_footer
+      opacity: 1
+      transition: all .4s ease-in
+      cursor: pointer    
   span
     display: block
     font-weight: bold
-    padding-top: 0.7rem
-  img
-    object-fit: cover
+  &_img
+    width: 100%
+    background-color: var(--neutral-level-2)
+    img
+      width: 100%
+    ~ *
+      margin: 0 1rem
   &_discount, &_banner
     position: absolute
     display: inline-flex
-    left: 1.2rem
-    padding: 0.2rem .7rem
+    left: 2rem
+    padding: .6rem .6rem
     border-radius: .5rem
     font-size: 1.3rem
     text-align: center
   &_banner
-    top: 1.2rem
+    top: 2rem
     background: #fff
   &_discount
-    top: 5rem
+    top: 7rem
     background: var(--secondary-green)
+  &_wishlist
+    position: absolute
+    top: 2rem
+    right: 2rem
+    font-size: 2.2rem
+    opacity: 0
+    &:hover
+      scale: 1.2
+      transition: all .4s ease-in
+  &_footer
+    width: 100%
+    background-color: var(--neutral-level-7)
+    color: var(--neutral-level-1)
+    font-weight: 400
+    font-size: 1.2rem
+    padding: .9rem
+    display: flex
+    align-items: center
+    justify-content: center
+    border-radius: .6rem
+    width: 92%
+    margin: 0 auto 
+    opacity: 0
+    &:hover
+      font-size: 1.3rem
+
+
