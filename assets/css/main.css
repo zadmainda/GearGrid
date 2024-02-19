@@ -581,6 +581,9 @@ img {
     grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
   }
 }
+.shop_grid .card img {
+  width: 100%;
+}
 @media screen and (max-width: 435px) {
   .shop_grid .card img {
     width: 100%;
