@@ -1,9 +1,15 @@
-const headerBar = document.querySelector('.header_bar');
-const headerBarClose = document.querySelector('.header_close');
+const messageBar = () => {
+  const headerBar = document.querySelector('.header_bar');
+  const headerBarClose = document.querySelector('.header_close');
 
-headerBarClose.addEventListener('click', () =>{
-  headerBar.remove()
-})
+  if(!headerBar || !headerBarClose) return;
+
+  headerBarClose.addEventListener('click', () => {
+    headerBar.remove()
+  });
+}
+messageBar()
+
 
 
 //HERO SLIDER
@@ -11,16 +17,12 @@ const heroSlider = () => {
   const heroImgSlider = document.querySelector('.hero_slide');
   const heroArrows = document.querySelectorAll('.hero_arrow');
   
-  if (!heroImgSlider || !heroArrows ) {
-    return;
-  }
+  if (!heroImgSlider || !heroArrows ) return;
 
   const firstHeroImg = document.querySelectorAll('.hero_slide img');
 
-  if ( !firstHeroImg ) {
-    return;
-  }
-
+  if ( !firstHeroImg ) return;
+  
   const firstHeroImgWidth = document.querySelectorAll('.hero_slide img')[0].clientWidth;
 
   if (heroImgSlider && heroArrows && firstHeroImgWidth) {
@@ -37,11 +39,10 @@ const heroSlider = () => {
     return;
   }
 }
-
 heroSlider()
 
-// landing Page Product Carousel
 
+// landing Page Product Carousel
 const landingPageProductCarousel = () => {
 
   const productCarousel = document.querySelector('.carousel_track');
@@ -70,7 +71,6 @@ landingPageProductCarousel()
 
 // Product Template Page Main Slider 
 const ProductTemplatePageMainSlider = () => {
-
   const productTemplateTrack = document.querySelector('.product_track');
   const productTemplateArrows = document.querySelectorAll('.product_arrow');
 
