@@ -1039,6 +1039,129 @@ img {
   color: var(--neutral-level-1);
 }
 
+.cart {
+  border: 2px solid red;
+  width: 100%;
+}
+.cart_title {
+  font-size: 4rem;
+  text-align: center;
+  margin-top: 3rem;
+}
+.cart_breadcrumps, .cart_breadcrump, .cart_breadcrump span {
+  display: flex;
+  align-items: center;
+}
+.cart_breadcrumps {
+  margin: 0 auto;
+  width: 60%;
+  justify-content: space-between;
+}
+.cart_breadcrump {
+  gap: 1rem;
+  color: var(--neutral-level-4);
+  font-weight: 600;
+  padding-bottom: 1.5rem;
+}
+.cart_breadcrump span {
+  background: var(--neutral-level-3);
+  color: var(--neutral-level-1);
+  height: 3.2rem;
+  width: 3.2rem;
+  border-radius: 50%;
+  justify-content: center;
+}
+.cart_breadcrump-active {
+  color: var(--neutral-level-7);
+  border-bottom: 0.2rem solid var(--neutral-level-6);
+}
+.cart_breadcrump-active span {
+  background-color: var(--neutral-level-7);
+  color: #fff;
+}
+.cart_products {
+  display: flex;
+}
+.cart_table {
+  flex-basis: 60%;
+  border: 1px solid red;
+}
+.cart_row {
+  padding: 2rem 0;
+  border: 1px solid green;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 5rem;
+}
+.cart_description {
+  border: 1px solid blue;
+  display: flex;
+  gap: 2rem;
+  font-size: 1.3rem;
+}
+.cart_img img {
+  height: 10rem;
+  width: 10rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.cart_counter {
+  margin-left: auto;
+}
+.cart_meta {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.cart_name {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.cart_color {
+  color: var(--neutral-level-4);
+}
+.cart_remove {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--neutral-level-4);
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+}
+.cart_remove i {
+  font-size: 2.5rem;
+}
+.cart_subtotal {
+  font-weight: 700;
+}
+
+.counter {
+  display: flex;
+  border: 0.1rem solid var(--neutral-level-6);
+  border-radius: 0.5rem;
+}
+.counter_minus, .counter_plus, .counter_text {
+  display: flex;
+  cursor: pointer;
+  width: 3.5rem;
+  height: 3.8rem;
+  align-items: center;
+  justify-content: center;
+}
+.counter_text {
+  text-align: center;
+  outline: none;
+  border: none;
+}
+.counter_text input {
+  text-align: center;
+  font-size: 26px;
+  vertical-align: middle;
+  outline: none;
+  border: none;
+}
+
 .blog_grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
