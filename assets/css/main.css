@@ -1084,18 +1084,17 @@ img {
 }
 .cart_table {
   flex-basis: 60%;
-  border: 1px solid red;
+  padding: 0.5rem;
 }
 .cart_row {
   padding: 2rem 0;
-  border: 1px solid green;
+  border-bottom: 0.2rem solid var(--neutral-level-3);
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 5rem;
 }
 .cart_description {
-  border: 1px solid blue;
   display: flex;
   gap: 2rem;
   font-size: 1.3rem;
@@ -1113,6 +1112,7 @@ img {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  width: 10rem;
 }
 .cart_name {
   font-size: 1.5rem;
@@ -1138,7 +1138,7 @@ img {
 
 .counter {
   display: flex;
-  border: 0.1rem solid var(--neutral-level-6);
+  border: 0.1rem solid var(--neutral-level-4);
   border-radius: 0.5rem;
 }
 .counter_minus, .counter_plus, .counter_text {
@@ -1148,6 +1148,9 @@ img {
   height: 3.8rem;
   align-items: center;
   justify-content: center;
+}
+.counter_minus i, .counter_plus i {
+  color: var(--neutral-level-4);
 }
 .counter_text {
   text-align: center;

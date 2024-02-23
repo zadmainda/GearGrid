@@ -1,7 +1,6 @@
 .counter
-  // width: 13rem
   display: flex
-  border: .1rem solid var(--neutral-level-6)
+  border: .1rem solid var(--neutral-level-4)
   border-radius: .5rem
   &_minus,  &_plus, &_text
     display: flex
@@ -10,6 +9,9 @@
     height: 3.8rem
     align-items: center
     justify-content: center
+  &_minus, &_plus
+    i
+      color: var(--neutral-level-4)
   &_text
     text-align: center
     outline: none

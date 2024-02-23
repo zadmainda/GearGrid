@@ -92,3 +92,35 @@ const ProductTemplatePageMainSlider = () => {
   });
 }
 ProductTemplatePageMainSlider()
+
+
+
+/*
+
+document.addEventListener("DOMContentLoaded", function() {
+    var minusButtons = document.querySelectorAll('.minus');
+    var plusButtons = document.querySelectorAll('.plus');
+    
+    minusButtons.forEach(function(button) {
+        button.addEventListener('click', function() {
+            var input = this.parentNode.querySelector('input');
+            var count = parseInt(input.value) - 1;
+            count = count < 1 ? 1 : count;
+            input.value = count;
+            input.dispatchEvent(new Event('change'));
+            return false;
+        });
+    });
+
+    plusButtons.forEach(function(button) {
+        button.addEventListener('click', function() {
+            var input = this.parentNode.querySelector('input');
+            input.value = parseInt(input.value) + 1;
+            input.dispatchEvent(new Event('change'));
+            return false;
+        });
+    });
+});
+
+
+*/
