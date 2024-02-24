@@ -1436,7 +1436,7 @@ img {
 }
 .header_icon:last-of-type span {
   display: inline-flex;
-  font-weight: 700;
+  font-weight: 500;
   font-size: 1.2rem;
   justify-content: center;
   align-items: center;

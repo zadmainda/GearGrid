@@ -95,8 +95,6 @@ ProductTemplatePageMainSlider()
 
 
 
-
-
 document.addEventListener("DOMContentLoaded", function() {
     let minusButtons = document.querySelectorAll('.counter_minus');
     let plusButtons = document.querySelectorAll('.counter_plus');
@@ -107,7 +105,6 @@ document.addEventListener("DOMContentLoaded", function() {
             let count = parseInt(input.value) - 1;
             count = count < 1 ? 1 : count;
             input.value = count;
-            input.dispatchEvent(new Event('change'));
             return false;
         });
     });
@@ -116,7 +113,6 @@ document.addEventListener("DOMContentLoaded", function() {
         button.addEventListener('click', function() {
             let input = this.parentNode.querySelector('input');
             input.value = parseInt(input.value) + 1;
-            input.dispatchEvent(new Event('change'));
             return false;
         });
     });
@@ -125,10 +121,13 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 //Shopping cart
-const cartTable = document.querySelector('.cart_table'); 
-let cartItemsCount = cartTable.childElementCount - 1;
-
-console.log(cartItemsCount)
 
 
+const cart = () => {
+  const cartTable = document.querySelector('.cart_table');
+  if (!cartTable) return
+  let cartItemsCount = cartTable.childElementCount - 1;
 
+}
+
+cart()
