@@ -132,7 +132,7 @@ img {
 }
 
 :root {
-  --primary-color: #000;
+  --primary-color: #000000;
   --secondary-blue: #377dff;
   --secondary-green: #38cb89;
   --secondary-orange: #ffab00;
@@ -1040,7 +1040,6 @@ img {
 }
 
 .cart {
-  border: 2px solid red;
   width: 100%;
 }
 .cart_title {
@@ -1089,11 +1088,14 @@ img {
 }
 .cart_row {
   padding: 2rem 0;
+  width: 100%;
   border-bottom: 0.2rem solid var(--neutral-level-3);
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 5rem;
+}
+.cart_row > * {
+  margin-right: 2%;
 }
 .cart_description {
   display: flex;
@@ -1129,9 +1131,16 @@ img {
   display: flex;
   align-items: center;
   gap: 0.7rem;
+  transition: all 0.2s ease-in;
 }
 .cart_remove i {
   font-size: 2.5rem;
+}
+.cart_remove:hover {
+  scale: 1.03;
+  transition: all 0.3s ease-in;
+  color: var(--neutral-level-6);
+  cursor: pointer;
 }
 .cart_subtotal {
   font-weight: 700;
@@ -1140,6 +1149,7 @@ img {
   border-radius: 0.6rem;
   border: 0.1rem solid var(--neutral-level-4);
   flex-basis: 39%;
+  flex-shrink: 1.5;
   padding: 1.5rem;
   height: -moz-fit-content;
   height: fit-content;
@@ -1170,6 +1180,30 @@ img {
 }
 .cart_grandTotal {
   font-weight: 700;
+}
+.cart_coupon {
+  padding: 5rem 0 3rem 0;
+}
+.cart_coupon p:first-of-type {
+  font-weight: 700;
+  font-size: 2rem;
+}
+.cart_form {
+  border: 0.1rem solid var(--neutral-level-4);
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 0.5rem;
+  border-radius: 0.6rem;
+  margin-top: 2rem;
+}
+.cart_form input {
+  padding: 0.5rem 1rem;
+  outline: none;
+  border: none;
+}
+.cart_form button {
+  background-color: #fff;
+  padding: 0.5rem 1rem;
 }
 
 .counter {

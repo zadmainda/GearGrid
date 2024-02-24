@@ -44,10 +44,10 @@
             <i class="fa-solid fa-magnifying-glass"></i>
           </div>
           <div class="header_icon">
-            <i class="fa-regular fa-circle-user"></i>
+            <a href="/sign_in_popup.html"><i class="fa-regular fa-circle-user"></i></a>
           </div>
           <div class="header_icon">
-            <i class="fa-solid fa-bag-shopping"></i>
+            <a href="/cart.html"><i class="fa-solid fa-bag-shopping"></i></a>
           </div>
           <div class="header_icon">
             <i class="fa-regular fa-circle-question"></i>
@@ -77,7 +77,7 @@
 
       <div class="cart_products">
         <div class="cart_table">
-          <div class="cart_row">
+          <div class="cart_row cart_row-header">
             <h5>Product</h5>
             <h5>Quantity</h5>
             <h5>Price</h5>
@@ -102,7 +102,6 @@
               <input class="counter_text" type="text" value="1" />
               <span class="counter_plus"><i class="fa-solid fa-plus"></i></span>
             </div>
-      
             <div class="cart_price">$<span>18.00</span></div>
             <div class="cart_subtotal">$<span>35.50</span></div>
           </div>
@@ -182,15 +181,17 @@
             <span>Total</span>
             <p>$<span>1234.00</span></p>
           </div>
-          <div class="btn-black">
+          <div class="btn btn-black">
             <span>Checkout</span>
-          </div>
+        </div>
         </div>  
       </div>
       <div class="cart_coupon">
         <p>Have a Coupon?</p>
         <p>Add your code for an instant cart discount</p>
         <form class="cart_form" method="post">
+
+          <input type="text" name="" id="" placeholder="Coupon">
 
           <button type="submit">Apply</button>
 
