@@ -95,16 +95,16 @@ ProductTemplatePageMainSlider()
 
 
 
-/*
+
 
 document.addEventListener("DOMContentLoaded", function() {
-    var minusButtons = document.querySelectorAll('.minus');
-    var plusButtons = document.querySelectorAll('.plus');
+    let minusButtons = document.querySelectorAll('.counter_minus');
+    let plusButtons = document.querySelectorAll('.counter_plus');
     
     minusButtons.forEach(function(button) {
         button.addEventListener('click', function() {
-            var input = this.parentNode.querySelector('input');
-            var count = parseInt(input.value) - 1;
+            let input = this.parentNode.querySelector('input');
+            let count = parseInt(input.value) - 1;
             count = count < 1 ? 1 : count;
             input.value = count;
             input.dispatchEvent(new Event('change'));
@@ -114,7 +114,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     plusButtons.forEach(function(button) {
         button.addEventListener('click', function() {
-            var input = this.parentNode.querySelector('input');
+            let input = this.parentNode.querySelector('input');
             input.value = parseInt(input.value) + 1;
             input.dispatchEvent(new Event('change'));
             return false;
@@ -123,4 +123,12 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 
-*/
+
+//Shopping cart
+const cartTable = document.querySelector('.cart_table'); 
+let cartItemsCount = cartTable.childElementCount - 1;
+
+console.log(cartItemsCount)
+
+
+

@@ -1001,6 +1001,11 @@ img {
     margin-top: 1rem;
   }
 }
+.signup_form span a {
+  font-weight: 700;
+  border-bottom: 0.2rem solid var(--neutral-level-5);
+  padding-bottom: 0.5rem;
+}
 .signup_headline {
   font-size: 4rem;
 }
@@ -1413,6 +1418,11 @@ img {
 }
 .header_icons {
   gap: 2rem;
+  align-items: center;
+}
+.header_icon {
+  display: flex;
+  align-items: center;
 }
 .header_icon i {
   font-size: 2.15rem;
@@ -1423,6 +1433,24 @@ img {
   transition: all 0.5s ease-out;
   cursor: pointer;
   transform-origin: center;
+}
+.header_icon:last-of-type span {
+  display: inline-flex;
+  font-weight: 700;
+  font-size: 1.2rem;
+  justify-content: center;
+  align-items: center;
+  margin-left: -1.5rem;
+  color: var(--neutral-level-1);
+  background: var(--primary-color);
+  height: 1.7rem;
+  width: 1.7rem;
+  border-radius: 50%;
+  padding: 1rem;
+}
+.header_icon:last-of-type span:hover {
+  scale: 1;
+  cursor: default;
 }
 
 .newsletter {

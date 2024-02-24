@@ -40,13 +40,15 @@
   &_link
     a
       font-size: 1.7rem
-      // color: red
       font-weight: 400
   &_url
     font-size: 1.6rem
   &_icons
     gap: 2rem
+    align-items: center
   &_icon
+    display: flex
+    align-items: center
     i
       font-size: 2.15rem
       transition: all .3s ease-in
@@ -55,3 +57,20 @@
         transition: all .5s ease-out
         cursor: pointer
         transform-origin: center
+    &:last-of-type
+      span
+        display: inline-flex
+        font-weight: 700
+        font-size: 1.2rem
+        justify-content: center
+        align-items: center
+        margin-left: -1.5rem
+        color: var(--neutral-level-1)
+        background: var(--primary-color)
+        height: 1.7rem
+        width: 1.7rem
+        border-radius: 50%
+        padding: 1rem
+        &:hover
+          scale: 1
+          cursor: default
