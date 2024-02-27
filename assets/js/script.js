@@ -131,3 +131,21 @@ const cart = () => {
 }
 
 cart()
+
+
+const removeCartItemBtns = document.querySelectorAll('.cart_remove')
+
+removeCartItemBtns.forEach(function(btn){
+  if(!btn) return;
+  btn.addEventListener('click', function(e){
+    const clicked = e.target.closest('.cart_remove');
+
+    console.log(clicked.closest('.cart_row').remove());
+
+  })
+})
+
+
+// Subtotal
+cartItemsSubtotal = 0  
+cartItemsSubtotal = document.querySelectorAll('.cart_price')

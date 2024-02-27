@@ -5,10 +5,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="shortcut icon" href="/assets/images/logo/geargrid-128.png" type="image/x-icon">
+  <link rel="shortcut icon" href="/assets/images/logo/geargrid-128.png" type="image/x-icon">
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-  <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="stylesheet" href="/assets/css/fontawesome/css/fontawesome.css">
+  <link rel="stylesheet" href="/assets/css/fontawesome/css/brands.css">
+  <link rel="stylesheet" href="/assets/css/fontawesome/css/solid.css">
+  <link rel="stylesheet" href="/assets/css/main.css" preload>
 
   <script src="assets/js/script.js" defer></script>
   <title>GearGrid</title>
@@ -31,7 +33,7 @@
     <div class="header_wrapper">
       <div class="header_nav">
         <div class="header_logo">
-          <a href="/index.html" >GearGrid</a>
+          <a href="/index.html">GearGrid</a>
         </div>
         <ul class="header_links">
           <li class="header_link"><a href="/index.html" class="header_url">Home</a></li>
@@ -75,181 +77,306 @@
         </div>
       </div>
 
-      <div class="cart_products">
-        <div class="cart_table">
-          <div class="cart_row cart_row-header">
-            <h5>Product</h5>
-            <h5>Quantity</h5>
-            <h5>Price</h5>
-            <h5>Subtotal</h5>
+      <div class="cart_tabs">
+
+        <div class="cart_product">
+          <div class="cart_products">
+            <div class="cart_table">
+              <div class="cart_row cart_row-header">
+                <h5>Product</h5>
+                <h5>Quantity</h5>
+                <h5>Price</h5>
+                <h5>Subtotal</h5>
+              </div>
+              <div class="cart_row">
+                <div class="cart_description">
+                  <div class="cart_img">
+                    <img src="./assets/images/products/bedroom/grey-bed.png" alt="">
+                  </div>
+                  <div class="cart_meta">
+                    <p class="cart_name">Tray Table</p>
+                    <p class="cart_color">Color: <span>Black</span></p>
+                    <span class="cart_remove">
+                      <i class="fa-solid fa-xmark"></i>
+                      Remove
+                    </span>
+                  </div>
+                </div>
+                <div class="counter">
+                  <span class="counter_minus"><i class="fa-solid fa-minus"></i></span>
+                  <input class="counter_text" type="text" value="1" />
+                  <span class="counter_plus"><i class="fa-solid fa-plus"></i></span>
+                </div>
+                <div class="cart_price">$<span>18.00</span></div>
+                <div class="cart_subtotal">$<span>35.50</span></div>
+              </div>
+              <div class="cart_row">
+                <div class="cart_description">
+                  <div class="cart_img">
+                    <img src="./assets/images/products/bedroom/bed cabinet combo.png" alt="">
+                  </div>
+                  <div class="cart_meta">
+                    <p class="cart_name">Bed Cabinet Combo</p>
+                    <p class="cart_color">Color: <span>Brown</span></p>
+                    <span class="cart_remove">
+                      <i class="fa-solid fa-xmark"></i>
+                      Remove
+                    </span>
+                  </div>
+                </div>
+                <div class="counter">
+                  <span class="counter_minus"><i class="fa-solid fa-minus"></i></span>
+                  <input class="counter_text" type="text" value="1" />
+                  <span class="counter_plus"><i class="fa-solid fa-plus"></i></span>
+                </div>
+
+                <div class="cart_price">$<span>3256.00</span></div>
+                <div class="cart_subtotal">$<span>4565.00</span></div>
+              </div>
+              <div class="cart_row">
+                <div class="cart_description">
+                  <div class="cart_img">
+                    <img src="./assets/images/products/bedroom/vase.png" alt="">
+                  </div>
+                  <div class="cart_meta">
+                    <p class="cart_name">Vase</p>
+                    <p class="cart_color">Color: <span>Brown</span></p>
+                    <span class="cart_remove">
+                      <i class="fa-solid fa-xmark"></i>
+                      Remove
+                    </span>
+                  </div>
+                </div>
+                <div class="counter">
+                  <span class="counter_minus"><i class="fa-solid fa-minus"></i></span>
+                  <input class="counter_text" type="text" value="1" />
+                  <span class="counter_plus"><i class="fa-solid fa-plus"></i></span>
+                </div>
+
+                <div class="cart_price">$<span>3256.00</span></div>
+                <div class="cart_subtotal">$<span>4565.00</span></div>
+              </div>
+              <div class="cart_row">
+                <div class="cart_description">
+                  <div class="cart_img">
+                    <img src="./assets/images/products/bedroom/bedside-lamp.png" alt="">
+                  </div>
+                  <div class="cart_meta">
+                    <p class="cart_name">Bed Cabinet Combo</p>
+                    <p class="cart_color">Color: <span>Brown</span></p>
+                    <span class="cart_remove">
+                      <i class="fa-solid fa-xmark"></i>
+                      Remove
+                    </span>
+                  </div>
+                </div>
+                <div class="counter">
+                  <span class="counter_minus"><i class="fa-solid fa-minus"></i></span>
+                  <input class="counter_text" type="text" value="1" />
+                  <span class="counter_plus"><i class="fa-solid fa-plus"></i></span>
+                </div>
+
+                <div class="cart_price">$<span>3256.00</span></div>
+                <div class="cart_subtotal">$<span>4565.00</span></div>
+              </div>
+              <div class="cart_row">
+                <div class="cart_description">
+                  <div class="cart_img">
+                    <img src="./assets/images/products/kitchen/gas stove 2.png" alt="">
+                  </div>
+                  <div class="cart_meta">
+                    <p class="cart_name">Gas Stove</p>
+                    <p class="cart_color">Color: <span>Sliver</span></p>
+                    <span class="cart_remove">
+                      <i class="fa-solid fa-xmark"></i>
+                      Remove
+                    </span>
+                  </div>
+                </div>
+                <div class="counter">
+                  <span class="counter_minus"><i class="fa-solid fa-minus"></i></span>
+                  <input class="counter_text" type="text" value="1" />
+                  <span class="counter_plus"><i class="fa-solid fa-plus"></i></span>
+                </div>
+
+                <div class="cart_price">$<span>322.00</span></div>
+                <div class="cart_subtotal">$<span>322.00</span></div>
+              </div>
+            </div>
+            <div class="cart_summary">
+              <h5>Cart Summary</h5>
+              <div class="cart_shipping">
+                <div class="cart_radio">
+                  <input type="radio" id="free_shipping" name="shipping" value="0">
+                  <label for="free_shipping"><span> Free Shipping</span> <span>$0.00</span></label>
+                </div>
+                <div class="cart_radio">
+                  <input type="radio" id="express_shipping" name="shipping" value="15">
+                  <label for="express_shipping"><span>Express Shipping</span> <span>$15</span> </label>
+                </div>
+                <div class="cart_radio">
+                  <input type="radio" id="pick_up" name="shipping" value="21">
+                  <label for="pick_up"> <span>Pick Up</span> <span>$21.00</span> </label>
+                </div>
+              </div>
+
+              <div class="cart_grandSubTotal">
+                <span>Subtotal</span>
+                <p>$<span>1234.00</span></p>
+              </div>
+
+              <div class="cart_grandTotal">
+                <span>Total</span>
+                <p>$<span>1234.00</span></p>
+              </div>
+              <div class="btn btn-black">
+                <span>Checkout</span>
+              </div>
+            </div>
           </div>
-          <div class="cart_row">
-            <div class="cart_description">
-              <div class="cart_img">
-                <img src="./assets/images/products/bedroom/grey-bed.png" alt="">
-              </div>
-              <div class="cart_meta">
-                <p class="cart_name">Tray Table</p>
-                <p class="cart_color">Color: <span>Black</span></p>
-                <span class="cart_remove">
-                  <i class="fa-solid fa-xmark"></i>
-                  Remove
-                </span>
-              </div>
-            </div>
-            <div class="counter">
-              <span class="counter_minus"><i class="fa-solid fa-minus"></i></span>
-              <input class="counter_text" type="text" value="1" />
-              <span class="counter_plus"><i class="fa-solid fa-plus"></i></span>
-            </div>
-            <div class="cart_price">$<span>18.00</span></div>
-            <div class="cart_subtotal">$<span>35.50</span></div>
-          </div>
-          <div class="cart_row">
-            <div class="cart_description">
-              <div class="cart_img">
-                <img src="./assets/images/products/bedroom/bed cabinet combo.png" alt="">
-              </div>
-              <div class="cart_meta">
-                <p class="cart_name">Bed Cabinet Combo</p>
-                <p class="cart_color">Color: <span>Brown</span></p>
-                <span class="cart_remove">
-                  <i class="fa-solid fa-xmark"></i>
-                  Remove
-                </span>
-              </div>
-            </div>
-            <div class="counter">
-              <span class="counter_minus"><i class="fa-solid fa-minus"></i></span>
-              <input class="counter_text" type="text" value="1" />
-              <span class="counter_plus"><i class="fa-solid fa-plus"></i></span>
-            </div>
-      
-            <div class="cart_price">$<span>3256.00</span></div>
-            <div class="cart_subtotal">$<span>4565.00</span></div>
-          </div>
-          <div class="cart_row">
-            <div class="cart_description">
-              <div class="cart_img">
-                <img src="./assets/images/products/kitchen/gas stove 2.png" alt="">
-              </div>
-              <div class="cart_meta">
-                <p class="cart_name">Gas Stove</p>
-                <p class="cart_color">Color: <span>Sliver</span></p>
-                <span class="cart_remove">
-                  <i class="fa-solid fa-xmark"></i>
-                  Remove
-                </span>
-              </div>
-            </div>
-            <div class="counter">
-              <span class="counter_minus"><i class="fa-solid fa-minus"></i></span>
-              <input class="counter_text" type="text" value="1" />
-              <span class="counter_plus"><i class="fa-solid fa-plus"></i></span>
-            </div>
-      
-            <div class="cart_price">$<span>322.00</span></div>
-            <div class="cart_subtotal">$<span>322.00</span></div>
+          <div class="cart_coupon">
+            <p>Have a Coupon?</p>
+            <p>Add your code for an instant cart discount</p>
+            <form class="cart_form" method="post">
+              <input type="text" name="" id="" placeholder="Coupon">
+              <button type="submit">Apply</button>
+            </form>
           </div>
         </div>
-        <div class="cart_summary">
-          <h5>Cart Summary</h5>
-          <div class="cart_shipping">
-            <div class="cart_radio">
-              <input type="radio" id="free_shipping" name="shipping" value="0">
-              <label for="free_shipping"><span> Free Shipping</span> <span>$0.00</span></label>
+
+        <div class="checkout">
+          <div class="checkout_column">
+            <form class="checkout_form">
+
+              <div class="checkout_card checkout_contact">
+                <p class="checkout_header">Contact information</p>
+                <div class="checkout_field">
+                  <label for="firstname">First Name</label>
+                  <input type="text" name="" id="firstname">
+                </div>
+                <div class="checkout_field">
+                  <label for="lastname">Last Name</label>
+                  <input type="text" name="" id="lastname">
+                </div>
+                <div class="checkout_field">
+                  <label for="phonenumber">Phone Number</label>
+                  <input type="tel" name="" id="phonenumber">
+                </div>
+
+                <div class="checkout_field">
+                  <label for="firstname">Email Address</label>
+                  <input type="email" name="" id="email">
+                </div>
+              </div>
+
+              <div class="checkout_card checkout_shipping">
+                <p class="checkout_header">Shipping Address</p>
+                <div class="checkout_field">
+                  <label for="firstname">Street address</label>
+                  <input type="text" name="" id="address">
+                </div>
+                <div class="checkout_field">
+                  <label for="lastname">Country</label>
+                  <input type="text" name="" id="country">
+                </div>
+                <div class="checkout_field">
+                  <label for="lastname">Town?City</label>
+                  <input type="text" name="" id="city">
+                </div>
+                <div class="checkout_field">
+                  <label for="lastname">State</label>
+                  <input type="text" name="" id="state">
+                </div>
+                <div class="checkout_field">
+                  <label for="lastname">ZipCode</label>
+                  <input type="text" name="" id="country">
+                </div>
+                <div class="checkout_field">
+                  <input type="checkbox" name="" id="">
+                  USe a different billing address. [Optional]
+                </div>
+              </div>
+
+              <div class="checkout_card checkout_payment">
+                <p class="checkout_header">Payment Method</p>
+                <div class="checkout_field">
+                  <label for="firstname">First Name</label>
+                  <input type="text" name="" id="firstname">
+                </div>
+                <div class="checkout_field">
+                  <label for="lastname">Last Name</label>
+                  <input type="text" name="" id="lastname">
+                </div>
+                <div class="checkout_field">
+                  <label for="phonenumber">Card Number</label>
+                  <input type="tel" name="" id="text">
+                </div>
+                <div class="checkout_field">
+                  <label for="phonenumber">Expiration Date</label>
+                  <input type="tel" name="" id="text">
+                </div>
+                <div class="checkout_field">
+                  <label for="cvc">CVC</label>
+                  <input type="text" name="" id="cvc">
+                </div>
+              </div>
+
+              <button type="submit" class="btn btn-black">Place Order</button>
+            </form>
+          </div>
+          <div class="checkout_column checkout_summary">
+            <h4>Order Summary</h4>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div>
+              <input type="text" name="" id="">
+              <button type="submit" class="btn btn-black"><span>Apply</span></button>
             </div>
-            <div class="cart_radio">
-              <input type="radio" id="express_shipping" name="shipping" value="15">
-              <label for="express_shipping"><span>Express Shipping</span> <span>$15</span> </label>
-            </div>
-            <div class="cart_radio">
-              <input type="radio" id="pick_up" name="shipping" value="21">
-              <label for="pick_up"> <span>Pick Up</span> <span>$21.00</span> </label>
+            <div>
+
             </div>
           </div>
-      
-          <div class="cart_grandSubTotal">
-            <span>Subtotal</span>
-            <p>$<span>1234.00</span></p>
-          </div>
-      
-          <div class="cart_grandTotal">
-            <span>Total</span>
-            <p>$<span>1234.00</span></p>
-          </div>
-          <div class="btn btn-black">
-            <span>Checkout</span>
         </div>
-        </div>  
-      </div>
-      <div class="cart_coupon">
-        <p>Have a Coupon?</p>
-        <p>Add your code for an instant cart discount</p>
-        <form class="cart_form" method="post">
-          <input type="text" name="" id="" placeholder="Coupon">
-          <button type="submit">Apply</button>
-        </form>
-      </div>
 
-      <div class="checkout">
-        <div class="checkout_column">
-          <div class="checkout_form">
-            <p class="checkout_header">Contact inform</p>
-            <div class="checkout_card checkout_contact">
-              <div class="checkout_field">
-                <label for="firstname">First Name</label>
-                <input type="text" name="" id="firstname">
+        <div class="complete">
+          <div class="complete_inner">
+            <div class="complete_card">
+              <h5>Thank you! </h5>
+              <p>Your order has been received</p>
+              <div class="complete_images">
+                <img src="" alt="">
+                <img src="" alt="">
+                <img src="" alt="">
               </div>
-              <div class="checkout_field">
-                <label for="lastname">Last Name</label>
-                <input type="text" name="" id="lastname">
-              </div>
-              <div class="checkout_field">
-                <label for="phonenumber">Phone Number</label>
-                <input type="tel" name="" id="phonenumber">
-              </div>
-
-              <div class="checkout_field">
-                <label for="firstname">Email Address</label>
-                <input type="email" name="" id="email">
+              <div class="complete_summary">
+                <div class="complete_meta">
+                  <span>Order Code:</span>
+                  <span>#0123_43567</span>
+                </div>
+                <div class="complete_meta">
+                  <span>Date:</span>
+                  <span>Octer 19, 2023</span>
+                </div>
+                <div class="complete_meta">
+                  <span>Total:</span>
+                  <span>$1,345.00</span>
+                </div>
+                <div class="complete_meta">
+                  <span>Payment method: </span>
+                  <span>Credit Card</span>
+                </div>
               </div>
             </div>
-
-            <div class="checkout_card checkout_shipping">
-              <div class="checkout_field">
-                <label for="firstname">Street address</label>
-                <input type="text" name="" id="address">
-              </div>
-              <div class="checkout_field">
-                <label for="lastname">Country</label>
-                <input type="text" name="" id="country">
-              </div>
-              <div class="checkout_field">
-                <label for="lastname">Town?City</label>
-                <input type="text" name="" id="city">
-              </div>
-              <div class="checkout_field">
-                <label for="lastname">State</label>
-                <input type="text" name="" id="state">
-              </div>
-              <div class="checkout_field">
-                <label for="lastname">ZipCode</label>
-                <input type="text" name="" id="country">
-              </div>
-              <div class="checkout_field">
-                <input type="checkbox" name="" id="">
-                USe a different billing address. [Optional]
-              </div>
-            </div>
+        
+            <button class="btn btn-black"><span>Purchase History</span></button>
+        
           </div>
         </div>
-        <div class="checkout_column"></div>
+
       </div>
 
     </section>
-
-    
 
   </main>
 
@@ -257,7 +384,7 @@
     <div class="footer_wrapper">
       <div class="footer_nav">
         <h4>GearGrid</h4>
-        <span>  | </span>
+        <span> | </span>
         <span class="footer_desription">Gift & Decoration Store</span>
         <ul class="footer_links">
           <li class="footer_link"><a href="./index.html" class="footer_url">Home</a></li>
