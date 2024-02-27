@@ -1220,15 +1220,28 @@ img {
        column-gap: 5rem;
 }
 .checkout_column:first-of-type {
-  flex-basis: 70%;
+  flex-basis: 60%;
 }
 .checkout_column:last-of-type {
-  flex-basis: 30%;
-  border: 0.1rem solid var(--neutral-level-4);
-  border-radius: 2rem;
+  flex-basis: 40%;
+  border: 0.2rem solid #ccc;
+  padding: 2.5rem;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+.checkout_column:last-of-type .counter {
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.checkout_column:last-of-type .counter_minus, .checkout_column:last-of-type .counter_plus, .checkout_column:last-of-type .counter_text {
+  width: 3rem;
+  height: 3rem;
+}
+.checkout_column:last-of-type .counter_text input {
+  font-size: 2rem;
 }
 .checkout_card {
-  border: 1px solid #ccc;
+  border: 0.2rem solid #ccc;
   padding: 2.5rem;
   margin-bottom: 2rem;
   display: flex;
@@ -1276,9 +1289,31 @@ img {
 .checkout button {
   width: 100%;
 }
+.checkout_applyCoupon {
+  display: flex;
+  -moz-column-gap: 1.5rem;
+       column-gap: 1.5rem;
+  margin-top: 2.5rem;
+}
+.checkout_applyCoupon input {
+  width: 65%;
+  padding: 1.6rem 1.2rem;
+}
+.checkout_applyCoupon button {
+  width: 35%;
+}
+.checkout_finalDetails {
+  margin-top: 2.5rem;
+}
+.checkout_span {
+  border-bottom: 2px solid var(--neutral-level-2);
+  padding-bottom: 1.3rem;
+  margin-bottom: 1.3rem;
+  display: flex;
+  justify-content: space-between;
+}
 
 .complete {
-  border: 1px solid red;
   width: 90%;
   background-color: #fff;
   padding: 3rem 5rem;
