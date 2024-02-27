@@ -149,20 +149,49 @@
       flex-basis: 30%
       border: .1rem solid var(--neutral-level-4)
       border-radius: 2rem
+      
   &_card
     border: 1px solid #ccc
     padding: 2.5rem
     margin-bottom: 2rem
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    *
+      width: 100%
+    &-contact
+      .checkout_field
+        &:nth-child(2), &:nth-child(3)
+          width: 48%
+    &-shipping
+      .checkout_field
+        &:nth-child(5), &:nth-child(6)
+          width: 48%
+        &:last-of-type
+          flex-direction: row
+          *
+            width: fit-content
   &_header
     font-weight: 700
     padding: 1.5rem 0
   &_field
-    border: .1rem solid var(--neutral-level-4)
     display: flex
     flex-direction: column
+    margin-bottom: 1.5rem
+    gap: .6rem
+    label
+      padding: .5rem
+      color: var(--neutral-level-4)
+      text-transform: uppercase
+      font-size: 1.2rem
     input
       outline: none
-      border: .1rem solid var(--neutral-level-3)
+      border: .1rem solid #bbb
+      border-radius: .8rem
+      padding: 1.2rem 1rem
+  button
+    width: 100%
+
 .complete
   border: 1px solid red
   width: 90%

@@ -248,7 +248,7 @@
           <div class="checkout_column">
             <form class="checkout_form">
 
-              <div class="checkout_card checkout_contact">
+              <div class="checkout_card checkout_card-contact">
                 <p class="checkout_header">Contact information</p>
                 <div class="checkout_field">
                   <label for="firstname">First Name</label>
@@ -269,7 +269,7 @@
                 </div>
               </div>
 
-              <div class="checkout_card checkout_shipping">
+              <div class="checkout_card checkout_card-shipping">
                 <p class="checkout_header">Shipping Address</p>
                 <div class="checkout_field">
                   <label for="firstname">Street address</label>
@@ -288,24 +288,21 @@
                   <input type="text" name="" id="state">
                 </div>
                 <div class="checkout_field">
-                  <label for="lastname">ZipCode</label>
+                  <label for="">Country</label>
                   <input type="text" name="" id="country">
                 </div>
                 <div class="checkout_field">
                   <input type="checkbox" name="" id="">
-                  USe a different billing address. [Optional]
+                  <label for="lastname"> Use a different billing address. [Optional]</label>
+                 
                 </div>
               </div>
 
-              <div class="checkout_card checkout_payment">
+              <div class="checkout_card checkout_card-payment">
                 <p class="checkout_header">Payment Method</p>
                 <div class="checkout_field">
                   <label for="firstname">First Name</label>
                   <input type="text" name="" id="firstname">
-                </div>
-                <div class="checkout_field">
-                  <label for="lastname">Last Name</label>
-                  <input type="text" name="" id="lastname">
                 </div>
                 <div class="checkout_field">
                   <label for="phonenumber">Card Number</label>
@@ -316,12 +313,12 @@
                   <input type="tel" name="" id="text">
                 </div>
                 <div class="checkout_field">
-                  <label for="cvc">CVC</label>
+                  <label for="cvc">CVC Code</label>
                   <input type="text" name="" id="cvc">
                 </div>
               </div>
 
-              <button type="submit" class="btn btn-black">Place Order</button>
+              <button type="submit" class="btn btn-black"><span>Place Order</span></button>
             </form>
           </div>
           <div class="checkout_column checkout_summary">

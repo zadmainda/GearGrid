@@ -149,3 +149,13 @@ removeCartItemBtns.forEach(function(btn){
 // Subtotal
 cartItemsSubtotal = 0  
 cartItemsSubtotal = document.querySelectorAll('.cart_price')
+
+
+const cartInputs = document.querySelectorAll('.checkout_field')
+
+cartInputs.forEach(function(cardInput){
+  let types = ['text', 'email', 'tel']
+  let inputLabel = cardInput.children[0].textContent
+  let input = cardInput.children[1].setAttribute('placeholder', inputLabel)
+})
+
