@@ -1,3 +1,7 @@
+
+
+////////////////////////////////////////
+
 const messageBar = () => {
   const headerBar = document.querySelector('.header_bar');
   const headerBarClose = document.querySelector('.header_close');
@@ -133,18 +137,20 @@ const cart = () => {
 cart()
 
 
-const removeCartItemBtns = document.querySelectorAll('.cart_remove')
+const removeCartItems = () => {
+  const removeCartItemBtns = document.querySelectorAll('.cart_remove')
 
-removeCartItemBtns.forEach(function(btn){
-  if(!btn) return;
-  btn.addEventListener('click', function(e){
-    const clicked = e.target.closest('.cart_remove');
+  removeCartItemBtns.forEach(function (btn) {
+    if (!btn) return;
+    btn.addEventListener('click', function (e) {
+      const clicked = e.target.closest('.cart_remove');
 
-    console.log(clicked.closest('.cart_row').remove());
+      console.log(clicked.closest('.cart_row').remove());
 
+    })
   })
-})
-
+}
+removeCartItems()
 
 // Subtotal
 cartItemsSubtotal = 0  
@@ -159,3 +165,23 @@ cartInputs.forEach(function(cardInput){
   let input = cardInput.children[1].setAttribute('placeholder', inputLabel)
 })
 
+
+const productTemplateString = `
+  <div class="cart_row">
+    <div class="cart_description">
+      <div class="cart_img">
+        <img src="{{ product.imagePath }}" alt="{{ product.imgAlt }}">
+      </div>
+      <div class="cart_meta">
+        <p class="cart_name">{{ product.name }}</p>
+        <p class="cart_color">Color: <span>{{ product.color }}</span></p>
+        <div class="counter">
+          <span class="counter_minus"><i class="fa-solid fa-minus"></i></span>
+          <input class="counter_text" type="text" value="1" />
+          <span class="counter_plus"><i class="fa-solid fa-plus"></i></span>
+        </div>
+      </div>
+    </div>
+    <div class="cart_price">$<span> {{ product.price }}</span></div>
+  </div>
+`

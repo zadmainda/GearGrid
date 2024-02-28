@@ -45,7 +45,7 @@ ol, ul {
   list-style: none;
 }
 
-button {
+button, input {
   outline: none;
   border: none;
 }
@@ -690,17 +690,20 @@ img {
 }
 .card span {
   display: block;
-  font-weight: bold;
+  font-size: 1.4rem;
+  font-weight: 500;
 }
 .card_img {
   width: 100%;
   background-color: var(--neutral-level-2);
+  padding: 1.2rem;
+  margin-bottom: 0.5rem;
 }
 .card_img img {
   width: 100%;
 }
 .card_img ~ * {
-  margin: 0 1rem;
+  margin: 0.3rem 0;
 }
 .card_discount, .card_banner {
   position: absolute;
@@ -708,8 +711,8 @@ img {
   left: 2rem;
   padding: 0.6rem 0.6rem;
   border-radius: 0.5rem;
-  font-size: 1.3rem;
   text-align: center;
+  font-weight: 600;
 }
 .card_banner {
   top: 2rem;
@@ -1145,8 +1148,8 @@ img {
   font-size: 2.5rem;
 }
 .cart_remove:hover {
-  scale: 1.03;
-  transition: all 0.3s ease-in;
+  scale: 1.007;
+  transition: all 0.2s ease-in;
   color: var(--neutral-level-6);
   cursor: pointer;
 }
@@ -1225,6 +1228,7 @@ img {
 .checkout_column:last-of-type {
   flex-basis: 40%;
   border: 0.2rem solid #ccc;
+  border-radius: 0.6rem;
   padding: 2.5rem;
   height: -moz-fit-content;
   height: fit-content;
@@ -1242,6 +1246,7 @@ img {
 }
 .checkout_card {
   border: 0.2rem solid #ccc;
+  border-radius: 0.6rem;
   padding: 2.5rem;
   margin-bottom: 2rem;
   display: flex;
@@ -1298,6 +1303,8 @@ img {
 .checkout_applyCoupon input {
   width: 65%;
   padding: 1.6rem 1.2rem;
+  border: 0.1rem solid #bbb;
+  border-radius: 0.7rem;
 }
 .checkout_applyCoupon button {
   width: 35%;

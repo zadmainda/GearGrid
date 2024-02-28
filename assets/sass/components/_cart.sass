@@ -35,7 +35,6 @@
   &_table
     flex-basis: 60%
     padding: .5rem
-
   &_row
     padding: 2rem 0
     width: 100%
@@ -43,7 +42,6 @@
     display: flex
     align-items: center
     justify-content: space-between
-    // gap: 3%
     &-header
       // h5
       //   &:nth-of-type(2)
@@ -83,8 +81,8 @@
     i
       font-size: 2.5rem
     &:hover
-      scale: 1.03
-      transition: all .3s ease-in
+      scale: 1.007
+      transition: all .2s ease-in
       color: var(--neutral-level-6)
       cursor: pointer
   &_subtotal
@@ -148,6 +146,7 @@
     &:last-of-type
       flex-basis: 40%
       border: .2rem solid #ccc
+      border-radius: .6rem
       padding: 2.5rem
       height: fit-content
       .counter
@@ -158,10 +157,9 @@
         &_text
           input
             font-size: 2rem
-
-
   &_card
     border: .2rem solid #ccc
+    border-radius: .6rem
     padding: 2.5rem
     margin-bottom: 2rem
     display: flex
@@ -208,6 +206,8 @@
     input
       width: 65%
       padding: 1.6rem 1.2rem
+      border: .1rem solid #bbb
+      border-radius: .7rem
     button
       width: 35%
   &_finalDetails
