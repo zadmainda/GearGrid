@@ -185,3 +185,29 @@ const productTemplateString = `
     <div class="cart_price">$<span> {{ product.price }}</span></div>
   </div>
 `
+
+
+const allPriceBoxesChecked = () => {
+let allPricesChecked = document.querySelector('#all')
+
+if (!allPricesChecked) return
+
+allPricesChecked.addEventListener('change', function () {
+  const allPricesCheckboxes = document.querySelectorAll('.price_field input')
+  if (!allPricesChecked) {
+    return;
+  } else if (allPricesChecked.checked) {
+    allPricesCheckboxes.forEach(function (checkbox) {
+      checkbox.checked = true;
+    })
+
+  } else {
+    allPricesCheckboxes.forEach(function (checkbox) {
+      checkbox.checked = false;
+    });
+}})
+}
+
+
+
+allPriceBoxesChecked()

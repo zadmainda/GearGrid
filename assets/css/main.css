@@ -691,7 +691,7 @@ img {
 .card span {
   display: block;
   font-size: 1.4rem;
-  font-weight: 500;
+  font-weight: 600;
 }
 .card_img {
   width: 100%;
@@ -709,17 +709,17 @@ img {
   position: absolute;
   display: inline-flex;
   left: 2rem;
-  padding: 0.6rem 0.6rem;
+  padding: 0.4rem 0.7rem;
   border-radius: 0.5rem;
   text-align: center;
-  font-weight: 600;
+  font-weight: 600 !important;
 }
 .card_banner {
-  top: 2rem;
+  top: 1.5rem;
   background: #fff;
 }
 .card_discount {
-  top: 7rem;
+  top: 6rem;
   background: var(--secondary-green);
 }
 .card_wishlist {
