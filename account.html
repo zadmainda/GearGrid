@@ -61,53 +61,83 @@
 
     <section class="account account_wrapper">
       <h3 class="account_heading">My Account</h3>
-      <div class="account_sidebar">
-        <div class="account_displayphoto">
-          <img src="" alt="">
+      <div class="account_container">
+        <div class="account_sidebar">
+          <div class="account_displayphoto">
+            <img src="" alt="">
+            <span>Jane Doe</span>
+          </div>
+          <div class="account_account"><span>account</span></div>
+          <div class="account_address"><span>Address</span></div>
+          <div class="account_orders"><span>Orders</span></div>
+          <div class="account_wishlist"><span>Wishlist</span></div>
+          <div class="account_Logout"><span>Log Out</span></div>
         </div>
-        <div class="account_account"><span>account</span></div>
-        <div class="account_address"><span>Address</span></div>
-        <div class="account_orders"><span>Orders</span></div>
-        <div class="account_wishlist"><span>Wishlist</span></div>
-        <div class="account_Logout"><span>Log Out</span></div>
-      </div>
-      <div class="account_details">
-        <h6>Account Details</h6>
-        <form action="" method="post">
-          <div class="account_fieldset">
-            <label for="firstName">First Name</label>
-            <input type="text">
+        <div class="account_info">
+          <div class="account_details">
+            <h6>Account Details</h6>
+            <form action="" method="post">
+              <div class="account_fieldset">
+                <label for="firstName">First Name</label>
+                <input type="text">
+              </div>
+              <div class="account_fieldset">
+                <label for="lastName">Last Name</label>
+                <input type="text">
+              </div>
+              <div class="account_fieldset">
+                <label for="displayName">Display Name</label>
+                <input type="text">
+              </div>
+              <div class="account_fieldset">
+                <label for="firstName">Email</label>
+                <input type="email">
+              </div>
+              <p>Password</p>
+              <div class="account_fieldset">
+                <label for="oldpassword">Old Password</label>
+                <input type="password" name="oldpassword" id="oldpassword">
+              </div>
+              <div class="account_fieldset">
+                <label for="newpassword">New Password</label>
+                <input type="password" name="newpassword" id="newpassword">
+              </div>
+    
+              <div class="account_fieldset">
+                <label for="repeatNewPassword">Repeat New Password</label>
+                <input type="password" name="repeatNewPassword" id="repeatNewPassword">
+              </div>
+    
+              <button type="submit" class="btn btn-black"><span>Save Changes</span></button>
+    
+            </form>
           </div>
-          <div class="account_fieldset">
-            <label for="lastName">Last Name</label>
-            <input type="text">
+          <div class="account_address">
+            <h6>Address</h6>
+            <div class="account_billingAddress">
+              <div class="">
+                <h6>Billing Address</h6>
+                <span>Edit</span>
+              </div>
+              <span>Sofia Havertz</span>
+              <span>(+1) 234 567 890</span>
+              <span>345 Lonog Island, New York</span>
+            </div>
+            <div class="account_billingAddress">
+              <div class="">
+                <h6>Billing Address</h6>
+                <span>Edit</span>
+              </div>
+              <span>Sofia Havertz</span>
+              <span>(+1) 234 567 890</span>
+              <span>345 Lonog Island, New York</span>
+            </div>
           </div>
-          <div class="account_fieldset">
-            <label for="displayName">Display Name</label>
-            <input type="text">
+          <div class="account_orderHistory">
+            <h6>Order History</h6>
+    
           </div>
-          <div class="account_fieldset">
-            <label for="firstName">Email</label>
-            <input type="email">
-          </div>
-          <p>Password</p>
-          <div class="account_fieldset">
-            <label for="oldpassword">Old Password</label>
-            <input type="password" name="oldpassword" id="oldpassword">
-          </div>
-          <div class="account_fieldset">
-            <label for="newpassword">New Password</label>
-            <input type="password" name="newpassword" id="newpassword">
-          </div>
-
-          <div class="account_fieldset">
-            <label for="repeatNewPassword">Repeat New Password</label>
-            <input type="password" name="repeatNewPassword" id="repeatNewPassword">
-          </div>
-
-          <button type="submit" class="btn btn-black"><span>Save Changes</span></button>
-
-        </form>
+        </div>
       </div>
     </section>
 
