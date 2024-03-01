@@ -1405,9 +1405,6 @@ img {
   border: none;
 }
 
-.account {
-  border: 1px solid red;
-}
 .account_container {
   display: flex;
   justify-content: space-between;
@@ -1416,17 +1413,47 @@ img {
   padding: 0.9rem;
   flex-basis: 20%;
   background-color: var(--neutral-level-3);
+  border-radius: 0.7rem;
+  height: -moz-fit-content;
+  height: fit-content;
 }
 .account_displayphoto {
-  height: 10rem;
-  width: 10rem;
+  margin: 5rem auto 3rem auto;
+  height: 11rem;
+  width: 11rem;
   border-radius: 50%;
   overflow: clip;
-  border: 1px solid red;
+}
+.account_tab {
+  margin-bottom: 1.5rem;
+  padding: 0.5rem;
+}
+.account_tab span {
+  color: var(--neutral-level-4);
+  font-weight: 500;
+  text-transform: capitalize;
+}
+.account_tab-active {
+  border-bottom: 0.2rem solid var(--neutral-level-7);
+}
+.account_tab-active span {
+  color: var(--neutral-level-7);
 }
 .account_info {
-  border: 2px solid blue;
   flex-basis: 75%;
+}
+.account_fieldset {
+  margin-bottom: 1.2rem;
+  display: flex;
+  flex-direction: column;
+}
+.account_fieldset label {
+  margin-bottom: 0.5rem;
+}
+.account_fieldset input {
+  border: 0.1rem solid var(--neutral-level-3);
+  padding: 1.2rem;
+  border-radius: 0.8rem;
 }
 
 .blog_grid {

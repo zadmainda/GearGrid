@@ -217,3 +217,20 @@ allPriceBoxesChecked()
 //   let newPath = window.location.pathname.replace('.html', '');
 //   window.history.replaceState({}, document.title, newPath);
 // }
+
+const accountFieldSets = document.querySelectorAll('.account_fieldset');
+const accountFieldSetsLabels = document.querySelectorAll('.account_fieldset label');
+
+
+accountFieldSets.forEach(function(accountFieldSet){
+
+  let FieldSetsLabel = accountFieldSet.children[0].textContent
+  let input = cardInput.children[1].setAttribute('placeholder', inputLabel)
+})
+
+
+cartInputs.forEach(function(cardInput){
+  let types = ['text', 'email', 'tel']
+  let inputLabel = cardInput.children[0].textContent
+  let input = cardInput.children[1].setAttribute('placeholder', inputLabel)
+})

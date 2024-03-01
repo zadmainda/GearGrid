@@ -1,5 +1,5 @@
 .account
-  border: 1px solid red
+  // border: 1px solid red
   &_wrapper
     @extend .wrapper
   &_container
@@ -9,13 +9,36 @@
     padding: .9rem
     flex-basis: 20%
     background-color: var(--neutral-level-3)
+    border-radius: .7rem
+    height: fit-content
   &_displayphoto
-    height: 10rem
-    width: 10rem
+    margin: 5rem auto 3rem auto
+    height: 11rem
+    width: 11rem
     border-radius: 50%
     overflow: clip
-    border: 1px solid red
-
+  &_tab
+    margin-bottom: 1.5rem
+    padding: .5rem
+    span
+      color: var(--neutral-level-4)
+      font-weight: 500
+      text-transform: capitalize
+    &-active
+      border-bottom: .2rem solid var(--neutral-level-7)
+      span
+        color: var(--neutral-level-7)
   &_info
-    border: 2px solid blue
     flex-basis: 75%
+  &_details
+    ///import css-variables from 
+  &_fieldset
+    margin-bottom: 1.2rem
+    display: flex
+    flex-direction: column
+    label
+      margin-bottom: .5rem
+    input
+      border: .1rem solid var(--neutral-level-3)
+      padding: 1.2rem
+      border-radius: .8rem
