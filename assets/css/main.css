@@ -375,18 +375,22 @@ img {
 .carousel_arrows {
   position: absolute;
   font-size: 4.5rem;
-  color: var(--neutral-level-7);
+  color: var(--neutral-level-6);
   top: 40%;
   transform: translateY(-50%);
   font-size: 3.5rem;
   transition: all 0.3s ease-in;
   transform-origin: center;
   z-index: 10;
+  border: 0.1rem solid var(--neutral-level-6);
+  padding: 0.9rem 0.4rem;
+  -webkit-backdrop-filter: blur(0.3rem);
+          backdrop-filter: blur(0.3rem);
 }
 .carousel_arrows:hover {
   transform-origin: center;
   transition: all 0.3s ease-out;
-  scale: 1.2;
+  scale: 1.1;
   cursor: pointer;
   color: var(--neutral-level-6);
 }

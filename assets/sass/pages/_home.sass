@@ -163,17 +163,20 @@
   &_arrows
     position: absolute
     font-size: 4.5rem
-    color: var(--neutral-level-7)
+    color: var(--neutral-level-6)
     top: 40%
     transform: translateY(-50%)
     font-size: 3.5rem
     transition: all .3s ease-in
     transform-origin: center
     z-index: 10
+    border: .1rem solid var(--neutral-level-6)
+    padding: .9rem .4rem
+    backdrop-filter: blur(.3rem)
     &:hover
       transform-origin: center
       transition: all .3s ease-out
-      scale: 1.2
+      scale: 1.1
       cursor: pointer
       color: var(--neutral-level-6)
     &-left
