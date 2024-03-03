@@ -47,7 +47,7 @@ heroSlider()
 
 
 // landing Page Product Carousel
-const landingPageProductCarousel = () => {
+const landingPageProductCarouselScroll = () => {
 
   const productCarousel = document.querySelector('.carousel_track');
   const productArrows = document.querySelectorAll('.carousel_arrows');
@@ -70,7 +70,7 @@ const landingPageProductCarousel = () => {
     });
   });
 }
-landingPageProductCarousel()
+landingPageProductCarouselScroll()
 
 
 // Product Template Page Main Slider 
@@ -243,7 +243,7 @@ const productCatalog = [
     "price": "1200",
     "oldprice": "1350",
     "imgUrl": "/assets/images/products/bedroom/bed cabinet combo.png",
-    "discount": "50%",
+    "discount": "50",
     "rating": 4,
     "color": ["red", "green", "blue"],
     "tags": ["living", "bedroom"],
@@ -255,7 +255,7 @@ const productCatalog = [
     "price": "1800",
     "oldprice": "2000",
     "imgUrl": "/assets/images/products/bedroom/bedside-lamp.png",
-    "discount": "15%",
+    "discount": "15",
     "rating": 4.5,
     "color": ["brown", "beige", "gray"],
     "tags": ["bedroom"],
@@ -265,7 +265,7 @@ const productCatalog = [
     "name": "Beige Bed",
     "SKU": "34567",
     "price": "900",
-    "oldprice": "",
+    "oldprice": "995",
     "imgUrl": "/assets/images/products/bedroom/beige-bed.png",
     "discount": "5",
     "rating": 4,
@@ -526,7 +526,7 @@ const productCatalog = [
     "available": true
   },
   {
-    "name": "Dressing Table",
+    "name": "Dresdsing Table",
     "SKU": "56789",
     "price": "300",
     "oldprice": "",
@@ -597,4 +597,43 @@ const productCatalog = [
     "tags": ["living"],
     "available": true
   }
+];
+
+
+productCarouselItems = [
+  'Bed Cabinet Combo', 'BedSide Lamp', 'Beige Bed', 'Dressing Table', 
 ]
+let productCarouselCards = ''
+
+productCarouselItems.forEach(function(item){
+
+  
+
+  productCatalog.forEach(function(product){
+  
+      if(product.name.toLowerCase() == item.toLowerCase()){
+        productCarouselCards +=  `
+          <div class="card">
+            <div class="card_img">
+            <img src=".${product.imgUrl}" alt="" >
+              <div class="card_footer">
+                <span>Add to Cart</span>
+              </div>
+            </div>
+            <span class="card_rating">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+            <span class="card_title">${product.name}</span>
+            <span class="card_price">$${product.price}</span>
+            <span class="card_banner">New</span>
+            <span class="card_discount">-${product.discount}%</span>
+            <span class="card_wishlist"> <i class="fa-regular fa-heart"></i></span>
+          </div>
+        `
+      }
+  })
+ 
+})
+console.log(productCarouselCards)
+
+let carousel_track = document.querySelector('.carousel_track')
+console.log(carousel_track)
+carousel_track.insertAdjacentHTML('beforeend', productCarouselCards)
