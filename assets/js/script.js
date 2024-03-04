@@ -350,123 +350,123 @@ const productCatalog = [
     "available": true
   },
   {
-    "name": "Side Table",
+    "name": "Baby Bottle",
     "SKU": "01234",
-    "price": "100",
-    "oldprice": "",
-    "imgUrl": "path/to/image10.jpg",
-    "discount": "",
+    "price": "20",
+    "oldprice": "30",
+    "imgUrl": "/assets/images/products/kitchen/baby bottle.png",
+    "discount": "3",
     "rating": 3.5,
     "color": ["black", "white"],
-    "tags": ["living"],
+    "tags": ["Kitchen"],
     "available": true
   },
   {
-    "name": "Bar Stool",
+    "name": "Bottle Opener",
     "SKU": "12345",
-    "price": "80",
-    "oldprice": "",
-    "imgUrl": "path/to/image11.jpg",
-    "discount": "",
+    "price": "2",
+    "oldprice": "5",
+    "imgUrl": "/assets/images/products/kitchen/bottle opener.png",
+    "discount": "10",
     "rating": 3.5,
     "color": ["black", "white"],
     "tags": ["kitchen"],
     "available": true
   },
   {
-    "name": "Console Table",
+    "name": "Cork",
     "SKU": "23456",
-    "price": "200",
-    "oldprice": "",
-    "imgUrl": "path/to/image12.jpg",
-    "discount": "",
+    "price": "2",
+    "oldprice": "3",
+    "imgUrl": "/assets/images/products/kitchen/cork.png",
+    "discount": "20",
     "rating": 4,
     "color": ["brown", "black"],
-    "tags": ["living"],
+    "tags": ["kitchen"],
     "available": true
   },
   {
-    "name": "Lounge Chair",
+    "name": "Frying Pan",
     "SKU": "34567",
-    "price": "300",
-    "oldprice": "",
-    "imgUrl": "path/to/image13.jpg",
-    "discount": "",
+    "price": "30",
+    "oldprice": "32",
+    "imgUrl": "/assets/images/products/kitchen/frying pan.png",
+    "discount": "3",
     "rating": 4.5,
     "color": ["gray", "beige"],
-    "tags": ["living"],
+    "tags": ["kitchen"],
     "available": true
   },
   {
-    "name": "Dresser",
+    "name": "Gas Stove",
     "SKU": "45678",
     "price": "350",
-    "oldprice": "",
-    "imgUrl": "path/to/image14.jpg",
-    "discount": "",
+    "oldprice": "365",
+    "imgUrl": "/assets/images/products/kitchen/gas stove 2.png",
+    "discount": "5%",
     "rating": 4,
     "color": ["brown", "white"],
-    "tags": ["bedroom"],
+    "tags": ["kitchen"],
     "available": true
   },
   {
-    "name": "Couch",
+    "name": "Gas Stove",
     "SKU": "56789",
     "price": "900",
     "oldprice": "1000",
-    "imgUrl": "path/to/image15.jpg",
-    "discount": "10%",
+    "imgUrl": "/assets/images/products/kitchen/gas stove.png",
+    "discount": "6%",
     "rating": 4,
     "color": ["gray", "beige"],
-    "tags": ["living"],
+    "tags": ["kitchen"],
     "available": true
   },
   {
-    "name": "Accent Chair",
+    "name": "Grill",
     "SKU": "67890",
     "price": "180",
-    "oldprice": "",
-    "imgUrl": "path/to/image16.jpg",
-    "discount": "",
+    "oldprice": "190",
+    "imgUrl": "/assets/images/products/kitchen/grill-2.png",
+    "discount": "3",
     "rating": 3.5,
     "color": ["blue", "gray"],
-    "tags": ["living"],
+    "tags": ["kitchen"],
     "available": true
   },
   {
-    "name": "Dining Chair Set",
+    "name": "Grill",
     "SKU": "78901",
     "price": "250",
-    "oldprice": "",
-    "imgUrl": "path/to/image17.jpg",
-    "discount": "",
+    "oldprice": "270",
+    "imgUrl": "/assets/images/products/kitchen/grill-3.png",
+    "discount": "1",
     "rating": 4,
     "color": ["black", "white"],
-    "tags": ["dining"],
+    "tags": ["kitchen"],
     "available": true
   },
   {
-    "name": "Kitchen Island",
+    "name": "Grill",
     "SKU": "89012",
     "price": "600",
-    "oldprice": "",
-    "imgUrl": "path/to/image18.jpg",
-    "discount": "",
+    "oldprice": "650",
+    "imgUrl": "/assets/images/products/kitchen/grill.png",
+    "discount": "12",
     "rating": 4,
     "color": ["brown", "white"],
     "tags": ["kitchen"],
     "available": true
   },
   {
-    "name": "Bedside Table",
+    "name": "Sink",
     "SKU": "90123",
     "price": "120",
-    "oldprice": "",
-    "imgUrl": "path/to/image19.jpg",
-    "discount": "",
+    "oldprice": "130",
+    "imgUrl": "/assets/images/products/kitchen/sink.png",
+    "discount": "4",
     "rating": 3.5,
     "color": ["brown", "white"],
-    "tags": ["bedroom"],
+    "tags": ["kitchen"],
     "available": true
   },
   {
@@ -646,9 +646,16 @@ carousel_track.insertAdjacentHTML('beforeend', productCarouselCards)
 
 renderCarouselProducts()
 
-const accountSidebar = document.querySelector('.account_sidebar')
+// const accountSidebar = document.querySelector('.account_sidebar')
 
-accountSidebar.addEventListener('click', function(e){
-  e.target.classList.toggle("account_tab-active")
+// accountSidebar.addEventListener('click', function(e){
+//   e.target.classList.toggle("account_tab-active")
 
+// })
+
+
+document.querySelectorAll('.carousel_track .card .card_footer').forEach(function(card){
+  card.addEventListener('click', function(e){
+    console.log(e.target.closest('.card').children[2].textContent)
+  })
 })
