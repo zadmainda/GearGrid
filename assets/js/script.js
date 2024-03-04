@@ -637,3 +637,5 @@ console.log(productCarouselCards)
 let carousel_track = document.querySelector('.carousel_track')
 console.log(carousel_track)
 carousel_track.insertAdjacentHTML('beforeend', productCarouselCards)
+
+
