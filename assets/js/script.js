@@ -611,8 +611,6 @@ let productCarouselCards = ''
 
 productCarouselItems.forEach(function(item){
 
-  
-
   productCatalog.forEach(function(product){
   
       if(product.name.toLowerCase() == item.toLowerCase()){
@@ -659,3 +657,39 @@ document.querySelectorAll('.carousel_track .card .card_footer').forEach(function
     console.log(e.target.closest('.card').children[2].textContent)
   })
 })
+
+
+// Function to render cards programmatically into the Shop Grid 
+let shopGrid = document.querySelector('.shop_grid.shop_kitchen')
+
+
+const renderShopGrid = () => {
+  if (!shopGrid) return;
+  let shopGridHTML = ''
+
+  productCatalog.forEach(function (catalog) {
+    if (catalog.tags.includes('kitchen')){
+      shopGridHTML += 
+      `
+          <div class="card">
+            <div class="card_img">
+            <img src="..${catalog.imgUrl}" alt="" >
+              <div class="card_footer">
+                <span>Add to Cart</span>
+              </div>
+            </div>
+            <span class="card_rating">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+            <span class="card_title">${catalog.name}</span>
+            <span class="card_price">$${catalog.price}</span>
+            <span class="card_banner">New</span>
+            <span class="card_discount">-${catalog.discount}%</span>
+            <span class="card_wishlist"> <i class="fa-regular fa-heart"></i></span>
+          </div>
+        `
+    }
+  })
+  shopGrid.insertAdjacentHTML('afterbegin', shopGridHTML)
+}
+
+renderShopGrid()
+
