@@ -43,6 +43,7 @@
         color: var(--neutral-level-7)
   &_info
     flex-basis: 75%
+    padding-bottom: 4rem
   &_details
     ///import css-variables from 
   &_fieldset
@@ -56,6 +57,7 @@
       padding: 1.2rem
       border-radius: .8rem
   &_location
+    // display: none
     h6
       flex-basis: 100%
   &_billingAddresses
@@ -76,6 +78,8 @@
         font-size: 1.7rem
     span
       font-size: 1.3rem
+  &_orderHistory
+    // display: none
   &_table
     display: flex
     flex-direction: column
@@ -83,6 +87,11 @@
     display: flex
     border-bottom: .2rem solid var(--neutral-level-3)
     padding-bottom: .8rem
+    font-size: 1.4rem
+    &:first-of-type
+      font-size: 1.6rem
+      font-weight: 600
+      padding-bottom: 0rem
   &_cell
     flex: 1
     padding: .8rem

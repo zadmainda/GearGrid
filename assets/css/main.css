@@ -1462,6 +1462,7 @@ img {
 }
 .account_info {
   flex-basis: 75%;
+  padding-bottom: 4rem;
 }
 .account_fieldset {
   margin-bottom: 1.2rem;
@@ -1510,6 +1511,12 @@ img {
   display: flex;
   border-bottom: 0.2rem solid var(--neutral-level-3);
   padding-bottom: 0.8rem;
+  font-size: 1.4rem;
+}
+.account_row:first-of-type {
+  font-size: 1.6rem;
+  font-weight: 600;
+  padding-bottom: 0rem;
 }
 .account_cell {
   flex: 1;

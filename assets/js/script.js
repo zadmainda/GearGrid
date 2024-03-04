@@ -218,22 +218,26 @@ allPriceBoxesChecked()
 //   window.history.replaceState({}, document.title, newPath);
 // }
 
-const accountFieldSets = document.querySelectorAll('.account_fieldset');
-const accountFieldSetsLabels = document.querySelectorAll('.account_fieldset label');
+const fieldSet = () => {
+  const accountFieldSets = document.querySelectorAll('.account_fieldset');
+  const accountFieldSetsLabels = document.querySelectorAll('.account_fieldset label');
+
+  if(!accountFieldSets || !accountFieldSetsLabels) return
+
+  accountFieldSets.forEach(function (accountFieldSet) {
+    let FieldSetsLabel = accountFieldSet.children[0].textContent
+    let input = accountFieldSet.children[1].setAttribute('placeholder', FieldSetsLabel)
+  })
 
 
-accountFieldSets.forEach(function(accountFieldSet){
+  cartInputs.forEach(function (cardInput) {
+    let types = ['text', 'email', 'tel']
 
-  let FieldSetsLabel = accountFieldSet.children[0].textContent
-  let input = cardInput.children[1].setAttribute('placeholder', inputLabel)
-})
-
-
-cartInputs.forEach(function(cardInput){
-  let types = ['text', 'email', 'tel']
-  let inputLabel = cardInput.children[0].textContent
-  let input = cardInput.children[1].setAttribute('placeholder', inputLabel)
-})
+    let inputLabel = cardInput.children[0].textContent
+    let input = cardInput.children[1].setAttribute('placeholder', inputLabel)
+  })
+}
+fieldSet()
 
 
 const productCatalog = [
@@ -632,10 +636,19 @@ productCarouselItems.forEach(function(item){
   })
  
 })
-console.log(productCarouselCards)
+
 
 let carousel_track = document.querySelector('.carousel_track')
-console.log(carousel_track)
+const renderCarouselProducts = () => {
+  if(!carousel_track)return
 carousel_track.insertAdjacentHTML('beforeend', productCarouselCards)
+}
 
+renderCarouselProducts()
 
+const accountSidebar = document.querySelector('.account_sidebar')
+
+accountSidebar.addEventListener('click', function(e){
+  e.target.classList.toggle("account_tab-active")
+
+})
