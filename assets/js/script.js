@@ -209,14 +209,9 @@ allPricesChecked.addEventListener('change', function () {
 }
 
 
-
 allPriceBoxesChecked()
 
 
-// if (window.location.pathname.endsWith('.html')) {
-//   let newPath = window.location.pathname.replace('.html', '');
-//   window.history.replaceState({}, document.title, newPath);
-// }
 
 const fieldSet = () => {
   const accountFieldSets = document.querySelectorAll('.account_fieldset');
@@ -692,4 +687,21 @@ const renderShopGrid = () => {
 }
 
 renderShopGrid()
+
+
+// Render Product's details in a single page
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

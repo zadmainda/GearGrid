@@ -1938,6 +1938,7 @@ img {
 }
 .product_content {
   flex-basis: 50%;
+  border: 1px solid red;
 }
 .product_content > * {
   margin-bottom: 2rem;
@@ -2018,4 +2019,36 @@ img {
   align-items: center;
   border: 1px solid var(--neutral-level-4);
   border-radius: 0.99rem;
+}
+.reviews_card {
+  border-bottom: 0.2rem solid var(--neutral-level-3);
+  margin-bottom: 1.5rem;
+  height: auto;
+}
+.reviews_customer {
+  display: flex;
+  gap: 4rem;
+}
+.reviews_displayPhoto {
+  overflow: hidden;
+  border-radius: 50%;
+}
+.reviews_stars {
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.5rem;
+}
+.reviews_stars span:first-of-type {
+  font-size: 1.7rem;
+  font-weight: 700;
+}
+.reviews_stars span:last-of-type {
+  color: #111;
+  font-weight: 700;
+}
+.reviews_text {
+  padding-left: 14rem;
+  color: var(--neutral-level-4);
 }/*# sourceMappingURL=main.css.map */
