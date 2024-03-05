@@ -15,8 +15,16 @@
     background-color: var(--neutral-level-2)
     padding: 1.2rem
     margin-bottom: .5rem
+    height: 30rem
+    display: flex
+    flex-direction: column
+    align-items: center
     img
-      width: 100%
+      height: 23rem
+      margin-left: auto
+      margin-right: auto
+      width: auto
+      margin-bottom: .5rem
     ~ *
       margin: 0.3rem 0
   &_discount, &_banner
@@ -59,5 +67,7 @@
     opacity: 0
     overflow: hidden
     transition: all .4s ease-in
+    @media  screen and (max-width: 667px)
+      opacity: 1
     &:hover
       font-size: 1.3rem
