@@ -1798,6 +1798,7 @@ img {
   margin-top: 2rem;
   width: 40rem;
   padding: 1.2rem;
+  display: flex;
 }
 @media screen and (max-width: 667px) {
   .newsletter_form form {
