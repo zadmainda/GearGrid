@@ -1,30 +1,32 @@
 .card
   position: relative
-  height: fit-content
+  // height: fit-content
   &:hover
     .card_wishlist, .card_footer
       opacity: 1
-      transition: all .3s ease-out
+      transition: all .2s ease-out
       cursor: pointer    
   span
     display: block
     font-size: 1.4rem
     font-weight: 600
   &_img
-    width: 100%
+    // width: 100%
     background-color: var(--neutral-level-2)
     padding: 1.2rem
     margin-bottom: .5rem
-    height: 30rem
     display: flex
     flex-direction: column
     align-items: center
+    height: 30rem
+    // overflow: hidden 
     img
-      height: 23rem
+      height: 100%
       margin-left: auto
       margin-right: auto
-      width: auto
+      width: 100%
       margin-bottom: .5rem
+      object-fit: contain
     ~ *
       margin: 0.3rem 0
   &_discount, &_banner
