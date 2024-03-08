@@ -205,6 +205,7 @@ img {
   top: 50%;
   transform: translateY(-50%);
   left: 2rem;
+  display: none;
 }
 @media screen and (max-width: 667px) {
   .hero_arrow.fa-circle-arrow-left {
@@ -1691,6 +1692,16 @@ img {
 .header_nav {
   justify-content: space-between;
   padding: 0.8rem 0;
+}
+.header_toggle {
+  overflow: hidden;
+  height: 0;
+  width: 0;
+  display: none;
+}
+.header_hamburger {
+  font-size: 3rem;
+  display: none;
 }
 .header_logo a {
   font-size: 4.3rem;

@@ -28,6 +28,20 @@ const heroSlider = () => {
   if ( !firstHeroImg ) return;
   
   const firstHeroImgWidth = document.querySelectorAll('.hero_slide img')[0].clientWidth;
+  let scrollWidth = heroImgSlider.scrollWidth - heroImgSlider.clientWidth;
+
+  const showHideIcons = () =>{
+    if(heroImgSlider.scrollLeft == 0){
+      heroArrows[0].style.display = "none";
+    }else{
+      heroArrows[0].style.display = "block";
+    };
+    if(heroImgSlider.scrollLeft == scrollWidth){
+      heroArrows[1].style.display = "none";
+    }else{
+      heroArrows[1].style.display = "block";
+    }
+  }
 
   if (heroImgSlider && heroArrows && firstHeroImgWidth) {
     heroArrows.forEach(arrow => {
@@ -37,6 +51,7 @@ const heroSlider = () => {
         } else {
           heroImgSlider.scrollLeft += firstHeroImgWidth;
         }
+        showHideIcons();
       });
     });
   } else {
