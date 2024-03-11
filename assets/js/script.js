@@ -181,7 +181,7 @@ cartInputs.forEach(function(cardInput){
 })
 
 
-const productTemplateString = `
+const cartProductTemplateString = `
   <div class="cart_row">
     <div class="cart_description">
       <div class="cart_img">
@@ -707,7 +707,252 @@ renderShopGrid()
 // Render Product's details in a single page
 
 
+let productDetailsTemplateString = `
+<section class="product wrapper">
+<ul class="breadcrumps">
+  <div class="pageheader_crumps">
+    <a href="/index.html" class="pageheader_crump">Home</a>
+    <i class="fa-solid fa-angle-right"></i>
+    <a href="/shop.html" class="pageheader_crump">Shop</a>
+    <i class="fa-solid fa-angle-right"></i>
+    <a href="/shop/living-room.html" class="pageheader_crump">Living room</a>
+    <i class="fa-solid fa-angle-right"></i>
+    <a href="/product.html" class="pageheader_crump">Product</a>
+  </div>
+</ul>
+<div class="product_grid">
+  <div class="product_slider">
+    <div class="product_slider-L">
+      <div class="product_track">
+        <img src="/assets/images/products/Living Room/black Tray table.png" alt="">
+        <img src="/assets/images/products/Living Room/black Tray table.png" alt="">
+        <img src="/assets/images/products/Living Room/black Tray table.png" alt="">
+      </div>
+      <i class="fa-solid fa-circle-arrow-left  product_arrow product_arrow-left" id="product_arrow-left"></i>
+      <i class="fa-solid fa-circle-arrow-right product_arrow product_arrow-right" id="product_arrow-right"></i>
+    </div>
+    
+    <div class="product_slider-S">
+      <img src="/assets/images/products/Living Room/black Tray table-1.png" alt="">
+      <img src="/assets/images/products/Living Room/black Tray table-2.png" alt="">
+      <img src="/assets/images/products/Living Room/black Tray table-3.png" alt="">
+    </div>
+  </div>
 
+  <div class="product_content">
+    <div class="product_rating">
+      <div class="product_stars">
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+      </div>
+      <span class="product_reviewers">11 Reviewers</span>
+    </div>
+    <h3 class="product_title">
+      Tray Table
+    </h3>
+    <p class="product_description">
+      Buy one or buy a few and make every space wher you sit more convnient. Light and easy to move around with removable tray, top, handy for serving snacks.
+    </p>
+
+    <div class="product_prices">
+      <span class="product_newprice">$199.00</span>
+      <span class="product_oldprice">$400.00 </span>
+    </div>
+    <div class="product_countdown">
+      <span>Offer expires in:</span>
+      <div class="product_timer">
+        <div class="product_num">
+          <span>02</span>
+          <span>Days</span>
+        </div>
+        <div class="product_num">
+          <span>12</span>
+          <span>Hours</span>
+        </div>
+        <div class="product_num">
+          <span>45</span>
+          <span>Minutes</span>
+        </div>
+        <div class="product_num">
+          <span>09</span>
+          <span>Seconds</span>
+        </div>
+      </div>
+    </div>
+    <div class="product_measurement">
+      <span>Measurements</span>
+      <span>17 1/2x20 5/8"</span>
+    </div>
+    <div class="product_options">
+      <span>Choose color <i class="fa-solid fa-angle-right"></i> </span>
+      <div class="product_colors">
+        <div class="product_color product_color-1">
+          <span class="product_option-title">Black</span>
+          <img src="https://placehold.co/100x100/png" alt="">
+        </div>
+        <div class="product_color product_color-2">
+          <span class="product_option-title">Red</span>
+          <img src="https://placehold.co/100x100/png" alt="">
+        </div>
+        <div class="product_color product_color-3">
+          <span class="product_option-title">Purple</span>
+          <img src="https://placehold.co/100x100/png" alt="">
+        </div>
+        <div class="product_color product_color-4">
+          <span class="product_option-title">Green</span>
+          <img src="https://placehold.co/100x100/png" alt="">
+        </div>
+      </div>
+
+    </div>
+    <div class="product_count">
+      <div class="counter">
+        <span class="counter_minus"><i class="fa-solid fa-minus"></i></span>
+        <input class="counter_text" type="text" value="1" />
+        <span class="counter_plus"><i class="fa-solid fa-plus"></i></span>
+      </div>
+      <div class="product_wishlist">
+        <i class="fa-regular fa-heart"></i>
+        <span>wishlist</span>
+      </div>
+    </div>
+    <div class="btn btn-black addToCart">
+      <span>Add to Cart</span>
+  </div>
+    <div class="product_meta">
+      <div class="product_sku">
+        <span>SKU</span>
+        <span>117</span>
+      </div>
+      <div class="product_category">
+        <span>Living Room, </span>
+        <span>Bedroom</span>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="product_info">
+  <div class="product_infoTabs">
+    <span class="product_infoTabs product_infoTabs-active" id="product_additionalInfo">Additional Info</span>
+    <span class="product_infoTabs" id="product_questions">Questions</span>
+    <span class="product_infoTabs" id="product_reviews">Reviews</span>
+  </div>
+  <div class="product_additionalInfo"></div>
+  <div class="product_questions"></div>
+  <div class="product_reviews">
+    <h3>Customer Reviews</h3>
+    <div class="reviews_summary">
+      <span>&star; &star; &star; &star; &star;</span>
+      <span>11 Reviews</span>
+    </div>
+    <form action="" method="post">
+      <input type="text" placeholder="Your review...">
+      <button class="btn btn-black"><span>write Review</span></button>
+    </form>
+    <div class="reviews_sortby">
+      <span>11 Reviews</span>
+      <select name="sort" id="sort">
+        <option value="Newest">Newest</option>
+        <option value="Oldest">Oldest</option>
+        <option value="Highest">Highest</option>
+        <option value="Lowest">Lowest</option>
+      </select>
+    </div>
+    <div class="reviews_container">
+      <div class="reviews_card">
+        <div class="reviews_customer">
+          <div class="reviews_displayPhoto">
+            <img src="https://placehold.co/100x100/png" alt="">
+          </div>
+          <div class="reviews_stars">
+            <span class="reviews_name">Sofia Havertz</span>
+            <span>&star; &star; &star;</span>
+          </div>
+        </div>
+        <div class="reviews_text">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur corporis optio saepe officiis atque, dolor quis odio laboriosam error quia aliquid nesciunt beatae asperiores incidunt. At deserunt temporibus quidem unde, similique vero voluptatem tempore fuga.
+        </div>
+      </div>
+      <div class="reviews_card">
+        <div class="reviews_customer">
+          <div class="reviews_displayPhoto">
+            <img src="https://placehold.co/100x100/png" alt="">
+          </div>
+          <div class="reviews_stars">
+            <span class="reviews_name">Sofia Havertz</span>
+            <span>&star; &star; &star;</span>
+          </div>
+          
+        </div>
+        <div class="reviews_text">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur corporis optio saepe officiis atque, dolor quis odio laboriosam error quia aliquid nesciunt beatae asperiores incidunt. At deserunt temporibus quidem unde, similique vero voluptatem tempore fuga.
+        </div>
+      </div>
+      <div class="reviews_card">
+        <div class="reviews_customer">
+          <div class="reviews_displayPhoto">
+            <img src="https://placehold.co/100x100/png" alt="">
+          </div>
+          <div class="reviews_stars">
+            <span class="reviews_name">Sofia Havertz</span>
+            <span>&star; &star; &star;</span>
+          </div>
+        </div>
+        <div class="reviews_text">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur corporis optio saepe officiis atque, dolor quis odio laboriosam error quia aliquid nesciunt beatae asperiores incidunt. At deserunt temporibus quidem unde, similique vero voluptatem tempore fuga.
+        </div>
+      </div>
+      <div class="reviews_card">
+        <div class="reviews_customer">
+          <div class="reviews_displayPhoto">
+            <img src="https://placehold.co/100x100/png" alt="">
+          </div>
+          <div class="reviews_stars">
+            <span class="reviews_name">Sofia Havertz</span>
+            <span>&star; &star; &star;</span>
+          </div>
+        </div>
+        <div class="reviews_text">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur corporis optio saepe officiis atque, dolor quis odio laboriosam error quia aliquid nesciunt beatae asperiores incidunt. At deserunt temporibus quidem unde, similique vero voluptatem tempore fuga.
+        </div>
+      </div>
+      <div class="reviews_card">
+        <div class="reviews_customer">
+          <div class="reviews_displayPhoto">
+            <img src="https://placehold.co/100x100/png" alt="">
+          </div>
+          <div class="reviews_stars">
+            <span class="reviews_name">Sofia Havertz</span>
+            <span>&star; &star; &star;</span>
+          </div>
+        </div>
+        <div class="reviews_text">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur corporis optio saepe officiis atque, dolor quis odio laboriosam error quia aliquid nesciunt beatae asperiores incidunt. At deserunt temporibus quidem unde, similique vero voluptatem tempore fuga.
+        </div>
+      </div>
+      <div class="reviews_card">
+        <div class="reviews_customer">
+          <div class="reviews_displayPhoto">
+            <img src="https://placehold.co/100x100/png" alt="">
+          </div>
+          <div class="reviews_stars">
+            <span class="reviews_name">Sofia Havertz</span>
+            <span>&star; &star; &star;</span>
+          </div>
+        </div>
+        <div class="reviews_text">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur corporis optio saepe officiis atque, dolor quis odio laboriosam error quia aliquid nesciunt beatae asperiores incidunt. At deserunt temporibus quidem unde, similique vero voluptatem tempore fuga.
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+</section>
+
+`
 
 
 
