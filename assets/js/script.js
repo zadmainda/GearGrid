@@ -651,11 +651,11 @@ const productCatalog = [
     ]  
   },
   {
-    "name": "Futon",
+    "name": "Bean Bag",
     "SKU": "01234",
     "price": "350",
     "oldprice": "",
-    "imgUrl": "path/to/image20.jpg",
+    "imgUrl": "/assets/images/products/bedroom/Bean Bag Chair_1.png",
     "discount": "",
     "rating": 4,
     "color": ["gray", "beige"],
@@ -672,15 +672,15 @@ const productCatalog = [
     ]  
   },
   {
-    "name": "Desk",
+    "name": "Bean Bag",
     "SKU": "12345",
     "price": "200",
     "oldprice": "",
-    "imgUrl": "path/to/image21.jpg",
+    "imgUrl": "/assets/images/products/bedroom/Bean Bag Chair_2.png",
     "discount": "",
     "rating": 4,
     "color": ["black", "brown"],
-    "tags": ["office"],
+    "tags": ["bedroom", "living"],
     "available": true, 
     "ratings": [
       { "user": "User1", "rating": 4.5 },
@@ -693,15 +693,15 @@ const productCatalog = [
     ]  
   },
   {
-    "name": "Rocking Chair",
+    "name": "Chocolate Themed Bed",
     "SKU": "23456",
     "price": "150",
     "oldprice": "",
-    "imgUrl": "path/to/image22.jpg",
+    "imgUrl": "/assets/images/products/bedroom/choco-bed.png",
     "discount": "",
     "rating": 4,
     "color": ["brown", "white"],
-    "tags": ["living"],
+    "tags": ["bedroom", "living"],
     "available": true, 
     "ratings": [
       { "user": "User1", "rating": 4.5 },
@@ -714,11 +714,11 @@ const productCatalog = [
     ]  
   },
   {
-    "name": "Bunk Bed",
+    "name": "Closet",
     "SKU": "34567",
     "price": "800",
     "oldprice": "",
-    "imgUrl": "path/to/image23.jpg",
+    "imgUrl": "/assets/images/products/bedroom/closet.png",
     "discount": "",
     "rating": 4,
     "color": ["white", "gray"],
@@ -735,15 +735,15 @@ const productCatalog = [
     ]  
   },
   {
-    "name": "Armchair",
+    "name": "Wrought Iron Infant Bed",
     "SKU": "45678",
     "price": "120",
     "oldprice": "",
-    "imgUrl": "path/to/image24.jpg",
+    "imgUrl": "/assets/images/products/bedroom/wrought-iron-bed.png",
     "discount": "",
     "rating": 3.5,
     "color": ["black", "gray"],
-    "tags": ["living"],
+    "tags": ["bedroom", "living"],
     "available": true, 
     "ratings": [
       { "user": "User1", "rating": 4.5 },
@@ -756,11 +756,11 @@ const productCatalog = [
     ]  
   },
   {
-    "name": "Dresdsing Table",
+    "name": "Maasai Infant Bed",
     "SKU": "56789",
     "price": "300",
     "oldprice": "",
-    "imgUrl": "path/to/image25.jpg",
+    "imgUrl": "/assets/images/products/bedroom/maasai-infant-bed.png",
     "discount": "",
     "rating": 4,
     "color": ["white", "brown"],
@@ -777,15 +777,15 @@ const productCatalog = [
     ]  
   },
   {
-    "name": "Outdoor Dining Set",
+    "name": "Pink Infant bed",
     "SKU": "67890",
     "price": "1200",
     "oldprice": "",
-    "imgUrl": "path/to/image26.jpg",
+    "imgUrl": "/assets/images/products/bedroom/pink-infant-bed.png",
     "discount": "",
     "rating": 4.5,
     "color": ["brown", "gray"],
-    "tags": ["outdoor", "dining"],
+    "tags": ["bedroom", "dining"],
     "available": true, 
     "ratings": [
       { "user": "User1", "rating": 4.5 },
@@ -798,15 +798,15 @@ const productCatalog = [
     ]  
   },
   {
-    "name": "Bean Bag Chair",
+    "name": "Oak Infant Bed",
     "SKU": "78901",
     "price": "70",
     "oldprice": "",
-    "imgUrl": "path/to/image27.jpg",
+    "imgUrl": "/assets/images/products/bedroom/oak-Infant-bed.png",
     "discount": "",
     "rating": 4,
     "color": ["blue", "gray", "black"],
-    "tags": ["living"],
+    "tags": ["living", "bedroom"],
     "available": true, 
     "ratings": [
       { "user": "User1", "rating": 4.5 },
@@ -819,14 +819,35 @@ const productCatalog = [
     ]  
   },
   {
-    "name": "Corner Shelf",
+    "name": "Bunk Bed",
     "SKU": "89012",
     "price": "80",
     "oldprice": "",
-    "imgUrl": "path/to/image28.jpg",
+    "imgUrl": "/assets/images/products/bedroom/bunk-bed.png",
     "discount": "",
     "rating": 3.5,
     "color": ["white", "black"],
+    "tags": ["bedroom"],
+    "available": true, 
+    "ratings": [
+      { "user": "User1", "rating": 4.5 },
+      { "user": "User2", "rating": 5 },
+      { "user": "User3", "rating": 4 }
+    ],
+    "comments": [
+      { "user": "User1", "comment": "Great Chair, highly recommended!" },
+      { "user": "User2", "comment": "Fast delivery and excellent customer service." }
+    ]  
+  },
+  {
+    "name": "Recliner",
+    "SKU": "90123",
+    "price": "1000",
+    "oldprice": "1200",
+    "imgUrl": "/assets/images/products/Living Room/recliner.png",
+    "discount": "20%",
+    "rating": 4.5,
+    "color": ["brown", "gray"],
     "tags": ["living"],
     "available": true, 
     "ratings": [
@@ -840,15 +861,15 @@ const productCatalog = [
     ]  
   },
   {
-    "name": "Patio Set",
-    "SKU": "90123",
-    "price": "1000",
-    "oldprice": "1200",
-    "imgUrl": "path/to/image29.jpg",
-    "discount": "20%",
-    "rating": 4.5,
-    "color": ["brown", "gray"],
-    "tags": ["outdoor"],
+    "name": "Recliner Pro",
+    "SKU": "01234",
+    "price": "350",
+    "oldprice": "",
+    "imgUrl": "/assets/images/products/Living Room/recliner-pro.png",
+    "discount": "",
+    "rating": 4,
+    "color": ["black", "brown"],
+    "tags": ["living"],
     "available": true, 
     "ratings": [
       { "user": "User1", "rating": 4.5 },
@@ -861,11 +882,11 @@ const productCatalog = [
     ]  
   },
   {
-    "name": "Recliner Chair",
+    "name": "Woven Recliner",
     "SKU": "01234",
     "price": "350",
     "oldprice": "",
-    "imgUrl": "path/to/image30.jpg",
+    "imgUrl": "/assets/images/products/Living Room/recliner-woven.png",
     "discount": "",
     "rating": 4,
     "color": ["black", "brown"],
@@ -940,11 +961,11 @@ document.querySelectorAll('.carousel_track .card .card_footer').forEach(function
 
 
 // Function to render cards programmatically into the Shop Grid 
-let shopGrid = document.querySelector('.shop_grid.shop_kitchen')
+let kitchenGrid = document.querySelector('.shop_grid.shop_kitchen')
 
 
-const renderShopGrid = () => {
-  if (!shopGrid) return;
+const renderKitchenGrid = () => {
+  if (!kitchenGrid) return;
   let shopGridHTML = ''
 
   productCatalog.forEach(function (catalog) {
@@ -968,10 +989,87 @@ const renderShopGrid = () => {
         `
     }
   })
-  shopGrid.insertAdjacentHTML('afterbegin', shopGridHTML)
+  kitchenGrid.insertAdjacentHTML('afterbegin', shopGridHTML)
 }
 
-renderShopGrid()
+renderKitchenGrid()
+
+
+// Function to render cards programmatically into the Bedroom Grid 
+let bedroomGrid = document.querySelector('.shop_grid.shop_bedroom')
+
+
+const renderbedroomGrid = () => {
+  if (!bedroomGrid) return;
+  let shopGridHTML = ''
+
+  productCatalog.forEach(function (catalog) {
+    if (catalog.tags.includes('bedroom')){
+      shopGridHTML += 
+      `
+          <div class="card">
+            <div class="card_img">
+            <img src="..${catalog.imgUrl}" alt="" >
+              <div class="card_footer">
+                <span>Add to Cart</span>
+              </div>
+            </div>
+            <span class="card_rating">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+            <span class="card_title">${catalog.name}</span>
+            <span class="card_price">$${catalog.price}</span>
+            <span class="card_banner">New</span>
+            <span class="card_discount">-${catalog.discount}%</span>
+            <span class="card_wishlist"> <i class="fa-regular fa-heart"></i></span>
+          </div>
+        `
+    }
+  })
+  bedroomGrid.insertAdjacentHTML('afterbegin', shopGridHTML)
+}
+
+renderbedroomGrid()
+
+
+
+
+
+// Function to render cards programmatically into the Living Room Grid 
+let livingroomGrid = document.querySelector('.shop_grid.shop_livingroom')
+
+
+const renderlivingroomGrid = () => {
+  if (!livingroomGrid) return;
+  let shopGridHTML = ''
+
+  productCatalog.forEach(function (catalog) {
+    if (catalog.tags.includes('living')){
+      shopGridHTML += 
+      `
+          <div class="card">
+            <div class="card_img">
+            <img src="..${catalog.imgUrl}" alt="" >
+              <div class="card_footer">
+                <span>Add to Cart</span>
+              </div>
+            </div>
+            <span class="card_rating">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+            <span class="card_title">${catalog.name}</span>
+            <span class="card_price">$${catalog.price}</span>
+            <span class="card_banner">New</span>
+            <span class="card_discount">-${catalog.discount}%</span>
+            <span class="card_wishlist"> <i class="fa-regular fa-heart"></i></span>
+          </div>
+        `
+    }
+  })
+  livingroomGrid.insertAdjacentHTML('afterbegin', shopGridHTML)
+}
+
+renderlivingroomGrid()
+
+
+
+
 
 
 // Render Product's details in a single page
