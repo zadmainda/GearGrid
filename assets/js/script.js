@@ -261,7 +261,16 @@ const productCatalog = [
     "rating": 4,
     "color": ["red", "green", "blue"],
     "tags": ["living", "bedroom"],
-    "available": true
+    "available": true, 
+    "ratings": [
+      { "user": "User1", "rating": 4.5 },
+      { "user": "User2", "rating": 5 },
+      { "user": "User3", "rating": 4 }
+    ],
+    "comments": [
+      { "user": "User1", "comment": "Great Chair, highly recommended!" },
+      { "user": "User2", "comment": "Fast delivery and excellent customer service." }
+    ]   
   },
   {
     "name": "BedSide Lamp",
@@ -273,7 +282,16 @@ const productCatalog = [
     "rating": 4.5,
     "color": ["brown", "beige", "gray"],
     "tags": ["bedroom"],
-    "available": true
+    "available": true, 
+    "ratings": [
+      { "user": "User1", "rating": 4.5 },
+      { "user": "User2", "rating": 5 },
+      { "user": "User3", "rating": 4 }
+    ],
+    "comments": [
+      { "user": "User1", "comment": "Great Chair, highly recommended!" },
+      { "user": "User2", "comment": "Fast delivery and excellent customer service." }
+    ]  
   },
   {
     "name": "Beige Bed",
@@ -285,7 +303,16 @@ const productCatalog = [
     "rating": 4,
     "color": ["black", "white"],
     "tags": ["bedroom"],
-    "available": true
+    "available": true, 
+    "ratings": [
+      { "user": "User1", "rating": 4.5 },
+      { "user": "User2", "rating": 5 },
+      { "user": "User3", "rating": 4 }
+    ],
+    "comments": [
+      { "user": "User1", "comment": "Great Chair, highly recommended!" },
+      { "user": "User2", "comment": "Fast delivery and excellent customer service." }
+    ]  
   },
   {
     "name": "Dressing Table",
@@ -297,7 +324,16 @@ const productCatalog = [
     "rating": 3.5,
     "color": ["black", "gray"],
     "tags": ["bedroom"],
-    "available": true
+    "available": true, 
+    "ratings": [
+      { "user": "User1", "rating": 4.5 },
+      { "user": "User2", "rating": 5 },
+      { "user": "User3", "rating": 4 }
+    ],
+    "comments": [
+      { "user": "User1", "comment": "Great Chair, highly recommended!" },
+      { "user": "User2", "comment": "Fast delivery and excellent customer service." }
+    ]  
   },
   {
     "name": "Grey Bed",
@@ -309,7 +345,16 @@ const productCatalog = [
     "rating": 4,
     "color": ["brown", "black"],
     "tags": ["living"],
-    "available": true
+    "available": true, 
+    "ratings": [
+      { "user": "User1", "rating": 4.5 },
+      { "user": "User2", "rating": 5 },
+      { "user": "User3", "rating": 4 }
+    ],
+    "comments": [
+      { "user": "User1", "comment": "Great Chair, highly recommended!" },
+      { "user": "User2", "comment": "Fast delivery and excellent customer service." }
+    ]  
   },
   {
     "name": "Khaki Bed",
@@ -321,7 +366,16 @@ const productCatalog = [
     "rating": 4,
     "color": ["brown", "white"],
     "tags": ["bedroom"],
-    "available": true
+    "available": true, 
+    "ratings": [
+      { "user": "User1", "rating": 4.5 },
+      { "user": "User2", "rating": 5 },
+      { "user": "User3", "rating": 4 }
+    ],
+    "comments": [
+      { "user": "User1", "comment": "Great Chair, highly recommended!" },
+      { "user": "User2", "comment": "Fast delivery and excellent customer service." }
+    ]  
   },
   {
     "name": "Mahogany",
@@ -333,7 +387,16 @@ const productCatalog = [
     "rating": 4,
     "color": ["black", "white"],
     "tags": ["bedroom"],
-    "available": true
+    "available": true, 
+    "ratings": [
+      { "user": "User1", "rating": 4.5 },
+      { "user": "User2", "rating": 5 },
+      { "user": "User3", "rating": 4 }
+    ],
+    "comments": [
+      { "user": "User1", "comment": "Great Chair, highly recommended!" },
+      { "user": "User2", "comment": "Fast delivery and excellent customer service." }
+    ]  
   },
   {
     "name": "Red Bed",
@@ -345,7 +408,16 @@ const productCatalog = [
     "rating": 3.5,
     "color": ["black", "brown"],
     "tags": ["bedroom"],
-    "available": true
+    "available": true, 
+    "ratings": [
+      { "user": "User1", "rating": 4.5 },
+      { "user": "User2", "rating": 5 },
+      { "user": "User3", "rating": 4 }
+    ],
+    "comments": [
+      { "user": "User1", "comment": "Great Chair, highly recommended!" },
+      { "user": "User2", "comment": "Fast delivery and excellent customer service." }
+    ]  
   },
   {
     "name": "Vase",
@@ -357,7 +429,16 @@ const productCatalog = [
     "rating": 5,
     "color": ["brown", "white"],
     "tags": ["bedroom"],
-    "available": true
+    "available": true, 
+    "ratings": [
+      { "user": "User1", "rating": 4.5 },
+      { "user": "User2", "rating": 5 },
+      { "user": "User3", "rating": 4 }
+    ],
+    "comments": [
+      { "user": "User1", "comment": "Great Chair, highly recommended!" },
+      { "user": "User2", "comment": "Fast delivery and excellent customer service." }
+    ]  
   },
   {
     "name": "Baby Bottle",
@@ -369,7 +450,16 @@ const productCatalog = [
     "rating": 3.5,
     "color": ["black", "white"],
     "tags": ["Kitchen"],
-    "available": true
+    "available": true, 
+    "ratings": [
+      { "user": "User1", "rating": 4.5 },
+      { "user": "User2", "rating": 5 },
+      { "user": "User3", "rating": 4 }
+    ],
+    "comments": [
+      { "user": "User1", "comment": "Great Chair, highly recommended!" },
+      { "user": "User2", "comment": "Fast delivery and excellent customer service." }
+    ]  
   },
   {
     "name": "Bottle Opener",
@@ -381,7 +471,16 @@ const productCatalog = [
     "rating": 3.5,
     "color": ["black", "white"],
     "tags": ["kitchen"],
-    "available": true
+    "available": true, 
+    "ratings": [
+      { "user": "User1", "rating": 4.5 },
+      { "user": "User2", "rating": 5 },
+      { "user": "User3", "rating": 4 }
+    ],
+    "comments": [
+      { "user": "User1", "comment": "Great Chair, highly recommended!" },
+      { "user": "User2", "comment": "Fast delivery and excellent customer service." }
+    ]  
   },
   {
     "name": "Cork",
@@ -393,7 +492,16 @@ const productCatalog = [
     "rating": 4,
     "color": ["brown", "black"],
     "tags": ["kitchen"],
-    "available": true
+    "available": true, 
+    "ratings": [
+      { "user": "User1", "rating": 4.5 },
+      { "user": "User2", "rating": 5 },
+      { "user": "User3", "rating": 4 }
+    ],
+    "comments": [
+      { "user": "User1", "comment": "Great Chair, highly recommended!" },
+      { "user": "User2", "comment": "Fast delivery and excellent customer service." }
+    ]  
   },
   {
     "name": "Frying Pan",
@@ -405,7 +513,16 @@ const productCatalog = [
     "rating": 4.5,
     "color": ["gray", "beige"],
     "tags": ["kitchen"],
-    "available": true
+    "available": true, 
+    "ratings": [
+      { "user": "User1", "rating": 4.5 },
+      { "user": "User2", "rating": 5 },
+      { "user": "User3", "rating": 4 }
+    ],
+    "comments": [
+      { "user": "User1", "comment": "Great Chair, highly recommended!" },
+      { "user": "User2", "comment": "Fast delivery and excellent customer service." }
+    ]  
   },
   {
     "name": "Gas Stove",
@@ -417,7 +534,16 @@ const productCatalog = [
     "rating": 4,
     "color": ["brown", "white"],
     "tags": ["kitchen"],
-    "available": true
+    "available": true, 
+    "ratings": [
+      { "user": "User1", "rating": 4.5 },
+      { "user": "User2", "rating": 5 },
+      { "user": "User3", "rating": 4 }
+    ],
+    "comments": [
+      { "user": "User1", "comment": "Great Chair, highly recommended!" },
+      { "user": "User2", "comment": "Fast delivery and excellent customer service." }
+    ]  
   },
   {
     "name": "Gas Stove",
@@ -429,7 +555,16 @@ const productCatalog = [
     "rating": 4,
     "color": ["gray", "beige"],
     "tags": ["kitchen"],
-    "available": true
+    "available": true, 
+    "ratings": [
+      { "user": "User1", "rating": 4.5 },
+      { "user": "User2", "rating": 5 },
+      { "user": "User3", "rating": 4 }
+    ],
+    "comments": [
+      { "user": "User1", "comment": "Great Chair, highly recommended!" },
+      { "user": "User2", "comment": "Fast delivery and excellent customer service." }
+    ]  
   },
   {
     "name": "Grill",
@@ -441,7 +576,16 @@ const productCatalog = [
     "rating": 3.5,
     "color": ["blue", "gray"],
     "tags": ["kitchen"],
-    "available": true
+    "available": true, 
+    "ratings": [
+      { "user": "User1", "rating": 4.5 },
+      { "user": "User2", "rating": 5 },
+      { "user": "User3", "rating": 4 }
+    ],
+    "comments": [
+      { "user": "User1", "comment": "Great Chair, highly recommended!" },
+      { "user": "User2", "comment": "Fast delivery and excellent customer service." }
+    ]  
   },
   {
     "name": "Grill",
@@ -453,7 +597,16 @@ const productCatalog = [
     "rating": 4,
     "color": ["black", "white"],
     "tags": ["kitchen"],
-    "available": true
+    "available": true, 
+    "ratings": [
+      { "user": "User1", "rating": 4.5 },
+      { "user": "User2", "rating": 5 },
+      { "user": "User3", "rating": 4 }
+    ],
+    "comments": [
+      { "user": "User1", "comment": "Great Chair, highly recommended!" },
+      { "user": "User2", "comment": "Fast delivery and excellent customer service." }
+    ]  
   },
   {
     "name": "Grill",
@@ -465,7 +618,16 @@ const productCatalog = [
     "rating": 4,
     "color": ["brown", "white"],
     "tags": ["kitchen"],
-    "available": true
+    "available": true, 
+    "ratings": [
+      { "user": "User1", "rating": 4.5 },
+      { "user": "User2", "rating": 5 },
+      { "user": "User3", "rating": 4 }
+    ],
+    "comments": [
+      { "user": "User1", "comment": "Great Chair, highly recommended!" },
+      { "user": "User2", "comment": "Fast delivery and excellent customer service." }
+    ]  
   },
   {
     "name": "Sink",
@@ -477,7 +639,16 @@ const productCatalog = [
     "rating": 3.5,
     "color": ["brown", "white"],
     "tags": ["kitchen"],
-    "available": true
+    "available": true, 
+    "ratings": [
+      { "user": "User1", "rating": 4.5 },
+      { "user": "User2", "rating": 5 },
+      { "user": "User3", "rating": 4 }
+    ],
+    "comments": [
+      { "user": "User1", "comment": "Great Chair, highly recommended!" },
+      { "user": "User2", "comment": "Fast delivery and excellent customer service." }
+    ]  
   },
   {
     "name": "Futon",
@@ -489,7 +660,16 @@ const productCatalog = [
     "rating": 4,
     "color": ["gray", "beige"],
     "tags": ["living", "bedroom"],
-    "available": true
+    "available": true, 
+    "ratings": [
+      { "user": "User1", "rating": 4.5 },
+      { "user": "User2", "rating": 5 },
+      { "user": "User3", "rating": 4 }
+    ],
+    "comments": [
+      { "user": "User1", "comment": "Great Chair, highly recommended!" },
+      { "user": "User2", "comment": "Fast delivery and excellent customer service." }
+    ]  
   },
   {
     "name": "Desk",
@@ -501,7 +681,16 @@ const productCatalog = [
     "rating": 4,
     "color": ["black", "brown"],
     "tags": ["office"],
-    "available": true
+    "available": true, 
+    "ratings": [
+      { "user": "User1", "rating": 4.5 },
+      { "user": "User2", "rating": 5 },
+      { "user": "User3", "rating": 4 }
+    ],
+    "comments": [
+      { "user": "User1", "comment": "Great Chair, highly recommended!" },
+      { "user": "User2", "comment": "Fast delivery and excellent customer service." }
+    ]  
   },
   {
     "name": "Rocking Chair",
@@ -513,7 +702,16 @@ const productCatalog = [
     "rating": 4,
     "color": ["brown", "white"],
     "tags": ["living"],
-    "available": true
+    "available": true, 
+    "ratings": [
+      { "user": "User1", "rating": 4.5 },
+      { "user": "User2", "rating": 5 },
+      { "user": "User3", "rating": 4 }
+    ],
+    "comments": [
+      { "user": "User1", "comment": "Great Chair, highly recommended!" },
+      { "user": "User2", "comment": "Fast delivery and excellent customer service." }
+    ]  
   },
   {
     "name": "Bunk Bed",
@@ -525,7 +723,16 @@ const productCatalog = [
     "rating": 4,
     "color": ["white", "gray"],
     "tags": ["bedroom"],
-    "available": true
+    "available": true, 
+    "ratings": [
+      { "user": "User1", "rating": 4.5 },
+      { "user": "User2", "rating": 5 },
+      { "user": "User3", "rating": 4 }
+    ],
+    "comments": [
+      { "user": "User1", "comment": "Great Chair, highly recommended!" },
+      { "user": "User2", "comment": "Fast delivery and excellent customer service." }
+    ]  
   },
   {
     "name": "Armchair",
@@ -537,7 +744,16 @@ const productCatalog = [
     "rating": 3.5,
     "color": ["black", "gray"],
     "tags": ["living"],
-    "available": true
+    "available": true, 
+    "ratings": [
+      { "user": "User1", "rating": 4.5 },
+      { "user": "User2", "rating": 5 },
+      { "user": "User3", "rating": 4 }
+    ],
+    "comments": [
+      { "user": "User1", "comment": "Great Chair, highly recommended!" },
+      { "user": "User2", "comment": "Fast delivery and excellent customer service." }
+    ]  
   },
   {
     "name": "Dresdsing Table",
@@ -549,7 +765,16 @@ const productCatalog = [
     "rating": 4,
     "color": ["white", "brown"],
     "tags": ["bedroom"],
-    "available": true
+    "available": true, 
+    "ratings": [
+      { "user": "User1", "rating": 4.5 },
+      { "user": "User2", "rating": 5 },
+      { "user": "User3", "rating": 4 }
+    ],
+    "comments": [
+      { "user": "User1", "comment": "Great Chair, highly recommended!" },
+      { "user": "User2", "comment": "Fast delivery and excellent customer service." }
+    ]  
   },
   {
     "name": "Outdoor Dining Set",
@@ -561,7 +786,16 @@ const productCatalog = [
     "rating": 4.5,
     "color": ["brown", "gray"],
     "tags": ["outdoor", "dining"],
-    "available": true
+    "available": true, 
+    "ratings": [
+      { "user": "User1", "rating": 4.5 },
+      { "user": "User2", "rating": 5 },
+      { "user": "User3", "rating": 4 }
+    ],
+    "comments": [
+      { "user": "User1", "comment": "Great Chair, highly recommended!" },
+      { "user": "User2", "comment": "Fast delivery and excellent customer service." }
+    ]  
   },
   {
     "name": "Bean Bag Chair",
@@ -573,7 +807,16 @@ const productCatalog = [
     "rating": 4,
     "color": ["blue", "gray", "black"],
     "tags": ["living"],
-    "available": true
+    "available": true, 
+    "ratings": [
+      { "user": "User1", "rating": 4.5 },
+      { "user": "User2", "rating": 5 },
+      { "user": "User3", "rating": 4 }
+    ],
+    "comments": [
+      { "user": "User1", "comment": "Great Chair, highly recommended!" },
+      { "user": "User2", "comment": "Fast delivery and excellent customer service." }
+    ]  
   },
   {
     "name": "Corner Shelf",
@@ -585,7 +828,16 @@ const productCatalog = [
     "rating": 3.5,
     "color": ["white", "black"],
     "tags": ["living"],
-    "available": true
+    "available": true, 
+    "ratings": [
+      { "user": "User1", "rating": 4.5 },
+      { "user": "User2", "rating": 5 },
+      { "user": "User3", "rating": 4 }
+    ],
+    "comments": [
+      { "user": "User1", "comment": "Great Chair, highly recommended!" },
+      { "user": "User2", "comment": "Fast delivery and excellent customer service." }
+    ]  
   },
   {
     "name": "Patio Set",
@@ -597,7 +849,16 @@ const productCatalog = [
     "rating": 4.5,
     "color": ["brown", "gray"],
     "tags": ["outdoor"],
-    "available": true
+    "available": true, 
+    "ratings": [
+      { "user": "User1", "rating": 4.5 },
+      { "user": "User2", "rating": 5 },
+      { "user": "User3", "rating": 4 }
+    ],
+    "comments": [
+      { "user": "User1", "comment": "Great Chair, highly recommended!" },
+      { "user": "User2", "comment": "Fast delivery and excellent customer service." }
+    ]  
   },
   {
     "name": "Recliner Chair",
@@ -609,7 +870,16 @@ const productCatalog = [
     "rating": 4,
     "color": ["black", "brown"],
     "tags": ["living"],
-    "available": true
+    "available": true, 
+    "ratings": [
+      { "user": "User1", "rating": 4.5 },
+      { "user": "User2", "rating": 5 },
+      { "user": "User3", "rating": 4 }
+    ],
+    "comments": [
+      { "user": "User1", "comment": "Great Chair, highly recommended!" },
+      { "user": "User2", "comment": "Fast delivery and excellent customer service." }
+    ]  
   }
 ];
 
