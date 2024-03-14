@@ -691,6 +691,10 @@ img {
   transition: all 0.2s ease-out;
   cursor: pointer;
 }
+.card:hover .card_wishlist i {
+  background-color: none;
+  color: none;
+}
 .card span {
   display: block;
   font-size: 1.4rem;
@@ -726,13 +730,20 @@ img {
   text-align: center;
   font-weight: 600 !important;
 }
+.card_price {
+  display: flex;
+  gap: 1rem;
+}
+.card_discount {
+  color: var(--neutral-level-1);
+}
 .card_banner {
   top: 1.5rem;
   background: #fff;
 }
 .card_discount {
   top: 6rem;
-  background: var(--secondary-green);
+  background-color: var(--secondary-green);
 }
 .card_wishlist {
   position: absolute;
@@ -743,8 +754,9 @@ img {
   transition: all 0.6s ease-in;
 }
 .card_wishlist:hover {
-  scale: 1.2;
-  transition: all 0.6s ease-in;
+  scale: 1.3;
+  transition: all 0.4s ease-in;
+  color: red;
 }
 .card_footer {
   width: 100%;

@@ -85,7 +85,7 @@ const landingPageProductCarouselScroll = () => {
     });
   });
 }
-landingPageProductCarouselScroll()
+document.addEventListener("DOMContentLoaded", landingPageProductCarouselScroll)
 
 
 // Product Template Page Main Slider 
@@ -201,6 +201,7 @@ const cartProductTemplateString = `
   </div>
 `
 
+//SELECT OR UNSELECT ALL CHECKBOX Filters
 
 const allPriceBoxesChecked = () => {
 let allPricesChecked = document.querySelector('#all')
@@ -294,6 +295,176 @@ const productCatalog = [
     ]  
   },
   {
+    "name": "Bamboo Basket",
+    "SKU": "21226",
+    "price": "30",
+    "oldprice": "50",
+    "imgUrl": "/assets/images/products/Bamboo Basket.png",
+    "discount": "3",
+    "rating": 4,
+    "color": ["brown", "beige", "gray"],
+    "tags": ["living"],
+    "available": true, 
+    "ratings": [
+      { "user": "User1", "rating": 4.5 },
+      { "user": "User2", "rating": 5 },
+      { "user": "User3", "rating": 4 }
+    ],
+    "comments": [
+      { "user": "User1", "comment": "Great Chair, highly recommended!" },
+      { "user": "User2", "comment": "Fast delivery and excellent customer service." }
+    ]  
+  },
+  {
+    "name": "Frying Pan",
+    "SKU": "11526",
+    "price": "20",
+    "oldprice": "30",
+    "imgUrl": "/assets/images/products/Bamboo Basket.png",
+    "discount": "7",
+    "rating": 4,
+    "color": ["Yellow"],
+    "tags": ["kitchen"],
+    "available": true, 
+    "ratings": [
+      { "user": "User1", "rating": 4.5 },
+      { "user": "User2", "rating": 5 },
+      { "user": "User3", "rating": 4 }
+    ],
+    "comments": [
+      { "user": "User1", "comment": "Great Chair, highly recommended!" },
+      { "user": "User2", "comment": "Fast delivery and excellent customer service." }
+    ]  
+  },
+  {
+    "name": "Tabletop Grill",
+    "SKU": "10526",
+    "price": "450",
+    "oldprice": "530",
+    "imgUrl": "/assets/images/products/kitchen/grill-3.png",
+    "discount": "11",
+    "rating": 4,
+    "color": ["gray"],
+    "tags": ["kitchen"],
+    "available": true, 
+    "ratings": [
+      { "user": "User1", "rating": 4.5 },
+      { "user": "User2", "rating": 5 },
+      { "user": "User3", "rating": 4 }
+    ],
+    "comments": [
+      { "user": "User1", "comment": "Great Chair, highly recommended!" },
+      { "user": "User2", "comment": "Fast delivery and excellent customer service." }
+    ]  
+  },
+  {
+    "name": "Yellow Armchair",
+    "SKU": "10116",
+    "price": "950",
+    "oldprice": "1030",
+    "imgUrl": "/assets/images/products/Living Room/yellow armchair.png",
+    "discount": "11",
+    "rating": 4,
+    "color": ["gray"],
+    "tags": ["living"],
+    "available": true, 
+    "ratings": [
+      { "user": "User1", "rating": 4.5 },
+      { "user": "User2", "rating": 5 },
+      { "user": "User3", "rating": 4 }
+    ],
+    "comments": [
+      { "user": "User1", "comment": "Great Chair, highly recommended!" },
+      { "user": "User2", "comment": "Fast delivery and excellent customer service." }
+    ]  
+  },
+  {
+    "name": "Bose",
+    "SKU": "10996",
+    "price": "550",
+    "oldprice": "630",
+    "imgUrl": "/assets/images/products/Bose.png",
+    "discount": "7",
+    "rating": 4,
+    "color": ["gray"],
+    "tags": ["living"],
+    "available": true, 
+    "ratings": [
+      { "user": "User1", "rating": 4.5 },
+      { "user": "User2", "rating": 5 },
+      { "user": "User3", "rating": 4 }
+    ],
+    "comments": [
+      { "user": "User1", "comment": "Great Chair, highly recommended!" },
+      { "user": "User2", "comment": "Fast delivery and excellent customer service." }
+    ]  
+  },
+  {
+    "name": "Sony - WH-1000xm5.png",
+    "SKU": "454326",
+    "price": "650",
+    "oldprice": "680",
+    "imgUrl": "/assets/images/products/sony - WH-1000xm5.png",
+    "discount": "3.5",
+    "rating": 4,
+    "color": ["white"],
+    "tags": ["living"],
+    "available": true, 
+    "ratings": [
+      { "user": "User1", "rating": 4.5 },
+      { "user": "User2", "rating": 5 },
+      { "user": "User3", "rating": 4 }
+    ],
+    "comments": [
+      { "user": "User1", "comment": "Great Chair, highly recommended!" },
+      { "user": "User2", "comment": "Fast delivery and excellent customer service." }
+    ]  
+  },
+  {
+    "name": "Desktop Lamp",
+    "SKU": "64345",
+    "price": "150",
+    "oldprice": "180",
+    "imgUrl": "/assets/images/products/Table Lamp.png",
+    "discount": "7.5",
+    "rating": 4,
+    "color": ["white"],
+    "tags": ["living"],
+    "available": true, 
+    "ratings": [
+      { "user": "User1", "rating": 4.5 },
+      { "user": "User2", "rating": 5 },
+      { "user": "User3", "rating": 4 }
+    ],
+    "comments": [
+      { "user": "User1", "comment": "Great Chair, highly recommended!" },
+      { "user": "User2", "comment": "Fast delivery and excellent customer service." }
+    ]  
+  },
+  {
+    "name": "Beige Lamp",
+    "SKU": "99554",
+    "price": "120",
+    "oldprice": "140",
+    "imgUrl": "/assets/images/products/Beige Table Lamp.png",
+    "discount": "7",
+    "rating": 4,
+    "color": ["white"],
+    "tags": ["living"],
+    "available": true, 
+    "ratings": [
+      { "user": "User1", "rating": 4.5 },
+      { "user": "User2", "rating": 5 },
+      { "user": "User3", "rating": 4 }
+    ],
+    "comments": [
+      { "user": "User1", "comment": "Great Chair, highly recommended!" },
+      { "user": "User2", "comment": "Fast delivery and excellent customer service." }
+    ]  
+  },
+
+  
+  {
     "name": "Beige Bed",
     "SKU": "34567",
     "price": "900",
@@ -362,7 +533,7 @@ const productCatalog = [
     "price": "1500",
     "oldprice": "1700",
     "imgUrl": "/assets/images/products/bedroom/khaki-bed.png",
-    "discount": "8%",
+    "discount": "8",
     "rating": 4,
     "color": ["brown", "white"],
     "tags": ["bedroom"],
@@ -404,7 +575,7 @@ const productCatalog = [
     "price": "400",
     "oldprice": "450",
     "imgUrl": "/assets/images/products/bedroom/red bed.png",
-    "discount": "10%",
+    "discount": "10",
     "rating": 3.5,
     "color": ["black", "brown"],
     "tags": ["bedroom"],
@@ -425,8 +596,8 @@ const productCatalog = [
     "price": "50",
     "oldprice": "60",
     "imgUrl": "/assets/images/products/bedroom/vase.png",
-    "discount": "20%",
-    "rating": 5,
+    "discount": "20",
+    "rating": 2,
     "color": ["brown", "white"],
     "tags": ["bedroom"],
     "available": true, 
@@ -530,7 +701,7 @@ const productCatalog = [
     "price": "350",
     "oldprice": "365",
     "imgUrl": "/assets/images/products/kitchen/gas stove 2.png",
-    "discount": "5%",
+    "discount": "5",
     "rating": 4,
     "color": ["brown", "white"],
     "tags": ["kitchen"],
@@ -551,7 +722,7 @@ const productCatalog = [
     "price": "900",
     "oldprice": "1000",
     "imgUrl": "/assets/images/products/kitchen/gas stove.png",
-    "discount": "6%",
+    "discount": "6",
     "rating": 4,
     "color": ["gray", "beige"],
     "tags": ["kitchen"],
@@ -845,7 +1016,7 @@ const productCatalog = [
     "price": "1000",
     "oldprice": "1200",
     "imgUrl": "/assets/images/products/Living Room/recliner.png",
-    "discount": "20%",
+    "discount": "20",
     "rating": 4.5,
     "color": ["brown", "gray"],
     "tags": ["living"],
@@ -905,9 +1076,18 @@ const productCatalog = [
 ];
 
 
-productCarouselItems = [
-  'Bed Cabinet Combo', 'BedSide Lamp', 'Beige Bed', 'Dressing Table', 
+let productCarouselItems = [
+
+"Tabletop Grill",
+"Sony - WH-1000xm5.png",
+"Yellow Armchair",
+"Desktop Lamp",
+"Bose",
+"Beige Lamp",
+"Frying Pan",
+"BedSide Lamp", 'Beige Bed'
 ]
+
 let productCarouselCards = ''
 
 productCarouselItems.forEach(function(item){
@@ -1032,7 +1212,6 @@ renderbedroomGrid()
 
 
 
-
 // Function to render cards programmatically into the Living Room Grid 
 let livingroomGrid = document.querySelector('.shop_grid.shop_livingroom')
 
@@ -1066,9 +1245,6 @@ const renderlivingroomGrid = () => {
 }
 
 renderlivingroomGrid()
-
-
-
 
 
 
