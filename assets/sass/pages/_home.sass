@@ -60,9 +60,11 @@
     font-size: 5rem
     font-weight: 600
     @media  screen and (max-width: 667px)
-      font-size: 3.5rem
+      font-size: 3.3rem
     span
       font-size: 4.5rem
+      @media  screen and (max-width: 667px)
+        font-size: 3.3rem
       &:first-of-type
         font-weight: 800
   &_text
@@ -71,6 +73,7 @@
     width: 55ch
     @media  screen and (max-width: 667px)
       width: fit-content
+      padding: 2rem 0
     span
       font-weight: 800
       font-family: "Shantell Sans", cursive
@@ -123,6 +126,9 @@
 .carousel
   &_wrapper
     @extend .wrapper
+    @media  screen and (max-width: 667px)
+      padding-bottom: 2rem
+      padding-top: 2rem
   &_title
     display: flex
     justify-content: space-between
