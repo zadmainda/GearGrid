@@ -362,7 +362,7 @@ img {
 }
 @media screen and (max-width: 667px) {
   .carousel_track .card {
-    width: 99%;
+    width: 99.5%;
     margin-left: 0;
   }
 }
@@ -387,6 +387,13 @@ img {
   padding: 1.4rem 0.4rem;
   -webkit-backdrop-filter: blur(0.3rem);
           backdrop-filter: blur(0.3rem);
+}
+@media screen and (max-width: 667px) {
+  .carousel_arrows {
+    border: none;
+    -webkit-backdrop-filter: blur(0);
+            backdrop-filter: blur(0);
+  }
 }
 .carousel_arrows:hover {
   transform-origin: center;
@@ -1704,6 +1711,11 @@ img {
   justify-content: space-between;
   padding: 0.8rem 0;
 }
+@media screen and (max-width: 667px) {
+  .header_nav {
+    justify-content: start;
+  }
+}
 .header_toggle {
   overflow: hidden;
   height: 0;
@@ -1714,14 +1726,31 @@ img {
   font-size: 3rem;
   display: none;
 }
+@media screen and (max-width: 667px) {
+  .header_hamburger {
+    display: inline-block;
+    margin-right: 1.3rem;
+  }
+}
 .header_logo a {
   font-size: 4.3rem;
   font-family: "Shantell Sans", cursive;
   font-weight: 800;
   color: var(--neutral-level-7);
 }
+@media screen and (max-width: 667px) {
+  .header_logo a {
+    font-size: 2.5rem !important;
+    margin-right: auto;
+  }
+}
 .header_links {
   gap: 2rem;
+}
+@media screen and (max-width: 667px) {
+  .header_links {
+    display: none;
+  }
 }
 .header_link a {
   font-size: 1.7rem;
@@ -1733,6 +1762,11 @@ img {
 .header_icons {
   gap: 2rem;
   align-items: center;
+}
+@media screen and (max-width: 667px) {
+  .header_icons {
+    display: none;
+  }
 }
 .header_icon {
   display: flex;
@@ -1767,6 +1801,29 @@ img {
   cursor: default;
 }
 
+@media screen and (max-width: 667px) {
+  .header_toggle:checked ~ .header_links {
+    transition: 0.4s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    transform: translate(0%, 60%);
+    width: 91vw;
+    margin: 0;
+    padding: 0;
+    background-color: var(--neutral-level-2);
+    gap: 0;
+    z-index: 23;
+  }
+  .header_toggle:checked ~ .header_links .header_url {
+    display: inline-block;
+    width: 90vw;
+    border-bottom: 0.1rem solid var(--neutral-level-3);
+    text-align: left;
+    z-index: 10;
+    padding: 1.8rem 0.5rem;
+  }
+}
 .newsletter {
   background-image: url("../images/newsletter.png");
   background-position: 50% 50%;
@@ -2170,16 +2227,38 @@ img {
   display: flex;
   gap: 4rem;
 }
+@media screen and (max-width: 667px) {
+  .reviews_customer {
+    gap: 1.5rem;
+  }
+}
 .reviews_displayPhoto {
   overflow: hidden;
   border-radius: 50%;
+  border: 1px solid #ccc;
+}
+.reviews_displayPhoto img {
+  -o-object-fit: fill;
+     object-fit: fill;
+  height: 10rem;
+  width: 10rem;
+}
+@media screen and (max-width: 667px) {
+  .reviews_displayPhoto img {
+    height: 6rem;
+    width: 6rem;
+  }
 }
 .reviews_stars {
-  height: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
   gap: 1.5rem;
+}
+@media screen and (max-width: 667px) {
+  .reviews_stars {
+    gap: 0rem;
+  }
 }
 .reviews_stars span:first-of-type {
   font-size: 1.7rem;
@@ -2189,6 +2268,13 @@ img {
   color: #111;
 }
 .reviews_text {
-  padding-left: 14rem;
+  padding: 1rem 0 1.5rem 14rem;
   color: var(--neutral-level-4);
+  line-height: 1.3;
+  font-size: 1.4rem;
+}
+@media screen and (max-width: 667px) {
+  .reviews_text {
+    padding-left: 0rem;
+  }
 }/*# sourceMappingURL=main.css.map */

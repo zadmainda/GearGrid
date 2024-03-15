@@ -2,17 +2,17 @@
   &_bar, &_cta, &_nav, &_links, &_icons
     display: flex
     align-items: center
+  // &_nav, &_links
+  //   @media  screen and (max-width: 667px)
+  //     flex-direction: column
+  //     align-items: start
   &_bar
     justify-content: center
     width: 100%
     position: relative
     padding: .5rem 0.8rem 
     background-color: var(--neutral-level-2)
-    // display: none
-    // height: 0
-    // width: 0
     overflow: hidden
-    // opacity: 0
     font-size: 1.3rem
   &_cta
     justify-self: center
@@ -30,6 +30,8 @@
   &_nav
     justify-content: space-between
     padding: .8rem 0
+    @media  screen and (max-width: 667px)
+      justify-content: start
   &_toggle
     overflow: hidden
     height: 0
@@ -38,15 +40,22 @@
   &_hamburger
     font-size: 3rem
     display: none
-    
+    @media  screen and (max-width: 667px)
+      display: inline-block
+      margin-right: 1.3rem
   &_logo
     a
       font-size: 4.3rem
       font-family: "Shantell Sans", cursive
       font-weight: 800
       color: var(--neutral-level-7)
+      @media  screen and (max-width: 667px)
+        font-size: 2.5rem !important
+        margin-right: auto
   &_links
     gap: 2rem
+    @media  screen and (max-width: 667px)
+      display: none
   &_link
     a
       font-size: 1.7rem
@@ -56,6 +65,8 @@
   &_icons
     gap: 2rem
     align-items: center
+    @media  screen and (max-width: 667px)
+      display: none
   &_icon
     display: flex
     align-items: center
@@ -84,3 +95,26 @@
         &:hover
           scale: 1
           cursor: default
+@media  screen and (max-width: 667px)
+  .header_toggle:checked 
+    ~ .header_links
+      transition: .4s ease-in-out
+      display: flex
+      // height: 65svh
+      flex-direction: column
+      position: absolute
+      transform: translate(-0%, 60%)
+      width: 91vw
+      margin: 0
+      padding: 0
+      background-color: var(--neutral-level-2)
+      gap: 0
+      z-index: 23
+      // padding: 13rem
+      .header_url
+        display: inline-block
+        width: 90vw
+        border-bottom: .1rem solid var(--neutral-level-3)
+        text-align: left
+        z-index: 10
+        padding: 1.8rem 0.5rem
