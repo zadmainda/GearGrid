@@ -627,6 +627,34 @@ img {
   }
 }
 
+.room_field input {
+  display: none;
+  transition: all 0.4s ease-in;
+}
+.room_field input:checked ~ label {
+  color: var(--neutral-level-5);
+  text-decoration: underline;
+  text-underline-offset: 0.5rem;
+  text-decoration-thickness: 0.2rem;
+  transition: all 0.4s ease-out-in;
+}
+.room_field label {
+  padding-bottom: 0.6rem;
+  display: inline-flex;
+  width: 90%;
+  cursor: pointer;
+  color: var(--neutral-level-4);
+  font-size: 1.5rem;
+}
+.room_field:first-of-type {
+  padding: 0.6rem 0;
+}
+@media screen and (max-width: 835px) {
+  .room_field {
+    display: none;
+  }
+}
+
 .price {
   width: 100%;
 }
@@ -656,6 +684,7 @@ img {
   transition: all 0.4s ease-out-in;
 }
 .price_field label {
+  cursor: pointer;
   display: inline-flex;
   width: 90%;
   color: var(--neutral-level-4);
@@ -668,33 +697,6 @@ img {
 }
 @media screen and (max-width: 835px) {
   .price {
-    display: none;
-  }
-}
-
-.room_field input {
-  display: none;
-  transition: all 0.4s ease-in;
-}
-.room_field input:checked ~ label {
-  color: var(--neutral-level-5);
-  text-decoration: underline;
-  text-underline-offset: 0.5rem;
-  text-decoration-thickness: 0.2rem;
-  transition: all 0.4s ease-out-in;
-}
-.room_field label {
-  padding-bottom: 0.6rem;
-  display: inline-flex;
-  width: 90%;
-  color: var(--neutral-level-4);
-  font-size: 1.5rem;
-}
-.room_field:first-of-type {
-  padding: 0.6rem 0;
-}
-@media screen and (max-width: 835px) {
-  .room_field {
     display: none;
   }
 }

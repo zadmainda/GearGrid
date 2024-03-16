@@ -40,7 +40,29 @@
         width: 100%
         @media  screen and (max-width: 435px)
           width: 100%
-
+.room
+  &_field
+    input
+      display: none
+      transition: all .4s ease-in
+      &:checked
+        ~ label
+          color: var(--neutral-level-5)
+          text-decoration: underline
+          text-underline-offset: .5rem
+          text-decoration-thickness: .2rem
+          transition: all .4s ease-out-in
+    label
+      padding-bottom: .6rem
+      display: inline-flex
+      width: 90%
+      cursor: pointer
+      color: var(--neutral-level-4)
+      font-size: 1.5rem
+    &:first-of-type
+      padding: .6rem 0
+    @media  screen and (max-width: 835px)
+      display: none
 .price
   width: 100%
   &_title
@@ -63,7 +85,7 @@
           color: var(--neutral-level-5)
           transition: all .4s ease-out-in
     label
-      
+      cursor: pointer
       display: inline-flex
       width: 90%
       color: var(--neutral-level-4)
@@ -75,28 +97,3 @@
 
   @media  screen and (max-width: 835px)
     display: none
-
-.room
-  // border: 1px solid green
-  &_field
-    input
-      display: none
-      transition: all .4s ease-in
-      &:checked
-        ~ label
-          color: var(--neutral-level-5)
-          text-decoration: underline
-          text-underline-offset: .5rem
-          text-decoration-thickness: .2rem
-          transition: all .4s ease-out-in
-    label
-      padding-bottom: .6rem
-      display: inline-flex
-      width: 90%
-      
-      color: var(--neutral-level-4)
-      font-size: 1.5rem
-    &:first-of-type
-      padding: .6rem 0
-    @media  screen and (max-width: 835px)
-      display: none

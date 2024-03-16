@@ -259,10 +259,6 @@ allPriceBoxesChecked()
 
 
 
-
-
-
-
 const fieldSet = () => {
   const accountFieldSets = document.querySelectorAll('.account_fieldset');
   const accountFieldSetsLabels = document.querySelectorAll('.account_fieldset label');
