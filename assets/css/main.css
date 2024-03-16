@@ -587,7 +587,7 @@ img {
   }
 }
 .shop_filter {
-  margin-bottom: 3.5rem;
+  margin-bottom: 3rem;
   display: flex;
 }
 .shop_filter i {
@@ -597,6 +597,7 @@ img {
   display: block;
   margin-top: 0;
   padding-top: 0;
+  font-size: 1.8rem;
 }
 .shop_products {
   flex-basis: 100%;
@@ -626,32 +627,74 @@ img {
   }
 }
 
+.price {
+  width: 100%;
+}
+.price_title {
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+.price_fields {
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.price_field {
+  display: flex;
+  align-items: center;
+  padding-bottom: 0.6rem;
+  justify-content: space-between;
+  -moz-column-gap: 5rem;
+       column-gap: 5rem;
+}
+.price_field input {
+  transition: all 0.4s ease-in;
+  width: 2.2rem;
+  height: 2.2rem;
+}
+.price_field input:checked ~ label {
+  color: var(--neutral-level-5);
+  transition: all 0.4s ease-out-in;
+}
+.price_field label {
+  display: inline-flex;
+  width: 90%;
+  color: var(--neutral-level-4);
+  font-size: 1.5rem;
+  order: -1;
+  white-space: nowrap;
+}
+.price_field:first-of-type {
+  padding: 0.6rem 0;
+}
 @media screen and (max-width: 835px) {
   .price {
     display: none;
   }
 }
 
-.location_field input {
+.room_field input {
   display: none;
   transition: all 0.4s ease-in;
 }
-.location_field input:checked ~ label {
+.room_field input:checked ~ label {
   color: var(--neutral-level-5);
   text-decoration: underline;
   text-underline-offset: 0.5rem;
   text-decoration-thickness: 0.2rem;
   transition: all 0.4s ease-out-in;
 }
-.location_field label {
+.room_field label {
   padding-bottom: 0.6rem;
   display: inline-flex;
   width: 90%;
   color: var(--neutral-level-4);
   font-size: 1.5rem;
 }
+.room_field:first-of-type {
+  padding: 0.6rem 0;
+}
 @media screen and (max-width: 835px) {
-  .location_field {
+  .room_field {
     display: none;
   }
 }
@@ -903,32 +946,6 @@ img {
   .pageheader_title {
     font-size: 3.5rem;
   }
-}
-
-.price_title {
-  margin-bottom: 1.5rem;
-  display: inline-flex;
-}
-.price_fields {
-  width: -moz-fit-content;
-  width: fit-content;
-}
-.price_field {
-  display: flex;
-  align-items: center;
-  -moz-column-gap: 5rem;
-       column-gap: 5rem;
-  justify-content: space-between;
-  margin-bottom: 1rem;
-}
-.price_field label {
-  order: -1;
-  white-space: nowrap;
-  font-weight: 500;
-}
-.price_field input {
-  width: 2.2rem;
-  height: 2.2rem;
 }
 
 .header_bar, .header_cta, .header_nav, .header_links, .header_icons {

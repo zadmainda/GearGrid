@@ -201,10 +201,39 @@ const cartProductTemplateString = `
   </div>
 `
 
+
+//SELECT OR UNSELECT ALL ROOM Filters
+
+const allRoomsBoxesChecked = () => {
+  let allRoomsChecked = document.querySelector('#allRooms')
+
+  if (!allRoomsChecked) return
+
+  allRoomsChecked.addEventListener('change', function () {
+    const allRoomsCheckboxes = document.querySelectorAll('.room_field input')
+    if (!allRoomsChecked) {
+      return;
+    } else if (allRoomsChecked.checked) {
+      allRoomsCheckboxes.forEach(function (checkbox) {
+        checkbox.checked = true;
+      })
+
+    } else {
+      allRoomsCheckboxes.forEach(function (checkbox) {
+        checkbox.checked = false;
+      });
+    }
+  })
+}
+
+
+allRoomsBoxesChecked()
+
+
 //SELECT OR UNSELECT ALL CHECKBOX Filters
 
 const allPriceBoxesChecked = () => {
-let allPricesChecked = document.querySelector('#all')
+let allPricesChecked = document.querySelector('#allPrices')
 
 if (!allPricesChecked) return
 
@@ -226,6 +255,11 @@ allPricesChecked.addEventListener('change', function () {
 
 
 allPriceBoxesChecked()
+
+
+
+
+
 
 
 
