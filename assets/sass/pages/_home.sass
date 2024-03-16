@@ -54,11 +54,13 @@
     display: grid
     grid-template-columns: repeat(2, 1fr)
     padding: 1.5rem 0
-    @media  screen and (max-width: 667px)
+    @media  screen and (max-width: 830px)
       grid-template-columns: 1fr
+      width: 100%
   &_content
     font-size: 5rem
     font-weight: 600
+    line-height: 1.25
     @media  screen and (max-width: 667px)
       font-size: 3.3rem
     span
@@ -70,9 +72,9 @@
   &_text
     align-self: center
     justify-tracks: center
-    width: 55ch
-    @media  screen and (max-width: 667px)
-      width: fit-content
+    max-width: 55ch
+    @media  screen and (max-width: 830px)
+      max-width: 100%
       padding: 2rem 0
     span
       font-weight: 800
@@ -94,8 +96,9 @@
     overflow: hidden
     width: 100%
     img
-      // object-fit: cover
-      height: 100%
+      // object-fit: fill
+      // height: 100%
+      object-position: 50% 50%
       transition: all .4s ease-in
       width: 100%
     .banner_content

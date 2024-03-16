@@ -10,11 +10,17 @@
       padding-top: 2rem
   &_sidebar
     width: fit-content
-    margin-top: 5.5rem
     @media  screen and (max-width: 835px)
       margin-top: 1rem
+  &_filter
+    margin-bottom: 3.5rem
+    display: flex
+    i
+      margin-right: 2rem
   &_categories
     display: block
+    margin-top: 0
+    padding-top: 0
   &_products
     flex-basis: 100%
     padding-bottom: 5rem
@@ -34,15 +40,27 @@
         @media  screen and (max-width: 435px)
           width: 100%
 
-  &_rooms
-    margin-bottom: 3rem
-    input
-      display: none
-    label
-      padding-bottom: .6rem
-      display: inline-flex
-    @media  screen and (max-width: 835px)
-      display: none
 .price
   @media  screen and (max-width: 835px)
     display: none
+.location
+  // border: 1px solid green
+  &_field
+    input
+      display: none
+      transition: all .4s ease-in
+      &:checked
+        ~ label
+          color: var(--neutral-level-5)
+          text-decoration: underline
+          text-underline-offset: .5rem
+          text-decoration-thickness: .2rem
+          transition: all .4s ease-out-in
+    label
+      padding-bottom: .6rem
+      display: inline-flex
+      width: 90%
+      color: var(--neutral-level-4)
+      font-size: 1.5rem
+    @media  screen and (max-width: 835px)
+      display: none
