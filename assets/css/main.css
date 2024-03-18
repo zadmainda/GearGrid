@@ -1194,6 +1194,11 @@ button span {
   display: flex;
   gap: 4rem;
 }
+@media screen and (max-width: 730px) {
+  .cart_products {
+    flex-direction: column;
+  }
+}
 .cart_table {
   flex-basis: 60%;
   padding: 0.5rem;
@@ -1323,6 +1328,11 @@ button span {
   -moz-column-gap: 5rem;
        column-gap: 5rem;
 }
+@media screen and (max-width: 667px) {
+  .checkout {
+    flex-direction: column;
+  }
+}
 .checkout_column:first-of-type {
   flex-basis: 60%;
 }
@@ -1333,6 +1343,11 @@ button span {
   padding: 2.5rem;
   height: -moz-fit-content;
   height: fit-content;
+}
+@media screen and (max-width: 667px) {
+  .checkout_column:last-of-type {
+    margin-top: 2rem;
+  }
 }
 .checkout_column:last-of-type .counter {
   width: -moz-fit-content;
@@ -1426,6 +1441,11 @@ button span {
   background-color: #fff;
   padding: 3rem 5rem;
 }
+@media screen and (max-width: 667px) {
+  .complete {
+    width: 100%;
+  }
+}
 .complete_inner {
   border: 1px solid #bbb;
   width: 70%;
@@ -1435,6 +1455,11 @@ button span {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+@media screen and (max-width: 667px) {
+  .complete_inner {
+    width: 100%;
+  }
 }
 .complete h5 {
   color: var(--neutral-level-4);
