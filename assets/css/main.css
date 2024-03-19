@@ -1649,25 +1649,27 @@ button span {
 .blog_grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
-  -moz-column-gap: 2rem;
-       column-gap: 2rem;
+  gap: 2rem;
   padding: 5rem 0;
 }
 .blog_card .blog_img img {
-  transition: all 0.4s ease-in;
+  transition: all 0.3s ease-in;
 }
 .blog_card:hover .blog_img img {
   scale: 1.05;
-  transition: all 0.4s ease-in;
+  transition: all 0.3s ease-in;
 }
 .blog_img {
-  height: 70%;
+  height: 25rem;
   overflow: clip;
 }
 .blog_img img {
   transform-origin: center;
   -o-object-fit: cover;
      object-fit: cover;
+  -o-object-position: 50% 100%;
+     object-position: 50% 100%;
+  width: 100%;
 }
 .blog_title {
   padding: 2rem 0 0.5rem 0;
@@ -1679,6 +1681,7 @@ button span {
 .blog_date {
   font-size: 1.4rem;
   color: var(--neutral-level-4);
+  font-style: italic;
 }
 
 .footer {
@@ -2375,4 +2378,39 @@ button span {
   .reviews_text {
     padding-left: 0rem;
   }
+}
+
+.post * {
+  margin-bottom: 1.5rem;
+}
+.post_hero {
+  width: 100%;
+}
+.post_subheadline {
+  font-size: 2.3rem;
+}
+.post_twinImages {
+  width: 100%;
+  display: flex;
+  gap: 2rem;
+}
+.post_twinImages * {
+  flex-basis: 1;
+  width: 100%;
+}
+.post_twinImages img {
+  max-height: 70rem;
+  width: 100%;
+}
+
+.related_heading {
+  margin-top: -2rem;
+  margin-bottom: -2rem;
+}
+.related_heading a {
+  font-size: 1.6rem;
+}
+.related_title {
+  font-size: 2rem;
+  font-weight: 600;
 }/*# sourceMappingURL=main.css.map */

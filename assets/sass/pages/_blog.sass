@@ -2,22 +2,24 @@
   &_grid
     display: grid
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr))
-    column-gap: 2rem
+    gap: 2rem
     padding: 5rem 0
   &_card
     // height: 43rem
     .blog_img img
-      transition: all .4s ease-in
+      transition: all .3s ease-in
     &:hover
       .blog_img img
         scale: 1.05
-        transition: all .4s ease-in
+        transition: all .3s ease-in
   &_img
-    height: 70%
+    height: 25rem
     overflow: clip
     img
       transform-origin: center
       object-fit: cover
+      object-position: 50% 100%
+      width: 100%
   &_title
     padding: 2rem 0 .5rem 0
     font-weight: 600
@@ -27,3 +29,4 @@
   &_date
     font-size: 1.4rem
     color: var(--neutral-level-4)
+    font-style: italic
