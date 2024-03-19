@@ -1991,7 +1991,7 @@ button span {
   border: none;
   padding-left: 1rem;
   width: 100%;
-  background-color: var(--neutral-level-2);
+  background-color: var(--neutral-level-3);
 }
 @media screen and (max-width: 667px) {
   .newsletter_form form input {
@@ -2000,7 +2000,7 @@ button span {
   }
 }
 .newsletter_form form button {
-  background-color: var(--neutral-level-2);
+  background-color: var(--neutral-level-3);
   border: none;
   outline: none;
   transition: all 0.2s;
@@ -2394,6 +2394,11 @@ button span {
   display: flex;
   gap: 2rem;
 }
+@media screen and (max-width: 667px) {
+  .post_twinImages {
+    flex-direction: column;
+  }
+}
 .post_twinImages * {
   flex-basis: 1;
   width: 100%;
@@ -2402,10 +2407,21 @@ button span {
   max-height: 70rem;
   width: 100%;
 }
+@media screen and (max-width: 667px) {
+  .post_twinImages img {
+    max-height: 40rem;
+    width: auto;
+  }
+}
 
 .related_heading {
   margin-top: -2rem;
   margin-bottom: -2rem;
+}
+@media screen and (max-width: 667px) {
+  .related_heading {
+    margin: 0;
+  }
 }
 .related_heading a {
   font-size: 1.6rem;

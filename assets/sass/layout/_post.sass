@@ -12,18 +12,24 @@
     width: 100%
     display: flex
     gap: 2rem
+    @media  screen and (max-width: 667px)
+      flex-direction: column
     *
       flex-basis: 1
       width: 100%
-      
     img
       max-height: 70rem
       width: 100%
+      @media  screen and (max-width: 667px)
+        max-height: 40rem
+        width: auto
 
 .related
   &_heading
     margin-top: -2rem
     margin-bottom: -2rem
+    @media  screen and (max-width: 667px)
+      margin: 0
     a
       font-size: 1.6rem
   &_title
