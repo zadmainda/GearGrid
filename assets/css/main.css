@@ -131,6 +131,10 @@ img {
   display: none;
 }
 
+.active_link {
+  color: var(--neutral-level-7) !important;
+}
+
 :root {
   --primary-color: #000000;
   --secondary-blue: #377dff;
@@ -938,7 +942,7 @@ img {
 .pageheader_crumps i {
   font-size: 1.4rem;
 }
-.pageheader_crump:first-of-type, .pageheader i:first-of-type {
+.pageheader_crump, .pageheader i {
   color: var(--neutral-level-4);
 }
 .pageheader_title {
@@ -1845,6 +1849,9 @@ button span {
   .header_links {
     display: none;
   }
+}
+.header_link {
+  color: var(--neutral-level-4);
 }
 .header_link a {
   font-size: 1.7rem;
