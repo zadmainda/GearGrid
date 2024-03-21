@@ -941,6 +941,7 @@ img {
 }
 .pageheader_crumps i {
   font-size: 1.4rem;
+  color: var(--neutral-level-4);
 }
 .pageheader_crump, .pageheader i {
   color: var(--neutral-level-4);
