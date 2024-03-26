@@ -1128,7 +1128,7 @@ productCarouselItems.forEach(function(item){
         productCarouselCards +=  `
           <div class="card">
             <div class="card_img">
-            <img src=".${product.imgUrl}" alt="" >
+              <img src=".${product.imgUrl}" alt="" >
               <div class="card_footer">
                 <span>Add to Cart</span>
               </div>
@@ -1143,9 +1143,59 @@ productCarouselItems.forEach(function(item){
         `
       }
   })
- 
 })
 
+const zaz = () =>{
+
+
+  const cardwrapper = document.createElement('div');
+  cardwrapper.classList.add('card');
+  const cardImg = document.createElement('div');
+  cardImg.classList.add('card_img');
+  const img = document.createElement('img');
+  img.src = 'xxx';
+  // img.alt = item.imgAlt;
+  const cardFooter = document.createElement('div');
+  cardFooter.classList.add('card_footer');
+  const span = document.createElement('span');
+  span.textContent = 'Add to Cart';
+  const cardRating = document.createElement('span');
+  cardRating.classList.add('card_rating');
+  cardRating.textContent = '&#9733;&#9733;&#9733;&#9733;&#9733;';
+  const cardTitle = document.createElement('span');
+  cardTitle.classList.add('card_title');
+  cardTitle.textContent = 'xxx';
+  const cardPrice = document.createElement('span');
+  cardPrice.classList.add('card_price');
+  cardPrice.textContent = 'xxx';
+  const cardBanner = document.createElement('span');
+  cardBanner.classList.add('card_banner');
+  cardBanner.textContent = 'New';
+  const cardDiscount = document.createElement('span');
+  cardDiscount.classList.add('card_discount');
+  cardDiscount.textContent = 'XXX' + '%';
+
+  const cardWishlist = document.createElement('span');
+  cardWishlist.classList.add('card_wishlist');
+  cardWishlist.textContent = '<i class="fa-regular fa-heart"></i>';
+
+  cardwrapper.appendChild(cardImg)
+  cardImg.appendChild(img)
+  cardFooter.appendChild(span)
+  cardImg.appendChild(cardFooter)
+  cardwrapper.appendChild(cardRating)
+  cardwrapper.appendChild(cardTitle)
+  cardwrapper.appendChild(cardPrice)
+  cardwrapper.appendChild(cardBanner)
+  cardwrapper.appendChild(cardDiscount)
+  cardwrapper.appendChild(cardWishlist)
+
+  console.log(cardwrapper.childNodes)
+
+}
+
+
+zaz()
 
 let carousel_track = document.querySelector('.carousel_track')
 const renderCarouselProducts = () => {
@@ -1527,6 +1577,9 @@ let productDetailsTemplateString = `
 </section>
 
 `
+
+
+
 
 
 
