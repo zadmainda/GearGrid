@@ -1147,37 +1147,56 @@ productCarouselItems.forEach(function(item){
 
 const zaz = () =>{
 
+  let kitchenX = document.querySelector('.shop_grid.shop_kitchen')
+
+  if(!kitchenX){
+    return
+  }
+
+  let productsToBeRendered = []
+
+  productCatalog.map(function(product){
 
   const cardwrapper = document.createElement('div');
   cardwrapper.classList.add('card');
   const cardImg = document.createElement('div');
   cardImg.classList.add('card_img');
   const img = document.createElement('img');
-  img.src = 'xxx';
-  // img.alt = item.imgAlt;
+  img.src = product.imgUrl;
+  img.alt = product.name;
   const cardFooter = document.createElement('div');
   cardFooter.classList.add('card_footer');
   const span = document.createElement('span');
   span.textContent = 'Add to Cart';
   const cardRating = document.createElement('span');
   cardRating.classList.add('card_rating');
-  cardRating.textContent = '&#9733;&#9733;&#9733;&#9733;&#9733;';
+  cardRating.innerHTML = ' &#9733; &#9733; &#9733; &#9733; &#9733; ';
   const cardTitle = document.createElement('span');
   cardTitle.classList.add('card_title');
-  cardTitle.textContent = 'xxx';
+  cardTitle.textContent = product.name;
+
+  const priceWrapper = document.createElement('div');
+  priceWrapper.classList.add('card_pricewrapper')
+
   const cardPrice = document.createElement('span');
   cardPrice.classList.add('card_price');
-  cardPrice.textContent = 'xxx';
+  cardPrice.textContent = '$'+ product.price + '.99';
+
+
+  const oldPrice = document.createElement('span');
+  oldPrice.textContent = '$'+ product.oldprice + '.00';
+  oldPrice.classList.add('card_oldprice');
+
   const cardBanner = document.createElement('span');
   cardBanner.classList.add('card_banner');
   cardBanner.textContent = 'New';
   const cardDiscount = document.createElement('span');
   cardDiscount.classList.add('card_discount');
-  cardDiscount.textContent = 'XXX' + '%';
+  cardDiscount.textContent = product.discount + '%';
 
   const cardWishlist = document.createElement('span');
   cardWishlist.classList.add('card_wishlist');
-  cardWishlist.textContent = '<i class="fa-regular fa-heart"></i>';
+  cardWishlist.innerHTML = '<i class="fa-regular fa-heart"></i>';
 
   cardwrapper.appendChild(cardImg)
   cardImg.appendChild(img)
@@ -1185,13 +1204,22 @@ const zaz = () =>{
   cardImg.appendChild(cardFooter)
   cardwrapper.appendChild(cardRating)
   cardwrapper.appendChild(cardTitle)
-  cardwrapper.appendChild(cardPrice)
+  cardwrapper.appendChild(priceWrapper)
+  priceWrapper.appendChild(cardPrice)
+  priceWrapper.appendChild(oldPrice)
   cardwrapper.appendChild(cardBanner)
   cardwrapper.appendChild(cardDiscount)
   cardwrapper.appendChild(cardWishlist)
 
-  console.log(cardwrapper.childNodes)
+  productsToBeRendered.push(cardwrapper)
 
+  
+  })
+
+  productsToBeRendered.forEach(card => {
+    kitchenX.appendChild(card)
+  })
+  
 }
 
 

@@ -786,6 +786,7 @@ img {
   display: block;
   font-size: 1.4rem;
   font-weight: 600;
+  padding-left: 0.6rem;
 }
 .card_img {
   background-color: var(--neutral-level-2);
@@ -817,9 +818,14 @@ img {
   text-align: center;
   font-weight: 600 !important;
 }
-.card_price {
+.card_pricewrapper {
   display: flex;
-  gap: 1rem;
+  gap: 5rem;
+}
+.card_oldprice {
+  color: var(--neutral-level-4);
+  text-decoration: line-through;
+  text-decoration-color: var(--neutral-level-4) !important;
 }
 .card_discount {
   color: var(--neutral-level-1);

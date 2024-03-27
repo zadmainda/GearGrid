@@ -14,6 +14,7 @@
     display: block
     font-size: 1.4rem
     font-weight: 600
+    padding-left: .6rem
   &_img
     // width: 100%
     background-color: var(--neutral-level-2)
@@ -41,9 +42,19 @@
     border-radius: .5rem
     text-align: center
     font-weight: 600 !important
-  &_price
+  &_pricewrapper
     display: flex
-    gap: 1rem
+    gap: 5rem
+    
+  &_price
+    // border: 1px solid red
+    // font-size: 1.3rem !important
+  &_oldprice
+    color: var(--neutral-level-4) 
+    text-decoration: line-through 
+    text-decoration-color: var(--neutral-level-4) !important
+    // text-decoration-thickness: .1rem
+    // font-size: 1.3rem !important
     
   &_discount
     color: var(--neutral-level-1)
