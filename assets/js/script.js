@@ -1149,7 +1149,9 @@ let kitchenGrid = document.querySelector('.shop_grid.shop_kitchen')
 let bedroomGrid = document.querySelector('.shop_grid.shop_bedroom')
 let livingroomGrid = document.querySelector('.shop_grid.shop_livingroom')
 
-const renderProducts = (room) => {
+
+
+const renderProducts = (room, tag) => {
 
   room;
 
@@ -1159,7 +1161,15 @@ const renderProducts = (room) => {
 
   let productsToBeRendered = []
 
-  productCatalog.map(function (product) {
+  let filteredProducts = [];
+  productCatalog.forEach( product =>{
+    if (product.tags.includes(tag)){
+      filteredProducts.push(product)
+    }
+  })
+
+  
+  filteredProducts.map(function (product) {
     const cardwrapper = document.createElement('div');
     cardwrapper.classList.add('card');
     const cardImg = document.createElement('div');
@@ -1245,9 +1255,13 @@ const renderProducts = (room) => {
 
 }
 
-renderProducts(kitchenGrid)
-renderProducts(bedroomGrid)
-renderProducts(livingroomGrid)
+const kitchen = 'kitchen';
+const bedroom = 'bedroom';
+const living = 'living';
+
+renderProducts(kitchenGrid, kitchen);
+renderProducts(bedroomGrid, bedroom);
+renderProducts(livingroomGrid, living);
 
 let carousel_track = document.querySelector('.carousel_track')
 const renderCarouselProducts = () => {
