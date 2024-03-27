@@ -1317,6 +1317,8 @@ productCarouselItems.forEach(function(item){
 let kitchenGrid = document.querySelector('.shop_grid.shop_kitchen')
 let bedroomGrid = document.querySelector('.shop_grid.shop_bedroom')
 let livingroomGrid = document.querySelector('.shop_grid.shop_livingroom')
+let generalShopGrid = document.querySelector('.shop_grid.shop_allRooms')
+
 
 
 
@@ -1331,11 +1333,16 @@ const renderProducts = (room, tag) => {
   let productsToBeRendered = []
 
   let filteredProducts = [];
+  if (tag != 'all'){
   productCatalog.forEach( product =>{
     if (product.tags.includes(tag)){
       filteredProducts.push(product)
     }
-  })
+  })}
+  else{
+    filteredProducts = productCatalog;
+    console.log(filteredProducts)
+  }
 
   
   filteredProducts.map(function (product) {
@@ -1427,10 +1434,12 @@ const renderProducts = (room, tag) => {
 const kitchen = 'kitchen';
 const bedroom = 'bedroom';
 const living = 'living';
+const all = 'all'
 
 renderProducts(kitchenGrid, kitchen);
 renderProducts(bedroomGrid, bedroom);
 renderProducts(livingroomGrid, living);
+renderProducts(generalShopGrid, all)
 
 let carousel_track = document.querySelector('.carousel_track')
 const renderCarouselProducts = () => {
