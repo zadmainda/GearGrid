@@ -32,12 +32,13 @@
     @media  screen and (max-width: 740px)
       height: 25rem
     img
-      height: 100%
+      height: 85%
       margin-left: auto
       margin-right: auto
       width: 100%
       margin-bottom: .5rem
       object-fit: contain
+      flex: 1
     ~ *
       margin: 0.3rem 0
   &_discount, &_banner
@@ -81,7 +82,7 @@
       transition: all .4s ease-in
       color: red
   &_footer
-    width: 100%
+    // flex: 1
     background-color: var(--neutral-level-7)
     color: var(--neutral-level-1)
     padding: .9rem
