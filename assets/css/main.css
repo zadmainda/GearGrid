@@ -614,12 +614,12 @@ img {
 }
 .shop_grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
   gap: 2rem;
 }
 @media screen and (max-width: 740px) {
   .shop_grid {
-    grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
   }
 }
 .shop_grid .card img {
@@ -775,12 +775,16 @@ img {
 }
 .card:hover .card_wishlist, .card:hover .card_footer {
   opacity: 1;
-  transition: all 0.2s ease-out;
+  transition: all 0.3s ease-out;
   cursor: pointer;
 }
 .card:hover .card_wishlist i {
   background-color: none;
   color: none;
+}
+.card:hover .card_footer span {
+  font-weight: 400;
+  font-size: 1.3rem;
 }
 .card span {
   display: block;
@@ -796,6 +800,11 @@ img {
   flex-direction: column;
   align-items: center;
   height: 30rem;
+}
+@media screen and (max-width: 740px) {
+  .card_img {
+    height: 25rem;
+  }
 }
 .card_img img {
   height: 100%;
@@ -820,7 +829,7 @@ img {
 }
 .card_pricewrapper {
   display: flex;
-  gap: 5rem;
+  gap: 2rem;
 }
 .card_oldprice {
   color: var(--neutral-level-4);
@@ -855,17 +864,20 @@ img {
   width: 100%;
   background-color: var(--neutral-level-7);
   color: var(--neutral-level-1);
-  font-weight: 400;
-  font-size: 1.2rem;
   padding: 0.9rem;
   display: flex;
   align-items: center;
   justify-content: center;
+  border-radius: 0.9rem;
   width: 92%;
   margin: 0 auto;
   opacity: 0;
   overflow: hidden;
   transition: all 0.4s ease-in;
+}
+.card_footer span {
+  font-weight: 400;
+  font-size: 1.3rem;
 }
 @media screen and (max-width: 667px) {
   .card_footer {

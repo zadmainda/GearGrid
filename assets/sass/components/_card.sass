@@ -4,12 +4,16 @@
   &:hover
     .card_wishlist, .card_footer
       opacity: 1
-      transition: all .2s ease-out
+      transition: all .3s ease-out
       cursor: pointer   
     .card_wishlist
       i
         background-color: none 
         color: none
+    .card_footer
+      span
+        font-weight: 400
+        font-size: 1.3rem
   span
     display: block
     font-size: 1.4rem
@@ -25,6 +29,8 @@
     align-items: center
     height: 30rem
     // overflow: hidden 
+    @media  screen and (max-width: 740px)
+      height: 25rem
     img
       height: 100%
       margin-left: auto
@@ -44,8 +50,7 @@
     font-weight: 600 !important
   &_pricewrapper
     display: flex
-    gap: 5rem
-    
+    gap: 2rem
   &_price
     // border: 1px solid red
     // font-size: 1.3rem !important
@@ -79,18 +84,19 @@
     width: 100%
     background-color: var(--neutral-level-7)
     color: var(--neutral-level-1)
-    font-weight: 400
-    font-size: 1.2rem
     padding: .9rem
     display: flex
     align-items: center
     justify-content: center
-    // border-radius: .6rem
+    border-radius: .9rem
     width: 92%
     margin: 0 auto 
     opacity: 0
     overflow: hidden
     transition: all .4s ease-in
+    span
+        font-weight: 400
+        font-size: 1.3rem
     @media  screen and (max-width: 667px)
       opacity: 1
     &:hover

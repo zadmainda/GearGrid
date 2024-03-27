@@ -310,14 +310,14 @@ const productCatalog = [
     "oldprice": "2000",
     "imgUrl": "/assets/images/products/bedroom/bedside-lamp.png",
     "discount": "15",
-    "rating": 4.5,
+    "rating": 4,
     "color": ["brown", "beige", "gray"],
     "tags": ["bedroom"],
     "available": true, 
     "ratings": [
-      { "user": "User1", "rating": 4.5 },
-      { "user": "User2", "rating": 5 },
-      { "user": "User3", "rating": 4 }
+      { "user": "User1", "rating": 3 },
+      { "user": "User2", "rating": 3 },
+      { "user": "User3", "rating": 3 }
     ],
     "comments": [
       { "user": "User1", "comment": "Great Chair, highly recommended!" },
@@ -358,7 +358,7 @@ const productCatalog = [
     "available": true, 
     "ratings": [
       { "user": "User1", "rating": 4.5 },
-      { "user": "User2", "rating": 5 },
+      { "user": "User2", "rating": 2 },
       { "user": "User3", "rating": 4 }
     ],
     "comments": [
@@ -373,13 +373,13 @@ const productCatalog = [
     "oldprice": "530",
     "imgUrl": "/assets/images/products/kitchen/grill-3.png",
     "discount": "11",
-    "rating": 4,
+    "rating": 2,
     "color": ["gray"],
     "tags": ["kitchen"],
     "available": true, 
     "ratings": [
-      { "user": "User1", "rating": 4.5 },
-      { "user": "User2", "rating": 5 },
+      { "user": "User1", "rating": 3 },
+      { "user": "User2", "rating": 4 },
       { "user": "User3", "rating": 4 }
     ],
     "comments": [
@@ -399,9 +399,9 @@ const productCatalog = [
     "tags": ["living"],
     "available": true, 
     "ratings": [
-      { "user": "User1", "rating": 4.5 },
-      { "user": "User2", "rating": 5 },
-      { "user": "User3", "rating": 4 }
+      { "user": "User1", "rating": 2.5 },
+      { "user": "User2", "rating": 4 },
+      { "user": "User3", "rating": 3 }
     ],
     "comments": [
       { "user": "User1", "comment": "Great Chair, highly recommended!" },
@@ -420,9 +420,9 @@ const productCatalog = [
     "tags": ["living"],
     "available": true, 
     "ratings": [
-      { "user": "User1", "rating": 4.5 },
-      { "user": "User2", "rating": 5 },
-      { "user": "User3", "rating": 4 }
+      { "user": "User1", "rating": 5 },
+      { "user": "User2", "rating": 2 },
+      { "user": "User3", "rating": 3 }
     ],
     "comments": [
       { "user": "User1", "comment": "Great Chair, highly recommended!" },
@@ -441,7 +441,7 @@ const productCatalog = [
     "tags": ["living"],
     "available": true, 
     "ratings": [
-      { "user": "User1", "rating": 4.5 },
+      { "user": "User1", "rating": 4 },
       { "user": "User2", "rating": 5 },
       { "user": "User3", "rating": 4 }
     ],
@@ -462,9 +462,9 @@ const productCatalog = [
     "tags": ["living"],
     "available": true, 
     "ratings": [
-      { "user": "User1", "rating": 4.5 },
+      { "user": "User1", "rating": 5 },
       { "user": "User2", "rating": 5 },
-      { "user": "User3", "rating": 4 }
+      { "user": "User3", "rating": 5 }
     ],
     "comments": [
       { "user": "User1", "comment": "Great Chair, highly recommended!" },
@@ -483,8 +483,8 @@ const productCatalog = [
     "tags": ["living"],
     "available": true, 
     "ratings": [
-      { "user": "User1", "rating": 4.5 },
-      { "user": "User2", "rating": 5 },
+      { "user": "User1", "rating": 4 },
+      { "user": "User2", "rating": 4 },
       { "user": "User3", "rating": 4 }
     ],
     "comments": [
@@ -506,9 +506,9 @@ const productCatalog = [
     "tags": ["bedroom"],
     "available": true, 
     "ratings": [
-      { "user": "User1", "rating": 4.5 },
-      { "user": "User2", "rating": 5 },
-      { "user": "User3", "rating": 4 }
+      { "user": "User1", "rating": 3.5 },
+      { "user": "User2", "rating": 3 },
+      { "user": "User3", "rating": 3 }
     ],
     "comments": [
       { "user": "User1", "comment": "Great Chair, highly recommended!" },
@@ -527,8 +527,8 @@ const productCatalog = [
     "tags": ["bedroom"],
     "available": true, 
     "ratings": [
-      { "user": "User1", "rating": 4.5 },
-      { "user": "User2", "rating": 5 },
+      { "user": "User1", "rating": 2.5 },
+      { "user": "User2", "rating": 4 },
       { "user": "User3", "rating": 4 }
     ],
     "comments": [
@@ -548,9 +548,9 @@ const productCatalog = [
     "tags": ["living"],
     "available": true, 
     "ratings": [
-      { "user": "User1", "rating": 4.5 },
+      { "user": "User1", "rating": 5 },
       { "user": "User2", "rating": 5 },
-      { "user": "User3", "rating": 4 }
+      { "user": "User3", "rating": 5 }
     ],
     "comments": [
       { "user": "User1", "comment": "Great Chair, highly recommended!" },
@@ -569,9 +569,9 @@ const productCatalog = [
     "tags": ["bedroom"],
     "available": true, 
     "ratings": [
-      { "user": "User1", "rating": 4.5 },
+      { "user": "User1", "rating": 5 },
       { "user": "User2", "rating": 5 },
-      { "user": "User3", "rating": 4 }
+      { "user": "User3", "rating": 5 }
     ],
     "comments": [
       { "user": "User1", "comment": "Great Chair, highly recommended!" },
@@ -1145,85 +1145,109 @@ productCarouselItems.forEach(function(item){
   })
 })
 
-const zaz = () =>{
+let kitchenGrid = document.querySelector('.shop_grid.shop_kitchen')
+let bedroomGrid = document.querySelector('.shop_grid.shop_bedroom')
+let livingroomGrid = document.querySelector('.shop_grid.shop_livingroom')
 
-  let kitchenX = document.querySelector('.shop_grid.shop_kitchen')
+const renderProducts = (room) => {
 
-  if(!kitchenX){
+  room;
+
+  if (!room) {
     return
   }
 
   let productsToBeRendered = []
 
-  productCatalog.map(function(product){
-
-  const cardwrapper = document.createElement('div');
-  cardwrapper.classList.add('card');
-  const cardImg = document.createElement('div');
-  cardImg.classList.add('card_img');
-  const img = document.createElement('img');
-  img.src = product.imgUrl;
-  img.alt = product.name;
-  const cardFooter = document.createElement('div');
-  cardFooter.classList.add('card_footer');
-  const span = document.createElement('span');
-  span.textContent = 'Add to Cart';
-  const cardRating = document.createElement('span');
-  cardRating.classList.add('card_rating');
-  cardRating.innerHTML = ' &#9733; &#9733; &#9733; &#9733; &#9733; ';
-  const cardTitle = document.createElement('span');
-  cardTitle.classList.add('card_title');
-  cardTitle.textContent = product.name;
-
-  const priceWrapper = document.createElement('div');
-  priceWrapper.classList.add('card_pricewrapper')
-
-  const cardPrice = document.createElement('span');
-  cardPrice.classList.add('card_price');
-  cardPrice.textContent = '$'+ product.price + '.99';
+  productCatalog.map(function (product) {
+    const cardwrapper = document.createElement('div');
+    cardwrapper.classList.add('card');
+    const cardImg = document.createElement('div');
+    cardImg.classList.add('card_img');
+    const img = document.createElement('img');
+    img.src = product.imgUrl;
+    img.alt = product.name;
+    const cardFooter = document.createElement('div');
+    cardFooter.classList.add('card_footer');
+    const span = document.createElement('span');
+    span.textContent = 'Add to Cart';
 
 
-  const oldPrice = document.createElement('span');
-  oldPrice.textContent = '$'+ product.oldprice + '.00';
-  oldPrice.classList.add('card_oldprice');
+    const cardRating = document.createElement('span');
+    cardRating.classList.add('card_rating');
 
-  const cardBanner = document.createElement('span');
-  cardBanner.classList.add('card_banner');
-  cardBanner.textContent = 'New';
-  const cardDiscount = document.createElement('span');
-  cardDiscount.classList.add('card_discount');
-  cardDiscount.textContent = product.discount + '%';
+    productRating = Math.round(product.rating);
+    cardRatingInnerHTML = ''
+    for (let i = 0; i < productRating; i++) {
+      cardRatingInnerHTML += ' &#9733; '
+    }
+    cardRating.innerHTML = cardRatingInnerHTML;
+    cardRating.style.color = '#ff8b00';
 
-  const cardWishlist = document.createElement('span');
-  cardWishlist.classList.add('card_wishlist');
-  cardWishlist.innerHTML = '<i class="fa-regular fa-heart"></i>';
+    const cardTitle = document.createElement('span');
+    cardTitle.classList.add('card_title');
+    cardTitle.textContent = product.name;
 
-  cardwrapper.appendChild(cardImg)
-  cardImg.appendChild(img)
-  cardFooter.appendChild(span)
-  cardImg.appendChild(cardFooter)
-  cardwrapper.appendChild(cardRating)
-  cardwrapper.appendChild(cardTitle)
-  cardwrapper.appendChild(priceWrapper)
-  priceWrapper.appendChild(cardPrice)
-  priceWrapper.appendChild(oldPrice)
-  cardwrapper.appendChild(cardBanner)
-  cardwrapper.appendChild(cardDiscount)
-  cardwrapper.appendChild(cardWishlist)
+    const priceWrapper = document.createElement('div');
+    priceWrapper.classList.add('card_pricewrapper')
 
-  productsToBeRendered.push(cardwrapper)
+    const cardPrice = document.createElement('span');
+    cardPrice.classList.add('card_price');
+    cardPrice.textContent = '$' + product.price + '.99';
 
-  
-  })
+    const oldPrice = document.createElement('span');
+    oldPrice.textContent = '$' + product.oldprice + '.00';
+    if (product.oldprice) {
+      oldPrice.classList.add('card_oldprice');
+    } else {
+      oldPrice.style.display = 'none';
+    }
+
+
+    const cardBanner = document.createElement('span');
+    cardBanner.classList.add('card_banner');
+    cardBanner.textContent = 'New';
+
+    const cardDiscount = document.createElement('span');
+    cardDiscount.textContent = product.discount + '%';
+    if (product.discount) {
+      cardDiscount.classList.add('card_discount');
+    } else {
+      cardDiscount.style.display = 'none';
+    }
+
+
+    const cardWishlist = document.createElement('span');
+    cardWishlist.classList.add('card_wishlist');
+    cardWishlist.innerHTML = '<i class="fa-regular fa-heart"></i>';
+
+    cardwrapper.appendChild(cardImg)
+    cardImg.appendChild(img)
+    cardFooter.appendChild(span)
+    cardImg.appendChild(cardFooter)
+    cardwrapper.appendChild(cardRating)
+    cardwrapper.appendChild(cardTitle)
+    cardwrapper.appendChild(priceWrapper)
+    priceWrapper.appendChild(cardPrice)
+    priceWrapper.appendChild(oldPrice)
+    cardwrapper.appendChild(cardBanner)
+    cardwrapper.appendChild(cardDiscount)
+    cardwrapper.appendChild(cardWishlist)
+
+    productsToBeRendered.push(cardwrapper)
+
+  }
+  )
 
   productsToBeRendered.forEach(card => {
-    kitchenX.appendChild(card)
+    room.appendChild(card)
   })
-  
+
 }
 
-
-zaz()
+renderProducts(kitchenGrid)
+renderProducts(bedroomGrid)
+renderProducts(livingroomGrid)
 
 let carousel_track = document.querySelector('.carousel_track')
 const renderCarouselProducts = () => {
@@ -1247,112 +1271,6 @@ document.querySelectorAll('.carousel_track .card .card_footer').forEach(function
   })
 })
 
-
-// Function to render cards programmatically into the Shop Grid 
-let kitchenGrid = document.querySelector('.shop_grid.shop_kitchen')
-
-
-const renderKitchenGrid = () => {
-  if (!kitchenGrid) return;
-  let shopGridHTML = ''
-
-  productCatalog.forEach(function (catalog) {
-    if (catalog.tags.includes('kitchen')){
-      shopGridHTML += 
-      `
-          <div class="card">
-            <div class="card_img">
-            <img src="..${catalog.imgUrl}" alt="" >
-              <div class="card_footer">
-                <span>Add to Cart</span>
-              </div>
-            </div>
-            <span class="card_rating">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
-            <span class="card_title">${catalog.name}</span>
-            <span class="card_price">$${catalog.price}</span>
-            <span class="card_banner">New</span>
-            <span class="card_discount">-${catalog.discount}%</span>
-            <span class="card_wishlist"> <i class="fa-regular fa-heart"></i></span>
-          </div>
-        `
-    }
-  })
-  kitchenGrid.insertAdjacentHTML('afterbegin', shopGridHTML)
-}
-
-renderKitchenGrid()
-
-
-// Function to render cards programmatically into the Bedroom Grid 
-let bedroomGrid = document.querySelector('.shop_grid.shop_bedroom')
-
-
-const renderbedroomGrid = () => {
-  if (!bedroomGrid) return;
-  let shopGridHTML = ''
-
-  productCatalog.forEach(function (catalog) {
-    if (catalog.tags.includes('bedroom')){
-      shopGridHTML += 
-      `
-          <div class="card">
-            <div class="card_img">
-            <img src="..${catalog.imgUrl}" alt="" >
-              <div class="card_footer">
-                <span>Add to Cart</span>
-              </div>
-            </div>
-            <span class="card_rating">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
-            <span class="card_title">${catalog.name}</span>
-            <span class="card_price">$${catalog.price}</span>
-            <span class="card_banner">New</span>
-            <span class="card_discount">-${catalog.discount}%</span>
-            <span class="card_wishlist"> <i class="fa-regular fa-heart"></i></span>
-          </div>
-        `
-    }
-  })
-  bedroomGrid.insertAdjacentHTML('afterbegin', shopGridHTML)
-}
-
-renderbedroomGrid()
-
-
-
-
-// Function to render cards programmatically into the Living Room Grid 
-let livingroomGrid = document.querySelector('.shop_grid.shop_livingroom')
-
-
-const renderlivingroomGrid = () => {
-  if (!livingroomGrid) return;
-  let shopGridHTML = ''
-
-  productCatalog.forEach(function (catalog) {
-    if (catalog.tags.includes('living')){
-      shopGridHTML += 
-      `
-          <div class="card">
-            <div class="card_img">
-            <img src="..${catalog.imgUrl}" alt="" >
-              <div class="card_footer">
-                <span>Add to Cart</span>
-              </div>
-            </div>
-            <span class="card_rating">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
-            <span class="card_title">${catalog.name}</span>
-            <span class="card_price">$${catalog.price}</span>
-            <span class="card_banner">New</span>
-            <span class="card_discount">-${catalog.discount}%</span>
-            <span class="card_wishlist"> <i class="fa-regular fa-heart"></i></span>
-          </div>
-        `
-    }
-  })
-  livingroomGrid.insertAdjacentHTML('afterbegin', shopGridHTML)
-}
-
-renderlivingroomGrid()
 
 
 
