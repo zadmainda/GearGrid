@@ -1102,7 +1102,176 @@ const productCatalog = [
       { "user": "User1", "comment": "Great Chair, highly recommended!" },
       { "user": "User2", "comment": "Fast delivery and excellent customer service." }
     ]  
+  },
+  {
+    "name": "Sony WH",
+    "SKU": "1134",
+    "price": "299",
+    "oldprice": "",
+    "imgUrl": "/assets/images/products/Sony-Wh.png",
+    "discount": "",
+    "rating": 4,
+    "color": ["black", "brown"],
+    "tags": ["living"],
+    "available": true, 
+    "ratings": [
+      { "user": "User1", "rating": 4.5 },
+      { "user": "User2", "rating": 5 },
+      { "user": "User3", "rating": 4 }
+    ],
+    "comments": [
+      { "user": "User1", "comment": "Great Chair, highly recommended!" },
+      { "user": "User2", "comment": "Fast delivery and excellent customer service." }
+    ]  
+  },
+  {
+    "name": "Skull Candy Earbuds",
+    "SKU": "2234",
+    "price": "199",
+    "oldprice": "",
+    "imgUrl": "/assets/images/products/skullcandy-2.png",
+    "discount": "",
+    "rating": 5,
+    "color": ["black", "brown"],
+    "tags": ["living"],
+    "available": true, 
+    "ratings": [
+      { "user": "User1", "rating": 4.5 },
+      { "user": "User2", "rating": 5 },
+      { "user": "User3", "rating": 4 }
+    ],
+    "comments": [
+      { "user": "User1", "comment": "Great Chair, highly recommended!" },
+      { "user": "User2", "comment": "Fast delivery and excellent customer service." }
+    ]  
+  },
+  {
+    "name": "Comfy Pillow",
+    "SKU": "3342",
+    "price": "29",
+    "oldprice": "",
+    "imgUrl": "/assets/images/products/Light Beige Pillow.png",
+    "discount": "",
+    "rating": 3,
+    "color": ["black", "brown"],
+    "tags": ["living", 'bedroom'],
+    "available": true, 
+    "ratings": [
+      { "user": "User1", "rating": 4.5 },
+      { "user": "User2", "rating": 5 },
+      { "user": "User3", "rating": 4 }
+    ],
+    "comments": [
+      { "user": "User1", "comment": "Great Chair, highly recommended!" },
+      { "user": "User2", "comment": "Fast delivery and excellent customer service." }
+    ]  
+  },
+  {
+    "name": "Stainless Steel Pots",
+    "SKU": "3342",
+    "price": "87",
+    "oldprice": "",
+    "imgUrl": "/assets/images/products/tableware.png",
+    "discount": "",
+    "rating": 3,
+    "color": ["black", "brown"],
+    "tags": ['kitchen'],
+    "available": true, 
+    "ratings": [
+      { "user": "User1", "rating": 4.5 },
+      { "user": "User2", "rating": 5 },
+      { "user": "User3", "rating": 4 }
+    ],
+    "comments": [
+      { "user": "User1", "comment": "Great Chair, highly recommended!" },
+      { "user": "User2", "comment": "Fast delivery and excellent customer service." }
+    ]  
+  },
+  {
+    "name": "JBL Earbuds",
+    "SKU": "0974",
+    "price": "350",
+    "oldprice": "",
+    "imgUrl": "/assets/images/products/jbl.png",
+    "discount": "",
+    "rating": 3,
+    "color": ["black", "brown"],
+    "tags": ['living'],
+    "available": true, 
+    "ratings": [
+      { "user": "User1", "rating": 4.5 },
+      { "user": "User2", "rating": 5 },
+      { "user": "User3", "rating": 4 }
+    ],
+    "comments": [
+      { "user": "User1", "comment": "Great Chair, highly recommended!" },
+      { "user": "User2", "comment": "Fast delivery and excellent customer service." }
+    ]  
+  },
+  {
+    "name": "Bose HeadPhones",
+    "SKU": "0414",
+    "price": "499",
+    "oldprice": "",
+    "imgUrl": "/assets/images/products/Bose.png",
+    "discount": "",
+    "rating": 3,
+    "color": ["black", "brown"],
+    "tags": ['living'],
+    "available": true, 
+    "ratings": [
+      { "user": "User1", "rating": 4.5 },
+      { "user": "User2", "rating": 5 },
+      { "user": "User3", "rating": 4 }
+    ],
+    "comments": [
+      { "user": "User1", "comment": "Great Chair, highly recommended!" },
+      { "user": "User2", "comment": "Fast delivery and excellent customer service." }
+    ]  
+  },
+  {
+    "name": "Beats by DRE HeadPhones",
+    "SKU": "472",
+    "price": "699",
+    "oldprice": "",
+    "imgUrl": "/assets/images/products/beats.png",
+    "discount": "",
+    "rating": 3,
+    "color": ["black", "brown"],
+    "tags": ['living'],
+    "available": true, 
+    "ratings": [
+      { "user": "User1", "rating": 4.5 },
+      { "user": "User2", "rating": 5 },
+      { "user": "User3", "rating": 4 }
+    ],
+    "comments": [
+      { "user": "User1", "comment": "Great Chair, highly recommended!" },
+      { "user": "User2", "comment": "Fast delivery and excellent customer service." }
+    ]  
+  },
+  {
+    "name": "Beats by DRE Earbuds",
+    "SKU": "472",
+    "price": "459",
+    "oldprice": "",
+    "imgUrl": "/assets/images/products/beats-2.png",
+    "discount": "",
+    "rating": 3,
+    "color": ["black", "brown"],
+    "tags": ['living'],
+    "available": true, 
+    "ratings": [
+      { "user": "User1", "rating": 4.5 },
+      { "user": "User2", "rating": 5 },
+      { "user": "User3", "rating": 4 }
+    ],
+    "comments": [
+      { "user": "User1", "comment": "Great Chair, highly recommended!" },
+      { "user": "User2", "comment": "Fast delivery and excellent customer service." }
+    ]  
   }
+  
 ];
 
 
