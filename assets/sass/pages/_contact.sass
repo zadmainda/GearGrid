@@ -28,7 +28,14 @@
       grid-template-columns: 1fr
       padding: 2rem
   &_form
-    // width: 100%
+    form
+      button
+        color: #fff
+        padding: .8rem 1.5rem
+        background-color: var(--neutral-level-7)
+        border-radius: .4rem
+        &:hover
+          cursor: pointer
   &_field
     width: 100%
     display: flex
@@ -39,7 +46,7 @@
       text-transform: uppercase
     input, textarea
       padding: 1rem
-      border-radius: .8rem
+      border-radius: .4rem
       outline: none
       border: 1px solid var(--neutral-level-4)
   &_map

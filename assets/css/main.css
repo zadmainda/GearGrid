@@ -682,6 +682,10 @@ img {
   transition: all 0.4s ease-in;
   width: 2.2rem;
   height: 2.2rem;
+  position: relative;
+}
+.price_field input:checked {
+  accent-color: var(--neutral-level-5);
 }
 .price_field input:checked ~ label {
   color: var(--neutral-level-5);
@@ -749,6 +753,15 @@ img {
     padding: 2rem;
   }
 }
+.contact_form form button {
+  color: #fff;
+  padding: 0.8rem 1.5rem;
+  background-color: var(--neutral-level-7);
+  border-radius: 0.4rem;
+}
+.contact_form form button:hover {
+  cursor: pointer;
+}
 .contact_field {
   width: 100%;
   display: flex;
@@ -761,7 +774,7 @@ img {
 }
 .contact_field input, .contact_field textarea {
   padding: 1rem;
-  border-radius: 0.8rem;
+  border-radius: 0.4rem;
   outline: none;
   border: 1px solid var(--neutral-level-4);
 }
@@ -1460,27 +1473,43 @@ button span {
 }
 
 .complete {
-  width: 90%;
+  width: 70%;
   background-color: #fff;
   padding: 3rem 5rem;
+  border: 0.2rem solid #ccc;
+  border-radius: 0.6rem;
 }
 @media screen and (max-width: 667px) {
   .complete {
     width: 100%;
+    margin-top: 0.7rem;
+    margin-bottom: 0.7rem;
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 .complete_inner {
-  border: 1px solid #bbb;
   width: 70%;
   padding: 5rem 8rem;
-  margin-left: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   margin-right: auto;
+  margin-left: auto;
+}
+@media screen and (max-width: 667px) {
+  .complete_inner {
+    width: 100%;
+    padding: 3rem 0;
+  }
+}
+.complete_card {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 @media screen and (max-width: 667px) {
-  .complete_inner {
+  .complete_card {
     width: 100%;
   }
 }
@@ -1501,13 +1530,18 @@ button span {
   justify-content: space-between;
   padding: 2rem 0;
 }
+.complete_summary {
+  align-self: center;
+  width: 90%;
+}
 .complete_meta {
   display: flex;
-  align-items: center;
+  width: 100%;
+  align-items: flex-start;
   padding: 1rem 0;
 }
 .complete_meta span {
-  font-weight: 600;
+  font-weight: 500;
 }
 .complete_meta span:first-of-type {
   color: var(--neutral-level-4);
@@ -1522,6 +1556,10 @@ button span {
   padding-left: 3rem;
   padding-right: 3rem;
   margin-top: 2rem;
+}
+.complete button:hover {
+  cursor: pointer;
+  transform: scale(1.025);
 }
 
 .counter {
@@ -1874,7 +1912,6 @@ button span {
 }
 .header_link a {
   font-size: 1.7rem;
-  font-weight: 400;
 }
 .header_url {
   font-size: 1.6rem;
@@ -2023,6 +2060,7 @@ button span {
   .newsletter_form form input {
     width: 80%;
     padding: 1.2rem;
+    background-color: var(--neutral-level-3);
   }
 }
 .newsletter_form form button {
@@ -2030,11 +2068,17 @@ button span {
   border: none;
   outline: none;
   transition: all 0.2s;
+  padding: 0.8rem 1.6rem;
 }
 .newsletter_form form button:hover {
   scale: 1.05;
   cursor: pointer;
   transition: all 0.2s;
+}
+@media screen and (max-width: 667px) {
+  .newsletter_form form button {
+    background: var(--neutral-level-3);
+  }
 }
 
 .values {

@@ -1,4 +1,9 @@
+const html = document.querySelector('html');
+html.style.visibility = 'hidden';
 
+window.addEventListener("DOMContentLoaded", ()=>{
+  document.querySelector('html').style.visibility = 'visible';
+})
 
 ////////////////////////////////////////
 
@@ -255,6 +260,8 @@ allPricesChecked.addEventListener('change', function () {
 
 
 allPriceBoxesChecked()
+
+
 
 
 

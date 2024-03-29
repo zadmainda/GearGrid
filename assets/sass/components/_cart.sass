@@ -226,22 +226,34 @@
     justify-content: space-between
 
 .complete
-  width: 90%
+  width: 70%
   background-color: #fff
   padding: 3rem 5rem
+  border: 0.2rem solid #ccc
+  border-radius: .6rem
   @media  screen and (max-width: 667px)
     width: 100%
+    margin-top: .7rem
+    margin-bottom: .7rem
+    padding-left: 0
+    padding-right: 0
   &_inner
-    border: 1px solid #bbb
     width: 70%
     padding: 5rem 8rem
-    margin-left: auto
+    display: flex
+    flex-direction: column
+    align-items: center
     margin-right: auto
+    margin-left: auto
+    @media  screen and (max-width: 667px)
+      width: 100% 
+      padding: 3rem 0
+  &_card
     display: flex
     flex-direction: column
     align-items: center
     @media  screen and (max-width: 667px)
-      width: 100%
+      width: 100% 
   h5
     color: var(--neutral-level-4)
     font-size: 3rem
@@ -256,13 +268,16 @@
     display: flex
     justify-content: space-between
     padding: 2rem 0
+  &_summary
+    align-self: center
+    width: 90%
   &_meta
     display: flex
-    // margin-bottom: 1rem
-    align-items: center
+    width: 100%
+    align-items: flex-start
     padding: 1rem 0
     span
-      font-weight: 600
+      font-weight: 500
       &:first-of-type
         color: var(--neutral-level-4)
         flex-basis: 50%
@@ -274,3 +289,6 @@
     padding-left: 3rem
     padding-right: 3rem
     margin-top: 2rem
+    &:hover
+      cursor: pointer
+      transform: scale(1.025)
