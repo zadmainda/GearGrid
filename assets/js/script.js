@@ -329,15 +329,59 @@ const productCatalog = [
     ]  
   },
   {
-    "name": "Frying Pan",
-    "SKU": "11526",
-    "price": "20",
-    "oldprice": "30",
-    "imgUrl": "/assets/images/products/Bamboo Basket.png",
-    "discount": "7",
+    "name": "LoveSeat Sofa",
+    "SKU": "10026",
+    "price": "2230",
+    "oldprice": "2430",
+    "imgUrl": "/assets/images/products/Living Room/Loveseat Sofa.png",
+    "discount": "17",
     "rating": 4,
     "color": ["Yellow"],
-    "tags": ["kitchen"],
+    "tags": ["living"],
+    "available": true, 
+    "new": false,
+    "ratings": [
+      { "user": "User1", "rating": 4.5 },
+      { "user": "User2", "rating": 2 },
+      { "user": "User3", "rating": 4 }
+    ],
+    "comments": [
+      { "user": "User1", "comment": "Great Chair, highly recommended!" },
+      { "user": "User2", "comment": "Fast delivery and excellent customer service." }
+    ]  
+  },
+  {
+    "name": "Luxury Sofa",
+    "SKU": "4551",
+    "price": "1145",
+    "oldprice": "1230",
+    "imgUrl": "/assets/images/products/Living Room/Luxury sofa.png",
+    "discount": "3",
+    "rating": 5,
+    "color": ["Yellow"],
+    "tags": ["living"],
+    "available": true, 
+    "new": false,
+    "ratings": [
+      { "user": "User1", "rating": 4.5 },
+      { "user": "User2", "rating": 2 },
+      { "user": "User3", "rating": 4 }
+    ],
+    "comments": [
+      { "user": "User1", "comment": "Great Chair, highly recommended!" },
+      { "user": "User2", "comment": "Fast delivery and excellent customer service." }
+    ]  
+  },
+  {
+    "name": "White Drawer Unit",
+    "SKU": "10026",
+    "price": "499",
+    "oldprice": "560",
+    "imgUrl": "/assets/images/products/Living Room/white drawer unit.png",
+    "discount": "17",
+    "rating": 4,
+    "color": ["Yellow"],
+    "tags": ["living"],
     "available": true, 
     "new": false,
     "ratings": [
@@ -373,6 +417,28 @@ const productCatalog = [
     ]  
   },
   {
+    "name": "Generic Lamp",
+    "SKU": "1211",
+    "price": "99",
+    "oldprice": "150",
+    "imgUrl": "/assets/images/products/Lamp.png",
+    "discount": "35",
+    "rating": 5,
+    "color": ["black", "brown"],
+    "tags": ["living", "outdoor", 'bedroom', 'dining'],
+    "available": true, 
+    "new": false,
+    "ratings": [
+      { "user": "User1", "rating": 4.5 },
+      { "user": "User2", "rating": 5 },
+      { "user": "User3", "rating": 4 }
+    ],
+    "comments": [
+      { "user": "User1", "comment": "Great Chair, highly recommended!" },
+      { "user": "User2", "comment": "Fast delivery and excellent customer service." }
+    ]  
+  },
+  {
     "name": "Yellow Armchair",
     "SKU": "10116",
     "price": "950",
@@ -395,7 +461,7 @@ const productCatalog = [
     ]  
   },
   {
-    "name": "Bose",
+    "name": "Bose Headphones",
     "SKU": "10996",
     "price": "550",
     "oldprice": "630",
@@ -417,7 +483,7 @@ const productCatalog = [
     ]  
   },
   {
-    "name": "Sony - WH-1000xm5.png",
+    "name": "Sony - WH-1000xm5",
     "SKU": "454326",
     "price": "650",
     "oldprice": "680",
@@ -1123,6 +1189,50 @@ const productCatalog = [
     ]  
   },
   {
+    "name": "Bank-Sofa",
+    "SKU": "4524",
+    "price": "249",
+    "oldprice": "299",
+    "imgUrl": "/assets/images/products/Living Room/bank-sofa.png",
+    "discount": "",
+    "rating": 4,
+    "color": ["black", "brown"],
+    "tags": ["living"],
+    "available": true, 
+    "new": false,
+    "ratings": [
+      { "user": "User1", "rating": 4.5 },
+      { "user": "User2", "rating": 5 },
+      { "user": "User3", "rating": 4 }
+    ],
+    "comments": [
+      { "user": "User1", "comment": "Great Chair, highly recommended!" },
+      { "user": "User2", "comment": "Fast delivery and excellent customer service." }
+    ]  
+  },
+  {
+    "name": "Coffee Table",
+    "SKU": "9987",
+    "price": "312",
+    "oldprice": "320",
+    "imgUrl": "/assets/images/products/Living Room/coffee-table.png",
+    "discount": "",
+    "rating": 4,
+    "color": ["black", "brown"],
+    "tags": ["living"],
+    "available": true, 
+    "new": false,
+    "ratings": [
+      { "user": "User1", "rating": 4.5 },
+      { "user": "User2", "rating": 5 },
+      { "user": "User3", "rating": 4 }
+    ],
+    "comments": [
+      { "user": "User1", "comment": "Great Chair, highly recommended!" },
+      { "user": "User2", "comment": "Fast delivery and excellent customer service." }
+    ]  
+  },
+  {
     "name": "Sony WH",
     "SKU": "1134",
     "price": "299",
@@ -1144,6 +1254,29 @@ const productCatalog = [
       { "user": "User2", "comment": "Fast delivery and excellent customer service." }
     ]  
   },
+  {
+    "name": "Candle Table",
+    "SKU": "9872",
+    "price": "199",
+    "oldprice": "250",
+    "imgUrl": "/assets/images/products/Living Room/candle-table.png",
+    "discount": "10",
+    "rating": 4,
+    "color": ["black", "brown"],
+    "tags": ["living"],
+    "available": true, 
+    "new": false,
+    "ratings": [
+      { "user": "User1", "rating": 4.5 },
+      { "user": "User2", "rating": 5 },
+      { "user": "User3", "rating": 4 }
+    ],
+    "comments": [
+      { "user": "User1", "comment": "Great Chair, highly recommended!" },
+      { "user": "User2", "comment": "Fast delivery and excellent customer service." }
+    ]  
+  },
+
   {
     "name": "Skull Candy Earbuds",
     "SKU": "2234",
@@ -1176,6 +1309,28 @@ const productCatalog = [
     "rating": 3,
     "color": ["black", "brown"],
     "tags": ["living", 'bedroom'],
+    "available": true, 
+    "new": false,
+    "ratings": [
+      { "user": "User1", "rating": 4.5 },
+      { "user": "User2", "rating": 5 },
+      { "user": "User3", "rating": 4 }
+    ],
+    "comments": [
+      { "user": "User1", "comment": "Great Chair, highly recommended!" },
+      { "user": "User2", "comment": "Fast delivery and excellent customer service." }
+    ]  
+  },
+  {
+    "name": "Gypsy",
+    "SKU": "9712",
+    "price": "345",
+    "oldprice": "395",
+    "imgUrl": "/assets/images/products/Living Room/gypsy.png",
+    "discount": "2",
+    "rating": 4,
+    "color": ["black", "brown"],
+    "tags": ["living"],
     "available": true, 
     "new": false,
     "ratings": [
@@ -1233,6 +1388,73 @@ const productCatalog = [
     ]  
   },
   {
+    "name": "Gothic Armchair",
+    "SKU": "3221",
+    "price": "399",
+    "oldprice": "450",
+    "imgUrl": "/assets/images/products/Living Room/gothic-desk-chair.png",
+    "discount": "22",
+    "rating": 4,
+    "color": ["black", "brown"],
+    "tags": ["living"],
+    "available": true, 
+    "new": false,
+    "ratings": [
+      { "user": "User1", "rating": 4.5 },
+      { "user": "User2", "rating": 5 },
+      { "user": "User3", "rating": 4 }
+    ],
+    "comments": [
+      { "user": "User1", "comment": "Great Chair, highly recommended!" },
+      { "user": "User2", "comment": "Fast delivery and excellent customer service." }
+    ]  
+  },
+  {
+    "name": "AKG Headphones",
+    "SKU": "3311",
+    "price": "699",
+    "oldprice": "750",
+    "imgUrl": "/assets/images/products/AKG.png",
+    "discount": "12",
+    "rating": 4,
+    "color": ["black", "brown"],
+    "tags": ["living", "outdoor", 'bedroom', 'dining'],
+    "available": true, 
+    "new": false,
+    "ratings": [
+      { "user": "User1", "rating": 4.5 },
+      { "user": "User2", "rating": 5 },
+      { "user": "User3", "rating": 4 }
+    ],
+    "comments": [
+      { "user": "User1", "comment": "Great Chair, highly recommended!" },
+      { "user": "User2", "comment": "Fast delivery and excellent customer service." }
+    ]  
+  },
+  {
+    "name": "SkullCandy Headphones",
+    "SKU": "3864",
+    "price": "649",
+    "oldprice": "750",
+    "imgUrl": "/assets/images/products/Skullcandy.png",
+    "discount": "10",
+    "rating": 4,
+    "color": ["black", "brown"],
+    "tags": ["living", "outdoor", 'bedroom', 'dining'],
+    "available": true, 
+    "new": false,
+    "ratings": [
+      { "user": "User1", "rating": 4.5 },
+      { "user": "User2", "rating": 5 },
+      { "user": "User3", "rating": 4 }
+    ],
+    "comments": [
+      { "user": "User1", "comment": "Great Chair, highly recommended!" },
+      { "user": "User2", "comment": "Fast delivery and excellent customer service." }
+    ]  
+  },
+
+  {
     "name": "Bose HeadPhones",
     "SKU": "0414",
     "price": "499",
@@ -1277,6 +1499,50 @@ const productCatalog = [
     ]  
   },
   {
+    "name": "Sony WH-CH720N",
+    "SKU": "9342",
+    "price": "759",
+    "oldprice": "850",
+    "imgUrl": "/assets/images/products/Sony - WH-CH720N.png",
+    "discount": "5",
+    "rating": 4,
+    "color": ["black", "brown"],
+    "tags": ["living", "outdoor", 'bedroom', 'dining'],
+    "available": true, 
+    "new": false,
+    "ratings": [
+      { "user": "User1", "rating": 4.5 },
+      { "user": "User2", "rating": 5 },
+      { "user": "User3", "rating": 4 }
+    ],
+    "comments": [
+      { "user": "User1", "comment": "Great Chair, highly recommended!" },
+      { "user": "User2", "comment": "Fast delivery and excellent customer service." }
+    ]  
+  },
+  {
+    "name": "Office Desk",
+    "SKU": "8345",
+    "price": "499",
+    "oldprice": "620",
+    "imgUrl": "/assets/images/products/Living Room/office-desk.png",
+    "discount": "7",
+    "rating": 4,
+    "color": ["black", "brown"],
+    "tags": ["living", 'bedroom', 'dining'],
+    "available": true, 
+    "new": false,
+    "ratings": [
+      { "user": "User1", "rating": 4.5 },
+      { "user": "User2", "rating": 5 },
+      { "user": "User3", "rating": 4 }
+    ],
+    "comments": [
+      { "user": "User1", "comment": "Great Chair, highly recommended!" },
+      { "user": "User2", "comment": "Fast delivery and excellent customer service." }
+    ]  
+  },
+  {
     "name": "Beats by DRE Earbuds",
     "SKU": "472",
     "price": "459",
@@ -1298,45 +1564,45 @@ const productCatalog = [
       { "user": "User2", "comment": "Fast delivery and excellent customer service." }
     ]  
   },
-  { "name": "Aquarium", "SKU": 3109, "price": 900, "oldprice": 1081, "imgUrl": "/assets/images/products/Living Room/aquarium.png", "discount": "50", "rating": 4, "color": ["red", "green", "blue"], "tags": ['living'], "available": true, "new": false, "ratings": [{ "user": "User1", "rating": 4.5 }, { "user": "User2", "rating": 5 }, { "user": "User3", "rating": 4 }], "comments": [{ "user": "User1", "comment": "Great Chair, highly recommended!" }, { "user": "User2", "comment": "Fast delivery and excellent customer service." }] },
+  { "name": "Aquarium", "SKU": '3109', "price": 900, "oldprice": 1081, "imgUrl": "/assets/images/products/Living Room/aquarium.png", "discount": "50", "rating": 4, "color": ["red", "green", "blue"], "tags": ['living'], "available": true, "new": false, "ratings": [{ "user": "User1", "rating": 4.5 }, { "user": "User2", "rating": 5 }, { "user": "User3", "rating": 4 }], "comments": [{ "user": "User1", "comment": "Great Chair, highly recommended!" }, { "user": "User2", "comment": "Fast delivery and excellent customer service." }] },
 
-  { "name": "Plastic chair", "SKU": 2695, "price": 1100, "oldprice": 1275, "imgUrl": "/assets/images/products/Living Room/plastic-chair.png", "discount": "50", "rating": 2, "color": ["red", "green", "blue"], "tags": ['living'], "available": true, "new": false, "ratings": [{ "user": "User1", "rating": 4.5 }, { "user": "User2", "rating": 5 }, { "user": "User3", "rating": 4 }], "comments": [{ "user": "User1", "comment": "Great Chair, highly recommended!" }, { "user": "User2", "comment": "Fast delivery and excellent customer service." }] },
+  { "name": "Plastic chair", "SKU": '2695', "price": 1100, "oldprice": 1275, "imgUrl": "/assets/images/products/Living Room/plastic-chair.png", "discount": "50", "rating": 2, "color": ["red", "green", "blue"], "tags": ['living'], "available": true, "new": false, "ratings": [{ "user": "User1", "rating": 4.5 }, { "user": "User2", "rating": 5 }, { "user": "User3", "rating": 4 }], "comments": [{ "user": "User1", "comment": "Great Chair, highly recommended!" }, { "user": "User2", "comment": "Fast delivery and excellent customer service." }] },
 
-  { "name": "Executive Dining Set", "SKU": 2919, "price": 200, "oldprice": 382, "imgUrl": "/assets/images/products/dining/executive-dining-set.png", "discount": "50", "rating": 2, "color": ["red", "green", "blue"], "tags": ['dining'], "available": true, "new": false, "ratings": [{ "user": "User1", "rating": 4.5 }, { "user": "User2", "rating": 5 }, { "user": "User3", "rating": 4 }], "comments": [{ "user": "User1", "comment": "Great Chair, highly recommended!" }, { "user": "User2", "comment": "Fast delivery and excellent customer service." }] },
+  { "name": "Executive Dining Set", "SKU": '2919', "price": 200, "oldprice": 382, "imgUrl": "/assets/images/products/dining/executive-dining-set.png", "discount": "50", "rating": 2, "color": ["red", "green", "blue"], "tags": ['dining'], "available": true, "new": false, "ratings": [{ "user": "User1", "rating": 4.5 }, { "user": "User2", "rating": 5 }, { "user": "User3", "rating": 4 }], "comments": [{ "user": "User1", "comment": "Great Chair, highly recommended!" }, { "user": "User2", "comment": "Fast delivery and excellent customer service." }] },
 
-  { "name": "Grey Outdoor Chairs", "SKU": 1704, "price": 1000, "oldprice": 1101, "imgUrl": "/assets/images/products/dining/grey-outdoor-chairs.png", "discount": "50", "rating": 4, "color": ["red", "green", "blue"], "tags": ['dining'], "available": true, "new": false, "ratings": [{ "user": "User1", "rating": 4.5 }, { "user": "User2", "rating": 5 }, { "user": "User3", "rating": 4 }], "comments": [{ "user": "User1", "comment": "Great Chair, highly recommended!" }, { "user": "User2", "comment": "Fast delivery and excellent customer service." }] },
+  { "name": "Grey Outdoor Chairs", "SKU": '1704', "price": 1000, "oldprice": 1101, "imgUrl": "/assets/images/products/dining/grey-outdoor-chairs.png", "discount": "50", "rating": 4, "color": ["red", "green", "blue"], "tags": ['dining'], "available": true, "new": false, "ratings": [{ "user": "User1", "rating": 4.5 }, { "user": "User2", "rating": 5 }, { "user": "User3", "rating": 4 }], "comments": [{ "user": "User1", "comment": "Great Chair, highly recommended!" }, { "user": "User2", "comment": "Fast delivery and excellent customer service." }] },
 
-  { "name": "Kid's dining set", "SKU": 1700, "price": 300, "oldprice": 365, "imgUrl": "/assets/images/products/dining/kids-dining-set.png", "discount": "50", "rating": 2, "color": ["red", "green", "blue"], "tags": ['dining'], "available": true, "new": false, "ratings": [{ "user": "User1", "rating": 4.5 }, { "user": "User2", "rating": 5 }, { "user": "User3", "rating": 4 }], "comments": [{ "user": "User1", "comment": "Great Chair, highly recommended!" }, { "user": "User2", "comment": "Fast delivery and excellent customer service." }] },
+  { "name": "Kid's dining set", "SKU": '1700', "price": 300, "oldprice": 365, "imgUrl": "/assets/images/products/dining/kids-dining-set.png", "discount": "50", "rating": 2, "color": ["red", "green", "blue"], "tags": ['dining'], "available": true, "new": false, "ratings": [{ "user": "User1", "rating": 4.5 }, { "user": "User2", "rating": 5 }, { "user": "User3", "rating": 4 }], "comments": [{ "user": "User1", "comment": "Great Chair, highly recommended!" }, { "user": "User2", "comment": "Fast delivery and excellent customer service." }] },
 
-  { "name": "Mahogany dining table", "SKU": 3119, "price": 800, "oldprice": 976, "imgUrl": " /assets/images/products/dining/mahogany-dining-table.png", "discount": "50", "rating": 5, "color": ["red", "green", "blue"], "tags": ['dining'], "available": true, "new": false, "ratings": [{ "user": "User1", "rating": 4.5 }, { "user": "User2", "rating": 5 }, { "user": "User3", "rating": 4 }], "comments": [{ "user": "User1", "comment": "Great Chair, highly recommended!" }, { "user": "User2", "comment": "Fast delivery and excellent customer service." }] },
+  { "name": "Mahogany dining table", "SKU": '3119', "price": 800, "oldprice": 976, "imgUrl": " /assets/images/products/dining/mahogany-dining-table.png", "discount": "50", "rating": 5, "color": ["red", "green", "blue"], "tags": ['dining'], "available": true, "new": false, "ratings": [{ "user": "User1", "rating": 4.5 }, { "user": "User2", "rating": 5 }, { "user": "User3", "rating": 4 }], "comments": [{ "user": "User1", "comment": "Great Chair, highly recommended!" }, { "user": "User2", "comment": "Fast delivery and excellent customer service." }] },
 
-  { "name": 'Mini dining room set', "SKU": 569, "price": 800, "oldprice": 973, "imgUrl": "/assets/images/products/dining/mini-dining-room-set.png", "discount": "50", "rating": 2, "color": ["red", "green", "blue"], "tags": ['dining'], "available": true, "new": false, "ratings": [{ "user": "User1", "rating": 4.5 }, { "user": "User2", "rating": 5 }, { "user": "User3", "rating": 4 }], "comments": [{ "user": "User1", "comment": "Great Chair, highly recommended!" }, { "user": "User2", "comment": "Fast delivery and excellent customer service." }] },
+  { "name": 'Mini dining room set', "SKU": '569', "price": 800, "oldprice": 973, "imgUrl": "/assets/images/products/dining/mini-dining-room-set.png", "discount": "50", "rating": 2, "color": ["red", "green", "blue"], "tags": ['dining'], "available": true, "new": false, "ratings": [{ "user": "User1", "rating": 4.5 }, { "user": "User2", "rating": 5 }, { "user": "User3", "rating": 4 }], "comments": [{ "user": "User1", "comment": "Great Chair, highly recommended!" }, { "user": "User2", "comment": "Fast delivery and excellent customer service." }] },
 
-  { "name": 'stylish dining room set', "SKU": 2881, "price": 700, "oldprice": 771, "imgUrl": "/assets/images/products/dining/stylish-dining-room-set.png", "discount": "50", "rating": 2, "color": ["red", "green", "blue"], "tags": ['dining'], "available": true, "new": false, "ratings": [{ "user": "User1", "rating": 4.5 }, { "user": "User2", "rating": 5 }, { "user": "User3", "rating": 4 }], "comments": [{ "user": "User1", "comment": "Great Chair, highly recommended!" }, { "user": "User2", "comment": "Fast delivery and excellent customer service." }] },
+  { "name": 'stylish dining room set', "SKU": '2881', "price": 700, "oldprice": 771, "imgUrl": "/assets/images/products/dining/stylish-dining-room-set.png", "discount": "50", "rating": 2, "color": ["red", "green", "blue"], "tags": ['dining'], "available": true, "new": false, "ratings": [{ "user": "User1", "rating": 4.5 }, { "user": "User2", "rating": 5 }, { "user": "User3", "rating": 4 }], "comments": [{ "user": "User1", "comment": "Great Chair, highly recommended!" }, { "user": "User2", "comment": "Fast delivery and excellent customer service." }] },
 
-  { "name": 'Outdoor Furniture', "SKU": 903, "price": 700, "oldprice": 866, "imgUrl": "/assets/images/products/outdoor/Outdoor-Furniture-PNG-HD.png", "discount": "50", "rating": 4, "color": ["red", "green", "blue"], "tags": ['dining'], "available": true, "new": false, "ratings": [{ "user": "User1", "rating": 4.5 }, { "user": "User2", "rating": 5 }, { "user": "User3", "rating": 4 }], "comments": [{ "user": "User1", "comment": "Great Chair, highly recommended!" }, { "user": "User2", "comment": "Fast delivery and excellent customer service." }] },
+  { "name": 'Outdoor Furniture', "SKU": '903', "price": 700, "oldprice": 866, "imgUrl": "/assets/images/products/outdoor/Outdoor-Furniture-PNG-HD.png", "discount": "50", "rating": 4, "color": ["red", "green", "blue"], "tags": ['dining'], "available": true, "new": false, "ratings": [{ "user": "User1", "rating": 4.5 }, { "user": "User2", "rating": 5 }, { "user": "User3", "rating": 4 }], "comments": [{ "user": "User1", "comment": "Great Chair, highly recommended!" }, { "user": "User2", "comment": "Fast delivery and excellent customer service." }] },
 
-  { "name": 'Ayaki Patio Heater', "SKU": 1120, "price": 1000, "oldprice": 1058, "imgUrl": "/assets/images/products/outdoor/ayaki-patio-heater.png", "discount": "50", "rating": 4, "color": ["red", "green", "blue"], "tags": ['dining'], "available": true, "new": false, "ratings": [{ "user": "User1", "rating": 4.5 }, { "user": "User2", "rating": 5 }, { "user": "User3", "rating": 4 }], "comments": [{ "user": "User1", "comment": "Great Chair, highly recommended!" }, { "user": "User2", "comment": "Fast delivery and excellent customer service." }] },
+  { "name": 'Ayaki Patio Heater', "SKU": '1120', "price": 1000, "oldprice": 1058, "imgUrl": "/assets/images/products/outdoor/ayaki-patio-heater.png", "discount": "50", "rating": 4, "color": ["red", "green", "blue"], "tags": ['dining'], "available": true, "new": false, "ratings": [{ "user": "User1", "rating": 4.5 }, { "user": "User2", "rating": 5 }, { "user": "User3", "rating": 4 }], "comments": [{ "user": "User1", "comment": "Great Chair, highly recommended!" }, { "user": "User2", "comment": "Fast delivery and excellent customer service." }] },
 
-  { "name": 'Black porch swing', "SKU": 1837, "price": 1200, "oldprice": 1277, "imgUrl": "/assets/images/products/outdoor/black-porch-swing.png", "discount": "50", "rating": 3, "color": ["red", "green", "blue"], "tags": ['dining'], "available": true, "new": false, "ratings": [{ "user": "User1", "rating": 4.5 }, { "user": "User2", "rating": 5 }, { "user": "User3", "rating": 4 }], "comments": [{ "user": "User1", "comment": "Great Chair, highly recommended!" }, { "user": "User2", "comment": "Fast delivery and excellent customer service." }] },
+  { "name": 'Black porch swing', "SKU": '1837', "price": 1200, "oldprice": 1277, "imgUrl": "/assets/images/products/outdoor/black-porch-swing.png", "discount": "50", "rating": 3, "color": ["red", "green", "blue"], "tags": ['dining'], "available": true, "new": false, "ratings": [{ "user": "User1", "rating": 4.5 }, { "user": "User2", "rating": 5 }, { "user": "User3", "rating": 4 }], "comments": [{ "user": "User1", "comment": "Great Chair, highly recommended!" }, { "user": "User2", "comment": "Fast delivery and excellent customer service." }] },
 
-  { "name": 'Golden porch swing', "SKU": 502, "price": 200, "oldprice": 346, "imgUrl": "/assets/images/products/outdoor/golden-porch-swing.png", "discount": "50", "rating": 4, "color": ["red", "green", "blue"], "tags": ['dining'], "available": true, "new": false, "ratings": [{ "user": "User1", "rating": 4.5 }, { "user": "User2", "rating": 5 }, { "user": "User3", "rating": 4 }], "comments": [{ "user": "User1", "comment": "Great Chair, highly recommended!" }, { "user": "User2", "comment": "Fast delivery and excellent customer service." }] },
+  { "name": 'Golden porch swing', "SKU": '502', "price": 200, "oldprice": 346, "imgUrl": "/assets/images/products/outdoor/golden-porch-swing.png", "discount": "50", "rating": 4, "color": ["red", "green", "blue"], "tags": ['dining'], "available": true, "new": false, "ratings": [{ "user": "User1", "rating": 4.5 }, { "user": "User2", "rating": 5 }, { "user": "User3", "rating": 4 }], "comments": [{ "user": "User1", "comment": "Great Chair, highly recommended!" }, { "user": "User2", "comment": "Fast delivery and excellent customer service." }] },
 
-  { "name": 'Outdoor Swinging Set', "SKU": 1987, "price": 300, "oldprice": 353, "imgUrl": "/assets/images/products/outdoor/outdoor-dining-set.png", "discount": "50", "rating": 5, "color": ["red", "green", "blue"], "tags": ['dining'], "available": true, "new": false, "ratings": [{ "user": "User1", "rating": 4.5 }, { "user": "User2", "rating": 5 }, { "user": "User3", "rating": 4 }], "comments": [{ "user": "User1", "comment": "Great Chair, highly recommended!" }, { "user": "User2", "comment": "Fast delivery and excellent customer service." }] },
+  { "name": 'Outdoor Swinging Set', "SKU": '1987', "price": 300, "oldprice": 353, "imgUrl": "/assets/images/products/outdoor/outdoor-dining-set.png", "discount": "50", "rating": 5, "color": ["red", "green", "blue"], "tags": ['dining'], "available": true, "new": false, "ratings": [{ "user": "User1", "rating": 4.5 }, { "user": "User2", "rating": 5 }, { "user": "User3", "rating": 4 }], "comments": [{ "user": "User1", "comment": "Great Chair, highly recommended!" }, { "user": "User2", "comment": "Fast delivery and excellent customer service." }] },
 
-  { "name": 'Padded lawn Chairs', "SKU": 2416, "price": 1100, "oldprice": 1182, "imgUrl": "/assets/images/products/outdoor/padded-outdoor-chairs-table.png", "discount": "50", "rating": 4, "color": ["red", "green", "blue"], "tags": ['dining'], "available": true, "new": false, "ratings": [{ "user": "User1", "rating": 4.5 }, { "user": "User2", "rating": 5 }, { "user": "User3", "rating": 4 }], "comments": [{ "user": "User1", "comment": "Great Chair, highly recommended!" }, { "user": "User2", "comment": "Fast delivery and excellent customer service." }] },
+  { "name": 'Padded lawn Chairs', "SKU": '2416', "price": 1100, "oldprice": 1182, "imgUrl": "/assets/images/products/outdoor/padded-outdoor-chairs-table.png", "discount": "50", "rating": 4, "color": ["red", "green", "blue"], "tags": ['dining'], "available": true, "new": false, "ratings": [{ "user": "User1", "rating": 4.5 }, { "user": "User2", "rating": 5 }, { "user": "User3", "rating": 4 }], "comments": [{ "user": "User1", "comment": "Great Chair, highly recommended!" }, { "user": "User2", "comment": "Fast delivery and excellent customer service." }] },
 
-  { "name": 'Park Bench', "SKU": 545, "price": 300, "oldprice": 402, "imgUrl": "/assets/images/products/outdoor/park-bench.png", "discount": "50", "rating": 2, "color": ["red", "green", "blue"], "tags": ['dining'], "available": true, "new": false, "ratings": [{ "user": "User1", "rating": 4.5 }, { "user": "User2", "rating": 5 }, { "user": "User3", "rating": 4 }], "comments": [{ "user": "User1", "comment": "Great Chair, highly recommended!" }, { "user": "User2", "comment": "Fast delivery and excellent customer service." }] },
+  { "name": 'Park Bench', "SKU": '545', "price": 300, "oldprice": 402, "imgUrl": "/assets/images/products/outdoor/park-bench.png", "discount": "50", "rating": 2, "color": ["red", "green", "blue"], "tags": ['dining'], "available": true, "new": false, "ratings": [{ "user": "User1", "rating": 4.5 }, { "user": "User2", "rating": 5 }, { "user": "User3", "rating": 4 }], "comments": [{ "user": "User1", "comment": "Great Chair, highly recommended!" }, { "user": "User2", "comment": "Fast delivery and excellent customer service." }] },
 
-  { "name": 'Sony Patio heater', "SKU": 2344, "price": 800, "oldprice": 894, "imgUrl": "/assets/images/products/outdoor/patio-heater.png", "discount": "50", "rating": 3, "color": ["red", "green", "blue"], "tags": ['dining'], "available": true, "new": false, "ratings": [{ "user": "User1", "rating": 4.5 }, { "user": "User2", "rating": 5 }, { "user": "User3", "rating": 4 }], "comments": [{ "user": "User1", "comment": "Great Chair, highly recommended!" }, { "user": "User2", "comment": "Fast delivery and excellent customer service." }] },
+  { "name": 'Sony Patio heater', "SKU": '2344', "price": 800, "oldprice": 894, "imgUrl": "/assets/images/products/outdoor/patio-heater.png", "discount": "50", "rating": 3, "color": ["red", "green", "blue"], "tags": ['dining'], "available": true, "new": false, "ratings": [{ "user": "User1", "rating": 4.5 }, { "user": "User2", "rating": 5 }, { "user": "User3", "rating": 4 }], "comments": [{ "user": "User1", "comment": "Great Chair, highly recommended!" }, { "user": "User2", "comment": "Fast delivery and excellent customer service." }] },
 
-  { "name": 'Patio relaxing chairs', "SKU": 644, "price": 200, "oldprice": 271, "imgUrl": "/assets/images/products/outdoor/patio-relaxing-chairs.png", "discount": "50", "rating": 3, "color": ["red", "green", "blue"], "tags": ['dining'], "available": true, "new": false, "ratings": [{ "user": "User1", "rating": 4.5 }, { "user": "User2", "rating": 5 }, { "user": "User3", "rating": 4 }], "comments": [{ "user": "User1", "comment": "Great Chair, highly recommended!" }, { "user": "User2", "comment": "Fast delivery and excellent customer service." }] },
+  { "name": 'Patio relaxing chairs', "SKU": '644', "price": 200, "oldprice": 271, "imgUrl": "/assets/images/products/outdoor/patio-relaxing-chairs.png", "discount": "50", "rating": 3, "color": ["red", "green", "blue"], "tags": ['dining'], "available": true, "new": false, "ratings": [{ "user": "User1", "rating": 4.5 }, { "user": "User2", "rating": 5 }, { "user": "User3", "rating": 4 }], "comments": [{ "user": "User1", "comment": "Great Chair, highly recommended!" }, { "user": "User2", "comment": "Fast delivery and excellent customer service." }] },
 
-  { "name": 'Phillips Patio Heater', "SKU": 3385, "price": 500, "oldprice": 562, "imgUrl": "/assets/images/products/outdoor/phillips patio-heater.png", "discount": "50", "rating": 4, "color": ["red", "green", "blue"], "tags": ['dining'], "available": true, "new": false, "ratings": [{ "user": "User1", "rating": 4.5 }, { "user": "User2", "rating": 5 }, { "user": "User3", "rating": 4 }], "comments": [{ "user": "User1", "comment": "Great Chair, highly recommended!" }, { "user": "User2", "comment": "Fast delivery and excellent customer service." }] },
+  { "name": 'Phillips Patio Heater', "SKU": '3385', "price": 500, "oldprice": 562, "imgUrl": "/assets/images/products/outdoor/phillips patio-heater.png", "discount": "50", "rating": 4, "color": ["red", "green", "blue"], "tags": ['dining'], "available": true, "new": false, "ratings": [{ "user": "User1", "rating": 4.5 }, { "user": "User2", "rating": 5 }, { "user": "User3", "rating": 4 }], "comments": [{ "user": "User1", "comment": "Great Chair, highly recommended!" }, { "user": "User2", "comment": "Fast delivery and excellent customer service." }] },
 
-  { "name": 'Leather Porch Swing', "SKU": 2759, "price": 900, "oldprice": 972, "imgUrl": "/assets/images/products/outdoor/porch-swing.png", "discount": "50", "rating": 5, "color": ["red", "green", "blue"], "tags": ['dining'], "available": true, "new": false, "ratings": [{ "user": "User1", "rating": 4.5 }, { "user": "User2", "rating": 5 }, { "user": "User3", "rating": 4 }], "comments": [{ "user": "User1", "comment": "Great Chair, highly recommended!" }, { "user": "User2", "comment": "Fast delivery and excellent customer service." }] },
+  { "name": 'Leather Porch Swing', "SKU": '2759', "price": 900, "oldprice": 972, "imgUrl": "/assets/images/products/outdoor/porch-swing.png", "discount": "50", "rating": 5, "color": ["red", "green", "blue"], "tags": ['dining'], "available": true, "new": false, "ratings": [{ "user": "User1", "rating": 4.5 }, { "user": "User2", "rating": 5 }, { "user": "User3", "rating": 4 }], "comments": [{ "user": "User1", "comment": "Great Chair, highly recommended!" }, { "user": "User2", "comment": "Fast delivery and excellent customer service." }] },
   
-  { "name": 'Self supportting swing chair', "SKU": 3259, "price": 900, "oldprice": 1059, "imgUrl": "/assets/images/products/outdoor/self-supporting-swing.png", "discount": "50", "rating": 2, "color": ["red", "green", "blue"], "tags": ['dining'], "available": true, "new": false, "ratings": [{ "user": "User1", "rating": 4.5 }, { "user": "User2", "rating": 5 }, { "user": "User3", "rating": 4 }], "comments": [{ "user": "User1", "comment": "Great Chair, highly recommended!" }, { "user": "User2", "comment": "Fast delivery and excellent customer service." }] }
+  { "name": 'Self supportting swing chair', "SKU": '3259', "price": 900, "oldprice": 1059, "imgUrl": "/assets/images/products/outdoor/self-supporting-swing.png", "discount": "50", "rating": 2, "color": ["red", "green", "blue"], "tags": ['dining'], "available": true, "new": false, "ratings": [{ "user": "User1", "rating": 4.5 }, { "user": "User2", "rating": 5 }, { "user": "User3", "rating": 4 }], "comments": [{ "user": "User1", "comment": "Great Chair, highly recommended!" }, { "user": "User2", "comment": "Fast delivery and excellent customer service." }] }
   
 ];
 
