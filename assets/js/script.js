@@ -300,6 +300,7 @@ const productCatalog = [
     "color": ["red", "green", "blue"],
     "tags": ["living", "bedroom"],
     "available": true, 
+    "new": false,
     "ratings": [
       { "user": "User1", "rating": 4.5 },
       { "user": "User2", "rating": 5 },
@@ -319,8 +320,9 @@ const productCatalog = [
     "discount": "15",
     "rating": 4,
     "color": ["brown", "beige", "gray"],
-    "tags": ["bedroom"],
+    "tags": ["bedroom", "new"],
     "available": true, 
+    "new": true,
     "ratings": [
       { "user": "User1", "rating": 3 },
       { "user": "User2", "rating": 3 },
@@ -342,6 +344,7 @@ const productCatalog = [
     "color": ["brown", "beige", "gray"],
     "tags": ["living"],
     "available": true, 
+    "new": false,
     "ratings": [
       { "user": "User1", "rating": 4.5 },
       { "user": "User2", "rating": 5 },
@@ -363,6 +366,7 @@ const productCatalog = [
     "color": ["Yellow"],
     "tags": ["kitchen"],
     "available": true, 
+    "new": false,
     "ratings": [
       { "user": "User1", "rating": 4.5 },
       { "user": "User2", "rating": 2 },
@@ -382,8 +386,9 @@ const productCatalog = [
     "discount": "11",
     "rating": 2,
     "color": ["gray"],
-    "tags": ["kitchen"],
+    "tags": ["kitchen", "new"],
     "available": true, 
+    'new': true,
     "ratings": [
       { "user": "User1", "rating": 3 },
       { "user": "User2", "rating": 4 },
@@ -403,8 +408,9 @@ const productCatalog = [
     "discount": "11",
     "rating": 4,
     "color": ["gray"],
-    "tags": ["living"],
+    "tags": ["living", "new"],
     "available": true, 
+    "new": true,
     "ratings": [
       { "user": "User1", "rating": 2.5 },
       { "user": "User2", "rating": 4 },
@@ -424,8 +430,9 @@ const productCatalog = [
     "discount": "7",
     "rating": 4,
     "color": ["gray"],
-    "tags": ["living"],
+    "tags": ["living", "new"],
     "available": true, 
+    "new": true,
     "ratings": [
       { "user": "User1", "rating": 5 },
       { "user": "User2", "rating": 2 },
@@ -445,8 +452,9 @@ const productCatalog = [
     "discount": "3.5",
     "rating": 4,
     "color": ["white"],
-    "tags": ["living"],
+    "tags": ["living", "new"],
     "available": true, 
+    "new": true,
     "ratings": [
       { "user": "User1", "rating": 4 },
       { "user": "User2", "rating": 5 },
@@ -466,8 +474,9 @@ const productCatalog = [
     "discount": "7.5",
     "rating": 4,
     "color": ["white"],
-    "tags": ["living"],
+    "tags": ["living", "new"],
     "available": true, 
+    "new": true,
     "ratings": [
       { "user": "User1", "rating": 5 },
       { "user": "User2", "rating": 5 },
@@ -487,8 +496,9 @@ const productCatalog = [
     "discount": "7",
     "rating": 4,
     "color": ["white"],
-    "tags": ["living"],
+    "tags": ["living", "new"],
     "available": true, 
+    "new": true,
     "ratings": [
       { "user": "User1", "rating": 4 },
       { "user": "User2", "rating": 4 },
@@ -510,8 +520,9 @@ const productCatalog = [
     "discount": "5",
     "rating": 4,
     "color": ["black", "white"],
-    "tags": ["bedroom"],
+    "tags": ["bedroom", "new"],
     "available": true, 
+    "new": true,
     "ratings": [
       { "user": "User1", "rating": 3.5 },
       { "user": "User2", "rating": 3 },
@@ -533,6 +544,7 @@ const productCatalog = [
     "color": ["black", "gray"],
     "tags": ["bedroom"],
     "available": true, 
+    "new": false,
     "ratings": [
       { "user": "User1", "rating": 2.5 },
       { "user": "User2", "rating": 4 },
@@ -554,6 +566,7 @@ const productCatalog = [
     "color": ["brown", "black"],
     "tags": ["living"],
     "available": true, 
+    "new": false,
     "ratings": [
       { "user": "User1", "rating": 5 },
       { "user": "User2", "rating": 5 },
@@ -575,6 +588,7 @@ const productCatalog = [
     "color": ["brown", "white"],
     "tags": ["bedroom"],
     "available": true, 
+    "new": false,
     "ratings": [
       { "user": "User1", "rating": 5 },
       { "user": "User2", "rating": 5 },
@@ -596,6 +610,7 @@ const productCatalog = [
     "color": ["black", "white"],
     "tags": ["bedroom"],
     "available": true, 
+    "new": false,
     "ratings": [
       { "user": "User1", "rating": 4.5 },
       { "user": "User2", "rating": 5 },
@@ -617,6 +632,7 @@ const productCatalog = [
     "color": ["black", "brown"],
     "tags": ["bedroom"],
     "available": true, 
+    "new": false,
     "ratings": [
       { "user": "User1", "rating": 4.5 },
       { "user": "User2", "rating": 5 },
@@ -638,6 +654,7 @@ const productCatalog = [
     "color": ["brown", "white"],
     "tags": ["bedroom"],
     "available": true, 
+    "new": false,
     "ratings": [
       { "user": "User1", "rating": 4.5 },
       { "user": "User2", "rating": 5 },
@@ -659,6 +676,7 @@ const productCatalog = [
     "color": ["black", "white"],
     "tags": ["Kitchen"],
     "available": true, 
+    "new": false,
     "ratings": [
       { "user": "User1", "rating": 4.5 },
       { "user": "User2", "rating": 5 },
@@ -680,6 +698,7 @@ const productCatalog = [
     "color": ["black", "white"],
     "tags": ["kitchen"],
     "available": true, 
+    "new": false,
     "ratings": [
       { "user": "User1", "rating": 4.5 },
       { "user": "User2", "rating": 5 },
@@ -701,6 +720,7 @@ const productCatalog = [
     "color": ["brown", "black"],
     "tags": ["kitchen"],
     "available": true, 
+    "new": false,
     "ratings": [
       { "user": "User1", "rating": 4.5 },
       { "user": "User2", "rating": 5 },
@@ -720,8 +740,9 @@ const productCatalog = [
     "discount": "3",
     "rating": 4.5,
     "color": ["gray", "beige"],
-    "tags": ["kitchen"],
+    "tags": ["kitchen", "new"],
     "available": true, 
+    "new": true,
     "ratings": [
       { "user": "User1", "rating": 4.5 },
       { "user": "User2", "rating": 5 },
@@ -743,6 +764,7 @@ const productCatalog = [
     "color": ["brown", "white"],
     "tags": ["kitchen"],
     "available": true, 
+    "new": false,
     "ratings": [
       { "user": "User1", "rating": 4.5 },
       { "user": "User2", "rating": 5 },
@@ -764,6 +786,7 @@ const productCatalog = [
     "color": ["gray", "beige"],
     "tags": ["kitchen"],
     "available": true, 
+    "new": false,
     "ratings": [
       { "user": "User1", "rating": 4.5 },
       { "user": "User2", "rating": 5 },
@@ -785,6 +808,7 @@ const productCatalog = [
     "color": ["blue", "gray"],
     "tags": ["kitchen"],
     "available": true, 
+    "new": false,
     "ratings": [
       { "user": "User1", "rating": 4.5 },
       { "user": "User2", "rating": 5 },
@@ -806,6 +830,7 @@ const productCatalog = [
     "color": ["black", "white"],
     "tags": ["kitchen"],
     "available": true, 
+    "new": false,
     "ratings": [
       { "user": "User1", "rating": 4.5 },
       { "user": "User2", "rating": 5 },
@@ -827,6 +852,7 @@ const productCatalog = [
     "color": ["brown", "white"],
     "tags": ["kitchen"],
     "available": true, 
+    "new": false,
     "ratings": [
       { "user": "User1", "rating": 4.5 },
       { "user": "User2", "rating": 5 },
@@ -848,6 +874,7 @@ const productCatalog = [
     "color": ["brown", "white"],
     "tags": ["kitchen"],
     "available": true, 
+    "new": false,
     "ratings": [
       { "user": "User1", "rating": 4.5 },
       { "user": "User2", "rating": 5 },
@@ -869,6 +896,7 @@ const productCatalog = [
     "color": ["gray", "beige"],
     "tags": ["living", "bedroom"],
     "available": true, 
+    "new": false,
     "ratings": [
       { "user": "User1", "rating": 4.5 },
       { "user": "User2", "rating": 5 },
@@ -889,7 +917,8 @@ const productCatalog = [
     "rating": 4,
     "color": ["black", "brown"],
     "tags": ["bedroom", "living"],
-    "available": true, 
+    "available": true,
+    "new": false, 
     "ratings": [
       { "user": "User1", "rating": 4.5 },
       { "user": "User2", "rating": 5 },
@@ -911,6 +940,7 @@ const productCatalog = [
     "color": ["brown", "white"],
     "tags": ["bedroom", "living"],
     "available": true, 
+    "new": false,
     "ratings": [
       { "user": "User1", "rating": 4.5 },
       { "user": "User2", "rating": 5 },
@@ -932,6 +962,7 @@ const productCatalog = [
     "color": ["white", "gray"],
     "tags": ["bedroom"],
     "available": true, 
+    "new": false,
     "ratings": [
       { "user": "User1", "rating": 4.5 },
       { "user": "User2", "rating": 5 },
@@ -953,6 +984,7 @@ const productCatalog = [
     "color": ["black", "gray"],
     "tags": ["bedroom", "living"],
     "available": true, 
+    "new": false,
     "ratings": [
       { "user": "User1", "rating": 4.5 },
       { "user": "User2", "rating": 5 },
@@ -974,6 +1006,7 @@ const productCatalog = [
     "color": ["white", "brown"],
     "tags": ["bedroom"],
     "available": true, 
+    "new": false,
     "ratings": [
       { "user": "User1", "rating": 4.5 },
       { "user": "User2", "rating": 5 },
@@ -995,6 +1028,7 @@ const productCatalog = [
     "color": ["brown", "gray"],
     "tags": ["bedroom", "dining"],
     "available": true, 
+    "new": false,
     "ratings": [
       { "user": "User1", "rating": 4.5 },
       { "user": "User2", "rating": 5 },
@@ -1016,6 +1050,7 @@ const productCatalog = [
     "color": ["blue", "gray", "black"],
     "tags": ["living", "bedroom"],
     "available": true, 
+    "new": false,
     "ratings": [
       { "user": "User1", "rating": 4.5 },
       { "user": "User2", "rating": 5 },
@@ -1037,6 +1072,7 @@ const productCatalog = [
     "color": ["white", "black"],
     "tags": ["bedroom"],
     "available": true, 
+    "new": false,
     "ratings": [
       { "user": "User1", "rating": 4.5 },
       { "user": "User2", "rating": 5 },
@@ -1058,6 +1094,7 @@ const productCatalog = [
     "color": ["brown", "gray"],
     "tags": ["living"],
     "available": true, 
+    "new": false,
     "ratings": [
       { "user": "User1", "rating": 4.5 },
       { "user": "User2", "rating": 5 },
@@ -1079,6 +1116,7 @@ const productCatalog = [
     "color": ["black", "brown"],
     "tags": ["living"],
     "available": true, 
+    "new": false,
     "ratings": [
       { "user": "User1", "rating": 4.5 },
       { "user": "User2", "rating": 5 },
@@ -1100,6 +1138,7 @@ const productCatalog = [
     "color": ["black", "brown"],
     "tags": ["living"],
     "available": true, 
+    "new": false,
     "ratings": [
       { "user": "User1", "rating": 4.5 },
       { "user": "User2", "rating": 5 },
@@ -1120,7 +1159,8 @@ const productCatalog = [
     "rating": 4,
     "color": ["black", "brown"],
     "tags": ["living"],
-    "available": true, 
+    "available": true,
+    "new": false, 
     "ratings": [
       { "user": "User1", "rating": 4.5 },
       { "user": "User2", "rating": 5 },
@@ -1142,6 +1182,7 @@ const productCatalog = [
     "color": ["black", "brown"],
     "tags": ["living"],
     "available": true, 
+    "new": false,
     "ratings": [
       { "user": "User1", "rating": 4.5 },
       { "user": "User2", "rating": 5 },
@@ -1163,6 +1204,7 @@ const productCatalog = [
     "color": ["black", "brown"],
     "tags": ["living", 'bedroom'],
     "available": true, 
+    "new": false,
     "ratings": [
       { "user": "User1", "rating": 4.5 },
       { "user": "User2", "rating": 5 },
@@ -1184,6 +1226,7 @@ const productCatalog = [
     "color": ["black", "brown"],
     "tags": ['kitchen'],
     "available": true, 
+    "new": false,
     "ratings": [
       { "user": "User1", "rating": 4.5 },
       { "user": "User2", "rating": 5 },
@@ -1205,6 +1248,7 @@ const productCatalog = [
     "color": ["black", "brown"],
     "tags": ['living'],
     "available": true, 
+    "new": false,
     "ratings": [
       { "user": "User1", "rating": 4.5 },
       { "user": "User2", "rating": 5 },
@@ -1226,6 +1270,7 @@ const productCatalog = [
     "color": ["black", "brown"],
     "tags": ['living'],
     "available": true, 
+    "new": false,
     "ratings": [
       { "user": "User1", "rating": 4.5 },
       { "user": "User2", "rating": 5 },
@@ -1247,6 +1292,7 @@ const productCatalog = [
     "color": ["black", "brown"],
     "tags": ['living'],
     "available": true, 
+    "new": false,
     "ratings": [
       { "user": "User1", "rating": 4.5 },
       { "user": "User2", "rating": 5 },
@@ -1268,6 +1314,7 @@ const productCatalog = [
     "color": ["black", "brown"],
     "tags": ['living'],
     "available": true, 
+    "new": false,
     "ratings": [
       { "user": "User1", "rating": 4.5 },
       { "user": "User2", "rating": 5 },
@@ -1282,50 +1329,12 @@ const productCatalog = [
 ];
 
 
-let productCarouselItems = [
 
-"Tabletop Grill",
-"Sony - WH-1000xm5.png",
-"Yellow Armchair",
-"Desktop Lamp",
-"Bose",
-"Beige Lamp",
-"Frying Pan",
-"BedSide Lamp", 'Beige Bed'
-]
-
-let productCarouselCards = ''
-
-productCarouselItems.forEach(function(item){
-
-  productCatalog.forEach(function(product){
-  
-      if(product.name.toLowerCase() == item.toLowerCase()){
-        productCarouselCards +=  `
-          <div class="card">
-            <div class="card_img">
-              <img src=".${product.imgUrl}" alt="" >
-              <div class="card_footer">
-                <span>Add to Cart</span>
-              </div>
-            </div>
-            <span class="card_rating">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
-            <span class="card_title">${product.name}</span>
-            <span class="card_price">$${product.price}</span>
-            <span class="card_banner">New</span>
-            <span class="card_discount">-${product.discount}%</span>
-            <span class="card_wishlist"> <i class="fa-regular fa-heart"></i></span>
-          </div>
-        `
-      }
-  })
-})
-
-let kitchenGrid = document.querySelector('.shop_grid.shop_kitchen')
-let bedroomGrid = document.querySelector('.shop_grid.shop_bedroom')
-let livingroomGrid = document.querySelector('.shop_grid.shop_livingroom')
-let generalShopGrid = document.querySelector('.shop_grid.shop_allRooms')
-
+let kitchenGrid = document.querySelector('.shop_grid.shop_kitchen');
+let bedroomGrid = document.querySelector('.shop_grid.shop_bedroom');
+let livingroomGrid = document.querySelector('.shop_grid.shop_livingroom');
+let generalShopGrid = document.querySelector('.shop_grid.shop_allRooms');
+let carousel_track = document.querySelector('.carousel_track');
 
 
 
@@ -1438,30 +1447,19 @@ const renderProducts = (room, tag) => {
 
 }
 
+//Product Tags
 const kitchen = 'kitchen';
 const bedroom = 'bedroom';
 const living = 'living';
 const all = 'all'
+const newTag = 'new'
 
 renderProducts(kitchenGrid, kitchen);
 renderProducts(bedroomGrid, bedroom);
 renderProducts(livingroomGrid, living);
 renderProducts(generalShopGrid, all)
+renderProducts(carousel_track, newTag)
 
-let carousel_track = document.querySelector('.carousel_track')
-const renderCarouselProducts = () => {
-  if(!carousel_track)return
-carousel_track.insertAdjacentHTML('beforeend', productCarouselCards)
-}
-
-renderCarouselProducts()
-
-// const accountSidebar = document.querySelector('.account_sidebar')
-
-// accountSidebar.addEventListener('click', function(e){
-//   e.target.classList.toggle("account_tab-active")
-
-// })
 
 
 document.querySelectorAll('.carousel_track .card .card_footer').forEach(function(card){
