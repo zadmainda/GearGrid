@@ -1,9 +1,9 @@
-const html = document.querySelector('html');
-html.style.visibility = 'hidden';
+// const html = document.querySelector('html');
+// html.style.display = 'none';
 
-window.addEventListener("DOMContentLoaded", ()=>{
-  document.querySelector('html').style.visibility = 'visible';
-})
+// window.addEventListener("DOMContentLoaded", ()=>{
+//   document.querySelector('html').style.display = '';
+// })
 
 ////////////////////////////////////////
 
@@ -66,31 +66,6 @@ const heroSlider = () => {
 heroSlider()
 
 
-// landing Page Product Carousel
-const landingPageProductCarouselScroll = () => {
-
-  const productCarousel = document.querySelector('.carousel_track');
-  const productArrows = document.querySelectorAll('.carousel_arrows');
-
-  if( !productCarousel || !productArrows) return;
-
-  firstCarouselCard = document.querySelectorAll('.carousel_track .card')[1];
-  if(!firstCarouselCard) return ;
-
-  let productMarginLeft = parseFloat(window.getComputedStyle(firstCarouselCard).marginLeft)
-  let firstProductWidth = firstCarouselCard.clientWidth + productMarginLeft;
-
-  productArrows.forEach(arrow => {
-    arrow.addEventListener('click', () => {
-      if (arrow.id == "carousel_arrows-left") {
-        productCarousel.scrollLeft -= firstProductWidth;
-      } else {
-        productCarousel.scrollLeft += firstProductWidth;
-      }
-    });
-  });
-}
-document.addEventListener("DOMContentLoaded", landingPageProductCarouselScroll)
 
 
 // Product Template Page Main Slider 
@@ -260,8 +235,6 @@ allPricesChecked.addEventListener('change', function () {
 
 
 allPriceBoxesChecked()
-
-
 
 
 
@@ -1467,6 +1440,33 @@ document.querySelectorAll('.carousel_track .card .card_footer').forEach(function
     console.log(e.target.closest('.card').children[2].textContent)
   })
 })
+
+
+// landing Page Product Carousel
+const landingPageProductCarouselScroll = () => {
+
+  const productCarousel = document.querySelector('.carousel_track');
+  const productArrows = document.querySelectorAll('.carousel_arrows');
+
+  if( !productCarousel || !productArrows) return;
+
+  firstCarouselCard = document.querySelectorAll('.carousel_track .card')[1];
+  if(!firstCarouselCard) return ;
+
+  let productMarginLeft = parseFloat(window.getComputedStyle(firstCarouselCard).marginLeft)
+  let firstProductWidth = firstCarouselCard.clientWidth + productMarginLeft;
+
+  productArrows.forEach(arrow => {
+    arrow.addEventListener('click', () => {
+      if (arrow.id == "carousel_arrows-left") {
+        productCarousel.scrollLeft -= firstProductWidth;
+      } else {
+        productCarousel.scrollLeft += firstProductWidth;
+      }
+    });
+  });
+}
+document.addEventListener("DOMContentLoaded", landingPageProductCarouselScroll)
 
 
 
