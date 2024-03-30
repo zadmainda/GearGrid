@@ -1635,7 +1635,6 @@ const renderProducts = (room, tag) => {
   })}
   else{
     filteredProducts = productCatalog;
-    console.log(filteredProducts)
   }
 
   
@@ -1774,7 +1773,13 @@ const landingPageProductCarouselScroll = () => {
 document.addEventListener("DOMContentLoaded", landingPageProductCarouselScroll)
 
 
-
+let productCards = document.querySelectorAll('.card')
+let addToCartBtn = document.querySelectorAll('.card_footer')
+addToCartBtn.forEach(btn => {
+  btn.addEventListener('click', (e)=>{
+    console.log( e.target.closest('.card').querySelector('.card_title').textContent)
+  })
+})
 
 // Render Product's details in a single page
 
