@@ -1564,6 +1564,338 @@ const productCatalog = [
       { "user": "User2", "comment": "Fast delivery and excellent customer service." }
     ]  
   },
+  {
+    "name": "Bathroom Rradiator",
+    "SKU": "4532",
+    "price": "259",
+    "oldprice": "399",
+    "imgUrl": "assets/images/products/bathroom/adobe-bathroom-radiator.png",
+    "discount": "22",
+    "rating": 4,
+    "color": ["black", "brown"],
+    "tags": ['bathroom'],
+    "available": true, 
+    "new": false,
+    "ratings": [
+      { "user": "User1", "rating": 4.5 },
+      { "user": "User2", "rating": 5 },
+      { "user": "User3", "rating": 4 }
+    ],
+    "comments": [
+      { "user": "User1", "comment": "Great Chair, highly recommended!" },
+      { "user": "User2", "comment": "Fast delivery and excellent customer service." }
+    ]  
+  },
+  {
+    "name": "Bathroom Mirror",
+    "SKU": "11112",
+    "price": "60",
+    "oldprice": "89",
+    "imgUrl": "assets/images/products/bathroom/bathroom-mirror.png",
+    "discount": "12",
+    "rating": 5,
+    "color": ["black", "brown"],
+    "tags": ['bathroom'],
+    "available": true, 
+    "new": false,
+    "ratings": [
+      { "user": "User1", "rating": 4.5 },
+      { "user": "User2", "rating": 5 },
+      { "user": "User3", "rating": 4 }
+    ],
+    "comments": [
+      { "user": "User1", "comment": "Great Chair, highly recommended!" },
+      { "user": "User2", "comment": "Fast delivery and excellent customer service." }
+    ]  
+  },
+  {
+    "name": "Baby Bathtub",
+    "SKU": "1212",
+    "price": "100",
+    "oldprice": "119",
+    "imgUrl": "assets/images/products/bathroom/baby-bathtub.png",
+    "discount": "19",
+    "rating": 5,
+    "color": ["black", "brown"],
+    "tags": ['bathroom'],
+    "available": true, 
+    "new": false,
+    "ratings": [
+      { "user": "User1", "rating": 4.5 },
+      { "user": "User2", "rating": 5 },
+      { "user": "User3", "rating": 4 }
+    ],
+    "comments": [
+      { "user": "User1", "comment": "Great Chair, highly recommended!" },
+      { "user": "User2", "comment": "Fast delivery and excellent customer service." }
+    ]  
+  },
+  {
+    "name": "Bathtub Claw Footed",
+    "SKU": "1216",
+    "price": "200",
+    "oldprice": "209",
+    "imgUrl": "assets/images/products/bathroom/bathtub-claw-foot.png",
+    "discount": "3",
+    "rating": 4,
+    "color": ["black", "brown"],
+    "tags": ['bathroom'],
+    "available": true, 
+    "new": false,
+    "ratings": [
+      { "user": "User1", "rating": 4.5 },
+      { "user": "User2", "rating": 5 },
+      { "user": "User3", "rating": 4 }
+    ],
+    "comments": [
+      { "user": "User1", "comment": "Great Chair, highly recommended!" },
+      { "user": "User2", "comment": "Fast delivery and excellent customer service." }
+    ]  
+  },
+  {
+    "name": "Bathtub Iroon Feet",
+    "SKU": "2116",
+    "price": "300",
+    "oldprice": "330",
+    "imgUrl": "assets/images/products/bathroom/bathtub-ironcast-foot.png",
+    "discount": "13",
+    "rating": 4,
+    "color": ["black", "brown"],
+    "tags": ['bathroom'],
+    "available": true, 
+    "new": false,
+    "ratings": [
+      { "user": "User1", "rating": 4.5 },
+      { "user": "User2", "rating": 5 },
+      { "user": "User3", "rating": 4 }
+    ],
+    "comments": [
+      { "user": "User1", "comment": "Great Chair, highly recommended!" },
+      { "user": "User2", "comment": "Fast delivery and excellent customer service." }
+    ]  
+  },
+  {
+    "name": "Chile Toilet",
+    "SKU": "2118",
+    "price": "290",
+    "oldprice": "330",
+    "imgUrl": "assets/images/products/bathroom/chile-toilet.png",
+    "discount": "9",
+    "rating": 4,
+    "color": ["black", "brown"],
+    "tags": ['bathroom'],
+    "available": true, 
+    "new": false,
+    "ratings": [
+      { "user": "User1", "rating": 4.5 },
+      { "user": "User2", "rating": 5 },
+      { "user": "User3", "rating": 4 }
+    ],
+    "comments": [
+      { "user": "User1", "comment": "Great Chair, highly recommended!" },
+      { "user": "User2", "comment": "Fast delivery and excellent customer service." }
+    ]  
+  },
+  {
+    "name": "Detached Shower Head",
+    "SKU": "2120",
+    "price": "90",
+    "oldprice": "130",
+    "imgUrl": "assets/images/products/bathroom/detached-shower.png",
+    "discount": "12",
+    "rating": 4,
+    "color": ["black", "brown"],
+    "tags": ['bathroom'],
+    "available": true, 
+    "new": false,
+    "ratings": [
+      { "user": "User1", "rating": 4.5 },
+      { "user": "User2", "rating": 5 },
+      { "user": "User3", "rating": 4 }
+    ],
+    "comments": [
+      { "user": "User1", "comment": "Great Chair, highly recommended!" },
+      { "user": "User2", "comment": "Fast delivery and excellent customer service." }
+    ]  
+  },
+  {
+    "name": "Generic Bathroom Radiator",
+    "SKU": "2121",
+    "price": "319",
+    "oldprice": "",
+    "imgUrl": "assets/images/products/bathroom/generic-bathroom-radiator.png",
+    "discount": "",
+    "rating": 4,
+    "color": ["black", "brown"],
+    "tags": ['bathroom'],
+    "available": true, 
+    "new": false,
+    "ratings": [
+      { "user": "User1", "rating": 4.5 },
+      { "user": "User2", "rating": 5 },
+      { "user": "User3", "rating": 4 }
+    ],
+    "comments": [
+      { "user": "User1", "comment": "Great Chair, highly recommended!" },
+      { "user": "User2", "comment": "Fast delivery and excellent customer service." }
+    ]  
+  },
+  {
+    "name": "Golden Bathroom",
+    "SKU": "2122",
+    "price": "540",
+    "oldprice": "600",
+    "imgUrl": "assets/images/products/bathroom/golden-bathtub.png",
+    "discount": "10",
+    "rating": 4,
+    "color": ["black", "brown"],
+    "tags": ['bathroom'],
+    "available": true, 
+    "new": false,
+    "ratings": [
+      { "user": "User1", "rating": 4.5 },
+      { "user": "User2", "rating": 5 },
+      { "user": "User3", "rating": 4 }
+    ],
+    "comments": [
+      { "user": "User1", "comment": "Great Chair, highly recommended!" },
+      { "user": "User2", "comment": "Fast delivery and excellent customer service." }
+    ]  
+  },
+  {
+    "name": "Printed Bathroom",
+    "SKU": "2123",
+    "price": "550",
+    "oldprice": "610",
+    "imgUrl": "assets/images/products/bathroom/printed-bathtub.png",
+    "discount": "10",
+    "rating": 5,
+    "color": ["black", "brown"],
+    "tags": ['bathroom'],
+    "available": true, 
+    "new": false,
+    "ratings": [
+      { "user": "User1", "rating": 4.5 },
+      { "user": "User2", "rating": 5 },
+      { "user": "User3", "rating": 4 }
+    ],
+    "comments": [
+      { "user": "User1", "comment": "Great Chair, highly recommended!" },
+      { "user": "User2", "comment": "Fast delivery and excellent customer service." }
+    ]  
+  },
+  {
+    "name": "Pronged Shower Head",
+    "SKU": "2124",
+    "price": "150",
+    "oldprice": "210",
+    "imgUrl": "assets/images/products/bathroom/pronged-shower-head.png",
+    "discount": "15",
+    "rating": 5,
+    "color": ["black", "brown"],
+    "tags": ['bathroom'],
+    "available": true, 
+    "new": false,
+    "ratings": [
+      { "user": "User1", "rating": 4.5 },
+      { "user": "User2", "rating": 5 },
+      { "user": "User3", "rating": 4 }
+    ],
+    "comments": [
+      { "user": "User1", "comment": "Great Chair, highly recommended!" },
+      { "user": "User2", "comment": "Fast delivery and excellent customer service." }
+    ]  
+  },
+  {
+    "name": "Rectangular Shower Head",
+    "SKU": "2125",
+    "price": "250",
+    "oldprice": "310",
+    "imgUrl": "assets/images/products/bathroom/rectangular-shower.png",
+    "discount": "15",
+    "rating": 5,
+    "color": ["black", "brown"],
+    "tags": ['bathroom'],
+    "available": true, 
+    "new": false,
+    "ratings": [
+      { "user": "User1", "rating": 4.5 },
+      { "user": "User2", "rating": 5 },
+      { "user": "User3", "rating": 4 }
+    ],
+    "comments": [
+      { "user": "User1", "comment": "Great Chair, highly recommended!" },
+      { "user": "User2", "comment": "Fast delivery and excellent customer service." }
+    ]  
+  },
+  {
+    "name": "Shertilift max Shower",
+    "SKU": "2126",
+    "price": "110",
+    "oldprice": "210",
+    "imgUrl": "assets/images/products/bathroom/shertlift-max-shower.png",
+    "discount": "15",
+    "rating": 5,
+    "color": ["black", "brown"],
+    "tags": ['bathroom'],
+    "available": true, 
+    "new": false,
+    "ratings": [
+      { "user": "User1", "rating": 4.5 },
+      { "user": "User2", "rating": 5 },
+      { "user": "User3", "rating": 4 }
+    ],
+    "comments": [
+      { "user": "User1", "comment": "Great Chair, highly recommended!" },
+      { "user": "User2", "comment": "Fast delivery and excellent customer service." }
+    ]  
+  },
+  {
+    "name": "Toilet",
+    "SKU": "2127",
+    "price": "120",
+    "oldprice": "210",
+    "imgUrl": "assets/images/products/bathroom/toilet.png",
+    "discount": "15",
+    "rating": 5,
+    "color": ["black", "brown"],
+    "tags": ['bathroom'],
+    "available": true, 
+    "new": false,
+    "ratings": [
+      { "user": "User1", "rating": 4.5 },
+      { "user": "User2", "rating": 5 },
+      { "user": "User3", "rating": 4 }
+    ],
+    "comments": [
+      { "user": "User1", "comment": "Great Chair, highly recommended!" },
+      { "user": "User2", "comment": "Fast delivery and excellent customer service." }
+    ]  
+  },
+  {
+    "name": "Victorian Bathtub",
+    "SKU": "2128",
+    "price": "450",
+    "oldprice": "510",
+    "imgUrl": "assets/images/products/bathroom/victorian-bathtub.png",
+    "discount": "15",
+    "rating": 4,
+    "color": ["black", "brown"],
+    "tags": ['bathroom'],
+    "available": true, 
+    "new": false,
+    "ratings": [
+      { "user": "User1", "rating": 4.5 },
+      { "user": "User2", "rating": 5 },
+      { "user": "User3", "rating": 4 }
+    ],
+    "comments": [
+      { "user": "User1", "comment": "Great Chair, highly recommended!" },
+      { "user": "User2", "comment": "Fast delivery and excellent customer service." }
+    ]  
+  },
+
+
   { "name": "Aquarium", "SKU": '3109', "price": 900, "oldprice": 1081, "imgUrl": "/assets/images/products/Living Room/aquarium.png", "discount": "50", "rating": 4, "color": ["red", "green", "blue"], "tags": ['living'], "available": true, "new": false, "ratings": [{ "user": "User1", "rating": 4.5 }, { "user": "User2", "rating": 5 }, { "user": "User3", "rating": 4 }], "comments": [{ "user": "User1", "comment": "Great Chair, highly recommended!" }, { "user": "User2", "comment": "Fast delivery and excellent customer service." }] },
 
   { "name": "Plastic chair", "SKU": '2695', "price": 1100, "oldprice": 1275, "imgUrl": "/assets/images/products/Living Room/plastic-chair.png", "discount": "50", "rating": 2, "color": ["red", "green", "blue"], "tags": ['living'], "available": true, "new": false, "ratings": [{ "user": "User1", "rating": 4.5 }, { "user": "User2", "rating": 5 }, { "user": "User3", "rating": 4 }], "comments": [{ "user": "User1", "comment": "Great Chair, highly recommended!" }, { "user": "User2", "comment": "Fast delivery and excellent customer service." }] },
@@ -1646,6 +1978,7 @@ const renderProducts = (room, tag) => {
     const img = document.createElement('img');
     img.src = product.imgUrl;
     img.alt = product.name;
+    img.loading = 'lazy';
     const cardFooter = document.createElement('div');
     cardFooter.classList.add('card_footer');
     const span = document.createElement('span');
