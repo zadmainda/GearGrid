@@ -2115,13 +2115,31 @@ addToCartBtn.forEach(btn => {
 })
 
 
-//Checkout Tabs
+//cart Checkout Tabs
 const checkOutTabsContainer = document.querySelector('.cart_tabs');
 const checkOutTabs = document.querySelectorAll('.cart_tab');
 const checkOutcartContent = document.querySelectorAll('.cart_content');
 
 checkOutTabsContainer.addEventListener('click', e => {
-  console.log(e.target)
+  const clicked = e.target.closest('.cart_tab');
+  if(!clicked) return;
+
+  const clickedNum = clicked.querySelector('span').textContent;
+
+  checkOutTabs.forEach(tab => {
+    tab.classList.remove('cart_tab-active');
+  })
+
+  clicked.classList.add('cart_tab-active');
+
+  checkOutcartContent.forEach(t => {
+    t.classList.remove('cart_content-active');
+  })
+
+  cartContent = document.querySelector(`.cart_content-${clickedNum}`)
+  cartContent.classList.add('cart_content-active');
+  
+
 });
 
 
