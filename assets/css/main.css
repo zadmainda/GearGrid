@@ -1195,22 +1195,22 @@ button span {
   text-align: center;
   margin-top: 3rem;
 }
-.cart_breadcrumps, .cart_breadcrump, .cart_breadcrump span {
+.cart_tabs, .cart_tab, .cart_tab span {
   display: flex;
   align-items: center;
 }
-.cart_breadcrumps {
+.cart_tabs {
   margin: 0 auto;
   width: 60%;
   justify-content: space-between;
 }
-.cart_breadcrump {
+.cart_tab {
   gap: 1rem;
   color: var(--neutral-level-4);
   font-weight: 600;
   padding-bottom: 1.5rem;
 }
-.cart_breadcrump span {
+.cart_tab span {
   background: var(--neutral-level-3);
   color: var(--neutral-level-1);
   height: 3.2rem;
@@ -1218,11 +1218,11 @@ button span {
   border-radius: 50%;
   justify-content: center;
 }
-.cart_breadcrump-active {
+.cart_tab-active {
   color: var(--neutral-level-7);
   border-bottom: 0.2rem solid var(--neutral-level-6);
 }
-.cart_breadcrump-active span {
+.cart_tab-active span {
   background-color: var(--neutral-level-7);
   color: #fff;
 }

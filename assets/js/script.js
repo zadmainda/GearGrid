@@ -2114,6 +2114,24 @@ addToCartBtn.forEach(btn => {
   })
 })
 
+
+//Checkout Tabs
+const checkOutTabsContainer = document.querySelector('.cart_tabs');
+const checkOutTabs = document.querySelectorAll('.cart_tab');
+const checkOutcartContent = document.querySelectorAll('.cart_content');
+
+checkOutTabsContainer.addEventListener('click', e => {
+  console.log(e.target)
+});
+
+
+
+
+
+
+
+
+
 // Render Product's details in a single page
 
 
