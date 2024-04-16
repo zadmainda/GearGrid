@@ -2397,7 +2397,6 @@ const createCard = (param) => {
     oldPrice.style.display = 'none';
   }
 
-
   const cardBanner = document.createElement('span');
   cardBanner.classList.add('card_banner');
   cardBanner.textContent = 'New';
@@ -2409,7 +2408,6 @@ const createCard = (param) => {
   } else {
     cardDiscount.style.display = 'none';
   }
-
 
   const cardWishlist = document.createElement('span');
   cardWishlist.classList.add('card_wishlist');
@@ -2440,8 +2438,10 @@ const renderRoomProducts = (room, tag) => {
     return
   }
 
+  //array of DIVs/Products cards that will render with HTML
   let productsToBeRendered = []
 
+  //array of objects selected from the product Catalog
   let filteredProducts = [];
   if (tag != 'all') {
     productCatalog.forEach(product => {
@@ -2458,7 +2458,6 @@ const renderRoomProducts = (room, tag) => {
     productsToBeRendered.push(createCard(product))
   })
   
-
   productsToBeRendered.forEach(card => {
     room.appendChild(card)
   })
@@ -2561,25 +2560,29 @@ cartTabs()
 
 
 
-
-
 // Render Product's details in a single page
 
 
 let productDetailsTemplateString = `
 <section class="product wrapper">
+
 <ul class="breadcrumps">
   <div class="pageheader_crumps">
+
     <a href="/index.html" class="pageheader_crump">Home</a>
     <i class="fa-solid fa-angle-right"></i>
+
     <a href="/shop.html" class="pageheader_crump">Shop</a>
     <i class="fa-solid fa-angle-right"></i>
+
     <a href="/shop/living-room.html" class="pageheader_crump">Living room</a>
     <i class="fa-solid fa-angle-right"></i>
+
     <a href="/product.html" class="pageheader_crump">Product</a>
   </div>
 </ul>
-<div class="product_grid">
+
+<div class="product_grid"> 
   <div class="product_slider">
     <div class="product_slider-L">
       <div class="product_track">
@@ -2590,7 +2593,7 @@ let productDetailsTemplateString = `
       <i class="fa-solid fa-circle-arrow-left  product_arrow product_arrow-left" id="product_arrow-left"></i>
       <i class="fa-solid fa-circle-arrow-right product_arrow product_arrow-right" id="product_arrow-right"></i>
     </div>
-    
+
     <div class="product_slider-S">
       <img src="/assets/images/products/Living Room/black Tray table-1.png" alt="">
       <img src="/assets/images/products/Living Room/black Tray table-2.png" alt="">
@@ -2743,7 +2746,7 @@ let productDetailsTemplateString = `
             <span class="reviews_name">Sofia Havertz</span>
             <span>&star; &star; &star;</span>
           </div>
-          
+
         </div>
         <div class="reviews_text">
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur corporis optio saepe officiis atque, dolor quis odio laboriosam error quia aliquid nesciunt beatae asperiores incidunt. At deserunt temporibus quidem unde, similique vero voluptatem tempore fuga.
@@ -2814,5 +2817,87 @@ let productDetailsTemplateString = `
 `
 
 
+const createProductPage = (product) => {
+
+
+  const productWrapper  = document.createElement('section');
+  productWrapper.classList.add('product');
+  productWrapper.classList.add('wrapper');
+
+
+  const productBreadCrumbsUL = document.createElement('ul');
+  productBreadCrumbsUL.classList.add('breadCrumps');
+
+  productWrapper.appendChild(productBreadCrumbsUL);
+
+
+  const pageheaderCrumpsDiv = document.createElement('div');
+  pageheaderCrumpsDiv.classList.add('pageheader_crumps');
+
+  productBreadCrumbsUL.appendChild(pageheaderCrumpsDiv);
+
+  const pageHeaderCrumpHome = document.createElement('a');
+  pageHeaderCrumpHome.href = "/index.html";
+  pageHeaderCrumpHome.textContent = "Home";
+  pageHeaderCrumpHome.classList.add('pageheader_crump');
+
+  pageheaderCrumpsDiv.appendChild(pageHeaderCrumpHome);
+
+
+
+  const rightCaret = document.createElement('i');
+  rightCaret.classList.add('fa-solid')
+  rightCaret.classList.add('fa-angle-right');
+  pageheaderCrumpsDiv.appendChild(rightCaret);
+
+  const pageHeaderCrumpShop = document.createElement('a');
+  pageHeaderCrumpShop.href = "/shop.html";
+  pageHeaderCrumpShop.textContent = "Shop";
+  pageHeaderCrumpShop.classList.add('pageheader_crump');
+
+  pageheaderCrumpsDiv.appendChild(pageHeaderCrumpShop);
+
+  pageheaderCrumpsDiv.appendChild(rightCaret);
+
+
+  const pageHeaderTitle = document.createElement('a');
+  pageHeaderTitle.href = "/shop.html";
+  pageHeaderTitle.textContent = product.name;
+  pageHeaderTitle.classList.add('pageheader_crump');
+
+  pageheaderCrumpsDiv.appendChild(pageHeaderTitle);
+
+
+  //
+  const productGrid = document.createElement('div');
+  productGrid.classList.add('product_grid');
+  productWrapper.appendChild(productGrid);
+
+  //
+  const productSlider = document.createElement('div');
+  productSlider.classList.add('product_slider');
+
+  const
+
+
+
+
+  productGrid.appendChild(productSlider)
+
+
+
+
+
+
+
+  
+
+
+  return productWrapper.outerHTML
+
+
+}
+
+console.log(createProductPage (productCatalog[1]))
 
 
