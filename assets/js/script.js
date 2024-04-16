@@ -2877,8 +2877,6 @@ const createProductPage = (product) => {
   const productSlider = document.createElement('div');
   productSlider.classList.add('product_slider');
 
-  const
-
 
 
 
