@@ -2346,7 +2346,6 @@ const productCatalog = [
 ];
 
 
-
 let kitchenGrid = document.querySelector('.shop_grid.shop_kitchen');
 let bedroomGrid = document.querySelector('.shop_grid.shop_bedroom');
 let livingroomGrid = document.querySelector('.shop_grid.shop_livingroom');
@@ -2354,8 +2353,86 @@ let generalShopGrid = document.querySelector('.shop_grid.shop_allRooms');
 let carousel_track = document.querySelector('.carousel_track');
 
 
+const createCard = (param) => {
+  const cardwrapper = document.createElement('div');
+  cardwrapper.classList.add('card');
+  const cardImg = document.createElement('div');
+  cardImg.classList.add('card_img');
+  const img = document.createElement('img');
+  img.src = param.imgPath;
+  img.alt = param.name;
+  img.loading = 'lazy';
+  const cardFooter = document.createElement('div');
+  cardFooter.classList.add('card_footer');
+  const span = document.createElement('span');
+  span.textContent = 'Add to Cart';
 
-const renderProducts = (room, tag) => {
+  const cardRating = document.createElement('span');
+  cardRating.classList.add('card_rating');
+
+  paramRating = Math.round(param.rating);
+  cardRatingInnerHTML = ''
+  for (let i = 0; i < paramRating; i++) {
+    cardRatingInnerHTML += ' &#9733; '
+  }
+  cardRating.innerHTML = cardRatingInnerHTML;
+  cardRating.style.color = '#ff8b00';
+
+  const cardTitle = document.createElement('span');
+  cardTitle.classList.add('card_title');
+  cardTitle.textContent = param.name;
+
+  const priceWrapper = document.createElement('div');
+  priceWrapper.classList.add('card_pricewrapper')
+
+  const cardPrice = document.createElement('span');
+  cardPrice.classList.add('card_price');
+  cardPrice.textContent = '$' + param.price + '.99';
+
+  const oldPrice = document.createElement('span');
+  oldPrice.textContent = '$' + param.oldprice + '.00';
+  if (param.oldprice) {
+    oldPrice.classList.add('card_oldprice');
+  } else {
+    oldPrice.style.display = 'none';
+  }
+
+
+  const cardBanner = document.createElement('span');
+  cardBanner.classList.add('card_banner');
+  cardBanner.textContent = 'New';
+
+  const cardDiscount = document.createElement('span');
+  cardDiscount.textContent = param.discount + '%';
+  if (param.discount) {
+    cardDiscount.classList.add('card_discount');
+  } else {
+    cardDiscount.style.display = 'none';
+  }
+
+
+  const cardWishlist = document.createElement('span');
+  cardWishlist.classList.add('card_wishlist');
+  cardWishlist.innerHTML = '<i class="fa-regular fa-heart"></i>';
+
+  cardwrapper.appendChild(cardImg)
+  cardImg.appendChild(img)
+  cardFooter.appendChild(span)
+  cardImg.appendChild(cardFooter)
+  cardwrapper.appendChild(cardRating)
+  cardwrapper.appendChild(cardTitle)
+  cardwrapper.appendChild(priceWrapper)
+  priceWrapper.appendChild(cardPrice)
+  priceWrapper.appendChild(oldPrice)
+  cardwrapper.appendChild(cardBanner)
+  cardwrapper.appendChild(cardDiscount)
+  cardwrapper.appendChild(cardWishlist)
+
+  return cardwrapper
+}
+
+
+const renderRoomProducts = (room, tag) => {
 
   room;
 
@@ -2377,86 +2454,10 @@ const renderProducts = (room, tag) => {
     filteredProducts = productCatalog;
   }
 
+  filteredProducts.forEach((product) => {
+    productsToBeRendered.push(createCard(product))
+  })
   
-  filteredProducts.map(function (product) {
-    const cardwrapper = document.createElement('div');
-    cardwrapper.classList.add('card');
-    const cardImg = document.createElement('div');
-    cardImg.classList.add('card_img');
-    const img = document.createElement('img');
-    img.src = product.imgPath;
-    img.alt = product.name;
-    img.loading = 'lazy';
-    const cardFooter = document.createElement('div');
-    cardFooter.classList.add('card_footer');
-    const span = document.createElement('span');
-    span.textContent = 'Add to Cart';
-
-    const cardRating = document.createElement('span');
-    cardRating.classList.add('card_rating');
-
-    productRating = Math.round(product.rating);
-    cardRatingInnerHTML = ''
-    for (let i = 0; i < productRating; i++) {
-      cardRatingInnerHTML += ' &#9733; '
-    }
-    cardRating.innerHTML = cardRatingInnerHTML;
-    cardRating.style.color = '#ff8b00';
-
-    const cardTitle = document.createElement('span');
-    cardTitle.classList.add('card_title');
-    cardTitle.textContent = product.name;
-
-    const priceWrapper = document.createElement('div');
-    priceWrapper.classList.add('card_pricewrapper')
-
-    const cardPrice = document.createElement('span');
-    cardPrice.classList.add('card_price');
-    cardPrice.textContent = '$' + product.price + '.99';
-
-    const oldPrice = document.createElement('span');
-    oldPrice.textContent = '$' + product.oldprice + '.00';
-    if (product.oldprice) {
-      oldPrice.classList.add('card_oldprice');
-    } else {
-      oldPrice.style.display = 'none';
-    }
-
-
-    const cardBanner = document.createElement('span');
-    cardBanner.classList.add('card_banner');
-    cardBanner.textContent = 'New';
-
-    const cardDiscount = document.createElement('span');
-    cardDiscount.textContent = product.discount + '%';
-    if (product.discount) {
-      cardDiscount.classList.add('card_discount');
-    } else {
-      cardDiscount.style.display = 'none';
-    }
-
-
-    const cardWishlist = document.createElement('span');
-    cardWishlist.classList.add('card_wishlist');
-    cardWishlist.innerHTML = '<i class="fa-regular fa-heart"></i>';
-
-    cardwrapper.appendChild(cardImg)
-    cardImg.appendChild(img)
-    cardFooter.appendChild(span)
-    cardImg.appendChild(cardFooter)
-    cardwrapper.appendChild(cardRating)
-    cardwrapper.appendChild(cardTitle)
-    cardwrapper.appendChild(priceWrapper)
-    priceWrapper.appendChild(cardPrice)
-    priceWrapper.appendChild(oldPrice)
-    cardwrapper.appendChild(cardBanner)
-    cardwrapper.appendChild(cardDiscount)
-    cardwrapper.appendChild(cardWishlist)
-
-    productsToBeRendered.push(cardwrapper)
-
-  }
-  )
 
   productsToBeRendered.forEach(card => {
     room.appendChild(card)
@@ -2471,12 +2472,11 @@ const living = 'living';
 const all = 'all'
 const newTag = 'new'
 
-renderProducts(kitchenGrid, kitchen);
-renderProducts(bedroomGrid, bedroom);
-renderProducts(livingroomGrid, living);
-renderProducts(generalShopGrid, all)
-renderProducts(carousel_track, newTag)
-
+renderRoomProducts(kitchenGrid, kitchen);
+renderRoomProducts(bedroomGrid, bedroom);
+renderRoomProducts(livingroomGrid, living);
+renderRoomProducts(generalShopGrid, all)
+renderRoomProducts(carousel_track, newTag)
 
 
 document.querySelectorAll('.carousel_track .card .card_footer').forEach(function(card){
