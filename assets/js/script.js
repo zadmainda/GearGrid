@@ -238,7 +238,6 @@ allPriceBoxesChecked()
 
 
 
-
 const fieldSet = () => {
   const accountFieldSets = document.querySelectorAll('.account_fieldset');
   const accountFieldSetsLabels = document.querySelectorAll('.account_fieldset label');
@@ -267,7 +266,7 @@ const productCatalog = [
     "SKU": "12321",
     "price": "1200",
     "oldprice": "1350",
-    "imgUrl": "/assets/images/products/bedroom/bed cabinet combo.png",
+    "imgPath": "/assets/images/products/bedroom/bed cabinet combo.png",
     "discount": "50",
     "rating": 4,
     "color": ["red", "green", "blue"],
@@ -289,7 +288,7 @@ const productCatalog = [
     "SKU": "23456",
     "price": "1800",
     "oldprice": "2000",
-    "imgUrl": "/assets/images/products/bedroom/bedside-lamp.png",
+    "imgPath": "/assets/images/products/bedroom/bedside-lamp.png",
     "discount": "15",
     "rating": 4,
     "color": ["brown", "beige", "gray"],
@@ -311,7 +310,7 @@ const productCatalog = [
     "SKU": "21226",
     "price": "30",
     "oldprice": "50",
-    "imgUrl": "/assets/images/products/Bamboo Basket.png",
+    "imgPath": "/assets/images/products/Bamboo Basket.png",
     "discount": "3",
     "rating": 4,
     "color": ["brown", "beige", "gray"],
@@ -333,7 +332,7 @@ const productCatalog = [
     "SKU": "10026",
     "price": "2230",
     "oldprice": "2430",
-    "imgUrl": "/assets/images/products/Living Room/Loveseat Sofa.png",
+    "imgPath": "/assets/images/products/Living Room/Loveseat Sofa.png",
     "discount": "17",
     "rating": 4,
     "color": ["Yellow"],
@@ -355,7 +354,7 @@ const productCatalog = [
     "SKU": "4551",
     "price": "1145",
     "oldprice": "1230",
-    "imgUrl": "/assets/images/products/Living Room/Luxury sofa.png",
+    "imgPath": "/assets/images/products/Living Room/Luxury sofa.png",
     "discount": "3",
     "rating": 5,
     "color": ["Yellow"],
@@ -377,7 +376,7 @@ const productCatalog = [
     "SKU": "10026",
     "price": "499",
     "oldprice": "560",
-    "imgUrl": "/assets/images/products/Living Room/white drawer unit.png",
+    "imgPath": "/assets/images/products/Living Room/white drawer unit.png",
     "discount": "17",
     "rating": 4,
     "color": ["Yellow"],
@@ -399,7 +398,7 @@ const productCatalog = [
     "SKU": "10526",
     "price": "450",
     "oldprice": "530",
-    "imgUrl": "/assets/images/products/kitchen/grill-3.png",
+    "imgPath": "/assets/images/products/kitchen/grill-3.png",
     "discount": "11",
     "rating": 2,
     "color": ["gray"],
@@ -421,7 +420,7 @@ const productCatalog = [
     "SKU": "1211",
     "price": "99",
     "oldprice": "150",
-    "imgUrl": "/assets/images/products/Lamp.png",
+    "imgPath": "/assets/images/products/Lamp.png",
     "discount": "35",
     "rating": 5,
     "color": ["black", "brown"],
@@ -443,7 +442,7 @@ const productCatalog = [
     "SKU": "10116",
     "price": "950",
     "oldprice": "1030",
-    "imgUrl": "/assets/images/products/Living Room/yellow armchair.png",
+    "imgPath": "/assets/images/products/Living Room/yellow armchair.png",
     "discount": "11",
     "rating": 4,
     "color": ["gray"],
@@ -465,7 +464,7 @@ const productCatalog = [
     "SKU": "10996",
     "price": "550",
     "oldprice": "630",
-    "imgUrl": "/assets/images/products/Bose.png",
+    "imgPath": "/assets/images/products/Bose.png",
     "discount": "7",
     "rating": 4,
     "color": ["gray"],
@@ -487,7 +486,7 @@ const productCatalog = [
     "SKU": "454326",
     "price": "650",
     "oldprice": "680",
-    "imgUrl": "/assets/images/products/sony - WH-1000xm5.png",
+    "imgPath": "/assets/images/products/sony - WH-1000xm5.png",
     "discount": "3.5",
     "rating": 4,
     "color": ["white"],
@@ -509,7 +508,7 @@ const productCatalog = [
     "SKU": "64345",
     "price": "150",
     "oldprice": "180",
-    "imgUrl": "/assets/images/products/Table Lamp.png",
+    "imgPath": "/assets/images/products/Table Lamp.png",
     "discount": "7.5",
     "rating": 4,
     "color": ["white"],
@@ -531,7 +530,7 @@ const productCatalog = [
     "SKU": "99554",
     "price": "120",
     "oldprice": "140",
-    "imgUrl": "/assets/images/products/Beige Table Lamp.png",
+    "imgPath": "/assets/images/products/Beige Table Lamp.png",
     "discount": "7",
     "rating": 4,
     "color": ["white"],
@@ -555,7 +554,7 @@ const productCatalog = [
     "SKU": "34567",
     "price": "900",
     "oldprice": "995",
-    "imgUrl": "/assets/images/products/bedroom/beige-bed.png",
+    "imgPath": "/assets/images/products/bedroom/beige-bed.png",
     "discount": "5",
     "rating": 4,
     "color": ["black", "white"],
@@ -577,7 +576,7 @@ const productCatalog = [
     "SKU": "45678",
     "price": "150",
     "oldprice": "200",
-    "imgUrl": "/assets/images/products/bedroom/dressing table.png",
+    "imgPath": "/assets/images/products/bedroom/dressing table.png",
     "discount": "25",
     "rating": 3.5,
     "color": ["black", "gray"],
@@ -599,7 +598,7 @@ const productCatalog = [
     "SKU": "56789",
     "price": "300",
     "oldprice": "320",
-    "imgUrl": "/assets/images/products/bedroom/grey-bed.png",
+    "imgPath": "/assets/images/products/bedroom/grey-bed.png",
     "discount": "5",
     "rating": 4,
     "color": ["brown", "black"],
@@ -621,7 +620,7 @@ const productCatalog = [
     "SKU": "67890",
     "price": "1500",
     "oldprice": "1700",
-    "imgUrl": "/assets/images/products/bedroom/khaki-bed.png",
+    "imgPath": "/assets/images/products/bedroom/khaki-bed.png",
     "discount": "8",
     "rating": 4,
     "color": ["brown", "white"],
@@ -643,7 +642,7 @@ const productCatalog = [
     "SKU": "78901",
     "price": "250",
     "oldprice": "260",
-    "imgUrl": "/assets/images/products/bedroom/mahogany.png",
+    "imgPath": "/assets/images/products/bedroom/mahogany.png",
     "discount": "5",
     "rating": 4,
     "color": ["black", "white"],
@@ -665,7 +664,7 @@ const productCatalog = [
     "SKU": "89012",
     "price": "400",
     "oldprice": "450",
-    "imgUrl": "/assets/images/products/bedroom/red bed.png",
+    "imgPath": "/assets/images/products/bedroom/red bed.png",
     "discount": "10",
     "rating": 3.5,
     "color": ["black", "brown"],
@@ -687,7 +686,7 @@ const productCatalog = [
     "SKU": "90123",
     "price": "50",
     "oldprice": "60",
-    "imgUrl": "/assets/images/products/bedroom/vase.png",
+    "imgPath": "/assets/images/products/bedroom/vase.png",
     "discount": "20",
     "rating": 2,
     "color": ["brown", "white"],
@@ -709,7 +708,7 @@ const productCatalog = [
     "SKU": "01234",
     "price": "20",
     "oldprice": "30",
-    "imgUrl": "/assets/images/products/kitchen/baby bottle.png",
+    "imgPath": "/assets/images/products/kitchen/baby bottle.png",
     "discount": "3",
     "rating": 3.5,
     "color": ["black", "white"],
@@ -731,7 +730,7 @@ const productCatalog = [
     "SKU": "12345",
     "price": "2",
     "oldprice": "5",
-    "imgUrl": "/assets/images/products/kitchen/bottle opener.png",
+    "imgPath": "/assets/images/products/kitchen/bottle opener.png",
     "discount": "10",
     "rating": 3.5,
     "color": ["black", "white"],
@@ -753,7 +752,7 @@ const productCatalog = [
     "SKU": "23456",
     "price": "2",
     "oldprice": "3",
-    "imgUrl": "/assets/images/products/kitchen/cork.png",
+    "imgPath": "/assets/images/products/kitchen/cork.png",
     "discount": "20",
     "rating": 4,
     "color": ["brown", "black"],
@@ -775,7 +774,7 @@ const productCatalog = [
     "SKU": "34567",
     "price": "30",
     "oldprice": "32",
-    "imgUrl": "/assets/images/products/kitchen/frying pan.png",
+    "imgPath": "/assets/images/products/kitchen/frying pan.png",
     "discount": "3",
     "rating": 4.5,
     "color": ["gray", "beige"],
@@ -797,7 +796,7 @@ const productCatalog = [
     "SKU": "45678",
     "price": "350",
     "oldprice": "365",
-    "imgUrl": "/assets/images/products/kitchen/gas stove 2.png",
+    "imgPath": "/assets/images/products/kitchen/gas stove 2.png",
     "discount": "5",
     "rating": 4,
     "color": ["brown", "white"],
@@ -819,7 +818,7 @@ const productCatalog = [
     "SKU": "56789",
     "price": "900",
     "oldprice": "1000",
-    "imgUrl": "/assets/images/products/kitchen/gas stove.png",
+    "imgPath": "/assets/images/products/kitchen/gas stove.png",
     "discount": "6",
     "rating": 4,
     "color": ["gray", "beige"],
@@ -841,7 +840,7 @@ const productCatalog = [
     "SKU": "67890",
     "price": "180",
     "oldprice": "190",
-    "imgUrl": "/assets/images/products/kitchen/grill-2.png",
+    "imgPath": "/assets/images/products/kitchen/grill-2.png",
     "discount": "3",
     "rating": 3.5,
     "color": ["blue", "gray"],
@@ -863,7 +862,7 @@ const productCatalog = [
     "SKU": "78901",
     "price": "250",
     "oldprice": "270",
-    "imgUrl": "/assets/images/products/kitchen/grill-3.png",
+    "imgPath": "/assets/images/products/kitchen/grill-3.png",
     "discount": "1",
     "rating": 4,
     "color": ["black", "white"],
@@ -885,7 +884,7 @@ const productCatalog = [
     "SKU": "89012",
     "price": "600",
     "oldprice": "650",
-    "imgUrl": "/assets/images/products/kitchen/grill.png",
+    "imgPath": "/assets/images/products/kitchen/grill.png",
     "discount": "12",
     "rating": 4,
     "color": ["brown", "white"],
@@ -907,7 +906,7 @@ const productCatalog = [
     "SKU": "90123",
     "price": "120",
     "oldprice": "130",
-    "imgUrl": "/assets/images/products/kitchen/sink.png",
+    "imgPath": "/assets/images/products/kitchen/sink.png",
     "discount": "4",
     "rating": 3.5,
     "color": ["brown", "white"],
@@ -929,7 +928,7 @@ const productCatalog = [
     "SKU": "01234",
     "price": "350",
     "oldprice": "",
-    "imgUrl": "/assets/images/products/bedroom/Bean Bag Chair_1.png",
+    "imgPath": "/assets/images/products/bedroom/Bean Bag Chair_1.png",
     "discount": "",
     "rating": 4,
     "color": ["gray", "beige"],
@@ -951,7 +950,7 @@ const productCatalog = [
     "SKU": "12345",
     "price": "200",
     "oldprice": "",
-    "imgUrl": "/assets/images/products/bedroom/Bean Bag Chair_2.png",
+    "imgPath": "/assets/images/products/bedroom/Bean Bag Chair_2.png",
     "discount": "",
     "rating": 4,
     "color": ["black", "brown"],
@@ -973,7 +972,7 @@ const productCatalog = [
     "SKU": "23456",
     "price": "150",
     "oldprice": "",
-    "imgUrl": "/assets/images/products/bedroom/choco-bed.png",
+    "imgPath": "/assets/images/products/bedroom/choco-bed.png",
     "discount": "",
     "rating": 4,
     "color": ["brown", "white"],
@@ -995,7 +994,7 @@ const productCatalog = [
     "SKU": "34567",
     "price": "800",
     "oldprice": "",
-    "imgUrl": "/assets/images/products/bedroom/closet.png",
+    "imgPath": "/assets/images/products/bedroom/closet.png",
     "discount": "",
     "rating": 4,
     "color": ["white", "gray"],
@@ -1017,7 +1016,7 @@ const productCatalog = [
     "SKU": "45678",
     "price": "120",
     "oldprice": "",
-    "imgUrl": "/assets/images/products/bedroom/wrought-iron-bed.png",
+    "imgPath": "/assets/images/products/bedroom/wrought-iron-bed.png",
     "discount": "",
     "rating": 3.5,
     "color": ["black", "gray"],
@@ -1039,7 +1038,7 @@ const productCatalog = [
     "SKU": "56789",
     "price": "300",
     "oldprice": "",
-    "imgUrl": "/assets/images/products/bedroom/maasai-infant-bed.png",
+    "imgPath": "/assets/images/products/bedroom/maasai-infant-bed.png",
     "discount": "",
     "rating": 4,
     "color": ["white", "brown"],
@@ -1061,7 +1060,7 @@ const productCatalog = [
     "SKU": "67890",
     "price": "1200",
     "oldprice": "",
-    "imgUrl": "/assets/images/products/bedroom/pink-infant-bed.png",
+    "imgPath": "/assets/images/products/bedroom/pink-infant-bed.png",
     "discount": "",
     "rating": 4.5,
     "color": ["brown", "gray"],
@@ -1083,7 +1082,7 @@ const productCatalog = [
     "SKU": "78901",
     "price": "70",
     "oldprice": "",
-    "imgUrl": "/assets/images/products/bedroom/oak-Infant-bed.png",
+    "imgPath": "/assets/images/products/bedroom/oak-Infant-bed.png",
     "discount": "",
     "rating": 4,
     "color": ["blue", "gray", "black"],
@@ -1105,7 +1104,7 @@ const productCatalog = [
     "SKU": "89012",
     "price": "80",
     "oldprice": "",
-    "imgUrl": "/assets/images/products/bedroom/bunk-bed.png",
+    "imgPath": "/assets/images/products/bedroom/bunk-bed.png",
     "discount": "",
     "rating": 3.5,
     "color": ["white", "black"],
@@ -1127,7 +1126,7 @@ const productCatalog = [
     "SKU": "90123",
     "price": "1000",
     "oldprice": "1200",
-    "imgUrl": "/assets/images/products/Living Room/recliner.png",
+    "imgPath": "/assets/images/products/Living Room/recliner.png",
     "discount": "20",
     "rating": 4.5,
     "color": ["brown", "gray"],
@@ -1149,7 +1148,7 @@ const productCatalog = [
     "SKU": "01234",
     "price": "350",
     "oldprice": "",
-    "imgUrl": "/assets/images/products/Living Room/recliner-pro.png",
+    "imgPath": "/assets/images/products/Living Room/recliner-pro.png",
     "discount": "",
     "rating": 4,
     "color": ["black", "brown"],
@@ -1171,7 +1170,7 @@ const productCatalog = [
     "SKU": "01234",
     "price": "350",
     "oldprice": "",
-    "imgUrl": "/assets/images/products/Living Room/recliner-woven.png",
+    "imgPath": "/assets/images/products/Living Room/recliner-woven.png",
     "discount": "",
     "rating": 4,
     "color": ["black", "brown"],
@@ -1193,7 +1192,7 @@ const productCatalog = [
     "SKU": "4524",
     "price": "249",
     "oldprice": "299",
-    "imgUrl": "/assets/images/products/Living Room/bank-sofa.png",
+    "imgPath": "/assets/images/products/Living Room/bank-sofa.png",
     "discount": "",
     "rating": 4,
     "color": ["black", "brown"],
@@ -1215,7 +1214,7 @@ const productCatalog = [
     "SKU": "9987",
     "price": "312",
     "oldprice": "320",
-    "imgUrl": "/assets/images/products/Living Room/coffee-table.png",
+    "imgPath": "/assets/images/products/Living Room/coffee-table.png",
     "discount": "",
     "rating": 4,
     "color": ["black", "brown"],
@@ -1237,7 +1236,7 @@ const productCatalog = [
     "SKU": "1134",
     "price": "299",
     "oldprice": "",
-    "imgUrl": "/assets/images/products/Sony-Wh.png",
+    "imgPath": "/assets/images/products/Sony-Wh.png",
     "discount": "",
     "rating": 4,
     "color": ["black", "brown"],
@@ -1259,7 +1258,7 @@ const productCatalog = [
     "SKU": "9872",
     "price": "199",
     "oldprice": "250",
-    "imgUrl": "/assets/images/products/Living Room/candle-table.png",
+    "imgPath": "/assets/images/products/Living Room/candle-table.png",
     "discount": "10",
     "rating": 4,
     "color": ["black", "brown"],
@@ -1282,7 +1281,7 @@ const productCatalog = [
     "SKU": "2234",
     "price": "199",
     "oldprice": "",
-    "imgUrl": "/assets/images/products/skullcandy-2.png",
+    "imgPath": "/assets/images/products/skullcandy-2.png",
     "discount": "",
     "rating": 5,
     "color": ["black", "brown"],
@@ -1304,7 +1303,7 @@ const productCatalog = [
     "SKU": "3342",
     "price": "29",
     "oldprice": "",
-    "imgUrl": "/assets/images/products/Light Beige Pillow.png",
+    "imgPath": "/assets/images/products/Light Beige Pillow.png",
     "discount": "",
     "rating": 3,
     "color": ["black", "brown"],
@@ -1326,7 +1325,7 @@ const productCatalog = [
     "SKU": "9712",
     "price": "345",
     "oldprice": "395",
-    "imgUrl": "/assets/images/products/Living Room/gypsy.png",
+    "imgPath": "/assets/images/products/Living Room/gypsy.png",
     "discount": "2",
     "rating": 4,
     "color": ["black", "brown"],
@@ -1348,7 +1347,7 @@ const productCatalog = [
     "SKU": "3342",
     "price": "87",
     "oldprice": "",
-    "imgUrl": "/assets/images/products/tableware.png",
+    "imgPath": "/assets/images/products/tableware.png",
     "discount": "",
     "rating": 3,
     "color": ["black", "brown"],
@@ -1370,7 +1369,7 @@ const productCatalog = [
     "SKU": "0974",
     "price": "350",
     "oldprice": "",
-    "imgUrl": "/assets/images/products/jbl.png",
+    "imgPath": "/assets/images/products/jbl.png",
     "discount": "",
     "rating": 3,
     "color": ["black", "brown"],
@@ -1392,7 +1391,7 @@ const productCatalog = [
     "SKU": "3221",
     "price": "399",
     "oldprice": "450",
-    "imgUrl": "/assets/images/products/Living Room/gothic-desk-chair.png",
+    "imgPath": "/assets/images/products/Living Room/gothic-desk-chair.png",
     "discount": "22",
     "rating": 4,
     "color": ["black", "brown"],
@@ -1414,7 +1413,7 @@ const productCatalog = [
     "SKU": "3311",
     "price": "699",
     "oldprice": "750",
-    "imgUrl": "/assets/images/products/AKG.png",
+    "imgPath": "/assets/images/products/AKG.png",
     "discount": "12",
     "rating": 4,
     "color": ["black", "brown"],
@@ -1436,7 +1435,7 @@ const productCatalog = [
     "SKU": "3864",
     "price": "649",
     "oldprice": "750",
-    "imgUrl": "/assets/images/products/Skullcandy.png",
+    "imgPath": "/assets/images/products/Skullcandy.png",
     "discount": "10",
     "rating": 4,
     "color": ["black", "brown"],
@@ -1459,7 +1458,7 @@ const productCatalog = [
     "SKU": "0414",
     "price": "499",
     "oldprice": "",
-    "imgUrl": "/assets/images/products/Bose.png",
+    "imgPath": "/assets/images/products/Bose.png",
     "discount": "",
     "rating": 3,
     "color": ["black", "brown"],
@@ -1481,7 +1480,7 @@ const productCatalog = [
     "SKU": "472",
     "price": "699",
     "oldprice": "",
-    "imgUrl": "/assets/images/products/beats.png",
+    "imgPath": "/assets/images/products/beats.png",
     "discount": "",
     "rating": 3,
     "color": ["black", "brown"],
@@ -1503,7 +1502,7 @@ const productCatalog = [
     "SKU": "9342",
     "price": "759",
     "oldprice": "850",
-    "imgUrl": "/assets/images/products/Sony - WH-CH720N.png",
+    "imgPath": "/assets/images/products/Sony - WH-CH720N.png",
     "discount": "5",
     "rating": 4,
     "color": ["black", "brown"],
@@ -1525,7 +1524,7 @@ const productCatalog = [
     "SKU": "8345",
     "price": "499",
     "oldprice": "620",
-    "imgUrl": "/assets/images/products/Living Room/office-desk.png",
+    "imgPath": "/assets/images/products/Living Room/office-desk.png",
     "discount": "7",
     "rating": 4,
     "color": ["black", "brown"],
@@ -1547,7 +1546,7 @@ const productCatalog = [
     "SKU": "472",
     "price": "459",
     "oldprice": "",
-    "imgUrl": "/assets/images/products/beats-2.png",
+    "imgPath": "/assets/images/products/beats-2.png",
     "discount": "",
     "rating": 3,
     "color": ["black", "brown"],
@@ -1569,7 +1568,7 @@ const productCatalog = [
     "SKU": "4532",
     "price": "259",
     "oldprice": "399",
-    "imgUrl": "assets/images/products/bathroom/adobe-bathroom-radiator.png",
+    "imgPath": "assets/images/products/bathroom/adobe-bathroom-radiator.png",
     "discount": "22",
     "rating": 4,
     "color": ["black", "brown"],
@@ -1591,7 +1590,7 @@ const productCatalog = [
     "SKU": "11112",
     "price": "60",
     "oldprice": "89",
-    "imgUrl": "assets/images/products/bathroom/bathroom-mirror.png",
+    "imgPath": "assets/images/products/bathroom/bathroom-mirror.png",
     "discount": "12",
     "rating": 5,
     "color": ["black", "brown"],
@@ -1613,7 +1612,7 @@ const productCatalog = [
     "SKU": "1212",
     "price": "100",
     "oldprice": "119",
-    "imgUrl": "assets/images/products/bathroom/baby-bathtub.png",
+    "imgPath": "assets/images/products/bathroom/baby-bathtub.png",
     "discount": "19",
     "rating": 5,
     "color": ["black", "brown"],
@@ -1635,7 +1634,7 @@ const productCatalog = [
     "SKU": "1216",
     "price": "200",
     "oldprice": "209",
-    "imgUrl": "assets/images/products/bathroom/bathtub-claw-foot.png",
+    "imgPath": "assets/images/products/bathroom/bathtub-claw-foot.png",
     "discount": "3",
     "rating": 4,
     "color": ["black", "brown"],
@@ -1657,7 +1656,7 @@ const productCatalog = [
     "SKU": "2116",
     "price": "300",
     "oldprice": "330",
-    "imgUrl": "assets/images/products/bathroom/bathtub-ironcast-foot.png",
+    "imgPath": "assets/images/products/bathroom/bathtub-ironcast-foot.png",
     "discount": "13",
     "rating": 4,
     "color": ["black", "brown"],
@@ -1679,7 +1678,7 @@ const productCatalog = [
     "SKU": "2118",
     "price": "290",
     "oldprice": "330",
-    "imgUrl": "assets/images/products/bathroom/chile-toilet.png",
+    "imgPath": "assets/images/products/bathroom/chile-toilet.png",
     "discount": "9",
     "rating": 4,
     "color": ["black", "brown"],
@@ -1701,7 +1700,7 @@ const productCatalog = [
     "SKU": "2120",
     "price": "90",
     "oldprice": "130",
-    "imgUrl": "assets/images/products/bathroom/detached-shower.png",
+    "imgPath": "assets/images/products/bathroom/detached-shower.png",
     "discount": "12",
     "rating": 4,
     "color": ["black", "brown"],
@@ -1723,7 +1722,7 @@ const productCatalog = [
     "SKU": "2121",
     "price": "319",
     "oldprice": "",
-    "imgUrl": "assets/images/products/bathroom/generic-bathroom-radiator.png",
+    "imgPath": "assets/images/products/bathroom/generic-bathroom-radiator.png",
     "discount": "",
     "rating": 4,
     "color": ["black", "brown"],
@@ -1745,7 +1744,7 @@ const productCatalog = [
     "SKU": "2122",
     "price": "540",
     "oldprice": "600",
-    "imgUrl": "assets/images/products/bathroom/golden-bathtub.png",
+    "imgPath": "assets/images/products/bathroom/golden-bathtub.png",
     "discount": "10",
     "rating": 4,
     "color": ["black", "brown"],
@@ -1767,7 +1766,7 @@ const productCatalog = [
     "SKU": "2123",
     "price": "550",
     "oldprice": "610",
-    "imgUrl": "assets/images/products/bathroom/printed-bathtub.png",
+    "imgPath": "assets/images/products/bathroom/printed-bathtub.png",
     "discount": "10",
     "rating": 5,
     "color": ["black", "brown"],
@@ -1789,7 +1788,7 @@ const productCatalog = [
     "SKU": "2124",
     "price": "150",
     "oldprice": "210",
-    "imgUrl": "assets/images/products/bathroom/pronged-shower-head.png",
+    "imgPath": "assets/images/products/bathroom/pronged-shower-head.png",
     "discount": "15",
     "rating": 5,
     "color": ["black", "brown"],
@@ -1811,7 +1810,7 @@ const productCatalog = [
     "SKU": "2125",
     "price": "250",
     "oldprice": "310",
-    "imgUrl": "assets/images/products/bathroom/rectangular-shower.png",
+    "imgPath": "assets/images/products/bathroom/rectangular-shower.png",
     "discount": "15",
     "rating": 5,
     "color": ["black", "brown"],
@@ -1833,7 +1832,7 @@ const productCatalog = [
     "SKU": "2126",
     "price": "110",
     "oldprice": "210",
-    "imgUrl": "assets/images/products/bathroom/shertlift-max-shower.png",
+    "imgPath": "assets/images/products/bathroom/shertlift-max-shower.png",
     "discount": "15",
     "rating": 5,
     "color": ["black", "brown"],
@@ -1855,7 +1854,7 @@ const productCatalog = [
     "SKU": "2127",
     "price": "120",
     "oldprice": "210",
-    "imgUrl": "assets/images/products/bathroom/toilet.png",
+    "imgPath": "assets/images/products/bathroom/toilet.png",
     "discount": "15",
     "rating": 5,
     "color": ["black", "brown"],
@@ -1877,7 +1876,7 @@ const productCatalog = [
     "SKU": "2128",
     "price": "450",
     "oldprice": "510",
-    "imgUrl": "assets/images/products/bathroom/victorian-bathtub.png",
+    "imgPath": "assets/images/products/bathroom/victorian-bathtub.png",
     "discount": "15",
     "rating": 4,
     "color": ["black", "brown"],
@@ -1896,45 +1895,453 @@ const productCatalog = [
   },
 
 
-  { "name": "Aquarium", "SKU": '3109', "price": 900, "oldprice": 1081, "imgUrl": "/assets/images/products/Living Room/aquarium.png", "discount": "50", "rating": 4, "color": ["red", "green", "blue"], "tags": ['living'], "available": true, "new": false, "ratings": [{ "user": "User1", "rating": 4.5 }, { "user": "User2", "rating": 5 }, { "user": "User3", "rating": 4 }], "comments": [{ "user": "User1", "comment": "Great Chair, highly recommended!" }, { "user": "User2", "comment": "Fast delivery and excellent customer service." }] },
+  {
+    "name": "Aquarium",
+    "SKU": '3109',
+    "price": 900,
+    "oldprice": 1081,
+    "imgPath": "/assets/images/products/Living Room/aquarium.png",
+    "discount": "50", "rating": 4, "color": ["red", "green", "blue"],
+    "tags": ['living'],
+    "available": true,
+    "new": false,
+    "ratings": [
+      { "user": "User1", "rating": 4.5 },
+      { "user": "User2", "rating": 5 }, { "user": "User3", "rating": 4 }
+    ],
+    "comments": [
+      { "user": "User1", "comment": "Great Chair, highly recommended!" },
+      { "user": "User2", "comment": "Fast delivery and excellent customer service." }
+    ]
+  },
 
-  { "name": "Plastic chair", "SKU": '2695', "price": 1100, "oldprice": 1275, "imgUrl": "/assets/images/products/Living Room/plastic-chair.png", "discount": "50", "rating": 2, "color": ["red", "green", "blue"], "tags": ['living'], "available": true, "new": false, "ratings": [{ "user": "User1", "rating": 4.5 }, { "user": "User2", "rating": 5 }, { "user": "User3", "rating": 4 }], "comments": [{ "user": "User1", "comment": "Great Chair, highly recommended!" }, { "user": "User2", "comment": "Fast delivery and excellent customer service." }] },
+  {
+    "name": "Plastic chair",
+    "SKU": '2695',
+    "price": 1100, "oldprice": 1275,
+    "imgPath": "/assets/images/products/Living Room/plastic-chair.png",
+    "discount": "50",
+    "rating": 2,
+    "color": ["red", "green", "blue"],
+    "tags": ['living'],
+    "available": true,
+    "new": false,
+    "ratings": [
+      { "user": "User1", "rating": 4.5 },
+      { "user": "User2", "rating": 5 },
+      { "user": "User3", "rating": 4 }
+    ],
+    "comments": [
+      { "user": "User1", "comment": "Great Chair, highly recommended!" },
+      { "user": "User2", "comment": "Fast delivery and excellent customer service." }
+    ]
+  },
 
-  { "name": "Executive Dining Set", "SKU": '2919', "price": 200, "oldprice": 382, "imgUrl": "/assets/images/products/dining/executive-dining-set.png", "discount": "50", "rating": 2, "color": ["red", "green", "blue"], "tags": ['dining'], "available": true, "new": false, "ratings": [{ "user": "User1", "rating": 4.5 }, { "user": "User2", "rating": 5 }, { "user": "User3", "rating": 4 }], "comments": [{ "user": "User1", "comment": "Great Chair, highly recommended!" }, { "user": "User2", "comment": "Fast delivery and excellent customer service." }] },
+  {
+    "name": "Executive Dining Set",
+    "SKU": '2919',
+    "price": 200,
+    "oldprice": 382,
+    "imgPath": "/assets/images/products/dining/executive-dining-set.png",
+    "discount": "50",
+    "rating": 2,
+    "color": ["red", "green", "blue"],
+    "tags": ['dining'], "available": true,
+    "new": false,
+    "ratings": [
+      { "user": "User1", "rating": 4.5 }, { "user": "User2", "rating": 5 },
+      { "user": "User3", "rating": 4 }
+    ],
+    "comments": [
+      { "user": "User1", "comment": "Great Chair, highly recommended!" },
+      { "user": "User2", "comment": "Fast delivery and excellent customer service." }
+    ]
+  },
 
-  { "name": "Grey Outdoor Chairs", "SKU": '1704', "price": 1000, "oldprice": 1101, "imgUrl": "/assets/images/products/dining/grey-outdoor-chairs.png", "discount": "50", "rating": 4, "color": ["red", "green", "blue"], "tags": ['dining'], "available": true, "new": false, "ratings": [{ "user": "User1", "rating": 4.5 }, { "user": "User2", "rating": 5 }, { "user": "User3", "rating": 4 }], "comments": [{ "user": "User1", "comment": "Great Chair, highly recommended!" }, { "user": "User2", "comment": "Fast delivery and excellent customer service." }] },
+  {
+    "name": "Grey Outdoor Chairs",
+    "SKU": '1704',
+    "price": 1000,
+    "oldprice": 1101,
+    "imgPath": "/assets/images/products/dining/grey-outdoor-chairs.png",
+    "discount": "50",
+    "rating": 4,
+    "color": ["red", "green", "blue"],
+    "tags": ['dining'],
+    "available": true,
+    "new": false,
+    "ratings": [
+      { "user": "User1", "rating": 4.5 },
+      { "user": "User2", "rating": 5 },
+      { "user": "User3", "rating": 4 }
+    ],
+    "comments": [
+      { "user": "User1", "comment": "Great Chair, highly recommended!" },
+      { "user": "User2", "comment": "Fast delivery and excellent customer service." }
+    ]
+  },
 
-  { "name": "Kid's dining set", "SKU": '1700', "price": 300, "oldprice": 365, "imgUrl": "/assets/images/products/dining/kids-dining-set.png", "discount": "50", "rating": 2, "color": ["red", "green", "blue"], "tags": ['dining'], "available": true, "new": false, "ratings": [{ "user": "User1", "rating": 4.5 }, { "user": "User2", "rating": 5 }, { "user": "User3", "rating": 4 }], "comments": [{ "user": "User1", "comment": "Great Chair, highly recommended!" }, { "user": "User2", "comment": "Fast delivery and excellent customer service." }] },
+  {
+    "name": "Kid's dining set",
+    "SKU": '1700',
+    "price": 300,
+    "oldprice": 365,
+    "imgPath": "/assets/images/products/dining/kids-dining-set.png",
+    "discount": "50",
+    "rating": 2,
+    "color": ["red", "green", "blue"],
+    "tags": ['dining'],
+    "available": true,
+    "new": false,
+    "ratings": [
+      { "user": "User1", "rating": 4.5 },
+      { "user": "User2", "rating": 5 },
+      { "user": "User3", "rating": 4 }
+    ],
+    "comments": [
+      { "user": "User1", "comment": "Great Chair, highly recommended!" },
+      { "user": "User2", "comment": "Fast delivery and excellent customer service." }
+    ]
+  },
 
-  { "name": "Mahogany dining table", "SKU": '3119', "price": 800, "oldprice": 976, "imgUrl": " /assets/images/products/dining/mahogany-dining-table.png", "discount": "50", "rating": 5, "color": ["red", "green", "blue"], "tags": ['dining'], "available": true, "new": false, "ratings": [{ "user": "User1", "rating": 4.5 }, { "user": "User2", "rating": 5 }, { "user": "User3", "rating": 4 }], "comments": [{ "user": "User1", "comment": "Great Chair, highly recommended!" }, { "user": "User2", "comment": "Fast delivery and excellent customer service." }] },
+  {
+    "name": "Mahogany dining table",
+    "SKU": '3119',
+    "price": 800,
+    "oldprice": 976,
+    "imgPath": " /assets/images/products/dining/mahogany-dining-table.png",
+    "discount": "50",
+    "rating": 5,
+    "color": ["red", "green", "blue"],
+    "tags": ['dining'],
+    "available": true,
+    "new": false,
+    "ratings": [
+      { "user": "User1", "rating": 4.5 },
+      { "user": "User2", "rating": 5 },
+      { "user": "User3", "rating": 4 }
+    ],
+    "comments": [
+      { "user": "User1", "comment": "Great Chair, highly recommended!" },
+      { "user": "User2", "comment": "Fast delivery and excellent customer service." }
+    ]
+  },
 
-  { "name": 'Mini dining room set', "SKU": '569', "price": 800, "oldprice": 973, "imgUrl": "/assets/images/products/dining/mini-dining-room-set.png", "discount": "50", "rating": 2, "color": ["red", "green", "blue"], "tags": ['dining'], "available": true, "new": false, "ratings": [{ "user": "User1", "rating": 4.5 }, { "user": "User2", "rating": 5 }, { "user": "User3", "rating": 4 }], "comments": [{ "user": "User1", "comment": "Great Chair, highly recommended!" }, { "user": "User2", "comment": "Fast delivery and excellent customer service." }] },
+  {
+    "name": 'Mini dining room set',
+    "SKU": '569',
+    "price": 800,
+    "oldprice": 973,
+    "imgPath": "/assets/images/products/dining/mini-dining-room-set.png",
+    "discount": "50",
+    "rating": 2,
+    "color": ["red", "green", "blue"],
+    "tags": ['dining'],
+    "available": true,
+    "new": false,
+    "ratings": [
+      { "user": "User1", "rating": 4.5 },
+      { "user": "User2", "rating": 5 },
+      { "user": "User3", "rating": 4 }
+    ],
+    "comments": [
+      { "user": "User1", "comment": "Great Chair, highly recommended!" },
+      { "user": "User2", "comment": "Fast delivery and excellent customer service." }
+    ]
+  },
 
-  { "name": 'stylish dining room set', "SKU": '2881', "price": 700, "oldprice": 771, "imgUrl": "/assets/images/products/dining/stylish-dining-room-set.png", "discount": "50", "rating": 2, "color": ["red", "green", "blue"], "tags": ['dining'], "available": true, "new": false, "ratings": [{ "user": "User1", "rating": 4.5 }, { "user": "User2", "rating": 5 }, { "user": "User3", "rating": 4 }], "comments": [{ "user": "User1", "comment": "Great Chair, highly recommended!" }, { "user": "User2", "comment": "Fast delivery and excellent customer service." }] },
+  {
+    "name": 'stylish dining room set',
+    "SKU": '2881',
+    "price": 700,
+    "oldprice": 771,
+    "imgPath": "/assets/images/products/dining/stylish-dining-room-set.png",
+    "discount": "50",
+    "rating": 2,
+    "color": ["red", "green", "blue"],
+    "tags": ['dining'],
+    "available": true,
+    "new": false,
+    "ratings": [
+      { "user": "User1", "rating": 4.5 },
+      { "user": "User2", "rating": 5 }, { "user": "User3", "rating": 4 }
+    ],
+    "comments": [
+      { "user": "User1", "comment": "Great Chair, highly recommended!" },
+      { "user": "User2", "comment": "Fast delivery and excellent customer service." }
+    ]
+  },
 
-  { "name": 'Outdoor Furniture', "SKU": '903', "price": 700, "oldprice": 866, "imgUrl": "/assets/images/products/outdoor/Outdoor-Furniture-PNG-HD.png", "discount": "50", "rating": 4, "color": ["red", "green", "blue"], "tags": ['dining'], "available": true, "new": false, "ratings": [{ "user": "User1", "rating": 4.5 }, { "user": "User2", "rating": 5 }, { "user": "User3", "rating": 4 }], "comments": [{ "user": "User1", "comment": "Great Chair, highly recommended!" }, { "user": "User2", "comment": "Fast delivery and excellent customer service." }] },
+  {
+    "name": 'Outdoor Furniture',
+    "SKU": '903',
+    "price": 700,
+    "oldprice": 866,
+    "imgPath": "/assets/images/products/outdoor/Outdoor-Furniture-PNG-HD.png",
+    "discount": "50",
+    "rating": 4,
+    "color": ["red", "green", "blue"],
+    "tags": ['dining'],
+    "available": true,
+    "new": false,
+    "ratings": [
+      { "user": "User1", "rating": 4.5 },
+      { "user": "User2", "rating": 5 },
+      { "user": "User3", "rating": 4 }
+    ],
+    "comments": [
+      { "user": "User1", "comment": "Great Chair, highly recommended!" },
+      { "user": "User2", "comment": "Fast delivery and excellent customer service." }
+    ]
+  },
 
-  { "name": 'Ayaki Patio Heater', "SKU": '1120', "price": 1000, "oldprice": 1058, "imgUrl": "/assets/images/products/outdoor/ayaki-patio-heater.png", "discount": "50", "rating": 4, "color": ["red", "green", "blue"], "tags": ['dining'], "available": true, "new": false, "ratings": [{ "user": "User1", "rating": 4.5 }, { "user": "User2", "rating": 5 }, { "user": "User3", "rating": 4 }], "comments": [{ "user": "User1", "comment": "Great Chair, highly recommended!" }, { "user": "User2", "comment": "Fast delivery and excellent customer service." }] },
+  {
+    "name": 'Ayaki Patio Heater',
+    "SKU": '1120',
+    "price": 1000,
+    "oldprice": 1058,
+    "imgPath": "/assets/images/products/outdoor/ayaki-patio-heater.png",
+    "discount": "50",
+    "rating": 4,
+    "color": ["red", "green", "blue"],
+    "tags": ['dining'],
+    "available": true,
+    "new": false,
+    "ratings": [
+      { "user": "User1", "rating": 4.5 },
+      { "user": "User2", "rating": 5 },
+      { "user": "User3", "rating": 4 }
+    ],
+    "comments": [
+      { "user": "User1", "comment": "Great Chair, highly recommended!" },
+      { "user": "User2", "comment": "Fast delivery and excellent customer service." }
+    ]
+  },
 
-  { "name": 'Black porch swing', "SKU": '1837', "price": 1200, "oldprice": 1277, "imgUrl": "/assets/images/products/outdoor/black-porch-swing.png", "discount": "50", "rating": 3, "color": ["red", "green", "blue"], "tags": ['dining'], "available": true, "new": false, "ratings": [{ "user": "User1", "rating": 4.5 }, { "user": "User2", "rating": 5 }, { "user": "User3", "rating": 4 }], "comments": [{ "user": "User1", "comment": "Great Chair, highly recommended!" }, { "user": "User2", "comment": "Fast delivery and excellent customer service." }] },
+  {
+    "name": 'Black porch swing',
+    "SKU": '1837',
+    "price": 1200,
+    "oldprice": 1277,
+    "imgPath": "/assets/images/products/outdoor/black-porch-swing.png",
+    "discount": "50",
+    "rating": 3,
+    "color": ["red", "green", "blue"],
+    "tags": ['dining'],
+    "available": true,
+    "new": false,
+    "ratings": [
+      { "user": "User1", "rating": 4.5 },
+      { "user": "User2", "rating": 5 },
+      { "user": "User3", "rating": 4 }
+    ],
+    "comments": [
+      { "user": "User1", "comment": "Great Chair, highly recommended!" },
+      { "user": "User2", "comment": "Fast delivery and excellent customer service." }
+    ]
+  },
 
-  { "name": 'Golden porch swing', "SKU": '502', "price": 200, "oldprice": 346, "imgUrl": "/assets/images/products/outdoor/golden-porch-swing.png", "discount": "50", "rating": 4, "color": ["red", "green", "blue"], "tags": ['dining'], "available": true, "new": false, "ratings": [{ "user": "User1", "rating": 4.5 }, { "user": "User2", "rating": 5 }, { "user": "User3", "rating": 4 }], "comments": [{ "user": "User1", "comment": "Great Chair, highly recommended!" }, { "user": "User2", "comment": "Fast delivery and excellent customer service." }] },
+  {
+    "name": 'Golden porch swing',
+    "SKU": '502',
+    "price": 200,
+    "oldprice": 346,
+    "imgPath": "/assets/images/products/outdoor/golden-porch-swing.png",
+    "discount": "50",
+    "rating": 4,
+    "color": ["red", "green", "blue"],
+    "tags": ['dining'],
+    "available": true,
+    "new": false,
+    "ratings": [
+      { "user": "User1", "rating": 4.5 },
+      { "user": "User2", "rating": 5 },
+      { "user": "User3", "rating": 4 }
+    ],
+    "comments": [
+      { "user": "User1", "comment": "Great Chair, highly recommended!" },
+      { "user": "User2", "comment": "Fast delivery and excellent customer service." }
+    ]
+  },
 
-  { "name": 'Outdoor Swinging Set', "SKU": '1987', "price": 300, "oldprice": 353, "imgUrl": "/assets/images/products/outdoor/outdoor-dining-set.png", "discount": "50", "rating": 5, "color": ["red", "green", "blue"], "tags": ['dining'], "available": true, "new": false, "ratings": [{ "user": "User1", "rating": 4.5 }, { "user": "User2", "rating": 5 }, { "user": "User3", "rating": 4 }], "comments": [{ "user": "User1", "comment": "Great Chair, highly recommended!" }, { "user": "User2", "comment": "Fast delivery and excellent customer service." }] },
+  {
+    "name": 'Outdoor Swinging Set',
+    "SKU": '1987',
+    "price": 300,
+    "oldprice": 353,
+    "imgPath": "/assets/images/products/outdoor/outdoor-dining-set.png",
+    "discount": "50",
+    "rating": 5,
+    "color": ["red", "green", "blue"],
+    "tags": ['dining'],
+    "available": true,
+    "new": false,
+    "ratings": [
+      { "user": "User1", "rating": 4.5 },
+      { "user": "User2", "rating": 5 },
+      { "user": "User3", "rating": 4 }
+    ],
+    "comments": [
+      { "user": "User1", "comment": "Great Chair, highly recommended!" },
+      { "user": "User2", "comment": "Fast delivery and excellent customer service." }
+    ]
+  },
 
-  { "name": 'Padded lawn Chairs', "SKU": '2416', "price": 1100, "oldprice": 1182, "imgUrl": "/assets/images/products/outdoor/padded-outdoor-chairs-table.png", "discount": "50", "rating": 4, "color": ["red", "green", "blue"], "tags": ['dining'], "available": true, "new": false, "ratings": [{ "user": "User1", "rating": 4.5 }, { "user": "User2", "rating": 5 }, { "user": "User3", "rating": 4 }], "comments": [{ "user": "User1", "comment": "Great Chair, highly recommended!" }, { "user": "User2", "comment": "Fast delivery and excellent customer service." }] },
+  {
+    "name": 'Padded lawn Chairs',
+    "SKU": '2416',
+    "price": 1100,
+    "oldprice": 1182,
+    "imgPath": "/assets/images/products/outdoor/padded-outdoor-chairs-table.png",
+    "discount": "50",
+    "rating": 4,
+    "color": ["red", "green", "blue"],
+    "tags": ['dining'],
+    "available": true,
+    "new": false,
+    "ratings": [
+      { "user": "User1", "rating": 4.5 },
+      { "user": "User2", "rating": 5 }, { "user": "User3", "rating": 4 }
+    ],
+    "comments": [
+      { "user": "User1", "comment": "Great Chair, highly recommended!" },
+      { "user": "User2", "comment": "Fast delivery and excellent customer service." }
+    ]
+  },
 
-  { "name": 'Park Bench', "SKU": '545', "price": 300, "oldprice": 402, "imgUrl": "/assets/images/products/outdoor/park-bench.png", "discount": "50", "rating": 2, "color": ["red", "green", "blue"], "tags": ['dining'], "available": true, "new": false, "ratings": [{ "user": "User1", "rating": 4.5 }, { "user": "User2", "rating": 5 }, { "user": "User3", "rating": 4 }], "comments": [{ "user": "User1", "comment": "Great Chair, highly recommended!" }, { "user": "User2", "comment": "Fast delivery and excellent customer service." }] },
+  {
+    "name": 'Park Bench',
+    "SKU": '545',
+    "price": 300,
+    "oldprice": 402,
+    "imgPath": "/assets/images/products/outdoor/park-bench.png",
+    "discount": "50",
+    "rating": 2,
+    "color": ["red", "green", "blue"],
+    "tags": ['dining'], "available": true,
+    "new": false,
+    "ratings": [
+      { "user": "User1", "rating": 4.5 },
+      { "user": "User2", "rating": 5 },
+      { "user": "User3", "rating": 4 }
+    ],
+    "comments": [
+      { "user": "User1", "comment": "Great Chair, highly recommended!" },
+      { "user": "User2", "comment": "Fast delivery and excellent customer service." }
+    ]
+  },
 
-  { "name": 'Sony Patio heater', "SKU": '2344', "price": 800, "oldprice": 894, "imgUrl": "/assets/images/products/outdoor/patio-heater.png", "discount": "50", "rating": 3, "color": ["red", "green", "blue"], "tags": ['dining'], "available": true, "new": false, "ratings": [{ "user": "User1", "rating": 4.5 }, { "user": "User2", "rating": 5 }, { "user": "User3", "rating": 4 }], "comments": [{ "user": "User1", "comment": "Great Chair, highly recommended!" }, { "user": "User2", "comment": "Fast delivery and excellent customer service." }] },
+  { 
+    "name": 'Sony Patio heater',
+    "SKU": '2344',
+    "price": 800,
+    "oldprice": 894,
+    "imgPath": "/assets/images/products/outdoor/patio-heater.png",
+    "discount": "50", "rating": 3, "color": ["red", "green", "blue"],
+    "tags": ['dining'],
+    "available": true,
+    "new": false,
+    "ratings": [
+      { "user": "User1", "rating": 4.5 },
+      { "user": "User2", "rating": 5 },
+      { "user": "User3", "rating": 4 }
+    ],
+    "comments": [
+      { "user": "User1", "comment": "Great Chair, highly recommended!" },
+      { "user": "User2", "comment": "Fast delivery and excellent customer service." }
+    ]
+  },
 
-  { "name": 'Patio relaxing chairs', "SKU": '644', "price": 200, "oldprice": 271, "imgUrl": "/assets/images/products/outdoor/patio-relaxing-chairs.png", "discount": "50", "rating": 3, "color": ["red", "green", "blue"], "tags": ['dining'], "available": true, "new": false, "ratings": [{ "user": "User1", "rating": 4.5 }, { "user": "User2", "rating": 5 }, { "user": "User3", "rating": 4 }], "comments": [{ "user": "User1", "comment": "Great Chair, highly recommended!" }, { "user": "User2", "comment": "Fast delivery and excellent customer service." }] },
+  {
+    "name": 'Patio relaxing chairs',
+    "SKU": '644',
+    "price": 200,
+    "oldprice": 271,
+    "imgPath": "/assets/images/products/outdoor/patio-relaxing-chairs.png",
+    "discount": "50",
+    "rating": 3,
+    "color": ["red", "green", "blue"],
+    "tags": ['dining'],
+    "available": true,
+    "new": false,
+    "ratings": [
+      { "user": "User1", "rating": 4.5 },
+      { "user": "User2", "rating": 5 },
+      { "user": "User3", "rating": 4 }
+    ],
+    "comments": [
+      { "user": "User1", "comment": "Great Chair, highly recommended!" },
+      { "user": "User2", "comment": "Fast delivery and excellent customer service." }
+    ]
+  },
 
-  { "name": 'Phillips Patio Heater', "SKU": '3385', "price": 500, "oldprice": 562, "imgUrl": "/assets/images/products/outdoor/phillips patio-heater.png", "discount": "50", "rating": 4, "color": ["red", "green", "blue"], "tags": ['dining'], "available": true, "new": false, "ratings": [{ "user": "User1", "rating": 4.5 }, { "user": "User2", "rating": 5 }, { "user": "User3", "rating": 4 }], "comments": [{ "user": "User1", "comment": "Great Chair, highly recommended!" }, { "user": "User2", "comment": "Fast delivery and excellent customer service." }] },
+  {
+    "name": 'Phillips Patio Heater',
+    "SKU": '3385',
+    "price": 500,
+    "oldprice": 562,
+    "imgPath": "/assets/images/products/outdoor/phillips patio-heater.png",
+    "discount": "50",
+    "rating": 4,
+    "color": ["red", "green", "blue"], "tags": ['dining'],
+    "available": true,
+    "new": false,
+    "ratings": [
+      { "user": "User1", "rating": 4.5 },
+      { "user": "User2", "rating": 5 },
+      { "user": "User3", "rating": 4 }
+    ],
+    "comments": [
+      { "user": "User1", "comment": "Great Chair, highly recommended!" },
+      { "user": "User2", "comment": "Fast delivery and excellent customer service." }
+    ]
+  },
 
-  { "name": 'Leather Porch Swing', "SKU": '2759', "price": 900, "oldprice": 972, "imgUrl": "/assets/images/products/outdoor/porch-swing.png", "discount": "50", "rating": 5, "color": ["red", "green", "blue"], "tags": ['dining'], "available": true, "new": false, "ratings": [{ "user": "User1", "rating": 4.5 }, { "user": "User2", "rating": 5 }, { "user": "User3", "rating": 4 }], "comments": [{ "user": "User1", "comment": "Great Chair, highly recommended!" }, { "user": "User2", "comment": "Fast delivery and excellent customer service." }] },
-  
-  { "name": 'Self supportting swing chair', "SKU": '3259', "price": 900, "oldprice": 1059, "imgUrl": "/assets/images/products/outdoor/self-supporting-swing.png", "discount": "50", "rating": 2, "color": ["red", "green", "blue"], "tags": ['dining'], "available": true, "new": false, "ratings": [{ "user": "User1", "rating": 4.5 }, { "user": "User2", "rating": 5 }, { "user": "User3", "rating": 4 }], "comments": [{ "user": "User1", "comment": "Great Chair, highly recommended!" }, { "user": "User2", "comment": "Fast delivery and excellent customer service." }] }
+  {
+    "name": 'Leather Porch Swing',
+    "SKU": '2759',
+    "price": 900,
+    "oldprice": 972,
+    "imgPath": "/assets/images/products/outdoor/porch-swing.png",
+    "discount": "50",
+    "rating": 5,
+    "color": ["red", "green", "blue"],
+    "tags": ['dining'],
+    "available": true,
+    "new": false,
+    "ratings": [
+      { "user": "User1", "rating": 4.5 },
+      { "user": "User2", "rating": 5 },
+      { "user": "User3", "rating": 4 }
+    ],
+    "comments": [
+      { "user": "User1", "comment": "Great Chair, highly recommended!" },
+      { "user": "User2", "comment": "Fast delivery and excellent customer service." }
+    ]
+  },
+
+  {
+    "name": 'Self supportting swing chair',
+    "SKU": '3259',
+    "price": 900,
+    "oldprice": 1059,
+    "imgPath": "/assets/images/products/outdoor/self-supporting-swing.png",
+    "discount": "50",
+    "rating": 2,
+    "color": ["red", "green", "blue"],
+    "tags": ['dining'],
+    "available": true,
+    "new": false,
+    "ratings": [
+      { "user": "User1", "rating": 4.5 },
+      { "user": "User2", "rating": 5 },
+      { "user": "User3", "rating": 4 }
+    ],
+    "comments": [
+      { "user": "User1", "comment": "Great Chair, highly recommended!" },
+      { "user": "User2", "comment": "Fast delivery and excellent customer service." }
+    ]
+  }
   
 ];
 
@@ -1959,13 +2366,14 @@ const renderProducts = (room, tag) => {
   let productsToBeRendered = []
 
   let filteredProducts = [];
-  if (tag != 'all'){
-  productCatalog.forEach( product =>{
-    if (product.tags.includes(tag)){
-      filteredProducts.push(product)
-    }
-  })}
-  else{
+  if (tag != 'all') {
+    productCatalog.forEach(product => {
+      if (product.tags.includes(tag)) {
+        filteredProducts.push(product)
+      }
+    })
+  }
+  else {
     filteredProducts = productCatalog;
   }
 
@@ -1976,14 +2384,13 @@ const renderProducts = (room, tag) => {
     const cardImg = document.createElement('div');
     cardImg.classList.add('card_img');
     const img = document.createElement('img');
-    img.src = product.imgUrl;
+    img.src = product.imgPath;
     img.alt = product.name;
     img.loading = 'lazy';
     const cardFooter = document.createElement('div');
     cardFooter.classList.add('card_footer');
     const span = document.createElement('span');
     span.textContent = 'Add to Cart';
-
 
     const cardRating = document.createElement('span');
     cardRating.classList.add('card_rating');
@@ -2120,27 +2527,33 @@ const checkOutTabsContainer = document.querySelector('.cart_tabs');
 const checkOutTabs = document.querySelectorAll('.cart_tab');
 const checkOutcartContent = document.querySelectorAll('.cart_content');
 
-checkOutTabsContainer.addEventListener('click', e => {
-  const clicked = e.target.closest('.cart_tab');
-  if(!clicked) return;
+const cartTabs = () => {
+  if (!checkOutTabs || !checkOutcartContent || !checkOutTabsContainer) {
+    return
+  } else {
+    checkOutTabsContainer.addEventListener('click', e => {
+      const clicked = e.target.closest('.cart_tab');
+      if (!clicked) return;
 
-  const clickedNum = clicked.querySelector('span').textContent;
+      const clickedNum = clicked.querySelector('span').textContent;
 
-  checkOutTabs.forEach(tab => {
-    tab.classList.remove('cart_tab-active');
-  })
+      checkOutTabs.forEach(tab => {
+        tab.classList.remove('cart_tab-active');
+      })
 
-  clicked.classList.add('cart_tab-active');
+      clicked.classList.add('cart_tab-active');
 
-  checkOutcartContent.forEach(t => {
-    t.classList.remove('cart_content-active');
-  })
+      checkOutcartContent.forEach(t => {
+        t.classList.remove('cart_content-active');
+      })
 
-  cartContent = document.querySelector(`.cart_content-${clickedNum}`)
-  cartContent.classList.add('cart_content-active');
-  
+      cartContent = document.querySelector(`.cart_content-${clickedNum}`)
+      cartContent.classList.add('cart_content-active');
 
-});
+    });
+  }
+}
+cartTabs()
 
 
 
