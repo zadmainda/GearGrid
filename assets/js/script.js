@@ -2557,9 +2557,6 @@ cartTabs()
 
 
 
-
-
-
 // Render Product's details in a single page
 
 
@@ -2868,23 +2865,18 @@ const createProductPage = (product) => {
   pageheaderCrumpsDiv.appendChild(pageHeaderTitle);
 
 
-  //
   const productGrid = document.createElement('div');
   productGrid.classList.add('product_grid');
   productWrapper.appendChild(productGrid);
 
-  //
+
   const productSlider = document.createElement('div');
   productSlider.classList.add('product_slider');
 
 
 
 
-  productGrid.appendChild(productSlider)
-
-
-
-
+  // productGrid.appendChild(productSlider)
 
 
 
