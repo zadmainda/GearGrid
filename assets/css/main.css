@@ -584,6 +584,9 @@ img {
 .shop_sidebar {
   width: -moz-fit-content;
   width: fit-content;
+  position: sticky;
+  height: -moz-fit-content;
+  height: fit-content;
 }
 @media screen and (max-width: 835px) {
   .shop_sidebar {

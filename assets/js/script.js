@@ -17,6 +17,17 @@ const headerObserver = new ResizeObserver((entries) => {
   let rectHeight = rect.height;
   main.style.marginTop = `${rectHeight}px`;
 
+
+  const sideBarTop = () => {
+    const sideBar = document.querySelector('.shop_sidebar');
+    if(!sideBar){
+      return
+    }else{
+      sideBar.style.top = `${rectHeight}px`;
+    }
+  }
+  sideBarTop();
+
 })
 
 headerObserver.observe(header)
@@ -2899,7 +2910,11 @@ const createProductPage = (product) => {
 
 
 }
-
+//TEST PROGRESS
 console.log(createProductPage (productCatalog[1]))
 
+console.log(productCatalog)
 
+for (const pro of productCatalog){
+  console.log( pro.name)
+}
