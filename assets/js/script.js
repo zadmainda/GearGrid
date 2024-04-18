@@ -7,6 +7,20 @@
 
 ////////////////////////////////////////
 
+const header = document.querySelector('.header');
+const main = document.querySelector('.main');
+
+
+const headerObserver = new ResizeObserver((entries) => {
+
+  let rect = entries[0].contentRect;
+  let rectHeight = rect.height;
+  main.style.marginTop = `${rectHeight}px`;
+
+})
+
+headerObserver.observe(header)
+
 const messageBar = () => {
   const headerBar = document.querySelector('.header_bar');
   const headerBarClose = document.querySelector('.header_close');
@@ -14,7 +28,7 @@ const messageBar = () => {
   if(!headerBar || !headerBarClose) return;
 
   headerBarClose.addEventListener('click', () => {
-    headerBar.remove()
+    headerBar.remove();
   });
 }
 messageBar()
@@ -232,7 +246,6 @@ allPricesChecked.addEventListener('change', function () {
     });
 }})
 }
-
 
 allPriceBoxesChecked()
 
@@ -2839,7 +2852,6 @@ const createProductPage = (product) => {
   pageHeaderCrumpHome.classList.add('pageheader_crump');
 
   pageheaderCrumpsDiv.appendChild(pageHeaderCrumpHome);
-
 
 
   const rightCaret = document.createElement('i');

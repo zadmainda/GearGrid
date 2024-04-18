@@ -986,6 +986,12 @@ img {
   }
 }
 
+.header {
+  position: fixed;
+  background-color: #fff;
+  z-index: 999;
+  width: 100%;
+}
 .header_bar, .header_cta, .header_nav, .header_links, .header_icons {
   display: flex;
   align-items: center;
