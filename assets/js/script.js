@@ -847,42 +847,9 @@ const createProductPage = (product) => {
   productSlider.classList.add('product_slider');
 
 
-  // productGrid.appendChild(productSlider)
+  productGrid.appendChild(productSlider)
 
   return productWrapper.outerHTML
 
 }
-//TEST PROGRESS
-// console.log(createProductPage(productCatalog[1]))
 
-// console.log(productCatalog)
-
-// for (const pro of productCatalog) {
-//   console.log(pro.name)
-//}
-// function runProductTests() {
-//   if (productCatalog.length > 0) {
-//     console.log('Testing createProductPage with product[1]:');
-//     console.log(createProductPage(productCatalog[1]));
-    
-//     console.log('All products:', productCatalog);
-    
-//     productCatalog.forEach(pro => {
-//       console.log(pro.name);
-//     });
-//   } else {
-//     console.error('ProductCatalog is empty');
-//   }
-// }
-
-// Listen for catalog to be loaded before running tests
-document.addEventListener('catalogLoaded', (e) => {
-  const products = e.detail;
-  console.log('Testing createProductPage with product[1]:');
-  console.log(createProductPage(products[1]));
-  console.log('All products:', products);
-  
-  products.forEach(pro => {
-    console.log(pro.name);
-  });
-});
