@@ -12,7 +12,19 @@
   <link rel="stylesheet" href="/assets/css/fontawesome/css/solid.css">
   <link rel="stylesheet" href="/assets/css/main.css" preload>
 
-  <script src="assets/js/script.js" defer></script>
+  <script type="module">
+  import { ProductShop } from './assets/js/modules/shop.js';
+  
+  // Wait for catalog to load
+  document.addEventListener('catalogLoaded', (e) => {
+    const productCatalog = e.detail;
+    if (document.querySelector('.shop_allRooms')) {
+      new ProductShop(productCatalog);
+    }
+  });
+</script>
+<script src="assets/js/script.js" defer></script>
+  
   <title>GearGrid</title>
 </head>
 

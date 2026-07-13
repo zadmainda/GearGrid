@@ -12,7 +12,17 @@
   <link rel="stylesheet" href="/assets/css/fontawesome/css/solid.css">
   <link rel="stylesheet" type="text/css" href="/assets/css/main.css" preload>
 
-  <script src="assets/js/script.js" defer></script>
+ <script type="module">
+  import { cart } from './assets/js/modules/cart.js';
+  
+  document.addEventListener('catalogLoaded', () => {
+    if (document.querySelector('.cart_table')) {
+      cart.renderCartPage();
+    }
+  });
+</script>
+<script src="assets/js/script.js" defer></script>
+  
   <title> Cart </title>
 </head>
 

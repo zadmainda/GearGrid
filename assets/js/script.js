@@ -7,6 +7,34 @@
 
 ////////////////////////////////////////
 
+let productCatalog = [];
+
+async function loadCatalogData() {
+  try {
+    const response = await fetch('/assets/js/products.json');
+    if (!response.ok) {
+      throw new Error(`Failed to load catalog: ${response.status}`);
+    }
+
+    productCatalog = await response.json();
+    
+    // Move this INSIDE the function after data is loaded
+    window.productCatalog = productCatalog;
+    
+    console.log('Catalog loaded successfully!', productCatalog);
+    
+    // Dispatch custom event to notify other scripts that catalog is ready
+    document.dispatchEvent(new CustomEvent('catalogLoaded', { detail: productCatalog }));
+    
+    return productCatalog;
+  } catch (error) {
+    console.error('Could not load the product catalog:', error);
+    return [];
+  }
+}
+
+document.addEventListener('DOMContentLoaded', loadCatalogData);
+
 const header = document.querySelector('.header');
 const main = document.querySelector('.main');
 
@@ -285,23 +313,7 @@ const fieldSet = () => {
 fieldSet()
 
 
-let productCatalog = [];
 
-async function loadCatalogData() {
-  try {
-    const response = await fetch('/assets/js/products.json');
-    if (!response.ok) {
-      throw new Error(`Failed to load catalog: ${response.status}`);
-    }
-
-    productCatalog = await response.json();
-    console.log('Catalog loaded successfully!', productCatalog);
-    return productCatalog;
-  } catch (error) {
-    console.error('Could not load the product catalog:', error);
-    return [];
-  }
-}
 
 let kitchenGrid = document.querySelector('.shop_grid.shop_kitchen');
 let bedroomGrid = document.querySelector('.shop_grid.shop_bedroom');
@@ -780,7 +792,6 @@ let productDetailsTemplateString = `
 
 const createProductPage = (product) => {
 
-
   const productWrapper = document.createElement('section');
   productWrapper.classList.add('product');
   productWrapper.classList.add('wrapper');
@@ -827,7 +838,6 @@ const createProductPage = (product) => {
 
   pageheaderCrumpsDiv.appendChild(pageHeaderTitle);
 
-
   const productGrid = document.createElement('div');
   productGrid.classList.add('product_grid');
   productWrapper.appendChild(productGrid);
@@ -837,24 +847,42 @@ const createProductPage = (product) => {
   productSlider.classList.add('product_slider');
 
 
-
-
   // productGrid.appendChild(productSlider)
-
-
-
-
-
 
   return productWrapper.outerHTML
 
-
 }
 //TEST PROGRESS
-console.log(createProductPage(productCatalog[1]))
+// console.log(createProductPage(productCatalog[1]))
 
-console.log(productCatalog)
+// console.log(productCatalog)
 
-for (const pro of productCatalog) {
-  console.log(pro.name)
-}
+// for (const pro of productCatalog) {
+//   console.log(pro.name)
+//}
+// function runProductTests() {
+//   if (productCatalog.length > 0) {
+//     console.log('Testing createProductPage with product[1]:');
+//     console.log(createProductPage(productCatalog[1]));
+    
+//     console.log('All products:', productCatalog);
+    
+//     productCatalog.forEach(pro => {
+//       console.log(pro.name);
+//     });
+//   } else {
+//     console.error('ProductCatalog is empty');
+//   }
+// }
+
+// Listen for catalog to be loaded before running tests
+document.addEventListener('catalogLoaded', (e) => {
+  const products = e.detail;
+  console.log('Testing createProductPage with product[1]:');
+  console.log(createProductPage(products[1]));
+  console.log('All products:', products);
+  
+  products.forEach(pro => {
+    console.log(pro.name);
+  });
+});
