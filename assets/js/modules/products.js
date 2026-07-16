@@ -17,44 +17,35 @@ export function getColorHex(color) {
 
 
 // Product Card Template
+// Product Card Template (matches createCard structure)
 export const productCardTemplate = (product) => {
+  const paramRating = Math.round(product.rating);
+  let cardRatingInnerHTML = '';
+  for (let i = 0; i < paramRating; i++) {
+    cardRatingInnerHTML += ' &#9733; ';
+  }
+
   return `
-    <div class="product_card">
-      <div class="product_image">
-        ${product.new ? '<div class="product_badge product_badge-new">New</div>' : ''}
-        ${product.discount ? `<div class="product_badge product_badge-discount">-${product.discount}%</div>` : ''}
-        <img src="${product.imgPath}" alt="${product.name}">
-        <div class="product_overlay">
-          <div class="product_actions">
-            <button class="product_btn product_btn-wishlist" title="Add to wishlist">
-              <i class="fa-regular fa-heart"></i>
-            </button>
-            <button class="product_btn product_btn-view" title="Quick view">
-              <i class="fa-solid fa-eye"></i>
-            </button>
-          </div>
-        </div>
-      </div>
-      <div class="product_info">
-        <h3 class="product_name">${product.name}</h3>
-        <div class="product_rating">
-          ${createStarRating(product.rating)}
-          <span class="product_rating_text">(${product.rating})</span>
-        </div>
-        <div class="product_price">
-          <span class="product_price_current">$${parseFloat(product.price).toFixed(2)}</span>
-          ${product.oldprice ? `<span class="product_price_original">$${parseFloat(product.oldprice).toFixed(2)}</span>` : ''}
-        </div>
-        <div class="product_colors">
-          ${product.color.map(color => 
-            `<span class="product_color" data-color="${color}" title="${color}" style="background-color: ${getColorHex(color)} "></span>`
-          ).join('')}
-        </div>
-        <button class="product_btn-add btn btn-black" data-sku="${product.SKU}">
+    <div class="card">
+      <div class="card_img">
+        <img src="${product.imgPath}" alt="${product.name}" loading="lazy">
+        <div class="card_footer">
           <span>Add to Cart</span>
-          <i class="fa-solid fa-bag-shopping"></i>
-        </button>
+        </div>
       </div>
+      <span class="card_rating" style="color: #ff8b00;">
+        ${cardRatingInnerHTML}
+      </span>
+      <span class="card_title">${product.name}</span>
+      <div class="card_pricewrapper">
+        <span class="card_price">$${product.price}.99</span>
+        ${product.oldprice ? `<span class="card_oldprice">$${product.oldprice}.00</span>` : '<span style="display: none;"></span>'}
+      </div>
+      <span class="card_banner">New</span>
+      ${product.discount ? `<span class="card_discount">${product.discount}%</span>` : '<span style="display: none;"></span>'}
+      <span class="card_wishlist">
+        <i class="fa-regular fa-heart"></i>
+      </span>
     </div>
   `;
 };
