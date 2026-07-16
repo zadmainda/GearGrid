@@ -331,6 +331,18 @@ export class ProductShop {
       const productCard = wrapper.firstElementChild;
       grid.appendChild(productCard);
 
+      productCard.addEventListener('click', (event) => {
+        if (event.target.closest('.card_footer, .card_wishlist')) return;
+        window.location.href = `/product.html?sku=${product.SKU}`;
+      });
+
+      productCard.addEventListener('keydown', (event) => {
+        if (event.key === 'Enter' || event.key === ' ') {
+          event.preventDefault();
+          window.location.href = `/product.html?sku=${product.SKU}`;
+        }
+      });
+
       this.attachProductCardListeners(productCard, product);
     });
   }

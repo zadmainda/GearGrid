@@ -26,7 +26,7 @@ export const productCardTemplate = (product) => {
   }
 
   return `
-    <div class="card">
+    <div class="card" data-sku="${product.SKU || ''}" style="cursor:pointer;" role="button" tabindex="0">
       <div class="card_img">
         <img src="${product.imgPath}" alt="${product.name}" loading="lazy">
         <div class="card_footer">
@@ -153,7 +153,6 @@ export const createProductDetailsTemplate = (product = {}) => {
   }).join('');
 
   return `
-<section class="product wrapper">
   <ul class="breadcrumps">
     <div class="pageheader_crumps">
       <a href="/index.html" class="pageheader_crump">Home</a>
@@ -247,7 +246,6 @@ export const createProductDetailsTemplate = (product = {}) => {
       <div class="reviews_container">${reviews || '<p>No reviews yet.</p>'}</div>
     </div>
   </div>
-</section>
   `;
 };
 

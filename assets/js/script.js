@@ -10,32 +10,31 @@
 
 
 let productCatalog = [];
+let catalogLoadPromise = null;
 
 async function loadCatalogData() {
-  try {
-    const response = await fetch('/assets/js/products.json');
-    if (!response.ok) {
-      throw new Error(`Failed to load catalog: ${response.status}`);
-    }
-
-    productCatalog = await response.json();
-    
-    // Move this INSIDE the function after data is loaded
-    window.productCatalog = productCatalog;
-    
-    // console.log('Catalog loaded successfully!', productCatalog);
-    
-    // Dispatch custom event to notify other scripts that catalog is ready
-    document.dispatchEvent(new CustomEvent('catalogLoaded', { detail: productCatalog }));
-    
-    return productCatalog;
-  } catch (error) {
-    // console.error('Could not load the product catalog:', error);
-    return [];
+  if (catalogLoadPromise) {
+    return catalogLoadPromise;
   }
-}
 
-document.addEventListener('DOMContentLoaded', loadCatalogData);
+  catalogLoadPromise = (async () => {
+    try {
+      const response = await fetch('/assets/js/products.json');
+      if (!response.ok) {
+        throw new Error(`Failed to load catalog: ${response.status}`);
+      }
+
+      productCatalog = await response.json();
+      window.productCatalog = productCatalog;
+      document.dispatchEvent(new CustomEvent('catalogLoaded', { detail: productCatalog }));
+      return productCatalog;
+    } catch (error) {
+      return [];
+    }
+  })();
+
+  return catalogLoadPromise;
+}
 
 const header = document.querySelector('.header');
 const main = document.querySelector('.main');
@@ -641,7 +640,8 @@ function getProductSKUFromURL() {
 function showProductNotFoundError() {
   console.error('[Stage 1] Showing product not found error');
   
-  const productSection = document.querySelector('.product.wrapper');
+  const main = document.querySelector('main.main');
+  const productSection = main?.querySelector('.product.wrapper');
   if (!productSection) {
     console.warn('[Stage 1] Product section not found in DOM');
     return;
@@ -665,6 +665,39 @@ function showProductNotFoundError() {
       </div>
     </div>
   `;
+}
+
+async function renderProductDetailsPage(products) {
+  const main = document.querySelector('main.main');
+  if (!main) return;
+
+  const newsletter = main.querySelector('.newsletter');
+  const existingProductSection = main.querySelector('.product.wrapper');
+
+  if (existingProductSection) {
+    existingProductSection.remove();
+  }
+
+  const sku = getProductSKUFromURL();
+  const product = products.find((item) => item.SKU === sku);
+
+  if (!product) {
+    showProductNotFoundError();
+    return;
+  }
+
+  const { createProductDetailsTemplate } = await import('/assets/js/modules/products.js');
+  const productSection = document.createElement('div');
+  productSection.className = 'product wrapper';
+  productSection.innerHTML = createProductDetailsTemplate(product);
+
+  if (newsletter) {
+    main.insertBefore(productSection, newsletter);
+  } else {
+    main.appendChild(productSection);
+  }
+
+  ProductTemplatePageMainSlider();
 }
 
 /**
@@ -694,14 +727,16 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 });
 
-// Listen for catalog to be loaded before running tests
-document.addEventListener('catalogLoaded', (e) => {
+let productPageRenderHandled = false;
+
+document.addEventListener('catalogLoaded', async (e) => {
   const products = e.detail;
-  console.log('Testing createProductPage with product[1]:');
-  console.log(createProductPage(products[1]));
-  console.log('All products:', products);
-  
-  products.forEach(pro => {
-    console.log(pro.name);
-  });
+
+  const isProductPage = window.location.pathname.includes('product.html') || window.location.pathname.endsWith('/product.html');
+  if (isProductPage) {
+    if (productPageRenderHandled) return;
+    productPageRenderHandled = true;
+    await renderProductDetailsPage(products);
+    return;
+  }
 });

@@ -1,0 +1,21 @@
+{
+  "name": "geargrid",
+  "version": "1.0.0",
+  "description": "This is a portfolio e-commerce website showcasing various products and services. It is built using SASS for styling, vanilla JavaScript for interactivity, and hosted on AWS Amplify for deployment. Features",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zadmainda/GearGrid.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/zadmainda/GearGrid/issues"
+  },
+  "homepage": "https://github.com/zadmainda/GearGrid#readme"
+}
