@@ -853,3 +853,108 @@ const createProductPage = (product) => {
 
 }
 
+// ============================================
+// STAGE 1: URL SKU EXTRACTION
+// ============================================
+
+/**
+ * Extracts the SKU query parameter from the URL
+ * Example: /product.html?sku=12345 returns "12345"
+ * @returns {string|null} The SKU value or null if not found
+ */
+function getProductSKUFromURL() {
+  try {
+    const params = new URLSearchParams(window.location.search);
+    const sku = params.get('sku');
+    
+    if (!sku) {
+      console.warn('[Stage 1] No SKU provided in URL');
+      return null;
+    }
+    
+    // Basic validation: SKU should not be empty string
+    if (sku.trim() === '') {
+      console.warn('[Stage 1] SKU is empty string');
+      return null;
+    }
+    
+    console.log('[Stage 1] SKU extracted from URL:', sku);
+    return sku;
+    
+  } catch (error) {
+    console.error('[Stage 1] Error extracting SKU from URL:', error);
+    return null;
+  }
+}
+
+/**
+ * Displays a user-friendly error message when product is not found
+ * Replaces product section content with error UI
+ */
+function showProductNotFoundError() {
+  console.error('[Stage 1] Showing product not found error');
+  
+  const productSection = document.querySelector('.product.wrapper');
+  if (!productSection) {
+    console.warn('[Stage 1] Product section not found in DOM');
+    return;
+  }
+  
+  productSection.innerHTML = `
+    <div class="error_container" style="text-align: center; padding: 60px 20px;">
+      <div style="max-width: 500px; margin: 0 auto;">
+        <h2 style="font-size: 28px; margin-bottom: 16px; color: #333;">Product Not Found</h2>
+        <p style="font-size: 16px; color: #666; margin-bottom: 32px;">
+          Sorry, we couldn't find the product you're looking for. It may have been removed or the link might be incorrect.
+        </p>
+        <div style="display: flex; gap: 12px; justify-content: center; flex-wrap: wrap;">
+          <a href="/shop.html" class="btn btn-black" style="text-decoration: none; display: inline-block;">
+            <span>Back to Shop</span>
+          </a>
+          <a href="/index.html" class="btn btn-black" style="text-decoration: none; display: inline-block; background-color: #666;">
+            <span>Go to Home</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  `;
+}
+
+/**
+ * Test Stage 1 functionality
+ * Logs the extracted SKU and shows if it was successful
+ */
+function testStage1() {
+  console.log('[Stage 1] Running Stage 1 tests...');
+  
+  const sku = getProductSKUFromURL();
+  
+  if (sku) {
+    console.log('[Stage 1 TEST] SUCCESS: SKU extracted:', sku);
+    console.log('[Stage 1 TEST] Ready for Stage 2: Product lookup');
+  } else {
+    console.log('[Stage 1 TEST] WARNING: No SKU found in URL');
+    console.log('[Stage 1 TEST] Current URL:', window.location.href);
+    console.log('[Stage 1 TEST] Expected format: /product.html?sku=YOUR_SKU_HERE');
+  }
+}
+
+// Run Stage 1 tests on DOMContentLoaded
+document.addEventListener('DOMContentLoaded', () => {
+  // Only run on product.html page
+  if (document.querySelector('.product.wrapper')) {
+    testStage1();
+  }
+});
+
+// Listen for catalog to be loaded before running tests
+document.addEventListener('catalogLoaded', (e) => {
+  const products = e.detail;
+  console.log('Testing createProductPage with product[1]:');
+  console.log(createProductPage(products[1]));
+  console.log('All products:', products);
+  
+  products.forEach(pro => {
+    console.log(pro.name);
+  });
+});
