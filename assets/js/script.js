@@ -322,10 +322,21 @@ let livingroomGrid = document.querySelector('.shop_grid.shop_livingroom');
 let generalShopGrid = document.querySelector('.shop_grid.shop_allRooms');
 let carousel_track = document.querySelector('.carousel_track');
 
+async function addProductToCart(product, quantity = 1, selectedColor = null) {
+  if (!window.gearGridCart) {
+    await initializeCart();
+  }
+
+  if (!window.gearGridCart || !product) return;
+
+  const normalizedColor = selectedColor ?? product.color?.[0] ?? null;
+  window.gearGridCart.addItem(product, quantity, normalizedColor);
+}
 
 const createCard = (param) => {
   const cardwrapper = document.createElement('div');
   cardwrapper.classList.add('card');
+  cardwrapper.dataset.sku = param.SKU || '';
   const cardImg = document.createElement('div');
   cardImg.classList.add('card_img');
   const img = document.createElement('img');
@@ -334,6 +345,15 @@ const createCard = (param) => {
   img.loading = 'lazy';
   const cardFooter = document.createElement('div');
   cardFooter.classList.add('card_footer');
+  cardFooter.addEventListener('click', (event) => {
+    event.preventDefault();
+    event.stopPropagation();
+
+    const productToAdd = productCatalog.find((item) => item.SKU === param.SKU) || param;
+    if (productToAdd) {
+      addProductToCart(productToAdd, 1, productToAdd.color?.[0] || null);
+    }
+  });
   const span = document.createElement('span');
   span.textContent = 'Add to Cart';
 
@@ -698,6 +718,16 @@ async function renderProductDetailsPage(products) {
     main.appendChild(productSection);
   }
 
+  const addToCartButton = productSection.querySelector('.addToCart');
+  if (addToCartButton) {
+    addToCartButton.addEventListener('click', (event) => {
+      event.preventDefault();
+      event.stopPropagation();
+      const selectedColor = product.color?.[0] || null;
+      addProductToCart(product, 1, selectedColor);
+    });
+  }
+
   ProductTemplatePageMainSlider();
 }
 
@@ -729,6 +759,20 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 let productPageRenderHandled = false;
+
+async function initializeCart() {
+  try {
+    const { cart } = await import('/assets/js/modules/cart.js');
+    window.gearGridCart = cart;
+    cart.updateCartCount();
+    return cart;
+  } catch (error) {
+    console.error('Could not initialize cart:', error);
+    return null;
+  }
+}
+
+initializeCart();
 
 document.addEventListener('catalogLoaded', async (e) => {
   const products = e.detail;

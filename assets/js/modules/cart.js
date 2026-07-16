@@ -77,6 +77,14 @@ export class ShoppingCart {
   }
 
   updateCartCount() {
+    const headerCount = document.querySelector('.header_count');
+    const countSpan = headerCount?.querySelector('span');
+
+    if (countSpan) {
+      countSpan.textContent = this.getItemCount();
+      return;
+    }
+
     const cartCountElements = document.querySelectorAll('.header_icon span');
     if (cartCountElements.length > 0) {
       cartCountElements[cartCountElements.length - 1].textContent = this.getItemCount();
