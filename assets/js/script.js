@@ -706,7 +706,7 @@ async function renderProductDetailsPage(products) {
     return;
   }
 
-  const { createProductDetailsTemplate } = await import('/assets/js/modules/products.js');
+  const { createProductDetailsTemplate } = await import('./assets/js/modules/products.js');
   const productSection = document.createElement('div');
   productSection.className = 'product wrapper';
   productSection.innerHTML = createProductDetailsTemplate(product);
