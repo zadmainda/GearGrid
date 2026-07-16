@@ -172,7 +172,6 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
-
 //Shopping cart
 
 
@@ -428,7 +427,7 @@ const renderRoomProducts = (room, tag) => {
     return
   }
 
-  
+
 
   //array of DIVs/Products cards that will render with HTML
   let productsToBeRendered = []
@@ -633,21 +632,21 @@ function getProductSKUFromURL() {
   try {
     const params = new URLSearchParams(window.location.search);
     const sku = params.get('sku');
-    
+
     if (!sku) {
       console.warn('[Stage 1] No SKU provided in URL');
       return null;
     }
-    
+
     // Basic validation: SKU should not be empty string
     if (sku.trim() === '') {
       console.warn('[Stage 1] SKU is empty string');
       return null;
     }
-    
+
     console.log('[Stage 1] SKU extracted from URL:', sku);
     return sku;
-    
+
   } catch (error) {
     console.error('[Stage 1] Error extracting SKU from URL:', error);
     return null;
@@ -660,14 +659,14 @@ function getProductSKUFromURL() {
  */
 function showProductNotFoundError() {
   console.error('[Stage 1] Showing product not found error');
-  
+
   const main = document.querySelector('main.main');
   const productSection = main?.querySelector('.product.wrapper');
   if (!productSection) {
     console.warn('[Stage 1] Product section not found in DOM');
     return;
   }
-  
+
   productSection.innerHTML = `
     <div class="error_container" style="text-align: center; padding: 60px 20px;">
       <div style="max-width: 500px; margin: 0 auto;">
@@ -724,7 +723,8 @@ async function renderProductDetailsPage(products) {
       event.preventDefault();
       event.stopPropagation();
       const selectedColor = product.color?.[0] || null;
-      addProductToCart(product, 1, selectedColor);
+      const quantity = parseInt(document.querySelector('.counter_text')?.value || 1);
+      addProductToCart(product, quantity, selectedColor);
     });
   }
 
@@ -736,9 +736,9 @@ async function renderProductDetailsPage(products) {
  */
 function testStage1() {
   console.log('[Stage 1] Running Stage 1 tests...');
-  
+
   const sku = getProductSKUFromURL();
-  
+
   if (sku) {
     console.log('[Stage 1 TEST] SUCCESS: SKU extracted:', sku);
     console.log('[Stage 1 TEST] Ready for Stage 2: Product lookup');
