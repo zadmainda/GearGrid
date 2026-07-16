@@ -453,6 +453,7 @@ const renderCatalog = () => {
 
 loadCatalogData().then(() => {
   renderCatalog();
+  landingPageProductCarouselScroll();
 });
 
 document.querySelectorAll('.carousel_track .card .card_footer').forEach(function (card) {
@@ -464,29 +465,29 @@ document.querySelectorAll('.carousel_track .card .card_footer').forEach(function
 
 // landing Page Product Carousel
 const landingPageProductCarouselScroll = () => {
-
   const productCarousel = document.querySelector('.carousel_track');
   const productArrows = document.querySelectorAll('.carousel_arrows');
 
-  if (!productCarousel || !productArrows) return;
+  if (!productCarousel || !productArrows.length) return;
 
-  firstCarouselCard = document.querySelectorAll('.carousel_track .card')[1];
+  const firstCarouselCard = document.querySelectorAll('.carousel_track .card')[1];
   if (!firstCarouselCard) return;
 
-  let productMarginLeft = parseFloat(window.getComputedStyle(firstCarouselCard).marginLeft)
-  let firstProductWidth = firstCarouselCard.clientWidth + productMarginLeft;
+  const productMarginLeft = parseFloat(window.getComputedStyle(firstCarouselCard).marginLeft || '0');
+  const firstProductWidth = firstCarouselCard.clientWidth + productMarginLeft;
 
-  productArrows.forEach(arrow => {
+  productArrows.forEach((arrow) => {
     arrow.addEventListener('click', () => {
-      if (arrow.id == "carousel_arrows-left") {
+      if (arrow.id === 'carousel_arrows-left') {
         productCarousel.scrollLeft -= firstProductWidth;
       } else {
         productCarousel.scrollLeft += firstProductWidth;
       }
     });
   });
-}
-document.addEventListener("DOMContentLoaded", landingPageProductCarouselScroll)
+};
+
+document.addEventListener('DOMContentLoaded', landingPageProductCarouselScroll);
 
 
 let productCards = document.querySelectorAll('.card')
