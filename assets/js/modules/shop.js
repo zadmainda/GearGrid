@@ -17,6 +17,7 @@ export class ProductShop {
       searchQuery: ''
     };
     this.initializeFilters();
+    this.applyCategoryFromUrl();
     this.renderPageHeader();
     this.renderProducts();
   }
@@ -58,6 +59,40 @@ export class ProductShop {
       .filter(value => value !== 'all');
     
     this.applyFilters();
+  }
+
+  applyCategoryFromUrl() {
+    const params = new URLSearchParams(window.location.search);
+    const categoryParam = params.get('category');
+
+    if (!categoryParam) return;
+
+    const normalizedCategory = this.normalizeCategory(categoryParam);
+    const matchingCheckbox = document.querySelector(`.room_field input[value="${normalizedCategory}"]`);
+
+    if (!matchingCheckbox) return;
+
+    document.querySelectorAll('.room_field input').forEach(checkbox => {
+      checkbox.checked = checkbox.value === normalizedCategory;
+    });
+
+    this.activeFilters.categories = [normalizedCategory];
+    this.applyFilters();
+  }
+
+  normalizeCategory(category) {
+    const mapping = {
+      'living-room': 'living',
+      'living room': 'living',
+      'living': 'living',
+      'bedroom': 'bedroom',
+      'kitchen': 'kitchen',
+      'bathroom': 'bathroom',
+      'dining': 'dining',
+      'outdoor': 'outdoor'
+    };
+
+    return mapping[category.toLowerCase()] || category.toLowerCase();
   }
 
   setupPriceFilters() {
