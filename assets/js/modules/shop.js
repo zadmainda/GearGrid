@@ -1,3 +1,4 @@
+import { createPageHeader } from './pageHeaderTemplate.js';
 import { productCardTemplate, } from './products.js';
 import { cart } from './cart.js';
 
@@ -16,6 +17,7 @@ export class ProductShop {
       searchQuery: ''
     };
     this.initializeFilters();
+    this.renderPageHeader();
     this.renderProducts();
   }
 
@@ -248,7 +250,32 @@ export class ProductShop {
     }
 
     this.filteredProducts = filtered;
+    this.renderPageHeader();
     this.renderProducts();
+  }
+
+  renderPageHeader() {
+    const header = document.querySelector('#shopPageHeader');
+    if (!header) return;
+
+    const selectedCategories = this.activeFilters.categories.length > 0
+      ? this.activeFilters.categories
+      : [];
+    const hasPriceFilter = Boolean(this.activeFilters.priceRange && this.activeFilters.priceRange.length > 0);
+
+    const title = selectedCategories.length === 1
+      ? selectedCategories[0]
+      : hasPriceFilter
+        ? 'Filtered Results'
+        : 'Shop';
+
+    const toolbarTitle = document.querySelector('.shop_title');
+
+    if (toolbarTitle) {
+      toolbarTitle.textContent = title === 'Shop' ? 'All Rooms' : title === 'Filtered Results' ? 'Filtered Results' : title.charAt(0).toUpperCase() + title.slice(1);
+    }
+
+    header.innerHTML = createPageHeader(selectedCategories.length > 0 ? selectedCategories : ['Shop']);
   }
 
   renderProducts() {
