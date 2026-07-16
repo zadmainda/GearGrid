@@ -38,10 +38,10 @@ export const productCardTemplate = (product) => {
       </span>
       <span class="card_title">${product.name}</span>
       <div class="card_pricewrapper">
-        <span class="card_price">$${product.price}.99</span>
+        <span class="card_price">$${product.price}</span>
         ${product.oldprice ? `<span class="card_oldprice">$${product.oldprice}.00</span>` : '<span style="display: none;"></span>'}
       </div>
-      <span class="card_banner">New</span>
+      ${product.new ? '<span class="card_banner">New</span>' : ''}
       ${product.discount ? `<span class="card_discount">${product.discount}%</span>` : '<span style="display: none;"></span>'}
       <span class="card_wishlist">
         <i class="fa-regular fa-heart"></i>

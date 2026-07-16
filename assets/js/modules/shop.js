@@ -348,7 +348,8 @@ export class ProductShop {
   }
 
   attachProductCardListeners(card, product) {
-    const addBtn = card.querySelector('.product_btn-add');
+    // const addBtn = card.querySelector('.product_btn-add');
+    const addBtn = card.querySelector('.card_footer');
     let selectedColor = product.color[0];
 
     const colorButtons = card.querySelectorAll('.product_color');
