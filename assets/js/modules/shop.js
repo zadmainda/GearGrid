@@ -348,26 +348,32 @@ export class ProductShop {
   }
 
   attachProductCardListeners(card, product) {
-    // const addBtn = card.querySelector('.product_btn-add');
-    const addBtn = card.querySelector('.card_footer');
-    let selectedColor = product.color[0];
+  // FIXED: Changed selector from .product_btn-add to .card_footer
+  const addBtn = card.querySelector('.card_footer');
+  let selectedColor = product.color[0];
 
-    const colorButtons = card.querySelectorAll('.product_color');
-    colorButtons.forEach(btn => {
-      btn.addEventListener('click', () => {
-        colorButtons.forEach(b => b.classList.remove('active'));
-        btn.classList.add('active');
-        selectedColor = btn.dataset.color;
-      });
+  const colorButtons = card.querySelectorAll('.product_color');
+  colorButtons.forEach(btn => {
+    btn.addEventListener('click', (e) => {
+      e.stopPropagation();  // Prevent click from navigating
+      colorButtons.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      selectedColor = btn.dataset.color;
     });
+  });
 
-    if (addBtn) {
-      addBtn.addEventListener('click', () => {
-        cart.addItem(product, 1, selectedColor);
-        this.showAddToCartNotification(product.name);
-      });
-    }
+  if (addBtn) {
+    addBtn.addEventListener('click', (e) => {
+      e.stopPropagation();  // Prevent click from navigating
+      e.preventDefault();
+      console.log('[ProductShop] Adding to cart:', product.name, selectedColor);
+      cart.addItem(product, 1, selectedColor);
+      this.showAddToCartNotification(product.name);
+    });
+  } else {
+    console.warn('[ProductShop] Add to cart button not found for product:', product.name);
   }
+}
 
   showAddToCartNotification(productName) {
     const notification = document.createElement('div');

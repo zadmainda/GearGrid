@@ -730,7 +730,6 @@ async function renderProductDetailsPage(products) {
 
   ProductTemplatePageMainSlider();
 }
-
 /**
  * Test Stage 1 functionality
  * Logs the extracted SKU and shows if it was successful
