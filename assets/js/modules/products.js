@@ -1,4 +1,20 @@
 
+export function getColorHex(color) {
+  const colorMap = {
+    'red': '#EF4444',
+    'green': '#10B981',
+    'blue': '#3B82F6',
+    'yellow': '#FBBF24',
+    'brown': '#92400E',
+    'beige': '#F5E6D3',
+    'gray': '#9CA3AF',
+    'black': '#1F2937',
+    'white': '#F3F4F6',
+    'silver': '#D1D5DB'
+  };
+  return colorMap[color.toLowerCase()] || '#6B7280';
+}
+
 
 // Product Card Template
 export const productCardTemplate = (product) => {
@@ -31,7 +47,7 @@ export const productCardTemplate = (product) => {
         </div>
         <div class="product_colors">
           ${product.color.map(color => 
-            `<span class="product_color" data-color="${color}" title="${color}" style="background-color: ${getColorHex(color)}"></span>`
+            `<span class="product_color" data-color="${color}" title="${color}" style="background-color: ${getColorHex(color)} "></span>`
           ).join('')}
         </div>
         <button class="product_btn-add btn btn-black" data-sku="${product.SKU}">

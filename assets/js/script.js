@@ -21,14 +21,14 @@ async function loadCatalogData() {
     // Move this INSIDE the function after data is loaded
     window.productCatalog = productCatalog;
     
-    console.log('Catalog loaded successfully!', productCatalog);
+    // console.log('Catalog loaded successfully!', productCatalog);
     
     // Dispatch custom event to notify other scripts that catalog is ready
     document.dispatchEvent(new CustomEvent('catalogLoaded', { detail: productCatalog }));
     
     return productCatalog;
   } catch (error) {
-    console.error('Could not load the product catalog:', error);
+    // console.error('Could not load the product catalog:', error);
     return [];
   }
 }
