@@ -415,6 +415,11 @@ const createCard = (param) => {
   cardwrapper.appendChild(cardDiscount)
   cardwrapper.appendChild(cardWishlist)
 
+  cardwrapper.addEventListener('click', (event) => {
+    if (event.target.closest('.card_footer, .card_wishlist')) return;
+    window.location.href = `/product.html?sku=${param.SKU}`;
+  });
+
   return cardwrapper
 }
 
@@ -475,11 +480,6 @@ loadCatalogData().then(() => {
   landingPageProductCarouselScroll();
 });
 
-document.querySelectorAll('.carousel_track .card .card_footer').forEach(function (card) {
-  card.addEventListener('click', function (e) {
-    console.log(e.target.closest('.card').children[2].textContent)
-  })
-})
 
 
 // landing Page Product Carousel
@@ -706,7 +706,7 @@ async function renderProductDetailsPage(products) {
     return;
   }
 
-  const { createProductDetailsTemplate } = await import('./assets/js/modules/products.js');
+  const { createProductDetailsTemplate } = await import('./modules/products.js');
   const productSection = document.createElement('div');
   productSection.className = 'product wrapper';
   productSection.innerHTML = createProductDetailsTemplate(product);
