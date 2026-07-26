@@ -417,7 +417,7 @@ const createCard = (param) => {
 
   cardwrapper.addEventListener('click', (event) => {
     if (event.target.closest('.card_footer, .card_wishlist')) return;
-    window.location.href = `/product.html?sku=${param.SKU}`;
+    window.location.href = `./product.html?sku=${param.SKU}`;
   });
 
   return cardwrapper

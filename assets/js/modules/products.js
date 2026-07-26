@@ -155,11 +155,11 @@ export const createProductDetailsTemplate = (product = {}) => {
   return `
   <ul class="breadcrumps">
     <div class="pageheader_crumps">
-      <a href="/index.html" class="pageheader_crump">Home</a>
+      <a href="./index.html" class="pageheader_crump">Home</a>
       <i class="fa-solid fa-angle-right"></i>
-      <a href="/shop.html" class="pageheader_crump">Shop</a>
+      <a href="./shop.html" class="pageheader_crump">Shop</a>
       <i class="fa-solid fa-angle-right"></i>
-      <a href="/product.html" class="pageheader_crump active_link">${productName}</a>
+      <a href="./product.html" class="pageheader_crump active_link">${productName}</a>
     </div>
   </ul>
 
