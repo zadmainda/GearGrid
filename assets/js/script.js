@@ -364,8 +364,8 @@ const createCard = (param) => {
   const cardRating = document.createElement('span');
   cardRating.classList.add('card_rating');
 
-  paramRating = Math.round(param.rating);
-  cardRatingInnerHTML = ''
+  const paramRating = Math.round(param.rating);
+  let cardRatingInnerHTML = ''
   for (let i = 0; i < paramRating; i++) {
     cardRatingInnerHTML += ' &#9733; '
   }
@@ -548,7 +548,7 @@ const cartTabs = () => {
         t.classList.remove('cart_content-active');
       })
 
-      cartContent = document.querySelector(`.cart_content-${clickedNum}`)
+      let cartContent = document.querySelector(`.cart_content-${clickedNum}`)
       cartContent.classList.add('cart_content-active');
 
     });
@@ -766,7 +766,7 @@ let productPageRenderHandled = false;
 
 async function initializeCart() {
   try {
-    const { cart } = await import('./assets/js/modules/cart.js');
+    const { cart } = await import('./modules/cart.js');
     window.gearGridCart = cart;
     cart.updateCartCount();
     return cart;
