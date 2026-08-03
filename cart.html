@@ -12,17 +12,17 @@
   <link rel="stylesheet" href="./assets/css/fontawesome/css/solid.css">
   <link rel="stylesheet" type="text/css" href="./assets/css/main.css" preload>
 
- <script type="module">
-  import { cart } from './assets/js/modules/cart.js';
-  
-  document.addEventListener('catalogLoaded', () => {
-    if (document.querySelector('.cart_table')) {
-      cart.renderCartPage();
-    }
-  });
-</script>
-<script src="assets/js/script.js" defer></script>
-  
+  <script type="module">
+    import { cart } from './assets/js/modules/cart.js';
+
+    document.addEventListener('catalogLoaded', () => {
+      if (document.querySelector('.cart_table')) {
+        cart.renderCartPage();
+      }
+    });
+  </script>
+  <script src="assets/js/script.js" defer></script>
+
   <title> Cart </title>
 </head>
 
@@ -58,8 +58,8 @@
           <div class="header_icon">
             <i class="fa-solid fa-magnifying-glass"></i>
           </div>
-          <div class="header_icon">
-            <a href="./sign_in_popup.html"><i class="fa-regular fa-circle-user"></i></a>
+          <div class="header_icon" id="header-auth-trigger">
+            <i class="fa-regular fa-circle-user"></i>
           </div>
           <div class="header_icon">
             <a href="./cart.html"><i class="fa-solid fa-bag-shopping"></i></a>
@@ -308,7 +308,7 @@
                 <div class="checkout_field">
                   <input type="checkbox" name="" id="">
                   <label for="lastname"> Use a different billing address. [Optional]</label>
-                 
+
                 </div>
               </div>
 
@@ -445,9 +445,9 @@
                 </div>
               </div>
             </div>
-        
+
             <button class="btn btn-black"><span>Purchase History</span></button>
-        
+
           </div>
         </div>
 
@@ -461,7 +461,7 @@
     <div class="footer_wrapper">
       <div class="footer_nav">
         <h4>GearGrid</h4>
-        <span>  | </span>
+        <span> | </span>
         <span class="footer_desription">Gift & Decoration Store</span>
         <ul class="footer_links">
           <li class="footer_link"><a href="./index.html" class="footer_url">Home</a></li>

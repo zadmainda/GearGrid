@@ -6,7 +6,10 @@
 // })
 
 ////////////////////////////////////////
+import { AuthModal } from './modules/auth.js';
 
+// Initialize auth modal once (works on all pages)
+const authModal = new AuthModal();
 
 
 let productCatalog = [];
