@@ -24,7 +24,7 @@ async function loadCatalogData() {
 
   catalogLoadPromise = (async () => {
     try {
-      const response = await fetch('/assets/js/products.json');
+      const response = await fetch('./assets/js/products.json');
       if (!response.ok) {
         throw new Error(`Failed to load catalog: ${response.status}`);
       }
@@ -206,7 +206,7 @@ const removeCartItems = () => {
 removeCartItems()
 
 // Subtotal
-cartItemsSubtotal = 0
+let cartItemsSubtotal = 0
 cartItemsSubtotal = document.querySelectorAll('.cart_price')
 
 
@@ -766,7 +766,7 @@ let productPageRenderHandled = false;
 
 async function initializeCart() {
   try {
-    const { cart } = await import('/assets/js/modules/cart.js');
+    const { cart } = await import('./assets/js/modules/cart.js');
     window.gearGridCart = cart;
     cart.updateCartCount();
     return cart;
