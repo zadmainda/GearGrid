@@ -4,12 +4,12 @@ document.addEventListener('DOMContentLoaded', () => {
   const authModal = new AuthModal();
 });
 
-const html = document.querySelector('html');
-html.style.display = 'none';
 
-window.addEventListener("DOMContentLoaded", ()=>{
-  document.querySelector('html').style.display = '';
-})
+document.addEventListener('DOMContentLoaded', () => {
+  // Reveal content after key initialization/rendering completes
+  const html = document.querySelector('html');
+  html.classList.add('rendered');
+});
 
 //////////////////////////////////////
 
@@ -771,6 +771,6 @@ document.addEventListener('catalogLoaded', async (e) => {
     await renderProductDetailsPage(products);
     return;
   }
-  
+
 
 });

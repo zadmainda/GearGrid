@@ -14,6 +14,13 @@ body, html
   -webkit-text-size-adjust: 100%
   font-size: 62.5%
 
+html
+  visibility: hidden
+  opacity: 0
+  transition: opacity 0.2s ease-in-out
+  &.rendered
+    visibility: visible
+    opacity: 1
 
 body
   font-family: 'Inter', sans-serif
@@ -41,7 +48,6 @@ ol, ul
 button, input
   outline: none
   border: none
-
 
 .h1, .h2, .h3, .h4, .h5, .h6
   color: var(--theme-color-text-cream)
@@ -82,10 +88,7 @@ img
   margin: auto
   padding: 0
 
-
-
-
-.main 
+.main
   width: 100%
   flex-grow: 1
   // border: 1px solid #3498db 

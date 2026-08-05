@@ -16,6 +16,16 @@ body, html {
   font-size: 62.5%;
 }
 
+html {
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+}
+html.rendered {
+  visibility: visible;
+  opacity: 1;
+}
+
 body {
   font-family: "Inter", sans-serif;
   color: var(--neutral-level-7);
