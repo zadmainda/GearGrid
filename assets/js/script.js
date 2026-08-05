@@ -4,14 +4,14 @@ document.addEventListener('DOMContentLoaded', () => {
   const authModal = new AuthModal();
 });
 
-// const html = document.querySelector('html');
-// html.style.display = 'none';
+const html = document.querySelector('html');
+html.style.display = 'none';
 
-// window.addEventListener("DOMContentLoaded", ()=>{
-//   document.querySelector('html').style.display = '';
-// })
+window.addEventListener("DOMContentLoaded", ()=>{
+  document.querySelector('html').style.display = '';
+})
 
-////////////////////////////////////////
+//////////////////////////////////////
 
 
 let productCatalog = [];
@@ -739,28 +739,7 @@ async function renderProductDetailsPage(products) {
  * Test Stage 1 functionality
  * Logs the extracted SKU and shows if it was successful
  */
-function testStage1() {
-  console.log('[Stage 1] Running Stage 1 tests...');
 
-  const sku = getProductSKUFromURL();
-
-  if (sku) {
-    console.log('[Stage 1 TEST] SUCCESS: SKU extracted:', sku);
-    console.log('[Stage 1 TEST] Ready for Stage 2: Product lookup');
-  } else {
-    console.log('[Stage 1 TEST] WARNING: No SKU found in URL');
-    console.log('[Stage 1 TEST] Current URL:', window.location.href);
-    console.log('[Stage 1 TEST] Expected format: /product.html?sku=YOUR_SKU_HERE');
-  }
-}
-
-// Run Stage 1 tests on DOMContentLoaded
-document.addEventListener('DOMContentLoaded', () => {
-  // Only run on product.html page
-  if (document.querySelector('.product.wrapper')) {
-    testStage1();
-  }
-});
 
 let productPageRenderHandled = false;
 
@@ -781,11 +760,17 @@ initializeCart();
 document.addEventListener('catalogLoaded', async (e) => {
   const products = e.detail;
 
-  const isProductPage = window.location.pathname.includes('product.html') || window.location.pathname.endsWith('/product.html');
+ 
+  const path = window.location.pathname;
+  // Matches /product, /product/, /product.html, or /product.html/
+  const isProductPage = path.includes('product.html') || path.endsWith('/product') || path.endsWith('/product/');
+
   if (isProductPage) {
     if (productPageRenderHandled) return;
     productPageRenderHandled = true;
     await renderProductDetailsPage(products);
     return;
   }
+  
+
 });
